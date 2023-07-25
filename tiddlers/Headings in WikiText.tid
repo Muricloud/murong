@@ -1,0 +1,18 @@
+caption: 标题行
+created: 20131205161234909
+modified: 20220819093318588
+tags: 中 WikiText TiddlyWiki
+title: Headings in WikiText
+tmap.id: 9e0245b5-5a6e-43ec-9234-084cd58b1b27
+type: text/vnd.tiddlywiki
+url: https://tiddlywiki.com/static/Headings%2520in%2520WikiText.html
+
+标题由一个或多个前导 `!` 字符指定：
+
+```
+! 这是1级标题
+
+!! 这是2级标题
+
+!!! 这是3级标题
+```

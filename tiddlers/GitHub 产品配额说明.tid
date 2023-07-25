@@ -1,0 +1,33 @@
+created: 20210429073411294
+modified: 20220626084759288
+tags: XP-tutorials
+title: GitHub 产品配额说明
+tmap.id: be92e091-524e-49cc-b54e-e24dc47dc5c4
+
+https://github.com/pricing ([[我的磁盘配额是多少？|https://docs.github.com/cn/github/managing-large-files/what-is-my-disk-quota]])
+
+Repository size limits for GitHub.com: https://stackoverflow.com/a/59479166
+
+! Free
+
+* 无限容量
+* 建议仓库保持较小，理想情况下小于 1 GB，强烈建议小于 5 GB
+* 单文件最大 100 MB
+* Unlimited public/private repositories
+
+成员人数
+
+* 私有库协作者数量限制 3 人
+
+访问 [[Repositories|https://github.com/settings/repositories]] 查看所有仓库的空间占用情况。
+
+<div class="gray-box">
+
+我们建议每个仓库均保持在 1GB 以下。 仓库的硬限制为 100GB。 如果达到 75GB，推送时您将在终端收到 Git 的警告。 如果将大文件留在仓库之外，则此限制很容易保持。 如果仓库超过 1GB，您可能会收到来自 GitHub 支持的礼貌电子邮件，要求您减小仓库的大小以使其恢复。
+
+<<<.br
+作者：知乎用户
+链接：https://www.zhihu.com/question/29514576/answer/972520133
+<<<
+
+</div>

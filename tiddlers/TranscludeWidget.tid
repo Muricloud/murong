@@ -1,0 +1,71 @@
+caption: transclude--嵌入部件
+created: 20130824142500000
+modified: 20210713052342033
+tags: 中 Widgets TiddlyWiki
+title: TranscludeWidget
+tmap.id: 95c10570-be93-48bc-8c63-3805a5c5c263
+type: text/vnd.tiddlywiki
+
+!! 介绍
+
+TranscludeWidget（嵌入部件）动态导入另一个条目的内容。
+
+!! 属性
+
+|!属性 |!描述 |
+|tiddler |要嵌入的条目的标题（默认为当前条目） |
+|field |当前条目的字段名称（默认为 "text"；如果存在的话则优先于 index 属性）|
+|index |[[数据条目|DataTiddlers]]中一个属性的索引 |
+|subtiddler |可选，目标条目是[[插件|Plugins]]时的SubTiddler（子条目）标题（参见下文）|
+|mode |为嵌入文本覆写默认的解析模式为 "block"（块模式）或 "inline"（内联模式） |
+
+TranscludeWidget 嵌入部件的所有包含内容被作为后备，如果未定义嵌入目标（即缺少条目或缺少字段）。
+
+!! 解析模式
+
+TiddlyWiki以两种模式解析文本：
+
+* ''inline''（内联）模式识别字符格式，如重点、链接等
+* ''block'' 模式可以识别所有''inline''格式，并增加了块格式，如表格、标题和列表等
+
+通常，模式是由嵌入部件本身是以块还是以内联模式解析来确定的。 它可以用 `mode` 属性覆写。
+
+例如，考虑条目 "A" 是如下内容：
+
+```
+# 项目一
+#<$transclude tiddler="B"/>
+# 项目二
+```
+
+条目 "B" 是如下内容：
+
+```
+# 项目一 - a
+# 项目一 - b
+```
+
+结果会是这个样子（"B"的内容被以内联模式显示在一行内）：
+
+# 项目一
+# # 项目一 - a # 项目一 - b
+# 项目二
+
+这可以通过修改条目 "A" 来解决（覆写mode属性）：
+
+```
+# 项目一
+#<$transclude tiddler="B" mode="block"/>
+# 项目二
+```
+
+!! 子条目访问
+
+嵌入部件允许访问存储在[[插件|Plugins]]中的单个条目。
+
+以下示例将嵌入条目[[$:/DefaultTiddlers]]的系统核心版本，即使它已被覆写：
+
+<<wikitext-example-without-html '
+<$transclude tiddler="$:/core" subtiddler="$:/DefaultTiddlers"/>
+
+'>>

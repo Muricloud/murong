@@ -1,0 +1,13 @@
+caption: 核心宏
+created: 20150220180315000
+modified: 20210714070134077
+tags: 中 [[Macros in WikiText]] TiddlyWiki
+title: Core Macros
+tmap.id: aa6712d4-647c-4719-a806-382592944cbf
+type: text/vnd.tiddlywiki
+
+（只显示了一些常用的，更多内容见官方文档 [[Core Macros|https://tiddlywiki.com/static/Core%2520Macros.html]]）
+
+以下[[宏|Macros]]内建于~TiddlyWiki的核心：
+
+<<list-links "[tag[Core Macros]]">>

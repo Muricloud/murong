@@ -1,0 +1,41 @@
+caption: 文件归类规则
+created: 20160424181300000
+modified: 20220712132529221
+tags: 中 [[Using TiddlyWiki on Node.js]] XP-tutorials
+title: Customising Tiddler File Naming
+tmap.id: cd4068d1-eac7-4153-a504-db137733bce4
+type: text/vnd.tiddlywiki
+
+! 文件归类规则
+
+server 版 TiddlyWiki 的内容是以一个个独立文件来储存的，其内容在 TiddlyWiki 里可以通过 tag 来分类索引，其文件本体也可以通过创建相应的规则让其自动归类到相应文件夹。（[[Customising Tiddler File Naming|https://tiddlywiki.com/static/Customising%2520Tiddler%2520File%2520Naming.html]]）
+
+所有文件路径操作都是相对于 `default-tiddler-location` 的，该位置默认为 [[Wiki 文件夹|TiddlyWikiFolders]]的 `tiddlers/` 目录。
+
+!! File System Paths
+
+通过创建 $:/config/FileSystemPaths 条目来定制逻辑路径。示范内容为：
+
+{{$:/config/FileSystemPaths.example}}
+
+> 该条目包含一个或多个过滤器表达式，每个表达式各占一行。@@color:Red;每次将条目保存到磁盘时，都会依次对每个过滤器进行匹配@@，并且将第一个匹配的过滤器的输出作为条目文件的逻辑路径。如果逻辑路径已更改，则会创建一个新文件，并删除旧文件。
+
+上面的设置会根据条目（tiddler）的[[类型|ContentType]]、标签、属性来为其标题增删前缀，让标题变成一个路径，使 tiddler 按路径储存：
+
+# 把新创建的系统条目存储在 `_system/` （排除 GTD 条目，剥离 `$:/` 前缀之后）
+# 把标签为 <<tag Private>> 且不是 Journal 的条目放在子目录 `private/`
+# 把标签为 <<tag Journal>> 的条目放在子目录 `journals/private/` 或者 `journals/`
+# 把草稿文件放在子目录 `drafts/`
+# 把类型为 image 的条目放在子目录 `images/`
+# 把标签为 <<tag GTD>> <<tag task>> <<tag todo>> <<tag Checklist>> 的条目移到子目录 `task-management/`
+# 最后，所有没有 `externalnote` 标签的 tidder 将存储在 `wiki/`
+
+如果没有匹配的过滤器，则逻辑路径就是标题，所有出现的 `/` 用 `_` 替换（为了向后兼容）。
+
+为了保证在所有支持的平台上生成的路径都是合法的，字符 
+ `<>:"\|?*^` 被替换为 `_` 。
+
+
+!! See also
+
+* [[[笔记] TiddlyWiki + Node.js 打造本地便携 wiki|https://meta.appinn.net/t/tiddlywiki-node-js-wiki/13744/1]]

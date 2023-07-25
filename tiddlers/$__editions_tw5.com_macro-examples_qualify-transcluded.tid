@@ -1,0 +1,12 @@
+caption: 标识位置宏示例用条目
+created: 20150221171233000
+modified: 20200901042844514
+tags: 中 [[qualify Macro]] [[Macro Examples]] TiddlyWiki
+title: $:/editions/tw5.com/macro-examples/qualify-transcluded
+type: text/vnd.tiddlywiki
+
+<$macrocall $name=".example" n="1"
+eg="""<ul>
+<li><code><<qualify "BaseTiddler">></code></li>
+<li><code><<transclusion>></code></li>
+</ul>"""/>

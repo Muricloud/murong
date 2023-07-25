@@ -1,0 +1,26 @@
+caption: timeline：时间轴宏
+created: 20150220180357000
+modified: 20171215171511341
+tags: 中 Macros [[Core Macros]] TiddlyWiki
+title: timeline Macro
+tmap.id: 3dd84e38-93e7-4345-a764-f6cd2015bd29
+type: text/vnd.tiddlywiki
+
+<<.def timeline>>（时间轴）[[宏|Macros]]返回一个按修改时间（或其他[[日期字段|Date Fields]]）反时序排列的条目列表，并按天分组。
+
+!! 参数
+
+;limit -- 数量限制
+: 最多可以包括的条目数，默认为100。但是如果某日的<<.em 一些>>条目已经被包括进来了，那么该日其他<<.em 所有>>条目也将被包括进来 -- 即使这可能造成超过条目数限制
+;format -- 格式
+: 一个字符串，指定所需的[[日期格式|DateFormat]]，默认为 `DDth MMM YYYY`
+;subfilter -- 子过滤器
+: 一个可选的额外[[筛选步骤|Filter Step]]，例如 `tag[MyTag]`
+;dateField -- 日期字段
+: 要使用的日期字段的名称，默认为 `modified`（修改日期）
+
+条目按[[过滤器表达式|Filter Expression]]来选择，其中 <<.param subfilter>> 和 <<.param limit>> 参数按如下方式拼接：
+
+> `[!is[system]$subfilter$has[$dateField$]!sort[$dateField$]limit[$limit$]eachday[$dateField$]]`
+
+<<.macro-examples "timeline">>

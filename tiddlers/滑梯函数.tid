@@ -1,0 +1,36 @@
+created: 20230719100410048
+modified: 20230719101249553
+tags: 
+title: 滑梯函数
+tmap.id: 7160625c-c0b6-4b72-9f80-fde82a86a7c6
+
+<div class=blue-box>
+$$f(x)=ax- \frac{b}{x} 
+$$
+</div>
+
+# 形如 $$f(x)=ax- \frac{b}{x} $$ 这种类型($$ab$$ 同号，此处以 $$a>0,b>0$$ 为例)，其图像为滑梯<br>
+# 函数定义域 $$(-\infty，0) \cup (0，+\infty)$$ ，<br>
+# 奇函数<br>
+# 当 $$x>0$$ 时，单调递增<br>
+# 当 $$x<0$$ 时，单调递减<br>
+# 无最大值，无最小值，函数图像像两个滑梯
+# 函数的零点为 $$x=\tiny{土}$$ $$\sqrt{\frac{b}{a}}$$<br>
+所谓零点，就是使函数值为零的点
+
+<$details summary="演示代码" open="no">
+$$y=x-\frac{1}{x}
+$$<br>
+$$y=2x-\frac{1}{x}
+$$<br>
+$$y=x-\frac{2}{x}
+$$<br>
+$$y=3x-\frac{5}{x}
+$$<br>
+<<codes src:"""f_{1}:y=x-1/x
+f_{2}:y=2x-1/x
+f_{3}:y=x-2/x
+f_{3}:y=3x-5/x
+""">>
+
+</$details>

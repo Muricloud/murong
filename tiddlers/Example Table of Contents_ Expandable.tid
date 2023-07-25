@@ -1,0 +1,12 @@
+caption: 可展开
+created: 20150221201816000
+modified: 20200901042844523
+order: 2
+tags: 中 table-of-contents-example TiddlyWiki
+title: Example Table of Contents: Expandable
+tmap.id: ec9fcc71-f822-4145-b22c-588d0bb75cbc
+
+<$macrocall $name=".example" n="1"
+eg="""<div class="tc-table-of-contents">
+<<toc-expandable "Contents">>
+</div>"""/>

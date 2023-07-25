@@ -1,0 +1,42 @@
+created: 20230602015639516
+modified: 20230602085516054
+tags: 
+title: 数学实验
+tmap.id: b0383c4b-9328-4b03-88fa-c7fb4d8faf32
+
+\define functionGraph(funexp,addr)
+<tr>
+<td>$$$funexp$$$
+</td>
+<td> <<codes src:"""$funexp$
+""">>
+</td>
+<td>
+<$button message="tm-modal" param="$addr$">{{$:/core/images/full-screen-button}}</$button>
+<div style="width:200px">
+{{$addr$}}
+</div>
+</td>
+</tr>
+\end
+
+绘制初等函数<br>
+
+<table>
+<th><div class=grew-box style="width:200px">函数
+</div></th>
+<th><div class=grew-box style="width:200px">实验代码
+</div>
+</th>
+<th><div class=grew-box style="width:200px">图像
+</div>
+</th>
+
+<<functionGraph y=x^2 geogebra#y=x^2#.svg>>
+<<functionGraph y=e^x geogebra#y=e^x#.svg>>
+<<functionGraph y=log_2x geogebra#y=log_2x#.svg>>
+<<functionGraph y=\log_{\frac{1}{2}}x geogebra#y=log_2frac1/2#.svg>>
+
+
+</table>
+

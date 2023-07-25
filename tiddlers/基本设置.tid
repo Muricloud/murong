@@ -1,0 +1,75 @@
+caption: {{$:/core/images/options-button}} 基本设置
+created: 20200816012617477
+modified: 20230604084630391
+tags: XP-tutorials 新手入门指南
+title: 基本设置
+tmap.id: baec7afe-9a6a-4525-a6e4-22fb0865d29b
+
+\define tv-config-toolbar-text() yes
+\define openCpBasics()
+<$action-setfield $tiddler="$:/state/tab-1749438307" $value="$:/core/ui/ControlPanel/Info"/>
+<$action-setfield $tiddler="$:/state/tab--2112689675" $value="$:/core/ui/ControlPanel/Basics"/>
+<$action-navigate $to="$:/ControlPanel"/>
+\end
+\define openCpTiddlyWiki()
+<$action-setfield $tiddler="$:/state/tab-1749438307" $value="$:/core/ui/ControlPanel/Settings"/>
+<$action-setfield $tiddler="$:/state/tab--20210420061617891" $value="$:/core/ui/ControlPanel/Settings/TiddlyWiki"/>
+<$action-navigate $to="$:/ControlPanel"/>
+\end
+\define openCpShiraz()
+<$action-setfield $tiddler="$:/state/tab-1749438307" $value="$:/core/ui/ControlPanel/Settings"/>
+<$action-setfield $tiddler="$:/state/tab--697582678" $value="$:/plugins/kookma/shiraz/ui/ControlPanel/Settings"/>
+<$action-navigate $to="$:/ControlPanel"/>
+\end
+\define openXP()
+<$action-navigate $to="$:/xp/ui/SideBar/XpSettings"/>
+\end
+\define openCpToolbars()
+<$action-setfield $tiddler="$:/state/tab-1749438307" $value="$:/core/ui/ControlPanel/Appearance"/>
+<$action-setfield $tiddler="$:/state/tab--1963855381" $value="$:/core/ui/ControlPanel/Toolbars"/>
+<$action-navigate $to="$:/ControlPanel"/>
+\end
+
+打开 <$button actions=<<openCpBasics>>>{{$:/core/images/options-button}} Basics</$button>，对 ~TiddlyWiki 做基本配置。
+
+* 标题
+* 副标题
+* 首页：默认开启的条目
+** [[在启动时保持打开的条目|Preserving open tiddlers at startup]]
+* 新条目的名称
+* 新日志条目的名称
+* 设置语言
+** （单文件版）在插件库中安装新语言 {{$:/core/ui/ControlPanel/Plugins/AddPlugins}}
+** （服务器版）参阅[[管理插件（服务器版）]]
+
+在 <$button actions=<<openCpTiddlyWiki>>>{{$:/core/images/options-button}} ~TiddlyWiki</$button> 中调整设置，比如：
+
+* [[Tiddler Opening Behaviour（条目开启行为）|$:/core/ui/ControlPanel/Settings/LinkToBehaviour]]
+* [[Tiddler Titles（条目标题）|$:/core/ui/ControlPanel/Settings/TitleLinks]]
+
+
+在 <$button actions=<<openCpShiraz>>>{{$:/core/images/options-button}} Shiraz</$button> 中调整界面效果：
+
+:<$checkbox tiddler="$:/plugins/kookma/shiraz/styles/ui/colorify-buttons" tag="$:/tags/Stylesheet"> Colorful UI buttons</$checkbox>
+:<$checkbox tiddler="$:/plugins/kookma/shiraz/styles/ui/view-toolbar-button-visibility" tag="$:/tags/Stylesheet"> Tiddler visibility on mouse hover</$checkbox>
+
+> 在触摸屏设备上，建议禁用 Tiddler visibility on mouse hover
+
+
+在 <$button actions=<<openXP>>>{{$:/core/images/options-button}} XP</$button> 中调整界面效果。也可以在右边栏选项卡中快速访问。
+
+: <$checkbox tiddler="$:/_xp/Stylesheet/box-shadow" tag="$:/tags/Stylesheet"> [[Show box-shadow|$:/_xp/Stylesheet/box-shadow]]</$checkbox>
+
+> 出于[[性能|Performance]]考虑，默认禁用阴影效果。使得打开大量条目时依然丝滑，流畅——不会感觉到卡顿。
+
+
+在 <$button actions=<<openCpToolbars>>>{{$:/core/images/options-button}} Toolbars</$button> 中调整工具栏图标的显示/位置。侧边栏选项卡 Tools 中有很多常用工具的按钮，可以善加利用。
+
+
+<div class="gray-box">
+
+[[Hidden Setting: Filename for Save Wiki Button|https://tiddlywiki.com/static/Hidden%2520Setting%253A%2520Filename%2520for%2520Save%2520Wiki%2520Button.html]]
+
+* $:/config/SaveWikiButton/Filename
+
+</div>

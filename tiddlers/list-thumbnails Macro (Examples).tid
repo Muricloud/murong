@@ -1,0 +1,12 @@
+created: 20200612170734735
+modified: 20200612171403882
+tags: [[Macro Examples]] TiddlyWiki
+title: list-thumbnails Macro (Examples)
+tmap.id: a3d41370-6b4a-4ce9-8782-36347980aece
+type: text/vnd.tiddlywiki
+
+This example lists all the tiddlers which are tagged with "HelloThumbnail":
+
+<$macrocall $name=".example" n="1" eg="""<<list-thumbnails filter:"[tag[HelloThumbnail]]" width:"168" height:"95">>"""/>
+
+

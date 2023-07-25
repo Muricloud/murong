@@ -1,0 +1,51 @@
+created: 20210711120223057
+modified: 20220626084901622
+tags: XP-tutorials
+title: sed配合grep批量替换文件中的字串
+tmap.id: fa70abdc-fd9e-46ad-bd19-74d029fc7cb5
+
+基本用法：
+
+```bash
+grep "$1" -rl ./  | xargs sed -i 's@$1@$2@g'
+```
+
+> 查找出当前目录下含有 $1 的文件，然后传给 sed 将 $1 替换为 $2。
+
+<div class="gray-box">
+
+在您的绝对掌控下，执行替换命令。如果犹豫，可以将目标文件拷贝一份出来做替换，然后再拷贝回去。
+
+</div>
+
+
+!! 例 1
+
+将目标文件中 `Plugin Card` 替换为 `How-to`：
+
+```bash
+grep "Plugin Card" -rl ./  | xargs sed -i 's@Plugin Card@How-to@g'
+```
+
+
+!! 例 2
+
+批量替换某个标签：
+
+```bash
+grep "$:/tags/QuickBar/PageControls" -rl ./ | xargs sed -i 's@$:/tags/QuickBar/PageControls@$:/tags/QuickBar/PageControlButtons@g'
+```
+
+
+!! 例 3
+
+批量替换目标文件中的某个过滤器。比如：
+
+*  `[tag[Course]tag[Ongoing]sort[]]` 修改为
+* `[!has[draft.of]tag[Course]tag[Ongoing]sort[]]`
+
+由于 `tag[Course` 能够唯一标识该过滤器，所以可以直接用来作为 $1：
+
+```bash
+grep "tag\[Course" -rl ./  | xargs sed -i 's@tag\[Course@\!has\[draft.of\]tag\[Course@g'
+```

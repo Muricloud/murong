@@ -1,0 +1,12 @@
+caption: 标题选集
+created: 20150117152418000
+modified: 20210423053751049
+tags: 中 Concepts TiddlyWiki
+title: Title Selection
+tmap.id: 3f489fdc-5292-4342-9759-050ca1bfa834
+
+一个<<.def "title selection">>（标题选集）是一组有序的条目标题（或类似的字符串），其中没有标题会出现一次以上。
+
+标题选集在[[过滤器|Filters]]处理中很重要。
+
+最简单的写法是像这样一个标题列表[[Title List]]。

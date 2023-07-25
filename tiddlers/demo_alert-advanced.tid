@@ -1,0 +1,63 @@
+caption: Alert advanced usage
+created: 20181208192049860
+creator: Mohammad
+modified: 20200901042808894
+tags: alert doc XP-tutorials
+title: demo/alert-advanced
+tmap.id: 59e86a65-25b8-4692-bf40-db9c8cc8efba
+type: text/vnd.tiddlywiki
+
+!Alert macro and class attribute
+
+Alet macro has a `class` attribute lets pass extra css classes to customize it.  Any CSS relevant classes can be used, but mostly customized classes are used for this purpose. In Shiraz 2.0+ these classes are courtesy from Bootstrap and can be found in [[demo/bootstrap-classes]].
+
+!! Examples i
+See below examples. Two classes are used here! `leftbar` which adds a left thick border and `border-primary` (or other conceptual colors, see [[demo/contextual-classes]]) which adds color to left border.
+
+```
+<<alert primary src:"Leftbar alert primary" class:"leftbar border-primary">>
+<<alert danger src:"Leftbar alert danger" class:"leftbar border-danger">>
+<<alert success src:"Leftbar alert success" class:"leftbar border-success">>
+<<alert warning src:"Leftbar alert warning" class:"leftbar border-warning">>
+<<alert info src:"Leftbar alert info" class:"leftbar border-info">>
+<<alert secondary src:"Leftbar alert secondary" class:"leftbar border-secondary">>
+<<alert dark src:"Leftbar alert dark" class:"leftbar border-dark">>
+```
+<<alert primary src:"Leftbar alert primary" class:"leftbar border-primary">>
+<<alert danger src:"Leftbar alert danger" class:"leftbar border-danger">>
+<<alert success src:"Leftbar alert success" class:"leftbar border-success">>
+<<alert warning src:"Leftbar alert warning" class:"leftbar border-warning">>
+<<alert info src:"Leftbar alert info" class:"leftbar border-info">>
+<<alert secondary src:"Leftbar alert secondary" class:"leftbar border-secondary">>
+<<alert dark src:"Leftbar alert dark" class:"leftbar border-dark">>
+
+
+!Examples ii
+
+Here the class `border-` e.g. `border-primary` is used to create alerts with full colored borders.
+
+```
+<<alert primary src:"Primary" class:"border-primary">>
+<<alert danger src:"Danger" class:"border-danger">>
+<<alert warning src:"Warning" class:"border-warning">>
+<<alert info src:"Info" class:"border-info">>
+```
+
+<<alert primary src:"Primary" class:"border-primary">>
+<<alert danger src:"Danger" class:"border-danger">>
+<<alert warning src:"Warning" class:"border-warning">>
+<<alert info src:"Info" class:"border-info">>
+
+
+!!Examples iii
+
+Here `bg-transparent` class is used to create alerts with colored text and borders and no background.
+
+```
+<$macrocall $name="alert" type="primary" src=<<.lorem>> class="bg-transparent"/>
+<$macrocall $name="alert" type="danger" src=<<.lorem>> class="bg-transparent"/>
+```
+
+<$macrocall $name="alert" type="primary" src=<<.lorem>> class="bg-transparent"/>
+<$macrocall $name="alert" type="danger" src=<<.lorem>> class="bg-transparent"/>
+

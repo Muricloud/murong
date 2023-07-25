@@ -1,0 +1,42 @@
+created: 20230623113716094
+modified: 20230704053519608
+tags: $:/tags/SideBar
+title: Markdown字母
+tmap.id: 7edf2676-8db3-439c-9ca7-47dbb1daa77d
+
+<table>
+<th>字母</th>
+<th><div class=gray-box style="width:150px">代码
+</div></th>
+<tr>
+<td>$$\Delta$$</td>
+<td><<codes src:""" \Delta
+""">></td>
+</tr>
+<tr>
+<td>$$\overline{v}$$</td>
+<td><<codes src:""" \overline{v}
+""">></td>
+</tr>
+
+<tr>
+<td>$$\geq $$</td>
+<td><<codes src:""" \geq 
+""">></td>
+</tr>
+
+<tr>
+<td>$$\neq $$</td>
+<td><<codes src:""" \neq
+""">></td>
+</tr>
+
+<tr>
+<td>$$ a=b \Rightarrow a {\tiny 土}c  $$</td>
+<td><<codes src:""" a=b \Rightarrow a {\tiny 土}c
+""">></td>
+</tr>
+
+</table>
+
+

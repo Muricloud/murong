@@ -1,0 +1,13 @@
+caption: WPS Office
+color: 
+created: 20220205190725799
+description: WPS Office（Writer, Presentation and Spreadsheets，作家和演示文稿和电子表格）是由金山软件股份有限公司发布的一款办公软件，用于办公软件最常用的文字编辑、表格、演示稿等功能。覆盖Windows、MacOS、Linux、Android、iOS及鸿蒙等平台。
+modified: 20220819092613185
+moscow: S
+purpose: 效率办公
+tags: Windows macOS Linux Android iOS 办公 Examples [[Should have]] Software
+title: WPS Office
+tmap.id: 85c5c2a2-63b3-41c3-a38c-c2a488bfd579
+url: https://www.wps.cn/
+
+{{!!description}}

@@ -1,0 +1,30 @@
+caption: 条目链接
+created: 20130825202900000
+modified: 20210423053751048
+tags: 中 Concepts TiddlyWiki
+title: TiddlerLinks
+tmap.id: cbd43f4f-1efc-4053-a60e-ac6099bf3143
+type: text/vnd.tiddlywiki
+
+链接是条目中可以点击的区域，可以导航到不同的条目。 导航行为由当前的StoryView设置决定; 经典的TiddlyWiki视图将篇目显示为条目的线性序列。
+
+按住 ''control''（控制） 或者 ''command''（命令）键同时点击条目链接，即可打开目标条目而不跳转到它。 这可能是排队等待稍后阅读的有用方法。
+
+链接对于在条目之间建立有机关联模型非常有用，特别是用于表达条目之间的导航路径。
+
+在条目的InfoPanel（信息面板）的''References''（参照）选项卡中，列出了到引用者条目的链接（incoming links）。
+
+[[Filters]]（过滤器） 可以包括以下与链接一起使用的过滤器操作符：
+
+* `[links[]]` - 返回当前选定的条目链接到的条目标题
+* `[backlinks[]]` - 返回链接到当前选定条目的条目标题
+
+TiddlyWiki5会改变条目链接的外观，以传达关于链接目标的附加信息：
+
+|!链接描述 |!链接外观 |
+|到一个存在的条目 |[[LikeThis|TiddlerLinks]] |
+|到一个不存在的条目 |[[LikeThis|ATiddlerThatDoesntExist]] |
+|到一个没有被覆写的影子条目 |[[LikeThis|$:/core/copyright.txt]] |
+|到一个被普通条目覆写的影子条目 |[[LikeThis|$:/SiteTitle]] |
+
+外部链接像这样： http://tiddlywiki.com/ 或者 [[这样|http://tiddlywiki.com/]].

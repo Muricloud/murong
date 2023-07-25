@@ -1,0 +1,42 @@
+created: 20220903124922541
+modified: 20220903145400874
+tags: Howto TiddlyWiki
+title: 如何将单文件版本中的插件放到 Node.js 中使用
+tmap.id: 5990be10-f09d-4962-8fa4-2c5a2181304c
+
+最简单的方法，当然是直接将插件拖动导入到维基中。如果有多个维基，那么建议使用官方推荐的方式安装插件，即编辑 `tiddlywiki.info`。
+
+如果插件作者没有提供 Node.js 版的源代码，有两种方法可将插件快速转换为 Node.js 版的插件。比如，将单文件版本中的插件 $:/plugins/kookma/commander 转换为 Node.js 版的插件：
+
+;方法一
+:在高级查找的筛选选项卡中，输入 `[[$:/plugins/kookma/commander]plugintiddlers[]]`，然后将插件条目导出为 JSON file：''tiddlers.json''。参照其他插件在 PluginFolders 中创建 ''plugin.info''。<div>
+
+```
+commander
+├── plugin.info
+└── tiddlers.json
+```
+</div>
+
+
+;方法二
+:新建一个空白维基 `tiddlywiki unpack --init server`，将插件拖动导入到其中：<div>
+
+```
+.
+├── tiddlers
+│   ├── $__plugins_kookma_commander.json
+│   ├── $__plugins_kookma_commander.json.meta
+└── tiddlywiki.info
+```
+</div>
+:使用 UnpackPluginCommand 将插件进行解包：`tiddlywiki --unpackplugin $:/plugins/kookma/commander`。
+:参照 `$__plugins_kookma_commander.json.meta` 在 PluginFolders 中创建 ''plugin.info''。<div>
+
+```
+commander
+├── plugin.info
+└── tiddlers...
+```
+</div>
+:删除文件 `$__plugins_kookma_commander.json` `$__plugins_kookma_commander.json.meta`。

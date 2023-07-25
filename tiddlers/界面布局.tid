@@ -1,0 +1,31 @@
+created: 20210815092916711
+modified: 20220904011129710
+tags: XP-tutorials 自定义
+title: 界面布局
+tmap.id: eb4ea1ad-cc39-41ec-8027-0a951c6ddd4c
+
+\define tv-config-toolbar-icons() yes
+\define tv-config-toolbar-text() yes
+\define tv-config-toolbar-class()
+
+!! 浅谈布局
+
+TiddlyWiki 的默认界面是「左右布局」：左边故事河-右边侧边栏。这是最简洁的设计！
+
+可以这么理解：
+
+# 「左右布局」中，侧边栏放在右边比放在左边好。在右边更容易操作，因为大多数人是右手使用鼠标——将小鱼（Tiddler）从右边栏中放到故事河中打开。
+#* 左右布局下，故事河拥有较大宽度，所以小鱼的 body 能显示更多内容，便于用户查阅或者编辑；
+#* 左右布局下，可以适当增加故事河的左边距进行留白，这样阅读时脑袋向左转的幅度更小，或者斜视的角度更小。也可以调整相对位置，将座位左移一点。<br><br>
+# 如果是 XP 的「左中右布局」：左边栏-故事河-右边栏，这种布局的好坏或许取决于用户电脑的屏幕大小。
+#* 如果屏幕宽，那么「左中右布局」就是多任务处理界面。用户可以扩大左右边栏的宽度，而故事河居中且拥有较大宽度。这使得阅读小鱼的体验更好；
+#* 如果屏幕窄，整个界面就会显得臃肿——故事河显得小，同时左右边栏的内容显示效果不佳（比如小鱼的标题很长时）。其实，浏览器是可以缩放页面大小的，如果还是觉得布局太紧凑，那就换回「左右布局」吧。
+
+!! 秉承简洁的理念
+
+为使主界面保持「简洁」，将不常用的按钮均隐藏在更多中：
+
+# 「查看工具栏」最多常驻显示五六个按钮，其余按钮通过 {{$:/core/ui/Buttons/more-tiddler-actions}} 进行访问；
+# 「[[页面工具栏|$:/core/ui/PageTemplate/pagecontrols]]」最多显示一列按钮，其余按钮分类收纳起来。
+#* TiddlyWiki 官方插件的按钮在 {{$:/core/ui/Buttons/more-page-actions}} 中进行访问。
+#* 而社区插件（Community Plugins）的按钮，将条目放入 $:/config/PageControlButtons/from-community-plugins 中，就可以通过 {{$:/xp/ui/Buttons/more-page-actions-cp}} 快速访问。

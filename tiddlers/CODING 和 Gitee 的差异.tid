@@ -1,0 +1,34 @@
+created: 20210429103848715
+modified: 20220626084748456
+tags: XP-tutorials
+title: CODING 和 Gitee 的差异
+tmap.id: 0cf05c93-c423-4a4a-8bb4-b18fe3a375f8
+
+<div class="gray-box">
+
+''CODING 和 Gitee 的差异''
+
+这里只谈论两个内容，一个是存储容量，一个是静态网站。对于免费用户：
+
+* 用户总仓库容量，CODING 有 100G，而 Gitee 有 5G。（参阅 [[代码托管平台产品配额]]）
+* Git 单仓库容量，CODING 有 2G，而 Gitee 有 1G。
+* CODING 上建站有费用（COS对象存储），Gitee 可以开启 Gitee Pages 搭建免费的静态网站。
+
+由于搭建私有笔记，不对外公开，可以说，这种情况下 Gitee Pages 可有可无。
+</div>
+
+
+<div class="blue-box">
+
+''CODING 单项目多仓库''
+
+CODING 有[[单项目多仓库|https://help.coding.net/docs/best-practices/host/multi-repo.html#pageTitle]]，如果将[[服务器版 TiddlyWiki|TiddlyWiki on Node.js]] 的文件[[分仓库存储|使用技巧：维基内容分仓库存储]]，那么管理起来很方便。
+
+</div>
+
+
+<div class="red-box">
+
+''注意''：没有必要等到容量用满了才考虑转移，预估内容会超过限制，就别用这些平台。
+
+</div>

@@ -1,0 +1,34 @@
+created: 20230623112006383
+modified: 20230623143702086
+title: 运动学公式的推导
+tmap.id: 1663d568-90ae-4cc1-b838-8a67adc50e83
+
+推导：
+
+<div class="red-box" style="width: 200px; margin: 0 auto;">{{运动学公式(vt,v0,a,t)}}</div>
+
+<$details summary="推导过程" open="no">
+{{运动学公式(vt,v0,a,t)推导过程}}
+</$details>
+<hr>
+推导：<div class="red-box" style="width: 200px; margin: 0 auto;">{{运动学公式(vt,v0,a,x)}}</div>
+<$details summary="推导过程" open="no">
+推导都是从已知到未知的
+<$details summary="想一下我们都学过哪些公式呢？" open="no">
+{{运动学公式(v0,vt,v平均)}}
+{{平均速度公式}}
+{{运动学公式(vt,v0,a,t)}}
+<hr>
+<$details summary="那个公式和我们要推导的公式差异最小？" open="no">
+{{运动学公式(vt,v0,a,x)推导过程}}
+</$details>
+</$details>
+
+</$details>
+<hr>
+
+推导：<div class="red-box" style="width: 200px; margin: 0 auto;">{{运动学公式(x,v0,t,a)}}</div>
+<$details summary="推导过程" open="no">
+{{运动学公式(x,v0,t,a)推导过程}}
+
+</$details>

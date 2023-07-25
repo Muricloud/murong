@@ -1,0 +1,20 @@
+caption: Node.js上的TiddlyWiki
+created: 20131129094353704
+modified: 20220819093318601
+tags: Platforms TiddlyWiki
+title: TiddlyWiki on Node.js
+tmap.id: 9960aa3e-c759-4864-8b5d-008e771d81b6
+type: text/vnd.tiddlywiki
+url: https://tiddlywiki.com/static/TiddlyWiki%2520on%2520Node.js.html
+
+在 [[Node.js]] 运行 TiddlyWiki 带来了超越单个文件版本之上的几个重要优点：
+
+* 您可以在任何兼容HTML5的合适浏览器（包括智能手机和平板电脑）上修改您的内容
+* 条目（tiddlers）分别存储在单独的文件中，您可以根据需要进行组织
+* 构建多个维基的能力，划分出不同的分享组合和独特内容
+
+<<.warning """请注意，Node.js 上的 TiddlyWiki 目前不支持在运行时通过文件系统直接修改 tiddler 文件。为了使更改生效，必须重新启动服务器。推荐通过 HTTP 或 JavaScript API 与运行中的 wiki 进行交互。""">>
+
+有关更多信息，请参阅：
+
+<<tabs "[[Installing TiddlyWiki on Node.js]] [[在 Node.js 上使用 TiddlyWiki]] [[Upgrading TiddlyWiki on Node.js]]" [[Installing TiddlyWiki on Node.js]] "$:/state/tab1">>

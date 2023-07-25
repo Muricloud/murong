@@ -1,0 +1,63 @@
+created: 20230719071050817
+modified: 20230719072816942
+title: 象限角和轴线角
+tmap.id: 01a39dc1-72da-40a2-8d7c-bcac74548f70
+
+''1、象限角和轴线角''<br>
+在平面直角坐标系内，使角的顶点与原点重合,角的始边与 $$x$$ 轴的非负半轴重合,那么,角的<mark class="mark-red">终边在第几象限,就角是第几象限角</mark>。如果<mark class="mark-blue">角的终边在坐标轴上</mark>,那么就认为这个角不属于任何象限，我们称其为轴线角。
+<br><br><br><br>
+''2、象限角的集合表示''<br>
+<table>
+<th>象限角</th>
+<th>角的集合</th>
+<tr>
+<td>第一象限角</td>
+<td>$$\{ \alpha | k ·360° \lt \alpha \lt k ·360°+90°,k \in Z\}$$</td>
+</tr>
+<tr>
+<td>第二象限角</td>
+<td>$$\{ \alpha | k ·360°+90°\lt \alpha \lt k ·360°+180°,k \in Z\}$$</td>
+</tr>
+<tr>
+<td>第三象限角</td>
+<td>$$\{ \alpha |k ·360°+180° \lt \alpha \lt k ·360°+270°,k \in Z\}$$</td>
+</tr>
+<tr>
+<td>第四象限角</td>
+<td>$$\{ \alpha | k ·360°-90° \lt \alpha \lt k ·360°,k \in Z\}$$</td>
+</tr>
+</table>
+<br><br>
+''3、轴线角的集合表示''<br>
+<table>
+<th>终边位置</th>
+<th>角的集合</th>
+<tr>
+<td>在 $$x$$ 轴的非负半轴上</td>
+<td>$$\{ \alpha | \alpha =k ·360° ,k \in Z\}$$</td>
+</tr>
+<tr>
+<td>在 $$x$$ 轴的非正半轴上</td>
+<td>$$\{ \alpha |\alpha = 180°+k ·360° ,k \in Z\}$$</td>
+</tr>
+<tr>
+<td>在 $$y$$ 轴的非负半轴上</td>
+<td>$$\{ \alpha |\alpha =90° + k ·360°,k \in Z\}$$</td>
+</tr>
+<tr>
+<td>在 $$y$$ 轴的非正半轴上</td>
+<td>$$\{ \alpha |\alpha =270° + k ·360°,k \in Z\}$$</td>
+</tr>
+<tr>
+<td>在 $$x$$ 轴上</td>
+<td>$$\{ \alpha |\alpha =k ·180° ,k \in Z\}$$</td>
+</tr>
+<tr>
+<td>在 $$y$$ 轴上</td>
+<td>$$\{ \alpha |\alpha =90° + k ·180° ,k \in Z\}$$</td>
+</tr>
+<tr>
+<td>在坐标轴上</td>
+<td>$$\{ \alpha |\alpha =k ·90° ,k \in Z\}$$</td>
+</tr>
+</table>

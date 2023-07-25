@@ -1,0 +1,22 @@
+caption: List Macros
+created: 20211209164728797
+modified: 20220626085950447
+tags: XP-tutorials 调用内置宏
+title: 调用内置宏/List Macros
+tmap.id: 9c5436ee-9aa6-42a3-8956-f9b87d3500d5
+
+<div class="gray-box">
+
+List 相关的几个宏放到一起，主要有：
+
+# [[list-links Macro]] 返回[[选定条目|Title Selection]]的格式化链接列表。定义在 $:/core/macros/list。
+# [[list-links-draggable Macro]] 将条目的 ListField（列表字段）呈现为可以通过[[拖放|Drag and Drop]]重新排序的链接列表。
+# [[list-tagged-draggable Macro]] 将特定标签下的条目呈现为可通过[[拖放|Drag and Drop]]重新排序的链接列表。最常见的就是标签丸的下拉列表。
+# [[list-thumbnails Macro]] 用于创建可链接的缩略图面板。定义在 $:/core/macros/thumbnails。其中还定义了 [[thumbnail Macro]]、[[thumbnail-right Macro]]。
+# [[timeline Macro]] 返回一个按修改时间（或其他日期字段）反时序排列的条目列表，并按天分组。定义在 $:/core/macros/timeline。边栏中的 Recent 是该宏的一个应用。
+
+</div>
+
+!! 代码实例
+
+<<tabs "[tag[Macro Examples]prefix[list]toggle[thumbnail Macro (Examples)]toggle[timeline Macro (Examples)]nsort[order]]" "list-links Macro (Examples)" "$:/state/tab/list-macros" >>

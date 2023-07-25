@@ -1,0 +1,96 @@
+caption: 过滤器符号介绍
+created: 20140410101941871
+modified: 20210423053751042
+tags: 中 Learning Filters TiddlyWiki
+title: Introduction to filter notation
+tmap.id: 2b779f1a-ccfc-4c0e-a45d-25127b8028c7
+type: text/vnd.tiddlywiki
+
+! 过滤器符号介绍
+
+<<.preamble """这里解释了通过编写一个[[过滤器|Filters]]来选择一套条目的基础知识。有关更多的技术演示，请参阅[[过滤器语法|Filter Syntax]]。""">>
+
+<$macrocall $name=".tip" _="""如果你只是把它们本身输入到条目中，那么过滤器什么也不会做。 它们需要一个上下文。实验一个过滤器的最简单方法就是把它们输入到[[高级搜索|$:/AdvancedSearch]]的<<.advancedsearch-tab Filter>>选项卡中。"""/>
+
+最简单的情况就是你已经准确知道你想要的条目。 在双方括号中输入每个标题，标题与标题之间留有空格：
+
+> `[[Recipe book]] [[ScrambledEggs]] [[Mom's apple pie]]`
+
+当某个标题不包含空格时，可以省略方括号：
+
+> `[[Recipe book]] ScrambledEggs [[Mom's apple pie]]`
+
+双方括号实际上是这个的简写：
+
+> `[title[ScrambledEggs]]`
+
+...这给了我们任意过滤器的<<.def "general model">>（一般模型）
+
+> `[operator[parameter]]`
+
+例如，以下是如何选择标签（tag）为 <<.tag Recipe>> 的所有条目：
+
+> `[tag[Recipe]]`
+
+我们可以通过在操作符（operator）之前添加一个感叹号 `!` 来反转含义。 例如，我们可以选择所有''不''具有 <<.tag Recipe>> 标签的条目：
+
+> `[!tag[Recipe]]`
+
+除标题和标签之外，条目也可以通过其他字段进行筛选：
+
+> `[field:serving[4]]`
+
+这个例子将会筛选出在其 <<.field serving>> 字段中有 <<.value 4>> 的条目。
+
+鉴于 "serving" 这个词不是一个标准的过滤器操作符（而且也不太可能成为），所以你可以放心地省略 `field:` 这个前缀而不会产生歧义：
+
+> `[serving[4]]`
+
+! 组合
+
+到目前为止，我们所看到的过滤器都只涉及一个步骤。 但是你可以像这样将多个步骤放在一个<<.def run>>（运行块）中：
+
+> `[tag[Vegetarian]!tag[soup]serving[4]]`
+
+注意整个run（运行块）是如何包含在一对方括号中的。
+
+一个运行块中，一个条目必须匹配<<.em 所有>>分部条件，所以，上例是检索食谱中素食（tag=Vegetarian）、汤除外（tag≠soup）的4人餐（serving=4）。
+
+而一系列单独的运行块，选择的则是与任一运行块匹配的条目。 我们可以使用下面这个来查找服务于3人、4人或5人的食谱：
+
+> `[serving[3]] [serving[4]] [serving[5]]`
+
+如果我们想忽略服务4人的素食食谱，我们可以这样说：
+
+> `[serving[3]] [serving[4]!tag[Vegetarian]] [serving[5]]`
+
+默认情况下，每个运行块都会考虑维基中的每个条目。 但是我们可以用一个 `+` 符号来强制一个运行块只考虑在前面的运行块处理中被选中的条目：
+
+> `[serving[3]] [serving[4]] [serving[5]] +[tag[Vegetarian]] +[sort[title]]`
+
+这是先选择供应3人、4人或5人的食谱，然后再次筛选它们，只保留素食的，最后把剩下的按字母顺序对标题排序。
+
+以类似的方式，我们还可以把 `-` 符号应用于一个运行块，以从当前的结果中排除选出的条目。 在这里，我们先选择了所有素食食谱，然后从中剔除了两个（~ScrambledEggs--炒鸡蛋、~ScrambledEggs--土司）：
+
+> `[tag[Vegetarian]] -[title[ScrambledEggs]] -BeansOnToast`
+
+! 特殊参数
+
+到目前为止，我们看到的每一步骤的参数都是放在方括号中，这表示~TiddlyWiki是按照字面看待它。 但是另外两种括号也是可以的：
+
+<<.def "大括号">> `{}` 表示该参数是一个TextReference（文本引用），它的值要到指定的条目中检索。 例如，如果我们有一个名叫<<.tid Preference>>（偏好）的条目，其文字恰好是<<.value Vegetarian>>（素食）这个词，我们可以这样写：
+
+> `[tag{Preference}]`
+
+以此作为 `[tag[Vegetarian]]` 的替代。 这使得偏好可随时变化。
+
+<<.def "尖括号">> `<>` 表示该参数是一个[[变量|Variables]]，而其值将被用来代入。这里我们在过滤器中使用内置的<<.vlink currentTiddler>>（当前条目）变量， 来选择其文本包含当前条目标题的那些条目。
+
+> `[search<currentTiddler>]`
+
+
+! Multiple parameters
+
+<<.from-version "5.1.23">> Some steps accept multiple parameters which are separated by a ` , ` character.
+
+> Example: `[param1],[param2]` or `<param1>,{param2}`

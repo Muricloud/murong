@@ -1,0 +1,101 @@
+created: 20230716084230008
+modified: 20230716090904836
+tags: 
+title: 判断函数奇偶性的方法
+tmap.id: 3feebb7f-193d-40ee-83ac-fa227f815e5c
+
+
+<$details summary="1、定义法" open="no">
+[img[奇偶函数定义法图.png]]
+</$details>
+
+<$details summary="2、图像法" open="no">
+[img[奇偶函数图像法.png]]
+</$details>
+
+<$details summary="3、奇偶函数运算性质" open="no">
+
+设$$f(x),g(x)$$的定义域分别是 $$D_1$$,$$D_2$$,在它们的<mark class="mark-red">公共定义域</mark>上，一般具有下列结论：<br><br>
+''公共定义域:'' $$D_1 \cap D_2$$<br><br>
+不要去死记：我们在头脑里假设<br>
+奇函数：$$y=x$$ <br>
+偶函数：$$y=C$$,$$C$$是一个常数<br><br>
+然后我们再去看下面的表格<br>
+<table>
+<th>$$f(x)$$</th>
+<th>$$gx)$$</th>
+<th>$$f(x)+g(x)$$</th>
+<th>$$f(x)-g(x)$$</th>
+<th>$$f(x)g(x)$$</th>
+<th>$$f(g(x))$$</th>
+<tr>
+<td>偶</td>
+<td>偶</td>
+<td><$details summary=" " open="no">
+偶
+</$details></td>
+<td><$details summary=" " open="no">
+偶
+</$details></td>
+<td><$details summary=" " open="no">
+偶
+</$details></td>
+<td><$details summary=" " open="no">
+偶
+</$details></td>
+</tr>
+<tr>
+<td>偶</td>
+<td>奇</td>
+<td><$details summary=" " open="no">
+不能确定
+</$details></td>
+<td><$details summary=" " open="no">
+不能确定
+</$details></td>
+<td><$details summary=" " open="no">
+奇
+</$details></td>
+<td><$details summary=" " open="no">
+偶
+</$details></td>
+</tr>
+<tr>
+<td>奇</td>
+<td>偶</td>
+<td><$details summary=" " open="no">
+不能确定
+</$details></td>
+<td><$details summary=" " open="no">
+不能确定
+</$details></td>
+<td><$details summary=" " open="no">
+奇
+</$details></td>
+<td><$details summary=" " open="no">
+偶
+</$details></td>
+</tr>
+<tr>
+<td>奇</td>
+<td>奇</td>
+<td><$details summary=" " open="no">
+奇
+</$details></td>
+<td><$details summary=" " open="no">
+奇
+</$details></td>
+<td><$details summary=" " open="no">
+偶
+</$details></td>
+<td><$details summary=" " open="no">
+奇
+</$details></td>
+</tr>
+</table>
+
+
+</$details>
+
+
+

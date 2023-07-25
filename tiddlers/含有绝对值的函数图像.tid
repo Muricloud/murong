@@ -1,0 +1,67 @@
+created: 20230716142325541
+modified: 20230716151738421
+title: 含有绝对值的函数图像
+tmap.id: 0a43de8c-6902-4932-af81-be9c682b557f
+
+<c style="color:Red;"></c><mark class="mark-red">$$f(x) 与 f(|x|)$$</mark><br>
+解析式把所有 $$x$$ 加上绝对值，会出现一种什么情况呢？<br>
+是不是我就不能取 $$x<0$$ 的值呢?<br>
+<$details summary="解析" open="no">
+不是的。<br>
+是我取的负数最后都会经过绝对值变成一个正数<br>
+</$details>
+所以把解析式中的所有 $$x$$ 加上绝对值，就会让函数图像 <mark class="mark-yellow"> $$y$$ 轴右边的图像</mark> <c style="color:Red;">''对折''</c> 到 <mark class="mark-yellow">$$y$$ 轴的左边去</mark>，<c style="color:Red;">''翻盖掉''</c> $$y$$ 轴的左边的函数图像。
+
+例如：$$f(x)=-2x^2-3x+5$$ 和 $$f(|x|)=-2x^2-3|x|+5$$,<br>
+分别画出 $$f(x)$$ 和 $$f(|x|)$$ 的函数图像。
+<$details summary="图像代码" open="no">
+
+<<codes src:"""f_{1}:y=-2x^2-3x+5
+f_{2}:f_{1}(|x|)
+""">>
+
+</$details>
+
+思考一个问题：如果我想让 “ <c style="color:Blue;">$$y$$ 轴左边的图像 对折 覆盖掉 $$y$$轴右边的图像</c>”，那么我应该怎么去写表达式？
+<$details summary="答案" open="no">
+<mark class="mark-red">$$f(x) 与 f(-|x|)$$</mark><br>
+$$f(x)=-2x^2-3x+5$$ 和 $$f(-|x|)=-2x^2+3|x|+5$$,<br>
+<$details summary="图像代码" open="no">
+
+<<codes src:"""f_{1}:y=-2x^2-3x+5
+f_{2}:f_{1}(-|x|)
+f_{3}:y=-2x^2+3abs(x)+5
+""">>
+
+</$details>
+
+</$details>
+
+<hr>
+<mark class="mark-red">$$f(x) 与 |f(x)|$$</mark><br>
+
+让函数图像 <mark class="mark-yellow">$$x$$ 轴下边的图像</mark> <c style="color:Red;">''对折''</c> 到 <mark class="mark-yellow">$$x$$ 轴的上边去</mark>，<c style="color:Red;">''不翻盖掉''</c> $$x$$ 轴的上边的函数图像。<br>
+
+例如：$$f(x)=-2x^2-3x+5$$ 和 $$|f(x)|=|-2x^2-3x+5|$$,<br>
+分别画出 $$f(x)$$ 和 $$|f(x)|$$ 的函数图像。
+<$details summary="图像代码" open="no">
+
+<<codes src:"""f_{1}:y=-2x^2-3x+5
+f_{2}:abs(f_{1}(x))
+""">>
+
+</$details>
+
+同理：如果我想让 “ <c style="color:Blue;">$$x$$ 轴上边的图像 对折 不覆盖掉 $$x$$轴下边的图像</c>”，那么我应该怎么去写表达式？
+<$details summary="答案" open="no">
+<mark class="mark-red">$$f(x) 与 -|f(x)|$$</mark><br>
+$$f(x)=-2x^2-3x+5$$ 和 $$-|f(x)|=-|-2x^2-3x+5|$$,<br>
+<$details summary="图像代码" open="no">
+
+<<codes src:"""f_{1}:y=-2x^2-3x+5
+f_{2}:-abs(f_{1}(x))
+""">>
+
+</$details>
+
+</$details>

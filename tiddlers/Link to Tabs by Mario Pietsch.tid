@@ -1,0 +1,14 @@
+caption: Link to Tabs
+created: 20210619153324648
+modified: 20220819085647285
+moscow: M
+tags: [[Community Plugins]] [[Plugin Card]] XP-tutorials
+title: Link to Tabs by Mario Pietsch
+tmap.id: a8a88fd5-1e3f-4853-b341-89fc4f1d4ca3
+url: https://wikilabs.github.io
+
+{{!!url}}
+
+Internal links are added to tabs if selected
+
+* $:/plugins/wikilabs/link-to-tabs

@@ -1,0 +1,11 @@
+caption: 行命令
+created: 20150117174359000
+modified: 20220819093318583
+tags: Concepts TiddlyWiki
+title: Commands
+tmap.id: db800e2e-3a1f-4b59-9ee1-9f9deae77d21
+url: https://tiddlywiki.com/static/Commands.html
+
+一个 <<.def command>>（命令）是下列单词之一，用 `--` 前缀书写，用作[[Node.js上的TiddlyWiki|TiddlyWiki on Node.js]]的命令行选项，指示需要执行哪个操作。
+
+<<list-links "[tag[Commands]]">>

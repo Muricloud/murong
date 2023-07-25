@@ -1,0 +1,13 @@
+caption: VirtualBox
+color: 
+created: 20220205190725797
+description: Oracle VM VirtualBox 是全球广受欢迎的开源跨平台虚拟化软件。使用该软件，开发人员能够在一台设备上运行多个操作系统，更快地交付代码。IT 团队和解决方案提供者可以使用 VirtualBox 来降低运营成本，缩短在本地和云端安全部署应用所需的时间。
+modified: 20220819092555797
+moscow: S
+purpose: 虚拟机
+tags: Windows macOS Linux 开发 Examples [[Should have]] Software
+title: VirtualBox
+tmap.id: d7aedae0-50fb-4f31-b69d-81dead7a50c1
+url: https://www.virtualbox.org/
+
+{{!!description}}

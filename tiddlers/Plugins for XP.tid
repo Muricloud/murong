@@ -1,0 +1,38 @@
+caption: Plugins for XP
+created: 20220419030121375
+linkcolor: #4ac3bf
+modified: 20230301162052706
+moscow: S
+tags: [[Community Plugins]] [[Plugin Card]] XP-tutorials
+title: Plugins for XP
+tmap.id: 8a4b1e4c-84e2-459f-9c68-588c7bb071fb
+
+~TiddlyWiki XP 相关插件。
+
+<table>
+<$list filter="[plugin-type[plugin]prefix[$:/plugins/xp/aggregation]sort[]]">
+<tr>
+<td>
+<$link to={{!!title}}>{{!!title}}</$link>
+</td>
+<td>
+<$list filter="[{!!title}has[description]]">
+<$transclude field="description"/>
+</$list>
+</td>
+</tr>
+</$list>
+</table>
+
+|$:/plugins/xp/columns          |内容分栏显示。 |
+|$:/plugins/xp/diary            |在侧边栏显示一个日记列表。 |
+|$:/plugins/xp/emoji-button     |插入一个 Emoji。✌️ |
+|$:/plugins/xp/html-button      |插入 HTML 代码。 |
+|$:/plugins/xp/leftopentab      |左置开启标签页。 |
+|$:/plugins/xp/magicsidebar     |隐藏侧边栏时，将鼠标指针划到右侧热点区显示侧边栏。 |
+|$:/plugins/xp/mark-button      |格式化文本的颜色或背景。即：标记文本 / 高亮文本。 |
+|$:/plugins/xp/quickbar         |一个常驻底部的快捷工具栏。 |
+|$:/plugins/xp/splashscreen     |修改启动画面。 |
+|$:/plugins/xp/switchlayout     |在「固定故事」和「固定侧边栏」之间快速切换。 |
+|$:/plugins/xp/theme-changer    |快速切换自定义主题。 |
+|$:/plugins/xp/tiddlertail      |在条目底部（鱼尾）查看条目的信息。 |

@@ -1,0 +1,92 @@
+caption: 导航按钮
+created: 20211208134022519
+modified: 20220221163323576
+tags: 创建一个按钮 XP-tutorials
+title: 创建一个按钮/导航按钮
+tmap.id: 6a0f03c3-74ff-4695-b8fd-60ca8367da87
+
+\define tv-config-toolbar-text() yes
+
+\define openCpTheme()
+<$action-setfield $tiddler="$:/state/tab-1749438307" $value="$:/core/ui/ControlPanel/Appearance"/>
+<$action-setfield $tiddler="$:/state/tab--1963855381" $value="$:/core/ui/ControlPanel/Theme"/>
+<$action-navigate $to="$:/ControlPanel"/>
+\end
+
+!! 内部导航：导航到某个条目
+
+<$macrocall $name="wikitext-example-without-html" 
+src="""<$button to="用以致学" tooltip="打开「用以致学」">
+{{$:/core/images/down-arrow}}
+用以致学
+</$button>
+"""/>
+
+或者可以这样写：
+
+```
+<$button>
+{{$:/core/images/down-arrow}}
+用以致学
+<$action-navigate $to="用以致学"/>
+</$button>
+```
+
+> 功能与 `[[用以致学]]` 一样，只是按钮形式显得更加醒目。
+
+
+!! 内部导航：打开设置
+
+点击按钮时打开 $:/ControlPanel -> Appearance -> Theme。
+
+```
+\define tv-config-toolbar-text() yes
+
+\define openCpTheme()
+<$action-setfield $tiddler="$:/state/tab-1749438307" $value="$:/core/ui/ControlPanel/Appearance"/>
+<$action-setfield $tiddler="$:/state/tab--1963855381" $value="$:/core/ui/ControlPanel/Theme"/>
+<$action-navigate $to="$:/ControlPanel"/>
+\end
+
+<$button actions=<<openCpTheme>>>{{$:/core/images/options-button}} ~ControlPanel</$button>
+```
+
+Experiment with the <$button actions=<<openCpTheme>>>{{$:/core/images/options-button}} ~ControlPanel</$button>
+
+
+!! 外部导航：外部链接
+
+```html
+<div style="font-size:0.7em;text-align:center;margin:3em auto;">
+<a href="https://github.com/Jermolene/TiddlyWiki5" class="tc-btn-big-green" style="border-radius:4px;background-color:#444;" target="_blank" rel="noopener noreferrer">
+{{$:/core/images/github}} ~GitHub
+</a>
+</div>
+```
+
+<div style="font-size:.9em;text-align:center;margin:3em auto;">
+<a href="https://groups.google.com/group/TiddlyWiki" class="tc-btn-big-green" style="border-radius:4px;background-color:#FF8C19;" target="_blank" rel="noopener noreferrer">
+{{$:/core/images/help}} Forum
+</a>
+<a href="https://www.youtube.com/c/JeremyRuston" class="tc-btn-big-green" style="border-radius:4px;background-color:#e52d27;" target="_blank" rel="noopener noreferrer">
+{{$:/core/images/video}} ~YouTube
+</a>
+<a href="https://twitter.com/TiddlyWiki" class="tc-btn-big-green" style="border-radius:4px;background-color:#5E9FCA;" target="_blank" rel="noopener noreferrer">
+{{$:/core/images/twitter}} Twitter
+</a>
+<a href="https://github.com/Jermolene/TiddlyWiki5" class="tc-btn-big-green" style="border-radius:4px;background-color:#444;" target="_blank" rel="noopener noreferrer">
+{{$:/core/images/github}} ~GitHub
+</a>
+<a href="https://gitter.im/TiddlyWiki/public" class="tc-btn-big-green" style="border-radius:4px;background-color:#753a88;background-image:linear-gradient(to left,#cc2b5e,#753a88);" target="_blank" rel="noopener noreferrer">
+{{$:/core/images/gitter}} Gitter
+</a>
+</div>
+
+<div style="font-size:0.7em;text-align:center;margin:3em auto;">
+<a href="http://search.dangdang.com/?key=%D3%A2%D3%EF%D3%EF%D2%F4%BD%CC%B3%CC&act=input" class="tc-btn-big-green" style="border-radius:4px;background-color:#5E9FCA;" target="_blank" rel="noopener noreferrer">
+{{$:/images/fa5/solid/book-open}} 【图书】英语语音教程
+</a>
+<a href="https://search.bilibili.com/all?keyword=%E7%A7%91%E5%AD%A6%E8%AE%B0%E5%BF%86" class="tc-btn-big-green" style="border-radius:4px;background-color:#36a2d6;" target="_blank" rel="noopener noreferrer">
+{{$:/core/images/video}} 【哔哩哔哩】科学记忆
+</a>
+</div>

@@ -1,0 +1,16 @@
+caption: Tiddler Context Menu Plugin
+created: 20220817113626969
+modified: 20220903071838232
+moscow: C
+tags: [[Community Plugins]] [[Plugin Card]]
+title: Tiddler Context Menu Plugin
+tmap.id: ce69176a-cb3c-4008-898c-a049772e9736
+url: https://github.com/ahanniga/tiddlywiki-context-menu-plugin
+
+{{!!url}}
+
+> https://context-menu-plugin.tiddlyhost.com/
+
+This plugin adds context menus to tiddlers.
+
+Right-click on this tiddler to open a menu (long-press on phone/tablet).

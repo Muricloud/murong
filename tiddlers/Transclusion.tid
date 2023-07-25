@@ -1,0 +1,25 @@
+caption: 嵌入
+created: 20141129194651420
+modified: 20220819093318602
+tags: 中 Concepts TiddlyWiki
+title: Transclusion
+tmap.id: e0f9c300-1beb-43bb-8a18-8e67aa950aac
+url: https://tiddlywiki.com/static/Transclusion.html
+
+[[嵌入|http://en.wikipedia.org/wiki/Transclusion]]是指从条目 "B" 引用另一个条目 "A" 的过程，使得 "A" 的内容看起来是 "B" 的一部分。
+
+复制和粘贴内容会在多个不同的位置创建相同内容的多个副本。 使用嵌入，可以只有一份拷贝，同时在 "B" 中用一个特殊指令，指出应该从条目 "A" 引入内容的位置。
+
+请注意，如果修改了 "A" 的内容，修改将自动出现在 "B" 中。 这使得维护重复的内容变得更容易，允许每个片断被写在一个单一的地方，但可以从多个地方来查看。
+
+嵌入概念在[[条目哲学体系|Philosophy of Tiddlers]]中扮演着重要角色，因为它是组合内容小材料的主要方式。
+
+了解更多：
+
+* [[WikiText中的嵌入|Transclusion in WikiText]]
+* [[嵌入的基本用法|Transclusion Basic Usage]]
+* [[用模板嵌入|Transclusion with Templates]]
+* [[嵌入和代换|Transclusion and Substitution]]
+* [[文本引用|TextReference]]
+* [[模板条目|TemplateTiddlers]]
+* [[嵌入部件|TranscludeWidget]]

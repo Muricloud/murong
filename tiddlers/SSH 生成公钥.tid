@@ -1,0 +1,25 @@
+created: 20220309004903609
+modified: 20220309025206793
+tags: XP-tutorials
+title: SSH 生成公钥
+tmap.id: 49f4f0d0-8b18-4f5c-9406-0be2b66df88d
+
+本文使用 ssh-keygen 工具生成 SSH 公钥，执行命令：
+
+```js
+ssh-keygen -m PEM -t ed25519 -C "your.email@example.com"  // 创建新的 SSH 私钥与公钥秘钥对，输入你的邮箱作为标签
+Enter file in which to save the key (/Users/you/.ssh/id_rsa): [Press enter]  // 推荐使用默认地址
+
+Enter passphrase (empty for no passphrase):  // 此处直接回车即可；若设置密码，则每次使用 SSH 方式推送代码时都会要求输入密码
+
+```
+
+若你需要使用多个 SSH 密钥对，在 Enter file in which to save the key 步骤时，输入一个新的文件名称就可以避免覆盖已有的密钥对。
+
+若您的系统不支持 Ed25519 算法（OpenSSH 版本小于 6.5），请使用命令 `ssh-keygen -m PEM -t rsa -b 4096 -C "your.email@example.com"`。
+
+See also:
+
+* [[配置 SSH 公钥|https://help.coding.net/docs/repo/ssh/config.html]]
+* [[Git 配置多个 SSH-Key|https://gitee.com/help/articles/4229#article-header0]]
+* [[使用 Ed25519 算法生成你的 SSH 密钥|https://zhuanlan.zhihu.com/p/110413836]]

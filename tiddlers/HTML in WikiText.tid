@@ -1,0 +1,58 @@
+caption: HTML 代码
+created: 20131205160816081
+modified: 20220819093318589
+tags: 中 WikiText TiddlyWiki
+title: HTML in WikiText
+tmap.id: f27fc890-742c-4ccb-8526-310884398aa2
+type: text/vnd.tiddlywiki
+url: https://tiddlywiki.com/static/HTML%2520in%2520WikiText.html
+
+''HTML 标签和注释可以直接在 WikiText 中使用。'' 例如：
+
+```
+<article class="hello">
+这是我的简单友好的文本块。你好！
+<!-- 这是注释，不会出现于维基输出 -->
+</article>
+```
+
+<article class="hello">
+这是我的简单友好的文本块。你好！
+<!-- 这是注释，不会出现于维基输出 -->
+</article>
+
+
+!! 内容解析
+
+HTML 元素的内容将以内联模式进行解析，除非开始标签后面有两个换行符，在这种情况下，它将以块模式进行解析。 （内联模式意味着像表、列表和标题等块模式格式将无法识别）
+
+`DIV开始标签后加一空行，则所有内容按块解析`
+
+```
+<div style="color:green;">
+
+!! 我想让这行显示为标题
+
+* 我想让这行显示为项目列表
+|我想|做个|三栏表格|
+</div>
+```
+
+效果：
+
+<div style="color:green;">
+
+!! 我想让这行显示为标题
+
+* 我想让这行显示为项目列表
+|我想|做个|三栏表格|
+</div>
+
+
+! Self closing elements
+
+The following tags are treated as 'void'. This means that `<tag>` is treated as if it were `<tag/>`, and that  no terminating `</tag>` is needed (if one is provided it will be ignored and treated as plain text).
+
+* `<area>`, `<base>`, `<br>`, `<col>`, `<command>`, `<embed>`, `<hr>`, `<img>`, `<input>`, `<keygen>`, `<link>`, `<meta>`, `<param>`, `<source>`, `<track>`, `<wbr>`
+
+If you don’t close any other tag then it will behave as if the missing closing tag were at the end of the tiddler.

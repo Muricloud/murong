@@ -1,0 +1,16 @@
+caption: tag：标签丸宏
+created: 20141206130540337
+modified: 20200901042844563
+tags: 中 Macros [[Core Macros]] TiddlyWiki
+title: tag Macro
+tmap.id: 06d4c9de-056f-47f3-bda3-1612aba8c13e
+type: text/vnd.tiddlywiki
+
+<<.def tag>>（标签）[[宏|Macros]]为指定的标签生成标签丸。
+
+!! 参数
+
+;tag -- 标签
+: 标签的标题，默认为[[当前条目|Current Tiddler]]
+
+<<.macro-examples "tag">>

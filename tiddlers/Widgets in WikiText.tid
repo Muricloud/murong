@@ -1,0 +1,44 @@
+caption: 部件
+created: 20131205160840915
+modified: 20211209154434661
+tags: 中 WikiText TiddlyWiki
+title: Widgets in WikiText
+tmap.id: ced9066f-5087-4425-b36e-53833e327d54
+type: text/vnd.tiddlywiki
+
+! [[WikiText 中的部件|https://tiddlywiki.com/static/Widgets%2520in%2520WikiText.html]]
+
+（进阶内容）
+
+小部件在WikiText（维基文本）中提供丰富的功能。 它们与[[HTML元素|HTML in WikiText]]具有相同的语法，但标签名称始终以 `$` 开始。 例如：
+
+```
+<$button message="tm-close-tiddler">关闭我！</$button>
+```
+
+例 2：添加一个创建主条目的按钮
+
+```
+<$button tooltip="Create Main Tiddler">
+<$action-sendmessage $message="tm-new-tiddler" title="MainTiddler" tags="TableOfContents" text="""Description...
+
+
+<div class="tc-table-of-contents">
+<<toc-selective-expandable  "MainTiddler" "sort[title]">>
+</div>"""/>
+{{$:/core/images/new-button}}
+</$button>
+```
+
+
+请注意，小部件继承了[[维基文本中的HTML|HTML in WikiText]]的所有特征：
+
+* 部件属性可以被指定为：
+** 未加引号的字符串（不能包含空格）（例如 `tags=TableOfContents`）
+** 用单引号或双引号括起来的字符串（例如 `tags="TableOfContents"`）
+** 用三个双引号括起来的字符串（例如 `text="""Description... """`）
+** 宏调用（例如`attr=<<myMacro>>`）
+** 引用嵌入（例如`attr={{MyTiddler!!field}}`）
+** 过滤后嵌入（例如`attr={{{ [filter[op]] }}}`）
+* 除非开始标签后紧跟着两个换行符（强制为块模式），否则小部件的内容将以行内模式进行解析（''译者注：''类似HTML代码忽略换行符的情形）
+** `Inline mode`（行内模式）意味着不能识别`block mode`（块模式）解析规则，如标题、表格和列表等。

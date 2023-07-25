@@ -1,0 +1,19 @@
+caption: 维基内容分仓库存储
+created: 20210515113055547
+modified: 20220407091959451
+tags: XP-tutorials 维基存储方案
+title: 使用技巧：维基内容分仓库存储
+tmap.id: cddcde1b-e0c5-4a24-a3bd-9904082ffae9
+
+由于[[代码托管平台|关于代码托管平台]] Git 单仓库容量通常为 2 G，可能很快就满了。所以应该提前规划好，将维基中某些内容分仓库存储。
+
+新手教程中分了三个子仓库：
+
+* `mywiki-private`：将标签为 `Private` 的内容存储到该仓库。
+* `mywiki-journals`：将标签为 `Journal` 的内容存储到该仓库。
+* `mywiki-images`：将图片存储到该仓库。
+
+详见：
+
+* [[在电脑与 Coding 之间同步维基|二、在电脑与 Coding 之间同步维基]]
+* [[在电脑与 Gitee 之间同步维基|二、在电脑与 Gitee 之间同步维基]]

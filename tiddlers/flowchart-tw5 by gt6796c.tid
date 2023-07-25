@@ -1,0 +1,13 @@
+caption: flowchart-tw5
+created: 20210630014618712
+modified: 20220819085605328
+tags: [[Community Plugins]] [[Plugin Card]] Charts Diagrams XP-tutorials
+title: flowchart-tw5 by gt6796c
+tmap.id: 84a8e026-83de-4f03-9405-d9021fe263da
+url: https://gt6796c.github.io/#%24%3A%2Fplugins%2Fgt6796c%2Fflowchart-tw5%2Fexample-flowchart:HelloThere%20%24%3A%2Fplugins%2Fgt6796c%2Fflowchart-tw5%20%24%3A%2Fplugins%2Fgt6796c%2Fflowchart-tw5%2Fexample-flowchart
+
+{{!!url}}
+
+Dedicated flowchart plugin. Also has sequence diagrams but this part appears not to be working.
+
+* $:/plugins/gt6796c/flowchart-tw5

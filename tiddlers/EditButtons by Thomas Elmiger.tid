@@ -1,0 +1,20 @@
+caption: EditButtons
+created: 20210619141231186
+modified: 20220819085540685
+moscow: S
+tags: [[Community Plugins]] [[Plugin Card]] XP-tutorials
+title: EditButtons by Thomas Elmiger
+tmap.id: 3f3c5ed1-48d1-48a1-bf85-427b5e5652bc
+url: https://tid.li/tw5/plugins.html
+
+{{!!url}}
+
+The [[EditButtons|$:/plugins/telmiger/EditButtons]] plugin makes editing more efficient by adding three buttons to the edit toolbar: 
+
+* <<.icon $:/plugins/telmiger/EditButtons/images/cancel-close-button>> Cancel & Close (Discard & Close)
+* <<.icon $:/plugins/telmiger/EditButtons/images/done-close-button>> Save & Close (Done & Close)
+* <<.icon $:/plugins/telmiger/EditButtons/images/done-open-button>> Save & Keep Open (Done & Reopen)
+
+Inspired by Josiah and Richard William Smith. See Discussion in the [[Google Group|https://groups.google.com/d/msg/tiddlywiki/A4v-DqjN_D8/4hkOaaf0BQAJ]].
+
+* $:/plugins/telmiger/EditButtons

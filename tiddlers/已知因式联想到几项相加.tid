@@ -1,0 +1,59 @@
+created: 20230720045149918
+modified: 20230720050632427
+tags: 
+title: 已知因式联想到几项相加
+tmap.id: 504723fd-271d-436e-82a7-103cc3df16df
+
+已知因式 $$\Rightarrow$$ 几项相加<br>
+<table>
+<th>已知因式</th>
+<th>$$\Rightarrow$$</th>
+<th>几项相加</th>
+<tr>
+<td>$$(a+b)^2$$</td>
+<td>$$=$$</td>
+<td><$details summary=" " open="no">
+$$a^2+2ab+b^2$$
+</$details></td>
+</tr>
+<tr>
+<td>$$(a-b)^2$$</td>
+<td>$$=$$</td>
+<td><$details summary=" " open="no">$$a^2-2ab+b^2$$</$details></td>
+</tr>
+<tr>
+<td>$$(a+b)(a-b)$$</td>
+<td>$$=$$</td>
+<td><$details summary=" " open="no">$$a^2-b^2$$</$details></td>
+</tr>
+<tr>
+<td>$$(a-b)(a^2+b^2+ab)$$</td>
+<td>$$=$$</td>
+<td><$details summary=" " open="no">$$a^3-b^3$$</$details></td>
+</tr>
+<tr>
+<td>$$(a+b)(a^2+b^2-ab)$$</td>
+<td>$$=$$</td>
+<td><$details summary=" " open="no">$$a^3+b^3$$</$details></td>
+</tr>
+<tr>
+<td>$$(a+b)^3$$</td>
+<td>$$=$$</td>
+<td><$details summary=" " open="no">$$a^3+3a^2b+3ab^2+b^3$$</$details></td>
+</tr>
+<tr>
+<td>$$(a-b)^3$$</td>
+<td>$$=$$</td>
+<td><$details summary=" " open="no">$$a^3-3a^2b+3ab^2-b^3$$</$details></td>
+</tr>
+<tr>
+<td>$$(x+\frac{1}{x})^2$$</td>
+<td>$$=$$</td>
+<td><$details summary=" " open="no">$$x^2+(\frac{1}{x})^2+2$$</$details></td>
+</tr>
+<tr>
+<td>$$(x-\frac{1}{x})^2$$</td>
+<td>$$=$$</td>
+<td><$details summary=" " open="no">$$x^2+(\frac{1}{x})^2-2$$</$details></td>
+</tr>
+</table>

@@ -1,0 +1,131 @@
+1: yes
+asa: 4
+created: 20230610122648816
+modified: 20230628024905502
+p1: yes
+p2: yes
+p3: yes
+scores: 4
+tags: 信息论
+title: 信息的重要性
+tmap.id: 93322048-db49-440f-97ca-3fb6d1742e0b
+
+\define addScores()
+<$action-setfield  scores={{{[{!!scores}add[1]]}}}  />
+\end
+
+\define subScores()
+<$action-setfield  scores={{{[{!!scores}add[-1]]}}}  />
+\end
+
+\define splitPara(paraNum,paraTopic,paraContent)
+<$details summary=<<$paraTopic$>> open={{!!$paraNum$}} actions="<$macrocall $name=macro1 />" >
+<<$paraContent$>>
+<div class=blue-box style="width:120px;height:40px" >
+<$checkbox field="$paraNum$" checked="yes" unchecked="no" default="no" checkactions="<$macrocall $name=addScores />" uncheckactions="<$macrocall $name=subScores />"> 阅读标记</$checkbox>
+</div>
+</$details>
+\end
+
+\define p1t()
+我是时间
+\end
+
+\define p1c()
+诺威格博士讲，你们知道，在1929—1933年经济大萧条时，银行亏得一塌糊涂，很多都倒闭了，但是在那时买银行股票的人后来都发了大财。别人就问他们，为什么敢于在那种情况下买银行股？他们说因为全世界的钱都在银行里啊！
+\end
+
+\define p2t()
+信息技术很重要
+\end
+
+\define p2c()
+因此，今天我给大家的第一个知识点就是“不要重视钱而轻视信息”。
+将信息的重要性等同于钱，是否言过其实呢？一点也不，为了说明这一点，我们不妨看三个大家并不陌生的例子。前两个和二战有关。
+\end
+
+\define p3t()
+信息技术很重要1
+\end
+
+\define p3c()
+11因此，今天我给大家的第一个知识点就是“不要重视钱而轻视信息”。
+将信息的重要性等同于钱，是否言过其实呢？一点也不，为了说明这一点，我们不妨看三个大家并不陌生的例子。前两个和二战有关。
+\end
+
+\define macro1()
+<$action-setfield  datetime=<<dt YYYY-0MM-0DD >> />
+\end
+
+\define macro2()
+<$action-setfield  打开=yes />
+\end
+
+\define tableTemple()
+导入：
+<table>
+<th>标题1</th>
+<th>标题2</th>
+<tr>
+<td>1</td>
+<td><$details summary=<<macro>> open="no" actions="<$macrocall $name=macro1 />" >
+<<macroName p1 p1t p1c>>
+</$details></td>
+</tr>
+<tr>
+<td>21</td>
+<td>22</td>
+</tr>
+</table>
+\end
+
+\define temple(name1)
+{{$name1$}}
+\end
+
+\define temple1(name1)
+<<$name1$>>
+\end
+
+\define setf()
+<$action-setfield  asa="2"  />
+\end
+
+\define setg()
+<$action-setfield  asa="4"  />
+\end
+
+\define compa(num)
+<$macrocall $name='temple' name1={{{[[$num$]compare:number:gteq[3]then[词汇表]else[打卡]]}}} />
+\end
+
+
+
+<$button actions=<<setf>>> 2</$button>
+<$button actions=<<setg>>> 4</$button>
+
+<$macrocall $name='temple' name1={{!!asa}} />
+<$macrocall $name='compa' num={{!!asa}} />
+{{!!asa}}
+
+
+
+<$checkbox field="1" checked="yes" unchecked="no" default=""> {{{[{!!1}compare:string:eq[yes]then[词汇表]else[打卡]]}}}</$checkbox>
+
+<<macroName p1 p1t p1c>>
+<<macroName p2 p2t p2c>>
+<<macroName p3 p3t p3c>>
+当然，世界上还是有人会看得更远一些的，比如我在Google的老板诺威格博士。2007年，他的母校伯克利要授予他一个特殊的荣誉，我作为同事参加了那个活动。
+
+在仪式上，诺威格博士回答了一个很多校友都好奇的事情——他为什么在2001年互联网在全球范围内处于低谷时，要离开工作非常安稳的NASA，加入当时还很小的Google公司。
+
+诺威格博士讲，你们知道，在1929—1933年经济大萧条时，银行亏得一塌糊涂，很多都倒闭了，但是在那时买银行股票的人后来都发了大财。别人就问他们，为什么敢于在那种情况下买银行股？他们说因为全世界的钱都在银行里啊！
+
+
+
+
+同样地，2001年，互联网泡沫时，我就在想，全世界的信息都在Google里啊！那么在信息最不值钱的时候加入信息公司，就如同在银行最不值钱的时候买银行的股票。
+
+因此，今天我给大家的第一个知识点就是“不要重视钱而轻视信息”。
+
+将信息的重要性等同于钱，是否言过其实呢？一点也不，为了说明这一点，我们不妨看三个大家并不陌生的例子。前两个和二战有关。

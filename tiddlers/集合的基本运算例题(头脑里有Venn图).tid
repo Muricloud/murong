@@ -1,0 +1,15 @@
+created: 20230703235711045
+modified: 20230704002022065
+tags: 
+title: 集合的基本运算例题(头脑里有Venn图)
+tmap.id: a9e96587-19b2-4224-b20d-8c3f9d699896
+
+能否画出下面的Venn图像<br>
+$$A \cap B = B \Rightarrow B \subseteq A$$<br>
+$$A \cap B = A \Rightarrow A \subseteq B$$<br>
+$$A \cup B = B \Rightarrow A \subseteq B$$<br>
+$$A \cup B = A \Rightarrow B \subseteq A$$<br>
+$$(\complement _u A) \cap B = B \Rightarrow A \cap B=\varnothing$$<br>
+$$(\complement _u A) \cup B = U \Rightarrow A \subseteq B$$<br> 
+$$(\complement _u A) \cap B = \varnothing \Rightarrow B \subseteq A$$<br> 
+$$(\complement _u A) \cup (\complement _u B) = (\complement _u A) \Rightarrow A \subseteq B$$<br> 

@@ -1,0 +1,33 @@
+created: 20230719094911778
+modified: 20230719101148056
+tags: 
+title: 双钩函数
+tmap.id: 402a7508-80cc-49b0-9e66-549dc9032104
+
+<div class=blue-box>
+$$f(x)= ax+ \frac{b}{x}
+$$
+</div>
+
+# 形如 $$f(x)= ax+ \frac{b}{x}$$ 这种类型($$ab$$ 同号，此处以 $$a>0,b>0$$ 为例) ，其图像为双钩函数<br>
+# 定义域$$(- \infty，0) \cup (0，+ \infty )$$<br>
+# 奇函数<br>
+# 在第一象限内,当 $$x=\sqrt{\frac{b}{a}}$$ 时，函数取得最小值，最小值为 $$2\sqrt {ab}$$<br>
+# 第三象限情况类似，当 $$x=-\sqrt{\frac{b}{a}}$$时，函数取得最大值，最大值为 $$-2\sqrt {ab}$$<br>
+
+<$details summary="演示代码" open="no">
+$$y=x+\frac{1}{x}
+$$<br>
+$$y=2x+\frac{1}{x}
+$$<br>
+$$y=x+\frac{2}{x}
+$$<br>
+$$y=3x+\frac{5}{x}
+$$<br>
+<<codes src:"""f_{1}:y=x+1/x
+f_{2}:y=2x+1/x
+f_{3}:y=x+2/x
+f_{3}:y=3x+5/x
+""">>
+
+</$details>

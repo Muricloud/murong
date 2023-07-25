@@ -1,0 +1,14 @@
+created: 20131129094739786
+modified: 20200901042844544
+tags: 中 Definitions TiddlyWiki
+title: Node.js
+tmap.id: 91c63306-ffb9-41e2-8c36-980ca9f4bb68
+type: text/vnd.tiddlywiki
+
+''Node.js'' 是为让你在 PC、Mac 或者 Linux 计算机上运行 JavaScript 程序的可下载应用程序。和运行在浏览器中的 ~JavaScript 程序不同，Node.js 代码可以完全访问计算机的文件系统和其他资源，使其能够承担传统上只有像 Java、PHP 和 Python 这类语言才可承担的角色。更多细节参见 http://nodejs.org 。
+
+对于 ~TiddlyWiki，Node.js意味着我们将拥有可以在浏览器或服务器上运行的单一代码库，从而为使用它提供了极大的灵活性。
+
+对于最终用户而言，Node.js的安装并不比一个Web浏览器更复杂，但却释放了强大的功能，例如，将TiddlyWiki作为可以从其他设备连接的Web服务器运行的功能。
+
+更多细节参见 [[Node.js上的TiddlyWiki|TiddlyWiki on Node.js]] 。

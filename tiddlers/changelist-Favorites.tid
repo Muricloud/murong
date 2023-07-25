@@ -1,0 +1,17 @@
+caption: Favorites
+created: 20220817122312545
+modified: 20230301155620141
+tags: [[Change List]] XP-tutorials
+title: changelist-Favorites
+tmap.id: 085bd0d9-e680-48dd-9b39-7ea4ab7dab6d
+
+!! $:/plugins/kookma/favorites
+
+由于侧边栏固定的项目较多，将文字标题换为图标显示：
+
+* $:/xp/ui/SideBar/Favorites
+
+取消标签：
+
+* $:/plugins/kookma/favorites/ui/buttons/add-remove
+* $:/plugins/kookma/favorites/ui/ControlPanel/Settings

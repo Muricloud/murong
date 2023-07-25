@@ -1,0 +1,23 @@
+caption: Utility
+created: 20230301155921084
+modified: 20230301160126195
+tags: [[Change List]] XP-tutorials
+title: changelist-Utility
+tmap.id: 9f7a9ffc-6564-4107-a076-9bd4501d8b54
+
+!! $:/plugins/kookma/utility
+
+* 取消默认显示版本号：$:/plugins/kookma/utility/styles/tw-version
+
+取消显示条目：
+
+* $:/plugins/kookma/utility/ui/Buttons/DraggableLink
+* $:/plugins/kookma/utility/viewtemplates/reveal-code
+
+取消标签：
+
+* $:/plugins/kookma/utility/ui/ControlPanel/Settings
+
+空格问题：
+
+* $:/plugins/kookma/utility/ui/Buttons/ViewFields

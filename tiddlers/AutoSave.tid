@@ -1,0 +1,20 @@
+caption: 自动保存
+created: 20140206211715540
+modified: 20210423053751036
+tags: 中 Features TiddlyWiki
+title: AutoSave
+tmap.id: 0ab82b6b-81dd-400a-bf26-797f9f552c77
+type: text/vnd.tiddlywiki
+
+\define tv-config-toolbar-text() yes
+\define openCpGeneral()
+<$action-setfield $tiddler="$:/state/tab-1749438307" $value="$:/core/ui/ControlPanel/Saving"/>
+<$action-setfield $tiddler="$:/state/tab--20210420065042581" $value="$:/core/ui/ControlPanel/Saving/General"/>
+<$action-navigate $to="$:/ControlPanel"/>
+\end
+
+如果有一个支持它的SaverModule（保存模块），当编辑一个条目时，点击''确定''按钮 {{$:/core/images/done-button}}或''删除''按钮  {{$:/core/images/delete-button}}，TiddlyWiki会自动触发当前文档的保存。
+
+您应该在窗口右上角看到一个黄色的通知，确认已经发生了自动保存。
+
+可以在 <$button actions=<<openCpGeneral>>>{{$:/core/images/options-button}} Saving </$button> 中启用或禁用自动保存。 在幕后，它通过配置条目  [[$:/config/AutoSave]] 进行控制，该值必须为“yes”，以启用自动保存。

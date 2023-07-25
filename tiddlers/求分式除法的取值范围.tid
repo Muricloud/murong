@@ -1,0 +1,33 @@
+created: 20230703062532516
+modified: 20230703070457486
+tags: 
+title: 求分式除法的取值范围
+tmap.id: 290e8864-4c16-4121-ab1c-5c20e6028e6a
+
+<div class=green-box>
+第一步:通分到这样一种形式：$$\frac{Ax+B}{Cx+D} \bigcirc 0$$<br><br>
+第二步:将$$\frac{Ax+B}{Cx+D}  \bigcirc 0$$ 等价为 $$(Ax+B)(Cx+D) \bigcirc 0$$ ，因为这两个式子同解<br><br>
+
+<c style="color:Red;">注意：$$\frac{Ax+B}{Cx+D} \geq 0$$ 或者 $$\frac{Ax+B}{Cx+D} \leq 0$$ 分母是不等于零的。</c>
+</div>
+
+
+
+$$以\frac{1}{a} < -1为例
+$$
+
+第一步:通分到这样一种形式：$$\frac{Ax+B}{Cx+D} \bigcirc 0$$
+
+$$
+ \begin{align*} 
+\frac{1}{a}+1&<0 \\
+\frac{a+1}{a}&<0
+\end{align*}
+$$
+
+第二步:将$$\frac{Ax+B}{Cx+D}  \bigcirc 0$$ 等价为 $$(Ax+B)(Cx+D) \bigcirc 0$$ ，因为这两个式子同解
+
+$$
+a(a+1)<0 \\
+-1<a<0
+$$

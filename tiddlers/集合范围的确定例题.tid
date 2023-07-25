@@ -1,0 +1,40 @@
+created: 20230702085454105
+modified: 20230703023255720
+tags: 
+title: 集合范围的确定例题
+tmap.id: a2304ef3-5a52-42a3-8745-cb4651769bb9
+
+$$1.已知集合P=\{x|x=2k,k \in Z \},Q=\{x|x=2k+1, k \in Z\},M=\{x|x=4k+1,k \in Z \},且 a \in P,b \in Q ,则 ( \ )$$
+<br><br>
+$$A. a+b \in P$$<br>
+$$B. a+b \in Q$$<br>
+$$C. a+b \in M$$<br>
+$$D. a+b不属于P,Q,M中的任何一个$$<br>
+
+[[视频播放|https://ziyuan.53zaixian.com/resources/video?id=1665992446931230721&bookId=1585249292675022850&folderId=377510&catalogueNumber=3&qrCodeName=%E7%AC%AC6%E9%A2%98&qrCodeType=%E8%B5%84%E6%BA%90%E4%BA%8C%E7%BB%B4%E7%A0%81]]
+
+
+$$2.(2021全国乙卷，2)已知集合S=\{s|s=2n+1,n \in Z \},T=\{t|t=4n+1,n \in Z\},则S \cap T=( \ )$$<br>
+$$A.\varnothing \qquad B.S \qquad C.T \qquad D.Z$$
+
+<br><br>
+$$3.已知集合A=\{x|x=\frac{1}{9} (2k+1),k \in Z \},B=\{x|x=\frac{4}{9}k{\tiny 土}\frac{1}{9},k \in Z \},则集合A，B之间的关系为$$ $$ ________ $$
+
+回答问题：
+<br>
+<div class=green-box>
+$$A=\{x|x=k,k \in Z \},P=\{x|x=2k,k \in Z \},Q=\{x|x=2k+1, k \in Z\}$$<br>
+$$1、思考：A集合中的元素比P或Q多一倍，且P,Q中的元素在A中都能找到，对不对？$$<br><br>
+</div>
+<div class=purple-box>
+$$A=\{x|x=4k,k \in Z \},B=\{x|x=4k+1, k \in Z\},C=\{x|x=4k+2,k \in Z \},D=\{x|x=4k+3, k \in Z\},\\E=\{x|x=4k-1,k \in Z \},F=\{x|x=4k-2, k \in Z\},G=\{x|x=4k-3, k \in Z\}$$<br><br>
+$$P=\{x|x=2k,k \in Z \},Q=\{x|x=2k+1, k \in Z\}$$<br>
+$$2、思考：这里面的集合关系是怎么样的？(谁和谁相等，谁是谁的子集。)$$
+<br><br>
+</div>
+
+<div class=blue-box>
+$$A=\{x|x=\frac{1}{9}k,k \in Z \},B=\{x|x=k,k \in Z \}$$<br>
+$$3、思考：A，B哪个集合的元素多一些，多几倍，谁是谁的子集？$$<br><br>
+</div>
+

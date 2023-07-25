@@ -1,0 +1,8 @@
+created: 20230623122546241
+modified: 20230627090120440
+tags: 
+title: 加速度公式
+tmap.id: ea2dc86e-e45a-4d66-b055-1886cba1fe2b
+
+$$ a=  \frac{\Delta v}{\Delta t}= \frac{v_t-v_0}{\Delta t}\\
+$$

@@ -1,0 +1,18 @@
+caption: 如何添加一个新选项卡到侧边栏
+created: 20141117000000000
+modified: 20211207131311947
+tags: Examples TiddlyWiki [[Customise TiddlyWiki]] Howto
+title: How to add a new tab to the sidebar
+tmap.id: 73a1265e-1c03-4458-801b-fc179f9f5305
+type: text/vnd.tiddlywiki
+
+要在侧边栏菜单中创建一个新标签：
+
+# 创建一个条目并使用[[系统标签|SystemTags]] [[$:/tags/SideBar]] 对其进行标记
+#* 要创建目录表，您可以使用[[目录表宏|Table-of-Contents Macros]]填充新选项卡条目。 例如，请参阅此处使用的[[TableOfContents]]
+
+# 默认情况下，条目标题被用作标签标题，但是你可以使用 `caption` 字段覆盖它
+# 要定义标签排序，请使用[[Tagging]]中讨论的 `list-after` 或 `list-before` 字段
+#* 例如：将 `list-after` 设置为[[$:/core/ui/SideBar/Open]]，会立即在“开启”标签之后放置一个侧边栏标签
+
+请注意，您可以使用 `$:/tags/MoreSideBar` 标签以相同的方式在“更多”选项卡下创建新选项卡。

@@ -1,0 +1,12 @@
+created: 20150221154356000
+modified: 20150221154803000
+tags: [[colour Macro]] [[Macro Examples]] TiddlyWiki
+title: colour Macro (Examples)
+tmap.id: 7d6285fb-16d8-482c-a491-5e9f8302419c
+type: text/vnd.tiddlywiki
+
+<$macrocall $name=".example" n="1" eg="""<<colour code-border>>"""/>
+<$macrocall $name=".example" n="2" eg="""<<colour foreground>>"""/>
+<$macrocall $name=".example" n="3" eg="""<<colour page-background>>"""/>
+<$macrocall $name=".example" n="4" eg="""<<colour sidebar-tab-background>>"""/>
+<$macrocall $name=".example" n="5" eg="""<<colour tag-foreground>>"""/>

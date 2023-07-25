@@ -1,0 +1,33 @@
+created: 20230624001031301
+modified: 20230624004334296
+tags: 
+title: 一元二次方程和一元一次方程一定有解吗？(证明过程)
+tmap.id: 555ec396-423d-40f8-9751-7ecf6e8c0843
+
+$$
+\begin{align*}
+\begin{cases}
+y&=ax^2+bx+c \\
+y&=kx+d \\
+\end{cases}
+\end{align*}
+\ \\
+\ \\
+kx+d = ax^2+bx+c  \\
+ax^2+(b-k)x+(c-d)=0 \\
+
+\ \\
+
+\begin{align*}
+		\Delta &= B^2-4AC \\
+    \Delta &= (b-k)^2-4a(c-d) \\
+           &=b^2-2bk+k^2-4ac+4ad \\
+					 &=b^2+k^2+4ad-2bk-4ac
+\end{align*}
+\ \\
+
+
+	\Delta \geq 0 时，方程组有解 \\
+	 b^2+k^2+4ad-2bk-4ac \geq 0 \\
+方程组有解
+$$

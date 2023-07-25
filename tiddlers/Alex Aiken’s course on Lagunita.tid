@@ -1,0 +1,20 @@
+background-color: #fff
+caption: Alex Aiken’s course on Lagunita
+color: red
+created: 20210711163605034
+icon: {{$:/core/images/video}}
+image: $:/heiban.png
+link: 
+linkcolor: <<colour primary>>
+modified: 20220701153654230
+tags: Planning Examples Course
+title: Alex Aiken’s course on Lagunita
+tmap.id: 2d4ff84b-8d6c-42d8-9928-268c8e68deb1
+
+!! 课程目录
+
+@@.list-tree
+* 
+** 
+* 
+@@

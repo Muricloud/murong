@@ -1,0 +1,50 @@
+created: 20200731102628029
+modified: 20230301151524915
+tags: XP-tutorials 新手入门指南
+title: 键盘快捷键
+tmap.id: 66873f9e-5a27-45c2-9732-b4542792e8c3
+
+熟悉快捷键可以更高效地使用 TiddlyWiki。
+
+为了更好地理解，我将快捷键分为两类：全局快捷键和编辑框快捷键。
+
+> 全局快捷键全局生效，而编辑框快捷键要求当前焦点在编辑框内。比如全局快捷键 <kbd>ctrl-shift-F</kbd> 将焦点放到边栏搜索框，而编辑框快捷键 <kbd>alt-Enter</kbd> 将打开高级搜索界面（只有焦点在该输入框，该快捷键才会生效）。
+
+!! 全局快捷键
+
+> 全局快捷键的条目打了标签 <<tag $:/tags/KeyboardShortcut>>。
+
+|''save-wiki''             |保存变更                 |<kbd>ctrl-S win-S</kbd>   |
+|''advanced-search''       |高级查找                 |<kbd>ctrl-shift-A</kbd>   |
+|''advanced-search-sidebartab'' |侧边栏中的高级查找    |<kbd>ctrl-shift-S</kbd>   |
+|''sidebar-search''        |选择侧边栏的查找字段     |<kbd>ctrl-shift-F</kbd>   |
+|''change-sidebar-layout'' |更改侧边栏布局           |<kbd>shift-alt-Down</kbd> |
+|''toggle-sidebar''        |切换显示或隐藏侧边栏     |<kbd>shift-alt-S</kbd>    |
+|''toggle-quickbar''       |切换显示或隐藏 quickbar     |<kbd>shift-alt-Q</kbd>    |
+|''new-tiddler''           |创建一个新的条目         |<kbd>ctrl-N</kbd> <kbd>alt-N</kbd>   |
+|''new-journal''           |创建一个新的日志条目     |<kbd>ctrl-J</kbd> <kbd>alt-J</kbd>   |
+|''new-markdown-tiddler''           |创建一个新的 Markdown 条目     |<kbd>ctrl-M</kbd> <kbd>alt-M</kbd>   |
+|''open-command-palette''  |Open the command palette |<kbd>ctrl-P</kbd>         |
+|''layout-switcher''       |打开布局切换器           |<kbd>ctrl-shift-L</kbd>   |
+
+!! 编辑框快捷键
+
+|''save-tiddler''        |确定对此条目的更改                 |<kbd>ctrl-Enter</kbd>   |
+|''cancel-edit-tiddler'' |放弃对此条目的更改                 |<kbd>Escape</kbd>       |
+|''preview''             |显示预览窗格                       |<kbd>alt-P</kbd>        |
+|''mono-line''           |套用等宽字符格式于所选文本         |<kbd>ctrl-M</kbd>       |
+|''mono-block''          |套用等宽区块格式于包含所选文本的列 |<kbd>ctrl-shift-M</kbd> |
+|''quote''               |套用引言文本格式于包含所选文本的列 |<kbd>ctrl-Q</kbd>       |
+|''link''                |创建维基文字链接                   |<kbd>ctrl-L</kbd>       |
+|''linkify''             |套用维基链接于所选文字             |<kbd>shift-alt-L</kbd>  |
+|''transcludify''        |套用嵌入于所选文字                 |<kbd>shift-alt-T</kbd>  |
+|''add-field''           |添加字段至条目                     |<kbd>Enter</kbd>        |
+
+当前快捷键可以在 <<.icon $:/core/images/options-button>> [[控制面板|$:/ControlPanel]] 的「键盘快捷键」选项卡中进行检查和自定义。
+
+进阶内容：
+
+* [[KeyboardShortcuts|https://tiddlywiki.com/static/KeyboardShortcuts.html]]
+* [[How to create keyboard shortcuts|https://tiddlywiki.com/static/How%2520to%2520create%2520keyboard%2520shortcuts.html]]
+* [[KeyboardWidget|https://tiddlywiki.com/static/KeyboardWidget.html]]
+* [[Keyboard Codes|https://tiddlywiki.com/static/Keyboard%2520Codes.html]]

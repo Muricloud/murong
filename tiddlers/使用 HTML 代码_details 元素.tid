@@ -1,0 +1,30 @@
+caption: details 元素
+created: 20211214231853799
+modified: 20220407164329475
+tags: XP-tutorials [[使用 HTML 代码]]
+title: 使用 HTML 代码/details 元素
+tmap.id: ec173544-e39e-4624-8a8a-7f0d53f59921
+
+!! `<details>` 元素
+
+# 点击编辑器工具栏上的''图章'' (<<.icon $:/core/images/stamp>>)
+# 选择 ''Details widget'' 插入代码
+
+```
+<$details summary="Details" open="true" class="">
+
+</$details>
+```
+
+* ''open'' 属性：flase (default) / ture, no / yes
+* ''class'' 属性（可选）：notification / warning / success 
+
+效果为：
+
+<$details summary="Details" open="true" class="">
+
+HTML `<details>` 元素可创建一个挂件，仅在被切换成展开状态时，它才会显示内含的信息。`<summary>` 元素可为该部件提供概要或者标签。
+
+</$details>
+
+> 参阅 [[HTML <details> 元素|https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/details]]

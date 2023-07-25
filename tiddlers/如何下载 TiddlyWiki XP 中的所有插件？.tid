@@ -1,0 +1,13 @@
+tags: XP-tutorials
+title: 如何下载 TiddlyWiki XP 中的所有插件？
+tmap.id: b289db7f-f92a-4c7d-9e66-a512a07419d2
+
+从 [[Gitee|https://gitee.com/keatonlao/tiddlywiki-xp]] / [[GitHub|https://github.com/keatonlao/tiddlywiki-xp]] 上将 tiddlywiki-xp 下载或者克隆下来：
+
+```bash
+git clone --depth=1 git@gitee.com:keatonlao/tiddlywiki-xp.git
+```
+> 加上 `--depth=1` 表示只克隆最新一次提交。不加的话，会将历史提交也克隆下来（如果有），这将花费更多下载时间和存储空间（特别是历史数据庞大时）。
+
+* 单文件版本所有插件 `plugins/PluginforSingleFileVersion.zip`
+* 服务器版本自定义插件库 `version/tiddlywiki-xp_Server.zip/MyPluginStore`

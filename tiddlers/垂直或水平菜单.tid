@@ -1,0 +1,34 @@
+created: 20230601121733281
+modified: 20230602010333623
+tags: 模板代码
+title: 垂直或水平菜单
+tmap.id: f83bdd9e-2027-4a27-bf08-10f9ec356ec1
+
+```
+能修改的 tag[TableOfContents] ，class="tc-horizontal"水平的
+```
+<br>
+<c style="color:Red;">代码:</c>
+
+<<codes src:"""<$list filter="[tag[TableOfContents]sort[]limit[1]]">
+<$macrocall
+  $name="tabs"
+  tabsList="[tag[TableOfContents]sort[]]"
+  default={{!!title}}
+  class="tc-vertical"
+  template="$:/templates/tabs"
+/>
+</$list>
+""">>
+<c style="color:Red;">效果:</c>
+<$navigator story="MySubStoryList" history="MySubHistoryList">
+
+<$list
+  filter="[list[MySubStoryList]]"
+  history="MySubHistoryList"
+  template={{$:/config/ui/ViewTemplate}}
+  editTemplate={{$:/config/ui/EditTemplate}}
+  storyview="classic"
+  emptyMessage="<p>Click this link to get started: [[TableOfContents]]</p>"/>
+
+</$navigator>

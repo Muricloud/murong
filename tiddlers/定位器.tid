@@ -1,0 +1,29 @@
+created: 20210806135914844
+modified: 20220626085459591
+tags: XP-tutorials
+title: 定位器
+tmap.id: 28b5dc14-33e1-4565-a032-65680b91f79b
+
+Locator（$:/plugins/bimlas/locator），定位器，或者叫条目定位器。其核心功能是帮助用户定位条目；其辅助功能是可以对条目进行编辑。
+
+这里主要介绍其中的 [[Locator view]]，它提供了一个通用界面，整合了目录树导航与过滤搜索。目录导航与 TableOfContents 基本一致；在目录导航的基础上，可以通过标签和字段值进行过滤搜索，你不需要编写[[过滤表达式|Filters]]，因为它提供了一个可视化的操作界面。
+
+<div class="gray-box">
+
+[[Locator view]] 的浏览方式，就像你使用文件管理器（网格视图）浏览文件夹。回想一下整个画面，你在文件管理器中依次点击文件夹，直到找到目标文件，此时地址栏显示了浏览路径。回到 TiddlyWiki，你在 [[Locator view]] 中依次点击图标 <<.icon $:/core/images/right-arrow>> 浏览条目，直到找到目标条目，此时水平分隔线上方显示了浏览路径，下方有一个工具栏。
+
+</div>
+
+我盲猜 TableOfContents 经典的树状层级结构，更符合大多数人的浏览习惯。大脑是懒惰的，每次查看目录都需要复杂的运算，大脑会很抗拒！
+
+值得一提的是，Locator 提供了一个查看按钮 {{$:/plugins/bimlas/locator/viewtemplate/open-in-sidebar}}，可将条目在 [[Locator view]] 中打开。
+
+:该按钮可用于查看条目的子条目。因为有些条目，它的内容中没有其子条目的链接列表。相比于在 [[Tags|$:/core/ui/MoreSideBar/Tags]] 选项卡中查阅或者使用 tag 进行搜索，Open in locator view 确实要便捷和高效许多。
+
+<div class="green-box">
+
+XP 中提供了相似的按钮（$:/xp/ui/Buttons/view-subtiddler），用于查看子条目。
+
+</div>
+
+更多内容请访问 https://bimlas.gitlab.io/tw5-locator/。

@@ -1,0 +1,63 @@
+caption: 升级
+created: 20131202102427114
+modified: 20210419091006956
+tags: 中 Features [[Working with TiddlyWiki]] TiddlyWiki
+title: Upgrading
+tmap.id: d623802e-36ff-4921-9420-58cb9c3678ec
+type: text/vnd.tiddlywiki
+
+TiddlyWiki定期发布错误修复和改进。 定期升级到最新版本是个好主意。
+
+! 介绍
+
+此处介绍的过程用于升级独立TiddlyWiki文件。 对于升级[[Node.js上的TiddlyWiki|TiddlyWiki on Node.js]]有[[不同的程序|Upgrading TiddlyWiki on Node.js]]。
+
+<<<
+升级时请记住[[使用TiddlyWiki的首要规则|The First Rule of Using TiddlyWiki]]：
+
+//你有责任照管好自己的数据; 注意备份，特别是在升级~TiddlyWiki内核的时候。//
+<<<
+
+! 在线升级
+
+这个过程在大多数桌面浏览器上有效。请注意，您的个人数据没有一个在此过程中离开浏览器。
+
+# 在文件系统中定位到您的TiddlyWiki文件（即使用Windows资源管理器、Mac OS X上的Finder或Linux上的文件管理器等）
+# 在浏览器中访问 http://tiddlywiki.com/upgrade.html
+# 将你旧的TiddlyWiki HTML文件拖到浏览器窗口中
+#* 如果文件被加密，则会提示您输入密码
+# 检查将要升级的条目列表
+# 点击''Upgrade（升级）''
+# 保存更改以保存新版本 (<<.icon $:/core/images/save-button>>)
+
+这会将一个名为 ''upgrade.html'' 的文件下载到您的计算机。 这个文件是你的旧文件的升级。 您可能需要打开 ''upgrade.html'' 的下载位置，把 ''upgrade.html'' 更名为您正在升级的旧文件的名称，然后将新文件移动到原来旧文件的位置以替换它。
+
+! 离线升级
+
+您也可以下载 http://tiddlywiki.com/upgrade.html 到本地并执行相同的拖放过程来升级您的文件。
+
+! 升级中的问题
+
+!! Firefox安全限制
+
+尝试使用Firefox执行联机升级过程时发生以下错误：
+
+<<<
+Error while saving（保存时出错）：
+
+Error:NS_ERROR_DOM_BAD_URI: Access to restricted URI denied（错误：NS_ERROR_DOM_BAD_URI：访问受限制的URI被拒绝）
+<<<
+
+升级操作与Firefox中的安全限制相冲突。在解决此问题之前，我们建议您使用脱机升级程序或使用Chrome执行升级：
+
+# 使用 Chrome 打开 http://tiddlywiki.com/upgrade.html，然后将 TiddlyWiki HTML 文件拖到升级窗口中，如上面的''在线升级''中所述
+# 保存升级后的文件，之后您应该可以在 Firefox 中打开它，请再次[[使用TiddlyFox保存|Saving with TiddlyFox]]它。
+
+!! 不兼容的定制
+
+在升级到最新版本时，以前版本中应用的自定义可能会中断。 有两种技术可以用来帮助追踪问题：
+
+* 重复尝试升级，有选择地取消那些可能将定制应用到TiddlyWiki的条目
+* 使用SafeMode（安全模式）禁用影子条目的所有自定义
+
+您可以在[[高级搜索|$:/AdvancedSearch]]的''筛选''选项卡中看到哪些影子条目已被覆写。 从下拉列表中选择“被覆写的默认条目”。

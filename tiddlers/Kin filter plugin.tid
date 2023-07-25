@@ -1,0 +1,15 @@
+caption: Kin filter plugin
+created: 20220730142420191
+linkcolor: 
+modified: 20220819085636273
+moscow: S
+revision: 0
+tags: [[Community Plugins]] [[Plugin Card]]
+title: Kin filter plugin
+tmap.id: 5ac6acb6-86a1-44dd-9fae-dc5ca053c76a
+type: text/vnd.tiddlywiki
+url: https://github.com/bimlas/tw5-kin-filter
+
+{{!!url}}
+
+For details, see the [[demo page|https://bimlas.gitlab.io/tw5-kin-filter]].

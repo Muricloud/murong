@@ -1,0 +1,8 @@
+caption: Todo
+created: 20230610061126267
+description: To do list
+modified: 20230610061126267
+tags: $:/tags/SideBar
+title: $:/xp/ui/SideBar/Todolist
+
+<<todolist-ui caption:"Todolist" base:"Sidebar" width:"90%">>

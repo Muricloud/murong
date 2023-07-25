@@ -1,0 +1,66 @@
+created: 20210418053036591
+modified: 20220903082414295
+tags: XP-tutorials
+title: Building XP Server
+tmap.id: d7e83492-0a79-4069-a8b9-e32481f422e0
+
+!! 启动
+
+* `tiddlywiki xp --init server` 以 server 为模板创建 xp
+* `tiddlywiki xp --listen` 启动 xp
+* 浏览器中访问 http://127.0.0.1:8080/
+
+
+!! 配置
+
+# 参阅「[[文件归类|Customising Tiddler File Naming]]」选项卡，设置文件存储到文件系统时的归类规则
+# `vim xp/tiddlywiki.info` 编辑 tiddlywiki.info 安装插件，参照 [[xp-tiddlywiki.info]]（详见「[[管理插件|管理插件（服务器版）]]」选项卡）
+# 重启 xp：<kbd>ctrl-C</kbd> 关闭，`tiddlywiki xp --listen` 启动
+# 配置其他内容。
+
+
+!! 设为模板
+
+; 方法一（推荐）
+: 设置操作系统[[环境变量|Environment Variables on Node.js]] `TIDDLYWIKI_EDITION_PATH`，放到自定义版本库中。<div>
+
+<$details summary="Details" open="no">
+
+比如 Linux 上，`vim ~/.bashrc` 添加：
+
+```
+export TIDDLYWIKI_EDITION_PATH="/DATA/TW/MyEditions"
+```
+
+然后 `source ~/.bashrc` 或者重启终端。
+
+将 xp 文件夹拷贝到 `/DATA/TW/MyEditions` 下即可。
+
+</$details></div>
+
+; 方法二
+: 直接拷贝到官方版本库中。有副作用，更新 TW 会重置官方版本库。<div>
+
+<$details summary="Details" open="no">
+
+将 xp 同步到版本库中：
+
+```bash
+sudo rsync -avq --delete xp `npm root -g`/tiddlywiki/editions/
+```
+
+<<<
+
+如果用 cp 命令，要先删除版本库中存在的版本：
+
+```bash
+sudo rm -fr `npm root -g`/tiddlywiki/editions/xp
+sudo cp -r xp `npm root -g`/tiddlywiki/editions/
+```
+
+这是因为，如果当前版本中 `呆瓜.tid` 被删除了，如果只运行 cp 命令，这个文件依然呆在版本库中。
+<<<
+
+</$details></div>
+
+搭建时，用 `--init xp` 即可。

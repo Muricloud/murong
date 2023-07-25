@@ -1,0 +1,26 @@
+created: 20211214101107002
+modified: 20220904055922956
+tags: [[WikiText 应用实例]] XP-tutorials
+title: 自定义布局
+tmap.id: b5a44352-8d2c-4e2d-a392-ea6f54f79bca
+
+> [[Page and tiddler layout customisation|https://tiddlywiki.com/static/Page%2520and%2520tiddler%2520layout%2520customisation.html]]. 通过布局定制和 CSS 样式显示内容。下面是几个例子：
+
+!! 显示摘要
+
+通过定制模板 $:/.tb/ui/ViewTemplate/summary，当条目含有 summary 字段时，在标签栏下方显示内容摘要。
+
+
+!! 显示原文链接
+
+通过定制模板 $:/xp/ui/ViewTemplate/url，当条目含有字段 `url` 时，在内容前面显示链接。
+
+这种方式，仅在打开条目时可见，所以用处似乎不大，仅提供思路。如果想一直可见，比如[[目录宏|Table-of-Contents Macros]]中也可见，那么只能取消查看模板，然后在每个条目的内容前添加 `{{||$:/xp/ui/ViewTemplate/url}}`。
+
+另见 [[kookma/solution|https://kookma.github.io/TW-Solution/#%24%3A%2Fplugins%2Fkookma%2Fsolution]]（$:/plugins/kookma/solution/viewtemplate/header-segment）
+
+
+!! 改变条目链接的颜色
+
+通过定制样式 $:/LinkStyle/Stylesheet，当条目含有 linkcolor 字段时，根据字段值改变跳转到该条目的链接颜色。这就是为什么「[[常见的编程命名方法]]」的链接颜色是红色的。
+

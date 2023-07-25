@@ -1,0 +1,10 @@
+caption: 组织条目
+created: 20220219165554759
+modified: 20220626114919437
+tags: 创建一个宏 XP-tutorials
+title: 创建一个宏/组织条目
+tmap.id: cb994993-003e-4b85-97f0-b85766f3ef88
+
+最有趣的应该是创建组织 Tiddlers 的宏，可以参照[[内置宏|调用内置宏]]进行自定义。比如 $:/xp/macros/list 中定义了 `list-questions` 宏。使用效果为：
+
+<<wikitext-example-without-html src:"""<<list-questions-autoclose tag:"FAQ" sort:"sort[list]" prompt:"常见问题：">>""">>

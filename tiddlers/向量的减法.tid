@@ -1,0 +1,19 @@
+created: 20230618122117484
+modified: 20230619063828472
+title: 向量的减法
+tmap.id: a7bdbb1f-43fb-4e5b-953a-a559374e73ef
+
+''向量的减法：减一个向量，等于加这个向量的相反向量，然后再用向量加法，首尾相连。''
+
+<$details summary="看图" open="no">
+现在有$$ \vec{a} $$ , $$ \vec{b} $$<br>
+<div style="width:300px">
+[img[向量a和向量b.png]]
+</div>
+<hr>
+那么求$$ \vec{a} - \vec{b} $$？<br>
+先取 $$\vec{b} $$ 的相反向量 $$- \vec{b} $$，然后利用[[向量加法，首尾相连|向量的加法]]。
+<div style="width:300px">
+[img[向量a减向量b.png]]
+</div>
+</$details>

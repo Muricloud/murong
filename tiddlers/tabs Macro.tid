@@ -1,0 +1,40 @@
+caption: tabs：选项卡宏
+created: 20131228162203521
+modified: 20200901042844562
+tags: 中 Macros [[Core Macros]] TiddlyWiki
+title: tabs Macro
+tmap.id: 4f397b64-1b8b-4aa7-9d18-a4d092fbe5bc
+type: text/vnd.tiddlywiki
+
+<<.def tabs>>（选项卡）[[宏|Macros]]将[[条目选集|Title Selection]]呈现为用户可以在其间切换的一组选项卡。
+
+条目如果有 <<.field caption>>（显示用的标题）字段，则选项卡显示该字段；否则，显示条目的标题。 如果有指定，则选项卡会将条目的 <<.field tooltip>>（工具提示）字段显示为相应的按钮工具提示。
+
+默认情况下，选项卡水平排列在内容上方。 要获得垂直排列的选项卡，请将 <<.param class>> 参数设置为 <<.value tc-vertical>>。
+
+!! 参数
+
+;tabsList -- 选项卡列表
+: 一个[[过滤器|Filters]]，选择要包含哪些条目
+;default -- 默认
+: 一个条目标题，对应的选项卡为默认选中
+;state -- 状态
+: [[状态条目|StateMechanism]]的标题前缀，缺省为 `$:/state/tab`。状态条目用于标记当前选定的选项卡，建议把它设为[[系统条目|SystemTiddlers]]
+;class -- 类
+: 为生成的 `div` 元素附加的[[CSS|Cascading Style Sheets]]类。多个类可以用空格分隔
+;template -- 模板
+: 可选用，[[模板|TemplateTiddlers]]条目的标题，该模板用于嵌入选中的选项卡的内容
+;buttonTemplate -- 按钮模板
+: 可选用，[[模板|TemplateTiddlers]]条目的标题，该模板用于嵌入选中的选项卡的按钮的内容
+
+在模板中，选中的选项卡的标题在 <<.var currentTab>> 变量中可用。
+
+<<.vlink currentTiddler>> 变量不受 <<.var tabs>> 宏的影响。 如果选项卡列表包含依赖于 <<.vlink currentTiddler>> 值的条目，例如，各条目要基于它自己的名字列出子条目，您可能就会遇到麻烦。 为了解决这个问题，你可以使用一个[[模板条目|TemplateTiddlers]]，像下面这样：
+
+```
+<$tiddler tiddler=<<currentTab>>>
+<$transclude mode="block" />
+</$tiddler>
+```
+
+<<.macro-examples "tabs">>

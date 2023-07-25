@@ -1,0 +1,15 @@
+created: 20220626092624966
+modified: 20220626092626129
+tags: XP-tutorials
+title: menubar 与 preview 不兼容
+tmap.id: 62048b5d-593f-4da5-85dc-e2e55f121f62
+
+''问题描述：''preview 插件致使 [[menubar|$:/plugins/tiddlywiki/menubar]] 中 Contents 下拉弹窗异常。
+
+<div class="red-box">
+
+点击 Contents 中的条目时，未自动关闭弹窗！
+
+</div>
+
+''解决办法：''禁用 preview 插件。或者将就着一起用。

@@ -1,0 +1,21 @@
+caption: WikiText 语法
+created: 20211217082109303
+list: [[Headings in WikiText]] [[Paragraphs in WikiText]] [[Formatting in WikiText]] [[Linking in WikiText]] [[Transclusion in WikiText]] [[Images in WikiText]] [[Block Quotes in WikiText]] [[Lists in WikiText]] [[Code Blocks in WikiText]] [[Tables in WikiText]] [[Definitions in WikiText]] [[Hard Linebreaks in WikiText]] [[Dashes in WikiText]] [[Horizontal Rules in WikiText]] [[Audios in WikiText]] [[Videos in WikiText]] [[Maps in WikiText]] 数学公式 [[HTML in WikiText]] [[Styles and Classes in WikiText]] [[Typed Blocks in WikiText]] [[Macros in WikiText]] [[Widgets in WikiText]] [[Variables in WikiText]]
+modified: 20220222060952088
+tags: 中 Concepts Reference TiddlyWiki TableOfContents
+title: WikiText
+tmap.id: 7d56fd0a-7700-443b-a39b-db4a4831f0a1
+
+> 此处的内容部分有所删减，只为让新手快速入门。详细内容需学习官方 [[WikiText|https://tiddlywiki.com/#WikiText]]（或者[[汉化文档|https://oss.hintsnet.com/mirror/tiddlywiki.cn.html#WikiText]]）。
+
+~WikiText 可以输入各种文字格式、超文本，并有互动功能。它让您专注于写作，而无需复杂的用户界面。它的设计为 [[Markdown|http://daringfireball.net/projects/markdown/]] 的用户所熟悉，但却有更多的焦点链接和交互功能。推荐在 TiddlyWiki 中使用 ~WikiText 处理文本。如果使用 Markdown，推荐使用原生语法以保持通用性。因为官方最新的 Markdown 插件支持内部链接和嵌入，我们可以戏称为 ~WikiMarkdown。
+
+以下 WikiText 语法元素被内置到内核中：
+
+<$macrocall
+	$name="toc-tabbed-external-nav"
+	tag="WikiText"
+	selectedTiddler="$:/temp/toc/selectedTiddler/WikiText"
+	unselectedText="<p>在目录中选择一个主题。点击箭头展开主题。</p>"
+	missingText="<p>失踪的条目。</p>"
+/>

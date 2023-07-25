@@ -1,0 +1,29 @@
+caption: Warpinator
+color: 
+created: 20211010015613082
+description: Share files across the LAN
+modified: 20220819092609363
+moscow: S
+purpose: 传输文件
+tags: Linux Android 网络 Examples [[Should have]] Software
+title: Warpinator
+tmap.id: 9e1d8233-4e26-4da5-bfa2-4090aae7d251
+url: https://github.com/linuxmint/warpinator
+
+{{!!description}}
+
+!! 安装
+
+Ubuntu 20.04 参照官网编译，或者使用：
+
+```
+flatpak install flathub org.x.Warpinator
+```
+
+!! 使用
+
+开放端口：
+
+```
+sudo ufw allow 42000
+```

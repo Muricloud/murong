@@ -1,0 +1,15 @@
+caption: thumbnail：缩略图宏
+created: 20150325172203603
+modified: 20200901042844567
+tags: 中 Macros [[Core Macros]] TiddlyWiki
+title: thumbnail Macro
+tmap.id: c96eca46-92f6-446e-b68c-52afbbca7d93
+type: text/vnd.tiddlywiki
+
+<<.def thumbnail>>（缩略图）[[宏|Macros]]用于创建可链接的缩略图面板。
+
+
+<<.macro-examples "thumbnail">>
+
+
+''译者注：''另有 <<.def thumbnail-right>> -- 缩略图在文字右上宏、<<.def list-thumbnails>> -- 缩略图列表宏，详参[[$:/core/macros/thumbnails]]。

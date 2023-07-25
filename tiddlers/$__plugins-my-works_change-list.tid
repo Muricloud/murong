@@ -1,0 +1,17 @@
+caption: Change List
+created: 20220419031720210
+modified: 20220626094640429
+tags: $:/tags/MyWorks XP-tutorials
+title: $:/plugins-my-works/change-list
+
+!! 插件更改 / 适配
+
+为确保更新插件时修改过的内容不会被覆盖掉，对修改的内容进行封装：
+
+* 默认插件条目封装至 $:/xp/mtw
+* 非默认插件条目封装至 $:/xp/mcp
+* 而插件样式放在 $:/_xp/Stylesheet/community-plugins
+
+<$list filter="[all[tiddlers+shadows]tag[Change List]sort[title]limit[1]]">
+  <$macrocall $name="tabs" tabsList="[all[tiddlers+shadows]tag[Change List]sort[]]" default={{!!title}} class="tc-vertical" />
+</$list>

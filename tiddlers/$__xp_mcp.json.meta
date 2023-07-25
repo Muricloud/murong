@@ -1,0 +1,12 @@
+author: kl
+created: 20210410192413385
+dependents: 
+description: Modifications to the community plugin
+list: readme
+modified: 20230224000215285
+name: MCP
+plugin-type: plugin
+revision: 0
+title: $:/xp/mcp
+type: application/json
+version: 0.2.2

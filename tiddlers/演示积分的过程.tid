@@ -1,0 +1,37 @@
+created: 20230616144324624
+modified: 20230616144439032
+tags: 
+title: 演示积分的过程
+tmap.id: ef47be72-21b6-4a44-a2fa-4cd1c1677bbc
+
+
+演示积分的过程
+<<codes src:"""
+import numpy as np
+from scipy.integrate import quad
+
+import matplotlib.pyplot as plt
+
+
+def f(x):
+    return 2**x
+
+
+a, b = 0, 10
+x = np.linspace(a, b, 500)
+y = f(x)
+
+fig, ax = plt.subplots()
+ax.plot(x, y, 'r', linewidth=2)
+
+rects = []
+for i in range(len(x) - 1):
+    rect = plt.Rectangle((x[i], 0), x[i + 1] - x[i], y[i], alpha=0.5, color='g')
+    rects.append(rect)
+    ax.add_patch(rect)
+
+q, _ = quad(f, a, b)
+ax.text(0.4, 0.8, f"$\\int_{{{a}}}^{{{b}}} f(x)dx = {q:.4f}$", transform=ax.transAxes, fontsize=14)
+plt.show()
+
+""">>

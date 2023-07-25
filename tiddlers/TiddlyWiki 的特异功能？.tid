@@ -1,0 +1,30 @@
+created: 20211129105530384
+modified: 20220626084947949
+tags: FAQ XP-tutorials
+title: TiddlyWiki 的特异功能？
+tmap.id: 7e48b63b-475d-4d0f-9157-ad4162c0a232
+
+''多页面同时处理''
+
+标准的维基用户界面一直是专门为单一页面的显示和操作而设计的，而 TiddlyWiki 被设计为一次能够处理多个页面（Tiddler）。TiddlyWiki 提出了故事河（[[Story River]]）这个概念，将 Tiddlers 在故事河中队列打开，巧妙地实现了多页面同时处理。
+
+
+''强大的 ~WikiText''
+
+WikiText 让你轻松地编辑内容和组织条目。比如 [[list-links|list-links Macro]]、[[tabs|tabs Macro]]、[[toc|Table-of-Contents Macros]] 等[[宏|Core Macros]]，可以将条目迅速组织起来。另外，[[过滤器|Filters]]也是其中的一大精髓。
+
+
+''可编程性''
+
+您可以使用 WikiText / HTML / JavaScript 添加自定义的功能，这就是 TiddlyWiki 的「可编程性」。可编程性给予用户最大的权利和自由，却也提高了学习难度。
+
+作为普通用户，使用 TiddlyWiki 默认提供的功能就能记好笔记。成为进阶用户后，可利用 TiddlyWiki 的「可编程性」来满足自己的独特需求。
+
+
+<div class="gray-box">
+
+* 虽然 TiddlyWiki 的编辑器算不上最强级别，但它在查阅、编辑和管理条目之间实现了功能平衡。这非常重要！
+* TiddlyWiki 是实践 Zettelkasten 卡片盒笔记法的最佳开源软件。
+* 对于一些人，一边记笔记，一边还能了解编程（甚至学习英语），或许是一件美好的事情。
+
+</div>

@@ -1,0 +1,14 @@
+caption: EditorCounter
+created: 20210619142144866
+modified: 20220819085548940
+moscow: C
+tags: [[Community Plugins]] [[Plugin Card]] XP-tutorials
+title: EditorCounter by Thomas Elmiger
+tmap.id: 5771e6fa-d24c-4702-9c6a-7298afef565d
+url: https://tid.li/tw5/plugins.html
+
+{{!!url}}
+
+The [[EditorCounter plugin|https://tid.li/tw5/plugins.html#EditorCounter]] can display counters for words and characters in the edit view. In single page wikis it can save texts automagically in the background – check the [[plugin settings|$:/plugins/telmiger/EditorCounter/settings]].
+
+* $:/plugins/telmiger/EditorCounter

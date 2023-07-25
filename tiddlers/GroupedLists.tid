@@ -1,0 +1,20 @@
+caption: 分组列表（示例）
+created: 20150106180000000
+modified: 20171215100553353
+tags: 中 ListWidget TiddlyWiki
+title: GroupedLists
+tmap.id: 7a7144a3-6b53-40ad-9f41-5934f604e7dd
+
+以下边栏选项卡提供了创建嵌套分组列表的示例。
+
+!! 类型选项卡
+
+对于 [[类型|$:/core/ui/MoreSideBar/Types]] 选项卡，如下所示，外层列表的过滤器选择`type`字段中找到的每个离散值。 内层列表的过滤器选择具有该类型的所有（非系统）条目。
+
+<<tw-code "$:/core/ui/MoreSideBar/Types">>
+
+!! 最近选项卡
+
+[[最近|$:/core/ui/SideBar/Recent]] 选项卡中的列表是使用 <<.mlink timeline>> 宏生成的。 在这里，外层列表的过滤器选择在 `modified` 字段中找到的每个离散日，而内层列表过的滤器选择在 `modified` 字段中某天的所有条目。
+
+<<tw-code-link "$:/core/macros/timeline">>

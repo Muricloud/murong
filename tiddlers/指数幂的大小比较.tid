@@ -1,0 +1,31 @@
+created: 20230718023914200
+modified: 20230718030505454
+title: 指数幂的大小比较
+tmap.id: cb462f5f-2211-4464-8033-5f8074a3de05
+
+''比较指数幂大小的方法''<br><br>
+<mark class="mark-blue">底数相同，指数不同 </mark> $$\rightarrow$$ <mark class="mark-greenyellow">利用指数函数的单调性来判断</mark><br><br>
+<mark class="mark-blue">底数不同，指数相同 </mark>  $$\rightarrow$$ <mark class="mark-greenyellow">利用幂函数的单调性来判断</mark><br><br>
+<mark class="mark-blue">底数不同，指数不同 </mark>  $$\rightarrow$$ <mark class="mark-greenyellow">通过中间量来比较</mark><br>
+
+<hr>
+<div class="colmask doublepage">
+	<div class="colleft">
+		<div class="col1">
+''例题：''<br><br>
+		{{指数幂的大小比较例题}}
+
+		</div>
+		<div class="col2">
+<$details summary="幂函数图像三类九种(测试)" open="no">
+
+{{幂函数图像三类九种(测试)}}
+</$details>
+<$details summary="指数函数的图像和性质测试" open="no">
+
+{{指数函数的图像和性质测试}}
+</$details>
+		</div>
+	</div>
+</div>
+

@@ -1,0 +1,27 @@
+caption: 选项卡外部
+created: 20150221205834000
+modified: 20211216044647928
+order: 6
+tags: 中 table-of-contents-example TiddlyWiki 常用目录宏
+title: Example Table of Contents: Tabbed External
+tmap.id: df70f1e8-0c79-4eee-8edb-8d1a80e05b77
+
+<$macrocall
+	$name="toc-tabbed-external-nav"
+	tag="TableOfContents"
+	selectedTiddler="$:/temp/toc/selectedTiddler"
+	unselectedText="<p>在目录中选择一个主题。 点击箭头展开主题。</p>"
+	missingText="<p>失踪的条目。</p>"
+/>
+
+```
+<$macrocall
+	$name="toc-tabbed-external-nav"
+	tag="TableOfContents"
+	selectedTiddler="$:/temp/toc/selectedTiddler"
+	unselectedText="<p>在目录中选择一个主题。 点击箭头展开主题。</p>"
+	missingText="<p>失踪的条目。</p>"
+/>
+```
+
+> 多个该类型的目录表时，要修改 selectedTiddler 的值使其唯一，以免冲突

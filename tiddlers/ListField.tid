@@ -1,0 +1,14 @@
+caption: 列表字段
+created: 20130830092500000
+modified: 20210423053751044
+tags: 中 Fields TiddlyWiki
+title: ListField
+tmap.id: 731a0f30-b1e8-4d25-a1cb-7600a3ab78cf
+type: text/vnd.tiddlywiki
+
+[[条目字段|TiddlerFields]]`list`是一个可选的功能，可用于帮助您结构化内容。 它的值是一个[[标题列表|Title List]]，它有几种使用方式：
+
+* 被用作标签的条目，其`list`字段决定了带有该标签的条目的顺序 - 详细信息参见[[标签|Tagging]]
+* `list`[[过滤器|Filters]]从列表中选择项目
+* `list`[[过滤器|Filters]]从已选条目列表选择条目
+* NavigatorWidget（导航部件）操纵一个StoryList（故事列表）条目，该条目包一个`list`字段，该字段包含显示在主故事栏中的条目。

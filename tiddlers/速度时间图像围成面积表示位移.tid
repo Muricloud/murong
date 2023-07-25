@@ -1,0 +1,48 @@
+created: 20230629044606170
+modified: 20230629094141177
+tags: 
+title: 速度时间图像围成面积表示位移
+tmap.id: 474d2fd6-6c18-46b5-8887-4a9d0b805e32
+
+1、匀速直线运动的v-t图像
+<div style="width:300px">
+[img[匀速直线运动求面积.png]]
+</div>
+在匀速直线运动中：$$x=vt$$
+<hr>
+匀变速直线运动的v-t图像
+<div style="width:300px">
+[img[匀变速直线运动vt图像围成面积2.png]]
+[img[匀变速直线运动vt图像围成面积3.png]]
+回答问题：三个蓝色的点和黑色的点它们速度是不是近似？
+
+<div style="width:300px">
+[img[匀变速直线运动vt图像.png]]
+</div>
+看一个演示
+https://www.geogebra.org/m/u3wdkjgq
+
+<br>
+上图围成面积是多少S=30,<br>
+n=3时，矩形面积的和a=28。<br>
+n=4时，矩形面积的和a=28.24。<br>
+n=20时，矩形面积的和a=29.7。<br>
+n=50时，矩形面积的和a=29.88。<br>
+n=$$\infty$$时，矩形面积的和a=30。<br>
+<$details summary="证明过程" open="no">
+[[速度时间图像围成面积表示位移的证明过程]]
+</$details>
+
+<hr>
+$$x=\frac{v_0+v_1}{2}t$$
+
+问题：1、$$\frac{v_0+v_1}{2}$$是不是中间时刻的速度？<br><br>
+问题：2、求上图运动过程的平均速度？
+<$details summary="答案" open="no">
+{{平均速度公式}}
+$$\overline{v}=\frac{\frac{v_0+v_1}{2}t}{t} =\frac{v_0+v_1}{2}
+$$
+
+</$details>
+
+<c style="color:Red;">结论（背）：匀变速直线运动中，$$\overline{v}=v_{\frac{t}{2}}=\frac{v_0+v_1}{2}$$</c>

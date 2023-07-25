@@ -1,0 +1,26 @@
+caption: {{$:/core/images/theme-button}} 使用样式表
+created: 20140305091244145
+modified: 20220904011038556
+tags: 中 [[Customise TiddlyWiki]] TiddlyWiki 自定义
+title: Using Stylesheets
+tmap.id: 05e52a78-e50e-439a-85f4-20e646fbe4a6
+type: text/vnd.tiddlywiki
+
+\define openCpStylesheets()
+<$action-setfield $tiddler="$:/state/tab-1749438307" $value="$:/core/ui/ControlPanel/Info"/>
+<$action-setfield $tiddler="$:/state/tab--2112689675" $value="$:/core/ui/ControlPanel/Advanced"/>
+<$action-setfield $tiddler="$:/state/tab--959111941" $value="$:/core/ui/ControlPanel/Stylesheets"/>
+<$action-navigate $to="$:/ControlPanel"/>
+\end
+
+改变 TiddlyWiki 外观的第一步是选择和应用一个可用的主题，或者修改[[调色板|ColourPalettes]]。
+
+另外，还可以通过给一个条目添加 `$:/tags/Stylesheet` 标签来自定义 [[CSS 样式表|http://www.w3schools.com/css]]。
+
+比如 ~TiddlyWiki XP 使用的样式表：
+
+* $:/_xp/Stylesheet
+
+打开 <$button actions=<<openCpStylesheets>>>{{$:/core/images/options-button}} Stylesheets</$button> 可以查看维基「当前启用」的全部样式表。
+
+> 参阅 [[Using Stylesheets|https://tiddlywiki.com/static/Using%2520Stylesheets.html]]

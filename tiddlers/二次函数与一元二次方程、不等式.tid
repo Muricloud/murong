@@ -1,0 +1,18 @@
+created: 20230704062301812
+modified: 20230706080328724
+title: 二次函数与一元二次方程、不等式
+tmap.id: 53b153c9-54a1-411e-821f-a59ab8818381
+
+<div class="red-box" style="width: 200px; margin: 0 auto;">会画图解决一切问题</div>
+
+$$a$$ 决定开口方向<br>
+$$c$$ 决定与y轴的交点,在正半轴还是负半轴上<br>
+$$-\frac{b}{2a}$$决定对称轴在x的正半轴还是负半轴<br>
+$$\Delta$$确定是否和x轴有交点，交点有几个。
+
+<div class=green-box>
+一般式：$$y=ax^2+bx+c$$ &emsp;&emsp;  [[二次函数一般式]]<br>
+ 根 式：$$y=a(x-x_1)(x-x_2)$$ &emsp; 一般通过提取公因式得到  &emsp;&emsp;  [[二次函数根式]]<br>
+顶点式：$$y=a(x-h)^2+k$$ &emsp; 一般通过配方法得到&emsp;&emsp;  [[二次函数顶点式]]、[[配方法求顶点式]]
+</div>
+

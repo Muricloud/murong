@@ -1,0 +1,19 @@
+caption: 技术散文风格
+created: 20150110182900000
+modified: 20200901042844565
+tags: 中 [[Improving TiddlyWiki Documentation]] TiddlyWiki
+title: Technical Prose Style
+tmap.id: 2c7fb091-3fac-4314-be65-e9e4177ea3d7
+
+在写一个[[指导条目|Instruction Tiddlers]]时，首先要规划一条到达你想要的信息的路径。 这应该是一个简单的，逻辑的，直接的思想进程，没有回溯或前向引用。 甚至在个别的句子中也使用这种方法：始终从原因到效果，从旧的或已知的到新的或未知的。
+
+保持句子简短。 一个明晰的技术句子很少包含一个以上的想法。 因此它避免了括号内的信息。 同样，保持段落结构简单。 平面展示通常比分层展示更容易理解。
+
+通常可以简化一个句子而不改变它的意思，只是通过调整它的词汇或语法结构。 <<.word "Execution of the macro is performed">> 意思只是 <<.word "The macro runs">>。<<.word "Your expectation might be...">> 意思只是 <<.word "You might expect...">>。
+
+默认情况下应优先选择主动语态：<<.word "Jane creates a tiddler">> 而不是<<.word "a tiddler is created by Jane">>。 如果您希望读者将注意力集中在动作本身或其结果上，被动语态可能很有用：<<.word "a tiddler is created">>。 但从因果关系出发，用主动语态说 <<.word "this creates a tiddler">> 往往更为清晰。
+
+文档通常提出两个相似或不同的平行的项目。 如果您对两者使用相同的句子或短语结构，读者将更容易感知到这种模式。 但是这必须与避免单调相权衡。
+
+优先选择精确的指令而不是模糊的描述。如果某事物有名称，就使用它。如果缺名字，就给它做一个条目。
+

@@ -1,0 +1,11 @@
+[
+    {
+        "created": "20230618004526019",
+        "text": "[[理想化模型]]：<c style=\"color:Red;\">抓住主要因素，忽略次要因素</c><br>\n<c style=\"color:Red;\">质点</c>：有质量，无形状和大小的点。<br>\n<$details summary=\"点的作用\" open=\"no\">\n1、点的作用占位置。比如：点的坐标，A(1,2)<br>\n2、通过移动,表示位置的变化<br>\n3、移动的快慢，可以表示速度的快慢<br>\n</$details>\n\n<$details summary=\"一个物体能被看成质点，这个物体的主要因素，次要因素分别有哪些\" open=\"no\">\n主要因素：质量，位置<br>\n次要因素：形状，大小<br>\n</$details>\n\n<$details summary=\"什么情况下，物体可以被看成质点？（能判断就好，不用记）\" open=\"no\">\n\n# 运动物体的形状和大小对它所研究的问题的影响可以忽略不计时，可将该物体当做质点。\n# 做平动的物体，由于物体上各个点运动的情况相同，可以选物体上任一点的运动来代表物体的运动，故平动的物体在研究其运动性质时，可将它视为质点。\n# 有转动，但相对平动而言可以忽略时，也可以把物体视为质点。如汽车在运行时，虽然车轮有转动，但我们关心的是车辆整体运动的快慢，故汽车可以看成质点。\n\n<$details summary=\"判断一下，下面的例子，哪些可以被看成质点？\" open=\"no\">\n\n（可以被看成质点的选中它 <$checkbox field=\"#0\" checked=\"yes\" unchecked=\"no\" default=\"yes\"> </$checkbox>）\n\n# 永州到上海，1300多公里，座高铁从永州到上海，那么在这个过程中，高铁能不能被看成质点。<$checkbox field=\"#1\" checked=\"yes\" unchecked=\"no\" default=\"no\"> </$checkbox>\n# 高铁穿过一个隧道，要计算高铁进出隧道的时间，高铁能不能被看成质点。<$checkbox field=\"#2\" checked=\"yes\" unchecked=\"no\" default=\"no\"> </$checkbox>\n# 研究乒乓球的旋转。<$checkbox field=\"#3\" checked=\"yes\" unchecked=\"no\" default=\"no\"> </$checkbox>\n# 研究舞蹈演员的舞姿。<$checkbox field=\"#4\" checked=\"yes\" unchecked=\"no\" default=\"no\"> </$checkbox>\n</$details>\n\n</$details>\n[[例题|质点-例题展示]]",
+        "title": "质点和理想化模型",
+        "modified": "20230714070017673",
+        "tmap.id": "f6330361-5c29-4a16-a095-628adb6236d7",
+        "质点": "no",
+        "#1": "yes"
+    }
+]

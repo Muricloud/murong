@@ -1,0 +1,156 @@
+created: 20210909145933849
+modified: 20210911021526130
+tags: XP-tutorials
+title: Ubuntu 上安装使用 gocryptfs 加密工具
+tmap.id: e7ed26f8-5653-44c4-a71b-fc18fd90a355
+
+# ''安装''<div>
+
+```
+$ sudo apt install gocryptfs
+```
+</div>
+
+# ''创建和挂载文件系统''<div>
+
+```
+$ mkdir cipher plain
+$ gocryptfs -init cipher
+  [...]
+$ gocryptfs cipher plain
+  [...]
+```
+
+> 操作 `gocryptfs -init cipher` 时，要设置一个[[安全密码]]，并妥善保存好 ''Your master key''。
+
+现在你应该有一个可以工作的 gocryptfs，它将数据存储在 `cipher` 中并挂载到 `plain`。您可以通过在 `plain` 明文目录中创建一个测试文件来验证它。该文件将以加密方式显示在 `cipher` 目录中。
+
+```
+$ touch plain/test.txt
+$ ls cipher
+  gocryptfs.conf  gocryptfs.diriv  ZSuIZVzYDy5-TbhWKY-ciA==
+```
+</div>
+
+# ''卸载加密目录''<div>
+
+数据加密存储在 `cipher` 中后，可以使用 `fusermount` 命令进行卸载（该命令是 FUSE 软件包的一部分）：
+
+```
+$ fusermount -u plain
+```
+
+> 如果电脑关机，那么将会自动卸载。
+
+卸载后，`plain` 明文目录为空。想要访问数据，必须重新挂载 `gocryptfs cipher plain`。
+</div>
+
+# ''删除备份中的文件''<div>
+
+为了测试，使用 `dd` 命令，在 `plain` 目录下生成一个 100 M 的 test 文件：
+
+```bash
+$ dd if=/dev/zero of=plain/test bs=1M count=100
+```
+
+将 test 文件移到回收站：
+
+```bash
+$ gio trash plain/test
+# 或者使用：gvfs-trash plain/test
+```
+
+该操作只是将 `test` 文件移到了隐藏目录 `plain/.Trash-1000` 中，此时 `cipher` 目录的体积并没有减少。只有清空回收站，文件才会被删除。
+
+```
+$ gio trash --empty
+```
+当然，使用 `rm` 命令可以永久删除文件（@@color:Red;谨慎使用@@）。比如：
+
+```
+$ rm -fr plain/test
+```
+</div>
+
+# ''云存储''<div>
+
+当您想将加密数据进行云存储（本例中为 [[Nutstore|https://www.jianguoyun.com/]]）时，`cipher` 文件夹应该在 `Nutstore` 文件夹内，而 `plain` 文件夹应该在''外面''！ 例子：
+
+```bash
+$ mkdir ~/Nutstore\ Files/cipher
+$ mkdir ~/plain
+$ gocryptfs -init ~/Nutstore\ Files/cipher
+$ gocryptfs ~/Nutstore\ Files/cipher ~/plain
+```
+
+这可确保 Nutstore 仅同步您数据的加密版本。
+</div>
+
+# ''数据安全''<div>
+
+''警告：''默认情况下，为了方便起见，`gocryptfs.conf` 文件存储在备份目录 `cipher` 中。 如果您将 `gocryptfs.conf` 文件上传到在线资源，并且您的密码已知或被破解，则您的备份可以被解密。使用强密码可以降低攻击的成功率。你可以使用 `-config` 选项来使用其他位置的 `gocryptfs.conf` 文件：
+
+```bash
+$ gocryptfs -config /Backup/config/gocryptfs.conf ~/Nutstore\ Files/cipher ~/plain
+```
+</div>
+
+# ''简化指令''<div>
+
+为了提高操作效率，常用指令可利用 Alias 进行简化，`vi ~/.bashrc`
+
+```bash
+# gocryptfs aliases
+# mount cipher directory
+alias mtc='gocryptfs ~/Nutstore\ Files/cipher ~/plain'
+# mount cipher directory (-config)
+alias mtcc='gocryptfs -config /Backup/config/gocryptfs.conf ~/Nutstore\ Files/cipher ~/plain'
+# unmount cipher directory
+alias umc='fusermount -u ~/plain'
+# Change password (cipher directory)
+alias cpc='gocryptfs -passwd ~/Nutstore\ Files/cipher'
+```
+
+> 此处别名使用三个字母，前两个字母为动作的缩写，最后一个字母为加密目录的首字母。
+
+运行 `source ~/.bashrc` 使上述别名生效。现在，在终端中执行 `mtc` 即可挂载 `cipher` 目录，执行 `umc` 即可卸载，而执行 `cpc` 可修改 `cipher` 目录的访问密码。
+</div>
+
+# ''反向模式''<div>
+
+gocryptfs 的 [[Reverse Mode|https://nuetzlich.net/gocryptfs/reverse_mode_crypto/]] 对于创建加密备份特别有用，因为它几乎不需要机器上的额外存储容量来备份。
+
+以下显示了用户 //joe// 创建 `/home/joe` 备份的示例：
+
+```bash
+$ mkdir /home/joe.cipher
+$ gocryptfs -init -reverse /home/joe
+$ gocryptfs -reverse /home/joe /home/joe.cipher
+
+$ cp -a /home/joe.cipher /Backup/home/joe
+$ fusermount -u /home/joe.cipher
+```
+
+挂载时，可以使用 `-exclude folder` 选项进行排除：
+
+```
+$ gocryptfs -reverse -exclude Downloads -exclude Music -exclude Videos /home/joe /home/joe.cipher
+```
+
+为了从加密备份中恢复，使用 gocryptfs 的正常模式挂载一个明文视图：
+
+```
+$ mkdir /home/joe.plain
+$ gocryptfs /Backup/home/joe /home/joe.plain
+```
+
+现在可以恢复所需的文件了。
+</div>
+
+
+!! 参考资料
+
+* [[gocryptfs 文档|https://nuetzlich.net/gocryptfs/]]
+* [[gocryptfs - ArchWiki|https://wiki.archlinux.org/title/Gocryptfs]]
+* [[Ubuntu Manpage_ gocryptfs - create or mount an encrypted filesystem|https://manpages.ubuntu.com/manpages/focal/man1/gocryptfs.1.html]]
+* [[Ubuntu Manpage_ fusermount - mount and unmount FUSE filesystems|https://manpages.ubuntu.com/manpages/trusty/man1/fusermount.1.html]]

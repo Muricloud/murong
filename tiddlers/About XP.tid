@@ -1,0 +1,26 @@
+created: 20200731102551312
+modified: 20220904093008120
+tags: XP-tutorials 新手入门指南
+title: About XP
+tmap.id: 0b150dad-f045-4057-b694-d403c05e8250
+
+~TiddlyWiki XP 在官方英文<ruby>空白版本<rt>{{download empty edition}}</rt></ruby>上装配了一些必备插件，让新手可以快速<ruby>体验<rt>E<font color="Red">xp</font>erience</rt></ruby> TiddlyWiki 的魅力。
+
+<div class="gray-box">
+
+{{TiddlyWiki XP 特点}}
+
+</div>
+
+文件下载：
+
+* 单文件版本 {{download xp}}
+* 服务器版本 {{download xp server}}
+
+> 或者直接[[将整个仓库下载下来|我想使用 TiddlyWiki XP？]]。
+
+<<<.tc-big-quote
+''文本、图像、音频、视频、文档、外部资源，高效组织这些内容，不仅仅是对笔记的整理，更是知识的内化——思维的整理与组合！''
+
+TiddlyWiki 在这方面的表现不俗、效果甚好。
+<<<

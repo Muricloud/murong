@@ -1,0 +1,8 @@
+created: 20220123124509489
+list: [[About XP]] [[TiddlyWiki 站点]] 安装与存储 基本设置 新建条目 编辑条目 引用外部文件 搜索条目 浏览条目 批量修改条目 加密数据 [[How to export tiddlers]] 键盘快捷键 认识系统标签 设置网站图标 使用图标 自定义 Performance 双栏 收藏夹与回收站 阅读列表 [[Annotate Button]] TiddlyMap [[Building a Knowledge System]] 每日一记 任务管理 开发插件 [[XP 构建流程]]
+modified: 20230601003726040
+tags: TableOfContents XP-tutorials
+title: 新手入门指南
+tmap.id: d930c6e1-4b0a-42b7-87dc-e85a670d5e20
+
+<<tabs "[tag[新手入门指南]]" "About XP" "$:/state/tab/beginner" "tc-vertical">>

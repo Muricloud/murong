@@ -1,0 +1,25 @@
+created: 20230703071639774
+modified: 20230703073730016
+tags: 
+title: 集合的基本运算
+tmap.id: 0c0ca298-a861-49a2-a9c5-b8374f4503ff
+
+!! 并集和交集
+[img[集合的基本运算交集和并集.png]]
+
+!! 全集和补集
+[img[集合的基本运算全集和补集.png]]
+
+
+''德·摩根定律''<br>
+$$1. \complement _u(A \cap B)=(\complement _u A) \cup (\complement _u B)$$<br>
+$$2. \complement _u(A \cup B)=(\complement _u A) \cap (\complement _u B)$$<br>
+
+链接：<br>
+[[展示一下交集、并集和全集|https://www.geogebra.org/m/cr5ddwtv]] <br>
+
+[[动态的做一些小题1|https://www.geogebra.org/m/ebryuhu6]]<br>
+
+[[动态的做一些小题2|https://www.geogebra.org/m/psaprgzf]]<br>
+
+[[这个有点全面|https://www.geogebra.org/m/bt9htqrp]]

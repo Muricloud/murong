@@ -1,0 +1,42 @@
+created: 20230629012346890
+modified: 20230629020929851
+tags: 
+title: 位移时间图像讲解
+tmap.id: 3de4236a-8b33-4d96-b719-e473804f4ac4
+
+<div style="width:500px">
+[img[位移时间图像1.png]]
+</div>
+
+<div style="width:500px">
+[img[位移时间图像2.png]]
+</div>
+
+
+
+$$k_1=\frac{\Delta x}{\Delta x}=\frac{4-0}{4-0}=1 \\
+\ \\
+v_1=k_1
+$$
+
+<div style="width:500px">
+[img[位移时间图像3.png]]
+</div>
+
+
+$$k_2=\frac{\Delta x}{\Delta x}=\frac{0-4}{10-8}=\frac{-4}{2}=-2 \\
+\ \\
+v_2=k_2
+$$
+
+求：$$k_3,k_4$$
+<div style="width:500px">
+[img[位移时间图像5.png]]
+</div>
+
+
+拐点和横轴交点，分别有什么物理意义？<br>
+拐点：B,C,F<br>
+横轴交点: A,E,G<br>
+
+[[位移时间图像例题]]

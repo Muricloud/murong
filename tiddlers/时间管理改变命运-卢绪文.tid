@@ -1,0 +1,30 @@
+background-color: #fff
+caption: 《时间管理改变命运》- 卢绪文
+color: red
+created: 20210626114701646
+icon: {{$:/core/images/video}}
+image: 时间管理改变命运_卢绪文.jpg
+link: 时间管理改变命运-卢绪文
+linkcolor: <<colour primary>>
+modified: 20220701153829004
+tags: Others Ongoing Examples Course
+title: 时间管理改变命运-卢绪文
+tmap.id: ecdec654-bea1-4358-95e8-ec72f3e3b9d5
+type: text/vnd.tiddlywiki
+
+!! 课程目录
+
+@@.list-tree
+* [[课时1　时间管理的本质与内容|时间管理改变命运/课时1/时间管理的本质与内容]]
+* [[课时2　时间去哪儿了？|时间管理改变命运/课时2/时间去哪儿了？]]
+* [[课时3　列清单，排优先，抓重点|时间管理改变命运/课时3/列清单，排优先，抓重点]]
+* [[课时4　简洁沟通，简化工作|时间管理改变命运/课时4/简洁沟通，简化工作]]
+* [[课时5　目标计划，拒绝干扰|时间管理改变命运/课时5/目标计划，拒绝干扰]]
+* [[课时6　条理工作，日清日省|时间管理改变命运/课时6/条理工作，日清日省]]
+* [[课时7　职业心态，借势借力|时间管理改变命运/课时7/职业心态，借势借力]]
+@@
+
+
+!! 课程地址
+
+https://study.163.com/course/courseLearn.htm?courseId=725014#/learn/video?lessonId=890088&courseId=725014

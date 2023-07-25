@@ -1,0 +1,59 @@
+created: 20210720030953769
+modified: 20220819093628659
+tags: Git Examples Howto
+title: Git Commit 提交规范
+tmap.id: bae0ee69-6873-4850-a9a0-84c2878895b6
+url: http://www.ruanyifeng.com/blog/2016/01/commit_message_change_log.html
+urltitle: Commit message 和 Change log 编写指南 - 阮一峰
+
+! 格式
+
+Commit message 包括三个部分：Header，Body 和 Footer。
+
+```
+<type>(<scope>): <subject>
+// 空一行
+<body>
+// 空一行
+<footer>
+```
+
+其中，Header 是必需的，Body 和 Footer 可以省略。
+
+不管是哪一个部分，任何一行都不得超过 72 个字符（或 100 个字符）。这是为了避免自动换行影响美观。
+
+!!.red Header
+
+Header 部分只有一行，包括三个字段：''type''（必需）、''scope''（可选）和 ''subject''（必需）。
+
+# ''type''　用于说明 commit 的类别，主要使用下面 7 个标识。<div><div class="blue-box">
+"""
+feat：新功能（feature）
+fix：修补bug
+docs：文档（documentation）
+style：格式（不影响代码运行的变动）
+refactor：重构（即不是新增功能，也不是修改bug的代码变动）
+test：增加测试
+chore：构建过程或辅助工具的变动
+"""
+</div>
+"""
+如果 type 为 `feat` 和 `fix`，则该 commit 将肯定出现在 Change log 之中。其他情况（docs、chore、style、refactor、test），建议不要放入 Change log。
+"""
+<br>
+</div>
+
+# ''scope''　用于说明 commit 影响的范围，比如数据层、控制层、视图层等等，视项目不同而不同。
+
+# ''subject''　是 commit 目的的简短描述，不超过 50 个字符。<div class="blue-box">
+"""
+以动词开头，使用第一人称现在时，比如 change，而不是 changed 或 changes
+第一个字母小写
+结尾不加句号（.）
+"""
+</div>
+
+
+! 其他
+
+* [[Commitizen|https://github.com/commitizen/cz-cli]] 是一个撰写合格 Commit message 的工具。

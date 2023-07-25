@@ -1,0 +1,30 @@
+created: 20191016025732445
+modified: 20210712102513028
+tags: 自定义 Examples [[How to apply custom styles]]
+title: 自定义内容的显示字体
+tmap.id: c1f15f9c-2ff6-48c9-94cf-2391604ce690
+
+<link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Alex Brush' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Akronim' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Annie Use Your Telescope' rel='stylesheet'>
+
+<style>
+.st2 {font-family: 'Playfair Display';font-size: 42px;}
+.st3 {font-family: 'Sofia';font-size: 42px;}
+.st4 {font-family: 'Alex Brush';font-size: 42px;}
+.st5 {font-family: 'Akronim';font-size: 42px;}
+.st6 {font-family: 'Annie Use Your Telescope';font-size: 42px;}
+</style>
+
+<h1 class="st2">'Playfair Display'  1234567890 ABC abc</h1>
+<h1 class="st3">'Sofia'  1234567890 ABC abc</h1>
+<h1 class="st4">'Alex Brush'  1234567890 ABC abc</h1>
+<h1 class="st5">'Akronim'  1234567890 ABC abc</h1>
+<h1 class="st6">Sofia  1234567890 ABC abc</h1>
+
+
+---
+
+* [[How can I embed a font into Tiddlywiki?|https://stackoverflow.com/questions/57726122/how-can-i-embed-a-font-into-tiddlywiki]]

@@ -1,0 +1,16 @@
+caption: 标题列表
+created: 20150117152418000
+modified: 20210423053751048
+tags: 中 Concepts TiddlyWiki
+title: Title List
+tmap.id: f9168970-81ca-49b8-b3f4-baf3196fa926
+
+一个<<.def "title list">>（标题列表）是一行文字，表示一个或多个条目的标题，并在每一个和下一个之间串联一个空格。
+
+如果一个标题<<.em contains>>（包含）一个空格，则需要用双方括号把它括起来：
+
+`GettingStarted [[Discover TiddlyWiki]] Upgrading`
+
+标题列表在多个地方使用，包括PermaLinks和ListField。
+
+它们实际上是[[过滤器|Filters]]的最简单情况，因而也是[[标题筛选|Title Selection]]的一种表达方式。

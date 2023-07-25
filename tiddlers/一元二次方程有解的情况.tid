@@ -1,0 +1,21 @@
+created: 20230624005922211
+modified: 20230624010507661
+tags: 
+title: 一元二次方程有解的情况
+tmap.id: 2e66feac-c8c9-49a3-8805-7aaf392a105e
+
+$$
+y=ax^x+bx+c \\
+\Delta=b^2-4ac
+\ \\
+\ \\
+ \begin{align*} 
+当 \Delta &>0时，有两个不同的实数解。
+\  \\
+当 \Delta &=0时，只有一个解。（也可以说有两个相同的实数解）
+\  \\
+当 \Delta &<0时，无解。（无实数解） 
+\end{align*}
+
+
+$$

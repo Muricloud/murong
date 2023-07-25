@@ -1,0 +1,12 @@
+caption: 简单
+created: 20150221201838000
+modified: 20211209055616330
+order: 1
+tags: 中 table-of-contents-example TiddlyWiki 常用目录宏
+title: Example Table of Contents: Simple
+tmap.id: d41a27f6-7589-42e0-a6e8-092a078b0412
+
+<$macrocall $name=".example" n="1"
+eg="""<div class="tc-table-of-contents">
+<<toc "Contents">>
+</div>"""/>

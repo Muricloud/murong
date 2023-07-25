@@ -1,0 +1,11 @@
+caption: version：版本号宏
+created: 20131228162448664
+modified: 20200901042844580
+tags: 中 Macros [[Core Macros]] TiddlyWiki
+title: version Macro
+tmap.id: f926ce03-d716-40f7-82ad-66ad715fa406
+type: text/vnd.tiddlywiki
+
+<<.def version>>（版本号）[[宏|Macros]]返回~TiddlyWiki的当前版本号。
+
+<<.macro-examples "version">>

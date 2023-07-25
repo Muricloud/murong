@@ -1,0 +1,11 @@
+color: #bbb
+created: 20230513004836639
+icon: $:/xp/images/faq
+list: [[Jeremy Ruston？]] [[TiddlyWiki 教程？]] [[TiddlyWiki 是如何发明的？]] [[TiddlyWiki 的特异功能？]] [[TiddlyWiki 的缺点？]] [[TiddlyWiki 论坛？]] [[寻找 TiddlyWiki 插件？]] [[我想使用 TiddlyWiki XP？]] $:/plugins-my-works/changelog
+modified: 20230601003721903
+title: FAQ
+tmap.id: fa48608f-8225-44a5-be07-7f80b9327725
+
+<small><i class="tc-muted">如果你阅读文档花费了很多时间，那么写文档的人一定付出了更多时间。如果你感觉软件学起来很难，那么发明者创造它的过程一定更难！</i></small>
+
+<<list-questions-autoclose tag:"FAQ" sort:"" prompt:"">>

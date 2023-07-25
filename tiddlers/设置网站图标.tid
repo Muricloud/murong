@@ -1,0 +1,15 @@
+created: 20200802095147047
+modified: 20220904042227089
+tags: XP-tutorials 自定义
+title: 设置网站图标
+tmap.id: b3d77acd-a07b-494f-9e97-c3cbd4e95615
+
+[img[$:/favicon.ico]] 
+
+将图标导入后，命名为 $:/favicon.ico 覆盖原有文件。
+
+!! 启动画面
+
+你可以修改启动画面，为生活增添一点小乐趣！
+
+{{$:/plugins/xp/splashscreen/settings}}

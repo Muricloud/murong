@@ -1,0 +1,57 @@
+created: 20230704052255845
+modified: 20230704054810408
+title: 等式性质与不等式性质
+tmap.id: 1cbd68a9-8aeb-4d81-8821-a973102451e9
+
+!! 等式与不等式的性质
+
+<table>
+<th></th>
+<th>等式</th>
+<th>不等式</th>
+<tr>
+<td>对称性</td>
+<td>$$ a=b \Leftrightarrow b=a 
+$$</td>
+<td>$$ a>b \Leftrightarrow b<a 
+$$</td>
+</tr>
+<tr>
+<td>传递性</td>
+<td>$$ a=b，b=c \Leftrightarrow a=c 
+$$</td>
+<td>$$ a>b，b>c \Leftrightarrow a>c 
+$$</td>
+</tr>
+<tr>
+<td>加法</td>
+<td>$$ a=b \Rightarrow a {\tiny 土}c=b{\tiny 土}c
+$$</td>
+<td>$$ a>b \Rightarrow  a+c>b+c
+$$ 
+<hr>
+$$ a>b,c>d \Rightarrow a+c>b+d
+$$</td>
+</tr>
+
+<tr>
+<td>乘法</td>
+<td>$$ a=b \Rightarrow ac=bc 
+$$<br>
+$$ a=b,c \neq 0 \Rightarrow \frac{a}{c} = \frac{b}{c}
+$$
+</td>
+<td>$$ a>b,c>0 \Rightarrow ac>bc 
+$$<br>
+$$ a>b,c<0 \Rightarrow ac<bc 
+$$<br>
+<hr>
+$$a>b>0,c>d>0 \Rightarrow ac>bd
+$$
+<hr>
+$$ a>b>0  \Rightarrow a^n > b^n \\
+(n \in N ,n \geq 2)
+$$
+</td>
+</tr>
+</table>

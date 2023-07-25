@@ -1,0 +1,13 @@
+caption: 斯坦福JavaScript加密库
+created: 20150624235333601
+modified: 20200901042844557
+tags: 中 Definitions TiddlyWiki
+title: Stanford JavaScript Crypto Library
+tmap.id: 74872d66-dd06-47d0-976b-0a8893368b7d
+url: http://bitwiseshiftleft.github.io/sjcl/
+
+! 斯坦福JavaScript加密库
+
+斯坦福JavaScript加密库是斯坦福大学计算机安全实验室的一个项目，旨在为Javascript中的加密技术构建一个安全、功能强大、快速、小巧、易于使用的跨浏览器库。
+
+{{!!url}}

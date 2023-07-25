@@ -1,0 +1,72 @@
+caption: TiddlyWiki的历史
+created: 20140908114400000
+modified: 20171202135946601
+tags: 中 About XP-tutorials
+title: History of TiddlyWiki
+tmap.id: 0a8148ce-682d-4089-9e20-267fba8798fe
+type: text/vnd.tiddlywiki
+
+//这些是 Jeremy Ruston 对 TiddlyWiki 历史和发展的个人反思。//
+
+//There is also a [[podcast from 2016|https://changelog.com/podcast/196]] discussing TiddlyWiki's backstory as well as a [[recording from 2021|https://twit.tv/shows/floss-weekly/episodes/620]].//
+
+!! TiddlyWiki 的起源
+
+早在 1997 年，一位同事向我介绍了[[沃德·坎宁汉姆的原始维基|http://c2.com/cgi/wiki]]。我印象深刻的是，如此强大的东西可以纳入只有 700 行的 Perl，并着迷于对安全和权限彻底的重新构想。像其他许多开发者一样，我利用一切机会尝试各种维基，探索他们在工作中的应用。
+
+对我来说，维基的魅力在于它最终会打破主流的面向打印文档和电子邮件的范式。
+
+在观察人们使用维基几年之后，我注意到高级用户广泛使用了在多个浏览器标签中一次打开多个维基页面的功能，使他们能够更容易地比较和查看页面，在它们之间复制文本并对还未阅读的页面排队。
+
+我觉得这种一次处理多个页面的能力对于重构一个维基的功能至关重要，并且人们普遍认为一个被精心重构的维基可能更有用。 而标准的维基用户界面一直是专门为单一页面的显示和操作而设计的。
+
+当我在 2004 年 4 月看到 GMail 时，所有这些想法都汇聚在一起，它巧妙地使用 Ajax 将各别的电子邮件融合到线程化会话中。
+
+我开始尝试使用 HTML 和 JavaScript 来进一步探索这个想法。我之前几乎没有任何经验，只做过把几个静态页面和简单的 ASP 网站放在一起。这些客户端技术绕的我头痛，像其他人一样，我很惊讶地发现网络编程的不兼容性和不一致性令人震惊。
+
+!! TiddlyWiki 的推出
+
+于是，在 2004 年 9 月，我发布了一个原始的 [[TiddlyWiki 的第一个版本|https://classic.tiddlywiki.com/firstversion.html]]。这是展示这个想法的没可能再小的东西：它是一个 48KB 的简单的、自包含的静态 HTML 文件。
+
+以这种方式编写 TiddlyWiki 的第一个版本的缺点是，它使得用它来编辑完全不切实际 - 当你点击“保存更改”时，它只是弹出一个窗口，显示将被保存的数据，如果有可能将 HTML 页面写入文件系统的话。
+
+很多早期的反馈意见是 TiddlyWiki 很整洁，但是如果可以妥善保存更改，它会更有用。我有点沮丧，因为我知道浏览器中运行的 HTML 文件不可能将更改保存到本地文件系统。
+
+在几个月内，我看到了一个实验性的 Firefox 扩展，使 TiddlyWiki 能够在浏览器中保存更改。检查代码后，我意识到，用于写入文件系统的 API 实际上可以在普通的 HTML 文件中使用，只要它们是通过  `file://` URI 加载的。
+
+我将 Firefox 代码改编到了 TiddlyWiki 的核心，并很快为 Internet Explorer 添加了一个类似的功能（利用 Microsoft 分发给 Internet Explorer 的旧 ActiveX 控件）。
+
+!! TiddlyWiki 的成长
+
+TiddlyWiki 成长的一个重要里程碑是由 Nathan Bowers 创作的“GTDTiddlyWiki”。他用了香草 TiddlyWiki 产品，并将其改编为具体的应用程序，使用流行的 Getting Things Done 方法跟踪任务。GTDTiddlyWiki 立即在像 LifeHacker 这样的网站受到热烈欢迎。
+
+在接下来的几年中，TiddlyWiki 继续流行，并获得了新的特性和功能。在一年之内，我通过在 TiddlyWiki 上进行定制开发工作来支持自己，尤其是与维基先驱 SocialText 就与在线服务同步更改的功能上的合作。
+
+!! BT 收购
+
+2007 年 5 月，[[BT]] 收购了我的咨询公司 [[Osmosoft]]。从一个员工手中收购一家公司，收入微不足道，这是一个不寻常的决定 - [[Osmosoft]] 甚至没有拥有 TiddlyWiki 的知识产权，因为我把它交给了 UnaMesa，以确保社区的未来。
+
+[[BT]] 的动机是帮助他们了解基于社区的生态系统。我作为“开源创新负责人”加入了该组织，负责开源治理，并就如何参与开源社区提供建议和专业知识。
+
+!! [[Osmosoft]] 和 TiddlySpace
+
+我以 [[Osmosoft]] 的名义在 BT 建立了一个团队。我们的目的是传播开源的好处，并帮助其他团队在实践中认识到这些好处。我们也发现有必要推广普及网络使用，尤其是网络标准。
+
+我们的方法是专注于展示而不是告诉。我们与 TiddlyWiki 社区合作来扩展生态系统，我们还为 BT 建立了许多内部系统（某些是基于 TiddlyWiki 而某些不是）。
+
+[[Osmosoft]] 对 TiddlyWiki 社区的主要贡献是创建了 TiddlyWeb 和 TiddlySpace。TiddlyWeb 是一个强大的、互联网规模的条目服务器，也可以组装这些条目的 TiddlyWiki 视图。TiddlySpace 则试图将 TiddlyWeb 打包成更直接易用的形式。
+
+!! 离开 BT
+
+到 2011 年底，我越来越觉得，我更愿意到 BT 企业范围之外去认识 TiddlyWiki 的潜力。因此，我离开并开始了作为独立开发者的工作，主要工作是在 TiddlyWiki5 形式下 TiddlyWiki 的全新重启。
+
+!! TiddlyWiki5 的开发
+
+我从 2011 年 11 月开始致力于 TiddlyWiki 新版本。作为一名程序员，我已经写就的“2.0 版本”是一个非常有吸引力的命题。这意味着需求被完全理解，使我能够专注于开发支持目标功能的体系结构。
+
+!! 未来
+
+现在，TiddlyWiki5 终于脱离了“测试版”的状态，我希望它会有很长的寿命。因为它只使用 HTML5 和 Node.js 的标准功能，所以没有理由在未来很多年里它不能全功能运行。我的目标是持续至少 25 年。
+
+//Jeremy Ruston，2014 年 9 月 20 日//
+

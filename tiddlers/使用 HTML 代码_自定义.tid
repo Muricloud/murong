@@ -1,0 +1,14 @@
+caption: 自定义
+created: 20211214232232984
+modified: 20211214232258732
+tags: XP-tutorials [[使用 HTML 代码]]
+title: 使用 HTML 代码/自定义
+tmap.id: a0ec4fb9-2320-46ae-8d83-7fef60cfe7ff
+
+!! 自定义信息提示样式
+
+这里有个例子：
+
+* $:/plugins/.mr/shiraz/demo/note
+* $:/plugins/.mr/shiraz/macro/classic-note
+* $:/plugins/.mr/shiraz/stylesheet/note

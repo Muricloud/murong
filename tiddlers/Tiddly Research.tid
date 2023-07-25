@@ -1,0 +1,25 @@
+caption: Tiddly Research
+created: 20220723140501268
+description: tiddlystudy
+linkcolor: 
+modified: 20220819085810341
+revision: 0
+tags: [[Community Plugins]] [[Plugin Card]] [[TW Editions]]
+title: Tiddly Research
+tmap.id: d07177d9-eb68-4d4e-b95f-c8be2320bdda
+type: text/vnd.tiddlywiki
+url: https://github.com/postkevone/TiddlyResearch <br> https://github.com/postkevone/tiddlystudy
+
+{{!!url}}
+
+Tiddly Research is a distribution of TiddlyWiki5 that includes the following plugins and tweaks:
+
+Context Plugin: visual highlight for search results
+Krystal: horizontal view
+Notebook: custom dark theme
+preview: tiddler preview when hovering internal links
+References: bidirectional note linking on multiple levels
+Relink: automatic re-linking and tiddler renaming
+Streams: bullet point based hierarchical note taking structure
+Tiddlyremember: Anki export and sync
+Todos: todos management

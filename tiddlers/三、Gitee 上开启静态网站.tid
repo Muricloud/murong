@@ -1,0 +1,35 @@
+created: 20210107135149224
+modified: 20210715091356388
+tags: XP-tutorials
+title: 三、Gitee 上开启静态网站
+tmap.id: 8cdfb54d-9649-48cf-929a-5563040cfdc1
+
+通常个人笔记是不公开的，不需要开启静态网站。如果维基要公开的话，参考下方开启静态网站。
+
+!! 将维基导出为 index.html
+
+为了方便，在 mywiki 中新建一个 [[build.sh]] 脚本。
+
+```bash
+vim build.sh
+chmod 755 build.sh
+./build.sh
+```
+
+!! 推送更新
+
+```
+./deploy.sh  Write your commit message here
+```
+
+!! 开启静态网站
+
+> 官方说明：https://gitee.com/help/articles/4136#article-header3
+
+回到 Gitee 上 mywiki 仓库，选择 pages 服务：
+
+[img width=900 [开启mywiki的pages服务.png]]
+
+勾选「Enforce HTTPS」后直接启动服务，访问生成的网站地址，就可以查看你部署的静态页面啦！
+
+> ''注意''　Gitee 不会自动重新部署网站，所以每次更新站点内容，你都需要到「Gitee Pages」手动更新。

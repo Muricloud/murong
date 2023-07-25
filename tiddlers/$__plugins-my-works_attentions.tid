@@ -1,0 +1,29 @@
+caption: Matters Need Attention
+created: 20220626091250016
+modified: 20220904060345745
+tags: $:/tags/MyWorks XP-tutorials
+title: $:/plugins-my-works/attentions
+
+\define lingo-base() $:/language/ControlPanel/
+
+!! 开发插件注意事项
+
+* 插件标题全部小写。参照 `$:/plugins/tiddlywiki/codemirror-search-replace`。
+* 插件条目的标题“必须”以 `$:/` 开头，也就是成为系统条目，以避免困扰到用户。
+*> 插件 tiddlymap 会给非系统条目添加字段 `tmap.id`，如果插件中存在非系统条目，tiddlymap 可能会制造麻烦。我遇到过一种情况，无法通过删除普通条目使其恢复到插件中的影子条目。禁用 tiddlymap 后，才能删除。
+*> 如果条目确实不想以 `$:/` 开头，最好保留 `tmap.id` 的字段值。
+* 去字段化：插件配置参数存储到一个条目里，而非一个自定义的字段里。
+** 比如侧边栏宽度存储于条目 $:/themes/tiddlywiki/vanilla/metrics/sidebarwidth。假设将值存储到样式条目 $:/themes/tiddlywiki/vanilla/base 的 `sidebarwidth` 字段里，虽然也能工作，但做法不正确。
+* 插件条目命名：尽量参考官方相关条目的命名方式：[[Naming of System Tiddlers|https://tiddlywiki.com/static/Naming%2520of%2520System%2520Tiddlers.html]]。
+* 重命名宏：不要直接去修改核心宏或者社区插件中的宏，应该将原来的宏复制出来重命名，然后再做修改。
+
+
+!! 模板条目
+
+统一命名格式：`$:/templates/用途-备注`，全部小写。比如：`$:/templates/popup-animate`
+
+当前模板条目有：
+
+<$list filter="[all[tiddlers+shadows]prefix[$:/templates]sort[title]limit[1]]">
+  <$macrocall $name="tabs" tabsList="[all[tiddlers+shadows]prefix[$:/templates]sort[]]" default={{!!title}} class="tc-vertical"/>
+</$list>

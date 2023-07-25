@@ -1,0 +1,81 @@
+created: 20210519120614563
+modified: 20230301171438986
+tags: XP-tutorials
+title: Node.js 下安装自定义插件
+tmap.id: cc4d48fc-058c-412c-b2ea-cbd64409a6e5
+url: 
+
+; [[Installing custom plugins on Node.js|https://tiddlywiki.com/static/Installing%2520custom%2520plugins%2520on%2520Node.js.html]]
+: 自定义插件：即非 TiddlyWiki 官方插件库中的插件。 
+
+!! 自定义插件库
+
+首先，创建一个名为 `MyPluginStore` 的文件夹作为自定义插件库，将自定义插件全部放到里面。
+
+插件通常具有 `$:/plugins/<publisher>/<name>` 形式的标题。所以，将 `<publisher>` 这个文件夹放到自定义插件库中即可。
+
+<div class="gray-box">
+
+插件库的目录结构，你可以在 {{download xp server}} 中的 `MyPluginStore` 进行查看。
+
+Linux 上可使用以下命令，查看 TiddlyWiki 官方插件库的目录结构：
+
+```bash
+tree -L 2 /usr/lib/node_modules/tiddlywiki/plugins/
+```
+</div>
+<div class="purple-box">
+
+自定义插件库的好处：
+
+# 集中化管理插件。它降低了维护成本，因为所有插件都可以一次更新。
+#> 如果通过拖拽导入插件，每次升级插件，你需要逐个升级你的所有维基。如果你有 10 个 TW（服务器版或者单文件版），这将增加 10 倍以上的维护成本。当然，如果所有插件都可在像 [[CPL|https://tw-cpl.netlify.app]] 这种在线插件库中更新，那么确实非常省事！
+# 多设备共用插件库。将自定义插件库存储到云端仓库，在多个设备之间同步插件库。
+#> 比如电脑和手机上都使用服务器版 TiddlyWiki。
+
+自定义插件库的隐患：
+
+* 理论上讲，你可能会安装到恶意插件，导致你的电脑中毒！
+
+<c style="color:Crimson;">特别提醒：不要将自定义插件放到官方插件库中。升级 TiddlyWiki 会重置官方插件库，你的插件将灰飞烟灭！</c>
+
+</div>
+
+!! 安装插件
+
+;方法一（推荐）
+: 设置操作系统[[环境变量|Environment Variables on Node.js]]来告诉 TiddlyWiki 搜索 ''~MyPluginStore''，然后在 `tiddlywiki.info` 中安装插件。
+
+;方法二
+: 先在 `tiddlywiki.info` 中安装插件，然后在启动命令中加载自定义插件库：`tiddlywiki ++/path/to/MyPluginStore mywiki --listen`。
+
+!! 插件加载顺序
+
+[[Plugin Ordering]]
+
+
+!! 安装案例
+
+# 自定义插件库的位置为：`/DATA/TW/MyPluginStore`
+# 设置操作系统[[环境变量|Environment Variables on Node.js]]。比如 Linux 上，`vim ~/.bashrc` 添加：<div>
+
+```
+export TIDDLYWIKI_PLUGIN_PATH="/DATA/TW/MyPluginStore"
+export TIDDLYWIKI_EDITION_PATH="/DATA/TW/MyEditions"
+```
+</div>然后 `source ~/.bashrc` 或者重启终端。
+#> 通过 `printenv TIDDLYWIKI_PLUGIN_PATH` 可以查看该变量的值。这里顺便设置了自定义版本库 `TIDDLYWIKI_EDITION_PATH`。
+# 下载社区插件的源码包，将 `<publisher>` 文件夹放到自定义插件库中。比如下载插件 [[TW-Shiraz|https://github.com/kookma/TW-Shiraz]] 的源码包，解压后将 source 下的文件夹 shiraz 储存到 `MyPluginStore/kookma` 中（需要手动新建 kookma 文件夹）。
+#> 源代码或者发行版的目录结构最好参照官方插件库的目录结构 `plugins/kookma/shiraz`，或者 `source/kookma/shiraz` `dist/kookma/shiraz`。
+# 编辑 `tiddlywiki.info` 文件，添加插件条目 ''kookma/shiraz''。（见下文）
+# 注意保留逗号以分隔项目，但不要用逗号来结束列表中的最后一项
+# 重新启动服务器
+
+```
+    "plugins": [
+        "tiddlywiki/tiddlyweb",
+        "tiddlywiki/filesystem",
+        "tiddlywiki/highlight",
+        "kookma/shiraz"
+    ],
+```

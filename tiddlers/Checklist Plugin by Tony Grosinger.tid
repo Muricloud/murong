@@ -1,0 +1,14 @@
+caption: Checklist
+created: 20210619143927880
+modified: 20220819085510680
+moscow: C
+tags: [[Community Plugins]] [[Plugin Card]] XP-tutorials
+title: Checklist Plugin by Tony Grosinger
+tmap.id: a27514a2-a861-47bb-a8a3-3c821680ace2
+url: https://github.com/tgrosinger/tw5-checklist
+
+{{!!url}}
+
+This plugin provides a simple checklist which does not create a new tiddler for each task. 
+
+* $:/plugins/tgrosinger/tw5-checklist

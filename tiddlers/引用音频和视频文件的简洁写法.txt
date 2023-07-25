@@ -1,0 +1,7 @@
+使用 <audio> 标签来嵌入音频文件。例如：
+
+<audio src="./ext/audio/sample.mp3" controls />
+
+使用 <video> 标签来嵌入视频文件。例如：
+
+<video src="./ext/video/sample.mp4" controls />

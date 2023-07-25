@@ -1,0 +1,56 @@
+caption: 安装 ~TiddlyWiki
+color: #F06292
+created: 20131219100608529
+delivery: DIY
+description: Flexible hosting on your own machine or in the cloud
+method: sync
+modified: 20210423053751042
+tags: [[TiddlyWiki on Node.js]] XP-tutorials
+title: Installing TiddlyWiki on Node.js
+tmap.id: 8bd8fdf1-7771-404a-a4df-bb1c5c0aabf8
+type: text/vnd.tiddlywiki
+
+# 安装 [[Node.js]]
+#* 通过您喜欢的软件包管理器安装：通常，在 Debian/Ubuntu Linux 上是用 `sudo apt install nodejs`，在 Android 系统上是用 [[Termux for Android|Serving TW5 from Android]]，在 Mac 上是用 `brew install node`
+
+#* 或者直接从 http://nodejs.org 安装
+# 打开命令行终端并键入：
+#> `npm install -g tiddlywiki`
+#> 如果因出现错误而失败，您可能需要以管理员身份重新运行该命令：
+#> `sudo npm install -g tiddlywiki` （Mac/Linux）
+#> `-g` 标志导致TiddlyWiki为全局安装。 没有它，TiddlyWiki只能在您安装它的目录中可用。
+
+# 输入以下内容，检查TiddlyWiki是否安装：
+#> `tiddlywiki --version`
+# 作为回应，您应该看到TiddlyWiki报告其当前版本（例如 "<<version>>"; 您可能还会看到报告的其他调试信息）
+# 试试看：
+## `tiddlywiki mynewwiki --init server` 为新维基创建一个文件夹，其中包含服务器相关的组件
+## `tiddlywiki mynewwiki --listen` 启动 TiddlyWiki
+## 在你的浏览器中访问 http://127.0.0.1:8080/ 
+## 尝试编辑和创建一些条目
+## 一个支持自动保存和文件独立存储的 TiddlyWiki 就这么搭起来了
+# 可选，制作脱机副本：
+#*点击侧边栏中的''保存变更''按钮 <<.icon $:/core/images/save-button>>，''或者''
+#* `tiddlywiki mynewwiki --build index`
+
+
+如果您正在使用Debian或基于Debian的Linux，并且在安装node.js软件包时收到 `node：command not found ` 的错误，则您可能需要在 `nodejs` 和 `node` 之间创建一个符号链接。 请查阅您的发行手册和 `whereis` 来正确地创建链接。 参见 github [[issue 1434|http://github.com/Jermolene/TiddlyWiki5/issues/1434]]
+
+例如 Debian v8.0：`sudo ln -s /usr/bin/nodejs /usr/bin/node`
+
+你也可以像这样安装以前的版本：
+
+> npm install -g tiddlywiki@5.1.13
+
+
+
+!! npm 将软件包安装到哪里
+
+全局的位置到底在哪里？
+
+* `npm root -g` 命令会告知其在计算机上的确切位置。
+** 参阅 [[npm 将软件包安装到哪里|http://nodejs.cn/learn/where-does-npm-install-the-packages]]
+
+升级 npm
+
+* `sudo npm install -g npm`

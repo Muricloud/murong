@@ -1,0 +1,17 @@
+created: 20230301154123775
+modified: 20230301154200302
+tags: XP-tutorials
+title: $:/annotation/example
+
+这里是批注的内容部分。
+
+可以正常呈现 WikiText 语法。一般使用纯文本和链接功能就够了。
+
+<<tabs "tabsList TAB2 TAB3" "tabsList" "$:/state/tab5">>
+
+!! 二级标题
+
+* 项目列表
+* 项目列表
+* 项目列表
+* TiddlyWiki

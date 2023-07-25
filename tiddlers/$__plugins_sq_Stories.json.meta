@@ -1,0 +1,14 @@
+core-version: >=5.0.0
+created: 20200729135650113
+dependents: $:/plugins/xp/leftopentab $:/plugins/felixhayashi/tiddlymap $:/plugins/felixhayashi/vis $:/plugins/felixhayashi/hotzone
+description: Add a second column to a TiddlyWiki layout using the default layout
+list: settings changelog
+modified: 20230315105557923
+modifier: kl
+name: Stories
+plugin-type: plugin
+revision: 0
+source: https://giffmex.org/stroll/stroll.html#%24%3A%2Fplugins%2Fsq%2FStories
+title: $:/plugins/sq/Stories
+type: application/json
+version: 1.0.3.17

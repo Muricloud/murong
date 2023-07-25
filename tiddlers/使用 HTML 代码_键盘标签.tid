@@ -1,0 +1,14 @@
+caption: 键盘标签
+created: 20211214231633858
+modified: 20211214232356259
+tags: XP-tutorials [[使用 HTML 代码]]
+title: 使用 HTML 代码/键盘标签
+tmap.id: 302e1240-a3b3-4437-8130-09d540550614
+
+!! 键盘标签
+
+```
+<kbd>ctrl-C-C</kbd>
+```
+
+<kbd>ctrl-C-C</kbd>

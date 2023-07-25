@@ -1,0 +1,25 @@
+caption: tag
+created: 20140410103123179
+modified: 20210713025222395
+op-input: 一个[[标题选集|Title Selection]]
+op-neg-output: 输入条目中不带标签 <<.place T>> 的
+op-output: 输入条目中带有标签 <<.place T>> 的
+op-parameter: 一个[[标签|Tagging]]条目的标题
+op-parameter-name: T
+op-purpose: 使用标签筛选、排序输入条目
+op-suffix: <<.from-version "5.1.14">> 可选的 `strict` （严格）标记
+op-suffix-name: S
+tags: 中 [[Filter Operators]] [[Common Operators]] [[Tag Operators]] [[Negatable Operators]] TiddlyWiki
+title: tag Operator
+tmap.id: 9131acc5-84a3-4cf4-9af3-09e5573f0f05
+type: text/vnd.tiddlywiki
+
+输出结果会使用标签条目的 <<.field list>> 列表字段和条目本身的 <<.field list-before>> 及 <<.field list-after>> 字段进行排序。
+
+当 <<.place T>> 为空，则行为取决于 <<.place S>> 这个可选后缀的设置：
+
+* 如果 <<.place T>> 丢失并且后缀  <<.place S>> 或者丢失或者设为 "loose"（宽松），则 `tag` 操作符输出为空，`!tag` 的输出为输入的副本。
+
+* <<.from-version "5.1.14">> 如果 <<.place T>> 丢失并且后缀 <<.place S>> 被设置为 "strict"（严格），则 `tag` 和 `!tag` 的输出均为输入的副本。
+
+<<.operator-examples "tag">>

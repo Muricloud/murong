@@ -1,0 +1,19 @@
+caption: 术语定义
+created: 20131205160424246
+modified: 20200901042844520
+tags: 中 WikiText TiddlyWiki
+title: Definitions in WikiText
+tmap.id: b8761e03-ce34-4df0-ab1b-31aefee3b1ae
+type: text/vnd.tiddlywiki
+
+```
+; 术语
+: 该术语的定义
+; 另一个术语
+: 另一个定义
+```
+
+; 术语
+: 该术语的定义
+; 另一个术语
+: 另一个定义

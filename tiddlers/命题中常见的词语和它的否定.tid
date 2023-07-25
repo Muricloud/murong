@@ -1,0 +1,46 @@
+created: 20230705103800102
+modified: 20230705104229862
+tags: 
+title: 命题中常见的词语和它的否定
+tmap.id: 0622c8c0-ada6-4e6a-8af5-63d38f3b4418
+
+<table>
+<th>词语</th>
+<th>否定</th>
+<tr>
+<td>都是</td>
+<td>不都是</td>
+</tr>
+<tr>
+<td>大于</td>
+<td>小于或等于</td>
+</tr>
+<tr>
+<td>小于</td>
+<td>大于或等于</td>
+</tr>
+<tr>
+<td>必有一个</td>
+<td>一个也没有</td>
+</tr>
+<tr>
+<td>至少有n个</td>
+<td>至多有(n-1)个</td>
+</tr>
+<tr>
+<td>至多有一个</td>
+<td>至少有两个</td>
+</tr>
+<tr>
+<td>至多有n个</td>
+<td>至少有(n+1)个</td>
+</tr>
+<tr>
+<td>所有x成立</td>
+<td>存在一个x不成立</td>
+</tr>
+<tr>
+<td>所有x不成立</td>
+<td>存在一个x成立</td>
+</tr>
+</table>

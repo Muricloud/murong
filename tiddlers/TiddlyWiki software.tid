@@ -1,0 +1,19 @@
+caption: TiddlyWiki
+color: 
+created: 20220205190725795
+description: a non-linear personal web notebook  一个非线性的个人网络笔记本
+modified: 20220819092534457
+moscow: S
+purpose: 管理笔记
+tags: Windows macOS Linux Android iOS 教育 Examples [[Should have]] Software
+title: TiddlyWiki software
+tmap.id: dfa8a9dd-87be-41bf-bfb8-cc994d1ec60c
+url: https://tiddlywiki.com/
+
+{{!!description}}
+
+使用教程：
+
+* https://github.com/keatonlao/tiddlywiki-xp
+
+{{emoji love}}

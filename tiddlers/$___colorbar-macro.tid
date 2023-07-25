@@ -1,0 +1,24 @@
+created: 20180202173228936
+modified: 20210419054934204
+tags: $:/tags/Macro XP-tutorials
+title: $:/_colorbar-macro
+
+\define colorbar(color, width:"100",height:"20")
+<svg width="$width$" height="$height$">
+  <rect fill="$color$" x="0" y="0" width="$width$" height="$height$"/>
+</svg>
+\end
+
+```
+\define colorbar(color, width:"100",height:"20")
+<svg width="$width$" height="$height$">
+  <rect fill="$color$" x="0" y="0" width="$width$" height="$height$"/>
+</svg>
+\end
+```
+
+```
+usage:
+<<colorbar #FFFFFF width height>>
+<<colorbar red 100 20>>
+```

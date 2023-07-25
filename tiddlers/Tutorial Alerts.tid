@@ -1,0 +1,9 @@
+caption: Alerts
+created: 20190912115757399
+modified: 20200901042808905
+tags: XP-tutorials
+title: Tutorial Alerts
+tmap.id: d2efa1ad-032a-4b7e-b909-a7496aff8d14
+type: text/vnd.tiddlywiki
+
+<<tabs tabsList:"[tag[alert]!tag[advanced]prefix[demo]]" default:"demo/alert-macro" class:"tc-horizontal">>

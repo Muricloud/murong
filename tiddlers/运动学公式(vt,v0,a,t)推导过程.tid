@@ -1,0 +1,14 @@
+created: 20230623122230841
+modified: 20230623123311626
+tags: 
+title: 运动学公式(vt,v0,a,t)推导过程
+tmap.id: 59988940-fbdf-4c93-8aac-1640f7e96213
+
+$$已知a=  \frac{\Delta v}{\Delta t} \\
+ \ \\
+ \Delta v=v_t-v_0\\
+  \ \\
+ a=  \frac{ v_t-v_0}{\Delta t} ,其实\Delta t=t \\
+  \ \\
+ v_t=v_0+at
+ $$

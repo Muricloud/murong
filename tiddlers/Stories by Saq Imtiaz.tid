@@ -1,0 +1,16 @@
+caption: Stories
+created: 20210619134856702
+modified: 20220819085746954
+moscow: M
+tags: [[Community Plugins]] [[Plugin Card]] XP-tutorials
+title: Stories by Saq Imtiaz
+tmap.id: 2604b631-09af-4ec1-aaad-1f6e9f08c1f4
+url: https://giffmex.org/stroll/stroll.html#%24%3A%2Fplugins%2Fsq%2FStories
+
+{{!!url}}
+
+* https://saqimtiaz.github.io/sq-tw/stories.html#%24%3A%2Fplugins%2Fsq%2FStories
+
+Add a second column to a TiddlyWiki layout using the default layout
+
+* $:/plugins/sq/Stories ,,@@color:Red;//modified//@@,,

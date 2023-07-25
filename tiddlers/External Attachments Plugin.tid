@@ -1,0 +1,12 @@
+caption: 外部附件插件
+created: 20171031172325817
+list: 
+modified: 20210423053751039
+tags: 中 OfficialPlugins [[Plugin Editions]] TiddlyWiki
+title: External Attachments Plugin
+tmap.id: bb6bfba8-2d77-4bdf-a33a-942f5f224fa3
+type: text/vnd.tiddlywiki
+
+外部附件插件提供了将条目作为外部附件导入的支持。 这意味着，不是将二进制文件作为自包含的条目文件导入，而是通过 ''_canonical_uri'' 字段引用原始文件，作为“瘦”条目导入。 这减少了维基的大小，从而提高了性能。 但是，这意味着维基不再是完全自包含的。
+
+此插件仅适用于将TiddlyWiki与支持导入/拖拽文件的“路径”属性的平台（如TiddlyDesktop）一起使用。

@@ -1,0 +1,16 @@
+caption: Command Palette
+created: 20210620005406176
+modified: 20220819085514663
+moscow: C
+tags: [[Community Plugins]] [[Plugin Card]] XP-tutorials
+title: Command Palette by Souk21
+tmap.id: 0c87482d-4f0f-4929-82cd-e35ff8e77c42
+url: https://github.com/souk21/TW-commandpalette
+
+{{!!url}}
+
+A command palette for TiddlyWiki. Demo: https://souk21.github.io/TW-commandpalette.
+
+This is a prototype, don't use with your wiki
+
+* $:/plugins/souk21/commandpalette

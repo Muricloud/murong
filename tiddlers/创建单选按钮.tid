@@ -1,0 +1,16 @@
+created: 20220419053250212
+modified: 20220419054947450
+tags: [[WikiText 应用实例]] XP-tutorials
+title: 创建单选按钮
+tmap.id: e6f27c88-4be2-4fd0-997d-1ae094590aa9
+
+> 单选按钮部件（[[RadioWidget|https://tiddlywiki.com/static/RadioWidget.html]]）显示一个HTML `<input type="radio">`，它反映了给定的条目字段是否具有指定的值。选择单选按钮将设置条目字段为该值。
+
+!!! 字段模式
+
+这个例子使用单选按钮部件来改变 MyPluginTiddler 条目的 `modifier`（修改人）字段：
+
+<$macrocall $name="wikitext-example-without-html" src="""<$tiddler tiddler="MyPluginTiddler">
+<$radio field="modifier" value="JoeBloggs"> Joe Bloggs</$radio>
+<$radio field="modifier" value="JaneBloggs"> Jane Bloggs</$radio>
+</$tiddler>"""/>

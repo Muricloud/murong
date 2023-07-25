@@ -1,0 +1,9 @@
+caption: Preview
+tags: [[Change List]] XP-tutorials
+title: changelist-preview
+tmap.id: 013bbab2-b2b3-4bd6-aa2c-121b2cea9329
+
+修改 [[preview|$:/plugins/tobibeer/preview]] 的 config：
+
+* $:/plugins/tobibeer/preview/defaults/delay：设置为 `300000`，即 300 秒。未提供禁用选项，推荐将时间改长。
+* $:/plugins/tobibeer/preview/defaults/not：后面添加 `tc-menubar tc-quickbar leftopentab-content`。

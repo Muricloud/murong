@@ -1,0 +1,57 @@
+created: 20230623112243270
+modified: 20230630014435489
+tags: $:/tags/SideBar
+title: Markdown语法
+tmap.id: a6f4ca04-19b6-4635-b263-1134cdcdaca7
+
+<table>
+<th>公式</th>
+<th><div class=gray-box style="width:150px">代码
+</div></th>
+<tr>
+<td>$$\frac{x}{y}$$</td>
+<td><<codes src:""" \frac{x}{y}
+""">></td>
+
+</tr>
+<tr>
+<td>$$ \	\	 ...\textcircled{1}$$</td>
+<td><<codes src:""" \	\	 ...\textcircled{1}
+""">></td>
+</tr>
+
+<tr>
+<td>$$\begin{align*} 
+a&=b+c \\
+&=b+c
+\end{align*}$$</td>
+<td><<codes src:""" \begin{align*} 
+a&=b+c \\
+&=b+c
+\end{align*}
+""">></td>
+</tr>
+
+<tr>
+<td>$$\begin{align*} 
+ \begin{cases}
+a&=b+c \\
+&=b+c
+\end{cases}
+\end{align*}$$</td>
+<td><<codes src:""" \begin{align*} 
+ \begin{cases}
+a&=b+c \\
+&=b+c
+\end{cases}
+\end{align*}
+""">></td>
+</tr>
+<tr>
+<td>$$\therefore $$</td>
+<td><<codes src:""" \therefore 
+""">></td>
+
+</tr>
+</table>
+

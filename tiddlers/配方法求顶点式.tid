@@ -1,0 +1,22 @@
+created: 20230706075537863
+modified: 20230706134156344
+tags: 
+title: 配方法求顶点式
+tmap.id: 797aaf84-a8d9-42e2-88ba-253835fdd965
+
+比如：$$y=ax^2+bx+c$$
+
+$$
+ \begin{align*} 
+y&=ax^2+bx+c \\
+&=a(x^2+\frac{b}{a}x)+c \\
+&=a(x^2+2*\frac{b}{2a}x+\frac{b^2}{4a^2}-\frac{b^2}{4a^2})+c \\
+&=a(x^2+2*\frac{b}{2a}x+\frac{b^2}{4a^2})+c -\frac{b^2}{4a} \\
+&=a(x+\frac{b}{2a})^2+c-\frac{b^2}{4a}
+\end{align*}
+$$
+
+<br>
+重点是这一步：
+$$y=a(x^2+2*\frac{b}{2a}x+\frac{b^2}{4a^2}-\frac{b^2}{4a^2})+c 
+$$

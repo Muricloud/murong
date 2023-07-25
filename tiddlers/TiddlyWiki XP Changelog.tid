@@ -1,0 +1,16 @@
+caption: Changelog
+created: 20220819094010585
+modified: 20220819094103163
+tags: Update $:/tags/MyWorks
+title: TiddlyWiki XP Changelog
+tmap.id: 1d529343-58a3-4509-8cc2-b8c482062b38
+
+<$list filter="[tag[Changelog]!sort[created]limit[1]]">
+<$macrocall
+  $name="tabs"
+  tabsList="[tag[Changelog]!sort[created]]"
+  default={{!!title}}
+  class="tc-vertical"
+  template="ChangelogTemplate"
+/>
+</$list>

@@ -1,0 +1,87 @@
+created: 20230716071106630
+modified: 20230718031651628
+tags: 
+title: 判断或证明函数单调性(性质法)
+tmap.id: 3b40e7f1-565e-4c10-b1e1-383d78b8de8b
+
+$$① f(x),g(x)$$在公共区间上的单调性如下:<br>
+<div class=red-box>把增函数想象成正数$$(+)$$，减函数想象成负数$$(-)$$
+</div>
+
+
+
+<table>
+<th>$$y=f(x)$$</th>
+<th>$$y=g(x)$$</th>
+<th>$$y=f(x)+g(x)$$</th>
+<th>$$y=f(x)-g(x)$$</th>
+<tr>
+<td align="center" valign="middle">$$+$$</td>
+<td align="center" valign="middle">$$+$$</td>
+<td align="center" valign="middle">$$+$$</td>
+<td align="center" valign="middle"></td>
+</tr>
+<tr>
+<td align="center" valign="middle">$$+$$</td>
+<td align="center" valign="middle">$$-$$</td>
+<td align="center" valign="middle"></td>
+<td align="center" valign="middle">$$+$$</td>
+</tr>
+<tr>
+<td align="center" valign="middle">$$-$$</td>
+<td align="center" valign="middle">$$-$$</td>
+<td align="center" valign="middle">$$-$$</td>
+<td align="center" valign="middle"></td>
+</tr>
+<tr>
+<td align="center" valign="middle">$$-$$</td>
+<td align="center" valign="middle">$$+$$</td>
+<td align="center" valign="middle"></td>
+<td align="center" valign="middle">$$-$$</td>
+</tr>
+</table>
+
+
+
+$$②$$ 复合函数单调性的判断依据如下:<br>
+由函数$$u=g(x)$$	与函数$$y=f(u)$$复合，	
+得到函数$$y=f(g(x))$$	，其单调性的判断方	
+法如下:<br>
+<div class=red-box>把复合函数单调性的判断想象成乘除法,或者记住口诀<mark class="mark-blue">"同增异减"</mark>
+</div>
+<table>
+<th>$$y=f(x)$$</th>
+<th>$$y=g(x)$$</th>
+<th>$$y=f(g(x))$$</th>
+<tr>
+<td align="center" valign="middle">$$+$$</td>
+<td align="center" valign="middle">$$+$$</td>
+<td align="center" valign="middle">$$+$$</td>
+</tr>
+<tr>
+<td align="center" valign="middle">$$+$$</td>
+<td align="center" valign="middle">$$-$$</td>
+<td align="center" valign="middle">$$-$$</td>
+</tr>
+<tr>
+<td align="center" valign="middle">$$-$$</td>
+<td align="center" valign="middle">$$-$$</td>
+<td align="center" valign="middle">$$+$$</td>
+</tr>
+<tr>
+<td align="center" valign="middle">$$-$$</td>
+<td align="center" valign="middle">$$+$$</td>
+<td align="center" valign="middle">$$-$$</td>
+</tr>
+</table>
+
+<hr>
+视频：
+<table>
+<th>内容</th>
+<th>链接</th>
+<tr>
+<td>一分钟学会判断常见函数单调性</td>
+<td>https://www.bilibili.com/video/BV1bP411g7HV?t=246.9</td>
+</tr>
+</table>

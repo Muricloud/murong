@@ -1,0 +1,16 @@
+caption: Font Scroller
+created: 20210620013855245
+modified: 20220819085609039
+moscow: C
+tags: [[Community Plugins]] [[Plugin Card]] XP-tutorials
+title: Font Scroller by jd
+tmap.id: 0b20301a-c900-4aeb-a657-37decffd0a20
+url: http://j.d.tiddlyspot.com/#%24%3A%2Fthemes%2Fjd%2FMono%2FButtons%2Ffont-scroller
+
+{{!!url}}
+
+A font scroller that will easily cycle through body font sizes.
+
+* $:/jd/Buttons/font-size
+
+See [[Change List|changelist-FontScroller]].

@@ -1,0 +1,98 @@
+created: 20230614095739932
+modified: 20230628132859218
+tags: 
+title: 矢量和标量
+tmap.id: 857e7674-1cde-4148-9d2f-e31449f43314
+
+矢量：有大小，有方向。,,(<c style="color:Red;">有方向，指的是方向可以是任意的，如果只有两个方向，不能算是矢量</c>）,,<br>
+标量：只有大小。
+
+<$details summary="物理里面的矢量就是数学里面的向量" open="no">
+
+只有在高中物理里面才有矢量这个概念，可以认为矢量是向量的别名。我查了矢量和向量的英文都是vector。
+</$details>
+
+可以借助''向量的运算''来判断一个概念是矢量还是标量。<br><br>
+规则如下：<br>
+矢量 X 矢量 = 标量<br>
+标量 X 标量 = 标量<br>
+标量 X 矢量 = 矢量<br>
+矢量 $$ \underline{+}$$ 矢量 = 矢量<br>
+标量 $$ \underline{+}$$ 标量 = 标量<br>
+矢量 $$ \underline{+}$$ 标量 （<c style="color:Red;">错误</c>）
+<br><br>
+
+演示几个：<br><br>
+现在告诉你位移(x)是矢量，时间(t)是标量。<br>
+
+<table>
+<th>题目</th>
+<th>答案</th>
+<tr>
+<td>1、已知：$$v=\frac{x}{t}$$ , 那么速度 $$v$$ 是标量还是矢量？</td>
+<td><$details summary=" " open="no">
+矢量
+</$details></td>
+</tr>
+<tr>
+<td>2、已知：$$a=\frac{ \Delta v}{ \Delta t}$$,其中$$\Delta v = v_t-v_0,\Delta t= t$$, 那么 $$a,\Delta v,\Delta t$$是标量还是矢量？</td>
+<td>
+<$details summary=" " open="no">
+矢量
+</$details>
+</td>
+</tr>
+<tr>
+<td>3、已知：$$F=ma$$, 那么 $$F$$是标量还是矢量？</td>
+<td>
+<$details summary=" " open="no">
+矢量
+</$details>
+</td>
+</tr>
+
+<tr>
+<td>4、已知：$$W=Fx$$,那么 $$W$$是标量还是矢量？</td>
+<td>
+<$details summary=" " open="no">
+标量
+</$details>
+</td>
+</tr>
+
+<tr>
+<td>5、已知：$$P=\frac{W}{t}$$,那么 $$P$$是标量还是矢量？</td>
+<td>
+<$details summary=" " open="no">
+标量
+</$details>
+</td>
+</tr>
+
+<tr>
+<td>6、已知：$$P=Fv$$,那么 $$P$$是标量还是矢量？</td>
+<td>
+<$details summary=" " open="no">
+标量
+</$details>
+</td>
+</tr>
+
+<tr>
+<td>7、已知：$$E=\frac{1}{2}mv^2$$,那么 $$E$$是标量还是矢量？</td>
+<td>
+<$details summary=" " open="no">
+标量
+</$details>
+</td>
+</tr>
+
+</table>
+<br><br>
+
+课后思考：
+<$details summary="下面是初中学过的一些概念：判断一下它们是矢量和标量" open="no">
+
+平均速率、质量、密度、力、压强、功、功率、内能、电压、电流、电阻、电能、电功、电功率、浮力、时间
+
+</$details>

@@ -1,0 +1,31 @@
+created: 20230718072704882
+modified: 20230718080904969
+title: 对数
+tmap.id: f631114a-c215-47da-941d-8f868ed8801a
+
+''对数的概念<br>''
+一般地,如果 $$a^x=N(a>0,且a \neq 1)$$ ,那么数 $$x$$ 叫做以 $$a$$ 为底 $$N$$ 的对数,记作 $$x=log_aN$$,其中 $$a$$ 叫做对数的底数, $$N$$ 叫做真数.<br>
+
+''常用对数与自然对数<br>''
+以10为底的对数叫做常用对数,并把 $$log_{10}N$$ 记为 $$lg N$$;<br>
+以 $$e(e=2.718 28··)$$为底的对数称为自然对数并把 $$log_eN$$记为 $$InN$$<br><br>
+
+''对数与指数的关系<br>''
+(1)当$$a>0,且a \neq 1$$ 时,$$a^x=N \Leftrightarrow x=log_aN$$ ,这是指数式与对数式互化的依据.<br><br>
+(2)相关结论:<br><br>
+$$①$$ 负数和 0 没有对数；<br><br>
+$$② log_a1=0,log_aa=1(a>0,且a \neq 1);$$<br><br>
+$$③ a^{log_aN}=N,log_aa^N=N(a>0,且a \neq 1,N>0).$$<br>
+
+''对数的运算性质<br>''
+
+如果 $$a>0,且a \neq 1,M>0,N>0$$,那么<br><br>
+(1) $$log_a(MN)=log_aM+log_aN;$$<br><br>
+(2) $$log_a{\frac{M}{N}}=log_aM-log_aN;$$<br><br>
+(3) $$log_aM^n=nlog_aM(n \in R).$$<br><br>
+
+''对数换底公式<br><br>''
+1、对数换底公式：<br><br>
+$$log_ab=\frac{log_cb}{log_ca}(a>0,且a \neq 1;b>0;c>0,且c \neq 1).$$<br><br>
+2、相关结论：<br><br>
+$$log_ab=\frac{1}{log_ba},log_ab^m=\frac{m}{n}log_ab(a>0,且a \neq 1;b>0,且 b \neq 1;n \neq 0)$$

@@ -1,0 +1,21 @@
+caption: TiddlyDesktop桌面程序
+created: 20140126125259638
+modified: 20210423053751048
+tags: 中 Definitions Platforms TiddlyWiki
+title: TiddlyDesktop
+tmap.id: 6260472c-3001-46e5-845f-ea6ac45d6fbc
+type: text/vnd.tiddlywiki
+
+TiddlyDesktop 是一个用 TiddlyWiki 文件（TiddlyWikiClassic 和 TiddlyWiki5）工作的应用程序。 它可以安装在 Windows，Mac OS X 或 Linux 上。 它与 TiddlyWiki5 和旧的 TiddlyWikiClassic 兼容。
+
+{{Saving on TiddlyDesktop}}
+
+{{Introducing TiddlyDesktop Video}}
+
+!! 资源
+
+TiddlyDesktop 基于开源项目 [[NW.js]]。 源代码在 GitHub上：
+
+https://github.com/Jermolene/TiddlyDesktop/
+
+参见 [[TiddlyDesktop Releases]]

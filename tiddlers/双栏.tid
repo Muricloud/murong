@@ -1,0 +1,54 @@
+caption: {{$:/xp/images/2column}} 双栏
+created: 20200731124100399
+modified: 20220904071443225
+tags: XP-tutorials 新手入门指南
+title: 双栏
+tmap.id: 8ce353ed-08d4-46ed-b86e-e1770aa13e32
+
+有时您想同时看到笔记：
+
+* 复习一个并写另一个
+* 比较两个想法
+* 在编写时打开参考表或摘要列表
+
+默认条件下，您可以使用查看工具栏的 <<.icon $:/core/images/open-window>> Open in new window 将条目在新窗口中打开；
+
+但现在您可以使用双栏，直接在维基中打开两列 tiddlers 并编辑它们：
+
+* 使用侧边栏顶部的图标 <<.icon $:/core/images/chevron-right>> 或者快捷键 <kbd>shift-alt-S</kbd> 隐藏侧边栏。
+* 按住 <kbd>Alt</kbd> / <kbd>Option</kbd> 键并单击这两个链接 [[Dave Gifford]] / [[Muffin 1]]。它应显示在右侧的单独列中。
+
+<div class="gray-box">
+
+原插件使用 <kbd>Shift</kbd> 键触发导航，这导致了一些体验问题，比如 <kbd>ctrl-shift-A</kbd> 会将高级搜索在右栏打开。所以，XP 中将触发键做了修改。
+
+* $:/_sq/Stories/LinkKeybindings
+
+</div>
+
+点击查看工具栏中按钮 <<.icon $:/_sq/Stories/icons/divert-left.svg>> 和 <<.icon $:/_sq/Stories/icons/divert-right.svg>> 可在两列之间来回“转移” [[Muffin 1]] 条目。
+
+> 当开启双栏后：你可以在 Open 标签页中，拖过链接进行转移；同样，你也可以将任意位置的 TiddlerLinks 直接拖到 Open 中进行打开。
+
+<div class="gray-box">
+
+XP 中进行了显示优化：
+
+* 「固定故事河」[[布局|$:/themes/tiddlywiki/vanilla/options/sidebarlayout]]下使用双栏，「隐藏右栏」会恢复到「固定故事河」；
+* 双栏状态下，将布局切换为「固定故事河」时，将自动隐藏右栏。
+
+</div>
+
+你可以使用折叠按钮“折叠”条目。折叠 tiddler 可以更快地上下滚动列。
+
+:<div>
+<$vars tv-config-toolbar-icons="yes" tv-config-toolbar-text="yes" tv-config-toolbar-class="" >
+
+<$list filter="[[$:/core/ui/Buttons/fold]] [[$:/core/ui/Buttons/fold-others]] [[$:/core/ui/Buttons/fold-all]] [[$:/core/ui/Buttons/unfold-all]]">
+<$transclude />
+</$list>
+
+</$vars>
+</div>
+
+> 该功能来自 [[Stroll|https://giffmex.org/stroll/stroll.html]] 中的插件 $:/plugins/sq/Stories。

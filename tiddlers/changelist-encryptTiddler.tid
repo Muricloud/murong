@@ -1,0 +1,8 @@
+caption: encryptTiddler
+tags: [[Change List]] XP-tutorials
+title: changelist-encryptTiddler
+tmap.id: 2e0bb18f-d794-4b37-a8a3-84023e5c89fe
+
+!! $:/plugins/danielo515/encryptTiddler
+
+* 【查看工具栏】隐藏按钮时，显示说明文字：$:/plugins/danielo515/encryptTiddler/openPopup

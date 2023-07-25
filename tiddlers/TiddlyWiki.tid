@@ -1,0 +1,16 @@
+color: #5778d8
+created: 20130822170700000
+icon: $:/core/icon
+modified: 20210806034015784
+tags: 中 Concepts TiddlyWiki
+title: TiddlyWiki
+tmap.id: 68c2543c-d001-46e2-970a-436b2dc18ee2
+type: text/vnd.tiddlywiki
+
+~TiddlyWiki 是一个丰富的交互式工具，用于操作那些结构很难适应常规工具（如电子表格或字处理程序）的复杂数据。
+
+~TiddlyWiki 设计来配合你的大脑，帮助你处理那些它不擅长的事情。[[基本思路|Philosophy of Tiddlers]]是这样，如果我们把信息分成最小的语义上有意义的块 — [[tiddlers（条目）|Tiddlers]]，并给出标题，以便可以使用[[链接|TiddlerLinks]]、[[标签|Tagging]]、[[列表|ListField]]和[[宏|Macros]]进行[[结构化|Structuring TiddlyWiki]]，那么信息将会更有用并可重用。条目（Tiddlers）使用维基文本（WikiText）符号，简明扼要地表示了各种文本格式和超文本功能。 ~TiddlyWiki 旨在为使用条目（Tiddlers）工作提供流畅的界面，使他们能够聚合并组合成更长的叙述。
+
+人们喜欢使用 ~TiddlyWiki。因为它可以在没有任何复杂的服务器基础设施的情况下使用，还因为它是[[开源|OpenSource]]的，它给人们带来了前所未有的自由，让他们在自己的控制之下保存宝贵的信息资料。
+
+~TiddlyWiki 最初由 JeremyRuston 创建，现在是一个蓬勃发展的[[开放源代码|License]]项目，拥有一个繁忙的独立开发者[[社区|Community]]。

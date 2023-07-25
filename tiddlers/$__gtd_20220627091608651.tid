@@ -1,0 +1,14 @@
+caption: 修改模板条目
+created: 20220627091608652
+due: 
+modified: 20220627091626850
+tags: $:/q1 GTD
+title: $:/gtd/20220627091608651
+
+! 模板文件命名
+
+统一命名格式：
+
+<$list filter="[all[tiddlers+shadows]prefix[$:/templates]sort[]limit[1]]">
+  <$macrocall $name="tabs" tabsList="[all[tiddlers+shadows]prefix[$:/templates]sort[]]" default={{!!title}} class="tc-vertical"/>
+</$list>

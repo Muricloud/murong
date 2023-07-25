@@ -1,0 +1,10 @@
+background-color: #fff
+caption: Introduction to ~TiddlyWiki
+color: red
+icon: {{$:/core/images/video}}
+image: Introduction Video Thumbnail.jpg
+link: Introduction Video
+modified: 20200901042844530
+tags: HelloThumbnail TiddlyWiki
+title: HelloThumbnail - Introduction Video
+tmap.id: 1af7de18-de09-433c-84d2-a9fb3b8c860c

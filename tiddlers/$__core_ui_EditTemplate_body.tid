@@ -1,0 +1,10 @@
+<$macrocall: true
+created: 20230610012758562
+days: true
+modified: 20230610022734800
+num: 0
+proficiency: no
+tags: $:/tags/EditTemplate
+title: $:/core/ui/EditTemplate/body
+
+<$transclude tiddler={{{ [<currentTiddler>] :cascade[all[shadows+tiddlers]tag[$:/tags/EditTemplateBodyFilter]!is[draft]get[text]] :and[!is[blank]else[$:/core/ui/EditTemplate/body/default]] }}} />

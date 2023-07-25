@@ -1,0 +1,15 @@
+caption: Edge
+color: blue
+created: 20220602100524924
+description: Microsoft Edge 是一款快速而安全的浏览器，可帮助您保护数据，节省时间和金钱。
+modified: 20220819092510293
+moscow: S
+purpose: 浏览网页
+revision: 0
+tags: Linux 浏览器 macOS Windows Examples [[Should have]] Software
+title: Microsoft Edge
+tmap.id: 976fecf3-a6e7-4fae-b006-9c474e2c9442
+type: text/vnd.tiddlywiki
+url: https://www.microsoft.com/zh-cn/edge
+
+{{!!description}}

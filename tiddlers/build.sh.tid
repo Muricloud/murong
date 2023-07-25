@@ -1,0 +1,14 @@
+created: 20200921160212921
+modified: 20210517090905991
+tags: XP-tutorials [[Shell Script]]
+title: build.sh
+tmap.id: 59247120-3a8e-41b3-b465-815a55405bf0
+
+```bash
+#!/usr/bin/env bash
+# build.sh
+
+echo -e "\033[0;31;1m--build index.html\033[0m"
+tiddlywiki --build index
+mv ./output/index.html ./
+```

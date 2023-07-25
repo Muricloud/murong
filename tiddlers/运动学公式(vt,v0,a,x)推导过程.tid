@@ -1,0 +1,31 @@
+created: 20230623130155598
+modified: 20230623132539228
+tags: 
+title: 运动学公式(vt,v0,a,x)推导过程
+tmap.id: 2061edb1-4994-421f-809b-9decf80a254c
+
+比较一下：
+	$$v_t=v_0+at  \	\	 ...\textcircled{1}\\
+	\ \\
+	v_t^2-v_0^2=2ax  \	\	 
+	...\textcircled{2}\\
+	\ \\
+	\textcircled{1}比\textcircled{2}多了t,少了x \\
+	\ \\
+	？？如果有t=含有x的某个公式,同时不带入杂质 \\
+	\ \\
+	v_t=v_0+a \frac{x}{ \overline{v}
+}\\
+	\ \\
+v_t=v_0+a \frac{x}{\frac{v_0+v_t}{2}
+}
+	\ \\
+	\ \\
+	v_t-v_0=a \frac{2x}{v_t+v_0} 
+		\ \\
+   	\	\\
+	(v_t-v_0)(v_t+v_0)=2ax 
+	\ \\
+	\ \\
+	最后得到：v_t^2-v_0^2=2ax 
+$$

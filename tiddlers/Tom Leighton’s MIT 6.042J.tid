@@ -1,0 +1,20 @@
+background-color: #fff
+caption: Tom Leighton’s MIT 6.042J
+color: red
+created: 20210711163445521
+icon: {{$:/core/images/video}}
+image: $:/heiban.png
+link: 
+linkcolor: <<colour primary>>
+modified: 20220701153819830
+tags: Planning Examples Course
+title: Tom Leighton’s MIT 6.042J
+tmap.id: 07f21d18-70af-4e23-870c-8ed2aeb0a0af
+
+!! 课程目录
+
+@@.list-tree
+* 
+** 
+* 
+@@

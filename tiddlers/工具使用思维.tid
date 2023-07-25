@@ -1,0 +1,11 @@
+created: 20220626231131073
+modified: 20220627091543904
+tags: GTD $:/q2 XP-tutorials
+title: 工具使用思维
+tmap.id: e2b37b40-fab9-42a2-a647-9414778de1e2
+
+要学会灵活使用多个工具来进行任务的协同处理。一个工具可能永远无法满足所有的需求。
+
+就比如「文件管理器」，Nautilus (Gnome Desktop Environment) 和 Thunar (Xfce Desktop Environment) 就是完全两种不同的设计思路和操作界面。
+
+* Nautilus 左侧是一个收藏栏，而 Thunar 左侧是一个树状目录。Nautilus 看起来简洁美观。可当经常需要打开多个子文件夹查看文件时，树状目录导航的效率更高！

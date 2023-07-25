@@ -1,0 +1,10 @@
+caption: 目录树宏（示例）
+created: 20170628164706364
+modified: 20230609133712252
+tags: 中 [[tree Macro]] [[Macro Examples]] TiddlyWiki
+title: tree Macro (Examples)
+tmap.id: 8c932179-e5a1-417f-a0ba-76498aba8420
+type: text/vnd.tiddlywiki
+
+<$macrocall $name=".example" n="1"
+eg="""<<tree prefix:"$:/">>"""/>

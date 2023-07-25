@@ -1,0 +1,19 @@
+caption: 带链接列表宏（示例）
+created: 20150221160534000
+modified: 20200901042844535
+tags: 中 [[list-links Macro]] [[Macro Examples]] TiddlyWiki
+title: list-links Macro (Examples)
+tmap.id: 7512cebb-7286-42a7-8bfc-1913d055c871
+type: text/vnd.tiddlywiki
+
+这个例子列出了标题以 J 开头的所有条目：
+
+<$macrocall $name=".example" n="1" eg="""<<list-links filter:"[prefix[J]]">>"""/>
+
+这个例子列出了核心宏的文档，每个核心宏文档都有一个<<.field caption>>（字幕标题）字段：
+
+<$macrocall $name=".example" n="2" eg="""<<list-links filter:"[tag[Core Macros]]">>"""/>
+
+输出为有序列表：
+
+<$macrocall $name=".example" n="3" eg="""<<list-links filter:"[tag[Core Macros]]" type:"ol">>"""/>

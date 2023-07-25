@@ -1,0 +1,13 @@
+created: 20230609233636436
+modified: 20230628022125611
+tags: 
+title: 词汇数量奖励
+tmap.id: 2b98b5b6-c492-45c8-a0bc-b4c47dbd49af
+
+
+记住超过3个单词
+<$list filter="[all[tiddlers]tag[单词]分组list[list1]proficiency[100]count[]compare:number:gteq[3]then[词汇表]else[no]]" template="$:/templates/transclusion-infocard"/>
+
+
+
+

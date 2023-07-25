@@ -1,0 +1,14 @@
+created: 20210316050724187
+modified: 20220819093318606
+tags: XP-tutorials
+title: 禁用搜索最小字数限制
+tmap.id: 56ea8f4e-6826-4045-82b1-ae5e75fcb670
+url: [[Hidden Setting: Search Minimum Length|https://tiddlywiki.com/static/Hidden%2520Setting%253A%2520Search%2520Minimum%2520Length.html]]
+
+TiddlyWiki 默认的搜索框存在字符数限制，要求搜索关键词大于三个字符。对于英语环境来说这很合理，但是对于中文来说，二字词的搜索是很常见的，因此很不方便。
+
+修改这个设置只需要：
+
+* 修改系统条目 $:/config/Search/MinLength 的内容为 2
+
+> 内容来自 [[TiddlyWiki - 知识管理系统|https://www.npc.ink/2480.html]]

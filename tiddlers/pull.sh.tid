@@ -1,0 +1,40 @@
+created: 20200920150844597
+modified: 20220714043634593
+tags: XP-tutorials [[Shell Script]]
+title: pull.sh
+tmap.id: fca4c5f2-68c0-4f48-b784-a792a35b06ec
+
+```bash
+#!/usr/bin/env bash
+# pull.sh
+
+REPOSITORYNAME='mywiki'
+WIKIPATH='/DATA/TW/wikiSites/mywiki'
+SUBMODULE1='mywiki-private'
+SUBDIR1='tiddlers/private'
+SUBMODULE2='mywiki-journals'
+SUBDIR2='tiddlers/journals'
+SUBMODULE3='mywiki-images'
+SUBDIR3='tiddlers/images'
+
+echo -e "\033[0;36mPull updates from CODING...\033[0m"
+
+echo -e "\033[0;31;1m↓ $REPOSITORYNAME\033[0m"
+cd $WIKIPATH
+git pull
+
+echo -e "\n\033[0;31;1m↓ $SUBMODULE1\033[0m"
+cd $WIKIPATH/$SUBDIR1
+git pull
+
+echo -e "\n\033[0;31;1m↓ $SUBMODULE2\033[0m"
+cd $WIKIPATH/$SUBDIR2
+git pull
+
+echo -e "\n\033[0;31;1m↓ $SUBMODULE3\033[0m"
+cd $WIKIPATH/$SUBDIR3
+git pull
+
+# Come Back up to the Project Root
+cd $WIKIPATH
+```

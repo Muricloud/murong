@@ -1,0 +1,11 @@
+caption: 单词卡片
+created: 20211214234653034
+modified: 20220220033446273
+tags: 创建一个宏 XP-tutorials
+title: 创建一个宏/单词卡片
+tmap.id: 1b6f94af-ca02-454e-811f-552f63a3eec0
+
+稍微复杂一点，利用 $:/plugins/kookma/shiraz 中提供的 card 宏，制作一个单词卡片宏。比如 $:/xp/macros/dict 定义了查询「沪江小D」的单词卡片。使用效果：
+
+<<wikitext-example-without-html src:"""<<xd debian "英 [di'biən] 美 [di'biən]"　E4063AD4CB1206B7>>""">>
+<<wikitext-example-without-html src:"""<<xd ubuntu "" 7FBD17320CA7A135>>""">>

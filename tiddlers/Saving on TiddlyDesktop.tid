@@ -1,0 +1,17 @@
+caption: 在~TiddlyDesktop上保存
+created: 20171112085137764
+delivery: App
+description: 与TiddlyWiki一起工作的客户桌面程序
+method: save
+modified: 20210423053751046
+tags: 中 Saving Mac Windows Linux TiddlyWiki
+title: Saving on TiddlyDesktop
+tmap.id: c9efb2b3-6103-417c-9a88-ea21db8eb5dd
+type: text/vnd.tiddlywiki
+
+观看 [[TiddlyDesktop 简介视频|Introducing TiddlyDesktop Video]]
+
+# 安装最新版本的 TiddlyDesktop：https://github.com/Jermolene/TiddlyDesktop/releases
+# 运行 TiddlyDesktop
+# 使用浏览按钮打开 TiddlyWiki 文件
+# 以通常的方式保存 TiddlyWiki 中的更改

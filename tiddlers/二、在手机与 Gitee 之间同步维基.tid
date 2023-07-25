@@ -1,0 +1,35 @@
+created: 20210107135734141
+modified: 20220626092551646
+tags: XP-tutorials 维基存储方案
+title: 二、在手机与 Gitee 之间同步维基
+tmap.id: 81710d18-ae1f-48a1-9d62-d61df5a6655c
+
+> 方法同于 [[在电脑与 Gitee 之间同步维基|二、在电脑与 Gitee 之间同步维基]]
+
+!! 将仓库克隆到手机上
+
+打开 Android 手机的文件管理器，进入''内部存储''，创建文件夹 `_wiki`。（名称前面加了下划线，这样文件夹可以显示在最前面）
+
+进入 Termux，将主仓库 mywiki 以及「自定义插件库」克隆下来：
+
+```bash
+cd $HOME/storage/shared/_wiki
+git clone git@gitee.com:YOURNAME/mywiki.git
+git clone git@gitee.com:YOURNAME/MyPluginStore.git
+```
+
+将其他仓库也克隆下来：
+
+```bash
+git submodule add -f git@gitee.com:YOURNAME/mywiki-private.git tiddlers/private
+git submodule add -f git@gitee.com:YOURNAME/mywiki-journals.git tiddlers/journals
+git submodule add -f git@gitee.com:YOURNAME/mywiki-images.git tiddlers/images
+```
+
+<div class="red-box">
+
+如果遇到无法拉取仓库的情况，请参阅 [[git: Permission denied (publickey)]]
+
+</div>
+
+{{在手机上维护维基}}

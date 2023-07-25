@@ -1,0 +1,31 @@
+caption: 拖放
+created: 20170328143119836
+modified: 20200901042844522
+tags: 中 Features TiddlyWiki
+title: Drag and Drop
+tmap.id: 10e3b8e7-e26e-4b18-84a7-76d5e12010be
+type: text/vnd.tiddlywiki
+
+~TiddlyWiki 使用拖放来提供两个独立的功能：
+
+* [[导入条目|Importing Tiddlers]]到~TiddlyWiki 
+* 在~TiddlyWiki中操作条目
+
+核心用户界面在以下上下文中支持通过拖放进行条目操作：
+
+* 在侧边栏的“打开”选项卡中的项目，可以通过拖放进行重新排序；可以通过将标题拖到列表中打开新的条目
+* 标签丸下拉菜单中的项目，可以通过拖放进行重新排序；可以通过将标题拖到列表中来分配新标签
+* 在[[控制面板|$:/ControlPanel]]“外观”/“工具栏”选项卡中的项目，可以通过拖放进行重新排序。 （也可以通过将标题拖到列表中来将新条目添加到工具栏中，但很少用）
+
+所有的条目链接默认是可拖动的。 可以在浏览器窗口中拖动它们来操作条目，或者拖动到不同的浏览器窗口来启动[[导入操作|Importing Tiddlers]]
+
+标签丸也是可拖动的，相当于同时拖动标签下的所有单个条目。
+
+拖放条目操作的一些常用场景被制作成可重用的宏：
+
+* [[list-links-draggable Macro]]（链接列表可拖动宏）重新排序在一个条目[[列表字段|ListField]]中的项目
+* [[list-tagged-draggable Macro]]（标签列表可拖动宏）重新排序带有指定标签的条目
+
+有关如何使用低级别拖放基元来建立更复杂的交互，详情请参阅 DragAndDropMechanism 。
+
+~TiddlyWiki使用的标准HTML5拖放API通常不能在智能手机或平板电脑上的移动浏览器上使用。 [[移动拖放Shim插件|Mobile Drag And Drop Shim Plugin]]增加了一个开源的库，在许多移动浏览器实现了部分支持，包括iOS和Android。

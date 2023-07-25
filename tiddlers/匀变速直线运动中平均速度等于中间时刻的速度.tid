@@ -1,0 +1,8 @@
+created: 20230629094143414
+modified: 20230701000653330
+tags: 
+title: 匀变速直线运动中平均速度等于中间时刻的速度
+tmap.id: ce316188-507e-4f0b-8207-2b56be98dceb
+
+$$\overline{v}=v_{\frac{t}{2}}=\frac{v_0+v_1}{2}
+$$

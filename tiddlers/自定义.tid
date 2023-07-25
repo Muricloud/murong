@@ -1,0 +1,10 @@
+caption: {{$:/core/images/theme-button}} 自定义
+created: 20220904010717831
+list: 设置网站图标 界面布局 [[Using Stylesheets]] [[Customising TiddlyWiki's user interface]] Cascades 自定义内容的显示字体 自定义字体大小和颜色 适合阅读的背景颜色
+modified: 20220904042840513
+tags: 新手入门指南 XP-tutorials
+title: 自定义
+tmap.id: ba4f7d19-598b-4a49-a655-faff3e107417
+type: text/vnd.tiddlywiki
+
+<<tabs "[tag[自定义]]" "设置网站图标" "$:/state/tab/customise">>

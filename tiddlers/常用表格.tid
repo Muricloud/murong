@@ -1,0 +1,116 @@
+created: 20230601125710820
+modified: 20230718013958469
+tags: 模板代码
+title: 常用表格
+tmap.id: 0341045d-c04f-4407-af2b-0fad9c5b99f8
+
+无任何样式的html表格<br>
+<table>
+<th>标题1</th>
+<th>标题2</th>
+<tr>
+<td>11</td>
+<td>12</td>
+</tr>
+<tr>
+<td>21</td>
+<td>22</td>
+</tr>
+</table>
+
+<<codes src:"""<table>
+<th>标题1</th>
+<th>标题2</th>
+<tr>
+<td>11</td>
+<td>12</td>
+</tr>
+<tr>
+<td>21</td>
+<td>22</td>
+</tr>
+</table>
+""">>
+
+
+<<codes src:"""<table>
+<th>$$y=f(x)$$</th>
+<th>$$y=g(x)$$</th>
+<th>$$y=f(x)+g(x)$$</th>
+<th>$$y=f(x)-g(x)$$</th>
+<tr>
+<td align="center" valign="middle">$$+$$</td>
+<td align="center" valign="middle">$$+$$</td>
+<td align="center" valign="middle">$$+$$</td>
+<td align="center" valign="middle"></td>
+</tr>
+<tr>
+<td align="center" valign="middle">$$+$$</td>
+<td align="center" valign="middle">$$-$$</td>
+<td align="center" valign="middle"></td>
+<td align="center" valign="middle">$$+$$</td>
+</tr>
+<tr>
+<td align="center" valign="middle">$$-$$</td>
+<td align="center" valign="middle">$$-$$</td>
+<td align="center" valign="middle">$$-$$</td>
+<td align="center" valign="middle"></td>
+</tr>
+<tr>
+<td align="center" valign="middle">$$-$$</td>
+<td align="center" valign="middle">$$+$$</td>
+<td align="center" valign="middle"></td>
+<td align="center" valign="middle">$$-$$</td>
+</tr>
+</table>
+""">>
+
+<table>
+  <tr>
+    <td>第一列</td>
+    <td colspan="3">合并的单元格</td>
+  </tr>
+  <tr>
+    <td>内容</td>
+    <td>内容</td>
+    <td>内容</td>
+  </tr>
+</table>
+
+<<codes src:"""<table>
+  <tr>
+    <td>第一列</td>
+    <td colspan="3">合并的单元格</td>
+  </tr>
+  <tr>
+    <td>内容</td>
+    <td>内容</td>
+    <td>内容</td>
+  </tr>
+</table>
+""">>
+
+<table>
+  <tr>
+    <td rowspan="2">合并的单元格</td>
+    <td>第一列</td>
+    <td>第二列</td>
+  </tr>
+  <tr>
+    <td>内容</td>
+    <td>内容</td>
+  </tr>
+</table>
+
+<<codes src:"""<table>
+  <tr>
+    <td rowspan="2">合并的单元格</td>
+    <td>第一列</td>
+    <td>第二列</td>
+  </tr>
+  <tr>
+    <td>内容</td>
+    <td>内容</td>
+  </tr>
+</table>
+""">>

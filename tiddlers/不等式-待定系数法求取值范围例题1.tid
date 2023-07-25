@@ -1,0 +1,40 @@
+created: 20230706094110800
+modified: 20230706133717576
+tags: 
+title: 不等式-待定系数法求取值范围例题1
+tmap.id: 068b3b06-1416-44d4-a46c-4c71aaa2dfb5
+
+已知 $$-1 \leq x+y \leq 1,1 \leq x-y \leq 3,则3x-2y$$的取值范围是 $$________$$
+<$details summary="答案" open="no">
+$$设: \ 3x-2y=m(x+y)+n(x-y)=(m+n)x+(m-n)y
+$$
+$$
+ \begin{align*} 
+ \begin{cases}
+m+n&=3 \\
+m-n&=-2
+\end{cases}
+\end{align*}
+
+\Rightarrow
+ \begin{align*} 
+ \begin{cases}
+m&=\frac{1}{2} \\
+n&=\frac{5}{2}
+\end{cases}
+\end{align*}
+$$
+
+$$ -1 \leq x+y \leq 1,1 \leq x-y \leq 3,\\
+\ \\
+-\frac{1}{2} \leq \frac{1}{2}(x+y) \leq \frac{1}{2},\frac{5}{2} \leq \frac{5}{2}(x-y) \leq \frac{15}{2},
+\ \\
+\ \\
+2 \leq  3x-2y \leq 8
+
+$$
+
+
+</$details>
+
+

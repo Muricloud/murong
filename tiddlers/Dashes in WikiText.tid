@@ -1,0 +1,19 @@
+caption: 破折号
+created: 20131205160641986
+modified: 20200901042844520
+tags: 中 WikiText TiddlyWiki
+title: Dashes in WikiText
+tmap.id: c0bcff0c-ef6d-4216-887b-ea7f15a68ccc
+type: text/vnd.tiddlywiki
+
+您可以使用两个 hyphen（连字符）`--` 创建一个 n-dash（连接号），并使用三连字符 `---` 创建一个 m-dash（破折号）。 例如：
+
+```
+-- 这是一个例子
+
+--- 这也是
+```
+
+-- 这是一个例子
+
+--- 这也是

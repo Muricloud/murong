@@ -1,0 +1,46 @@
+created: 20230628071914316
+modified: 20230629080151518
+tags: 
+title: 常见的速度时间图像(基础版1)
+tmap.id: 7fe5ba77-3edb-48bb-9aa2-8873e04abd38
+
+<div style="width:300px">
+[img[常见位移时间图像辨析1.png]]
+</div>
+<$details summary="你能想出哪些问题？" open="no">
+运动过程AB，BC，CD，DE，EF分别是什么运动？<br>
+匀加速直线运动：<br>
+匀减速直线运动：<br>
+匀速直线运动：<br>
+加速度相等：<br>
+加速度大小比较：<br>
+
+<$details summary="回答问题" open="no">
+匀加速直线运动：AB，DE<br>
+匀减速直线运动：CD、EF<br>
+匀速直线运动：BC<br>
+加速度相等：AB=EF,CD=DE<br>
+加速度大小比较：AB=EF > CD=DE<br>
+
+</$details>
+</$details>
+<hr>
+
+<div style="width:300px">
+[img[位移时间图像比较速度大学.png]]
+</div>
+<$details summary="你能想出提什么问题？" open="no">
+空
+
+
+</$details>
+<hr>
+
+<div style="width:300px">
+[img[位移时间图像里面三个点的速度比较.png]]
+</div>
+<$details summary="你能想出提什么问题？" open="no">
+
+空
+
+</$details>

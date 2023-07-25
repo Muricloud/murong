@@ -1,0 +1,16 @@
+created: 20160418154853776
+modified: 20200901042844518
+tags: 中 TiddlyWiki
+title: colour-picker Macro (Example 1)
+tmap.id: 7f751fad-4982-4174-834e-833e019545c4
+type: text/vnd.tiddlywiki
+
+颜色：<$edit-text tiddler='$:/_MyColour' tag='input' placeholder='（未设置）' default=''/>
+
+---
+
+<$macrocall $name='colour-picker' actions="
+
+<$action-setfield $tiddler='$:/_MyColour' $value=<<colour-picker-value>>/>
+
+"/>

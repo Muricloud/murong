@@ -1,0 +1,13 @@
+caption: 向导
+created: 20160107225427489
+modified: 20200901042844541
+tags: 中 Features TiddlyWiki
+title: Modals
+tmap.id: d3c2209a-b23f-4030-b0ac-a3b019f85e34
+type: text/vnd.tiddlywiki
+
+模式（或“向导”）让主TiddlyWiki窗口变暗并在其上显示一个孤立的条目，这个条目必须由用户明确关闭。
+
+模式显示用[[WidgetMessage: tm-modal]] 。
+
+<$button message="tm-modal" param="SampleWizard">打开模式演示</$button>

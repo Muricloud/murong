@@ -1,0 +1,22 @@
+created: 20230719065353581
+modified: 20230719070900191
+title: 终边相同的角
+tmap.id: 48eaf95a-a9df-4f29-a8f0-fa129df52b26
+
+ 相关概念：<br>
+
+<<<.br
+ &nbsp;''相等角:'' 如果角 $$\alpha$$ 和角 $$\beta$$ 的<mark class="mark-orange">旋转方向</mark>相同且<mark class="mark-orange">旋转量</mark>相等那么就称 $$\alpha=\beta$$.&emsp;&emsp; <c style="color:Red;">( $$\beta$$读作：beta)</c>
+''角的概念：''角可以看成一条射线绕着它的端点旋转所成的图形.
+<<<
+
+<br>
+''终边相同的角:''坐标轴上，构成两个角的边重叠在一起。<br>
+举例: $$30° 和 390°$$ 就是终边相同的角<br>
+问：相等角是不是终边相同的角？
+<$details summary="答案" open="no">
+是的。
+</$details>
+<br>
+所有与角 $$\alpha$$ 终边相同的角，连同角 $$\alpha$$ 在内，可构成一个集合 $$S=\{\beta|\beta =\alpha +k · 360°$$ ，即任一与角 $$\alpha$$ 终边相同的角，都可以表示成角 $$\alpha$$ 与整数个周角的和.<br>
+（$$360°叫周角,180°叫平角$$）

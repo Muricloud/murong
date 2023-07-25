@@ -1,0 +1,14 @@
+caption: 配置项去字段化
+created: 20220627091713462
+due: 
+modified: 20220627091956246
+tags: $:/q1 GTD
+title: $:/gtd/20220627091713462
+
+图便利，写插件时经常添加一些自定义字段来存储配置项。几年后突然发现，这是一个不好的习惯。因为只要修改配置，该字段就会出现在用户字段列表，而用户不会用到该字段。出现了「占着茅坑不拉屎」的情况，必须杜绝掉！
+
+于是，将之前的很多字段全部删掉，将字段替换为一个条目。比如：
+
+# 以前 Turn on [[Magic Sidebar|$:/plugins/xp/magicsidebar]] 的配置对象为样式条目的字段 `display`；现在配置对象改为 $:/config/MagicSidebar/display。
+
+<<emoji angry 1>>

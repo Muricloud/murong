@@ -1,0 +1,12 @@
+caption: 将维基存储到 Gitee（推荐）
+created: 20210107134414575
+modified: 20211217084920846
+tags: XP-tutorials
+title: 将维基存储到 Gitee
+tmap.id: b2d6050a-16c8-4efc-929f-52bde574abde
+
+在电脑（Linux）和手机（Android）之间同步维基。
+
+[img width=200 [手机和电脑之间同步维基.svg]]
+
+<<tabs "在电脑上将维基同步到Gitee 在手机上将维基同步到Gitee" "在电脑上将维基同步到Gitee" "$:/state/tab1">>

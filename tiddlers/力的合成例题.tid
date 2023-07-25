@@ -1,0 +1,25 @@
+created: 20230709014455076
+modified: 20230709055851664
+tags: 
+title: 力的合成例题
+tmap.id: 64d6b3cf-cea8-4767-8c10-588ce479f23a
+
+''例题1：''物体静止在斜面上，已知有重力$$G$$ 和 支持力 $$F_N$$,这两个力能否保证物体静止在斜面上。<br>
+如果不能，还缺少了什么力，该力的大小和方向分别是多少？
+<div style="width:300px">
+[img[力的合成例图1.png]]
+</div>
+<br>
+
+
+''例题2：''$$F_1$$和其他力构成的合力为零，现在把$$F_1$$拿走，其他力构成的合外力大小和方向是多少？
+<div style="width:300px">
+[img[力的合成例图2.png]]
+</div>
+
+<$details summary="答案" open="no">
+和$$F_1大小相等，方向相反$$
+<div style="width:300px">
+[img[力的合成例图3.png]]
+</div>
+</$details>

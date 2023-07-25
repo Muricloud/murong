@@ -1,0 +1,20 @@
+background-color: #fff
+caption: Steven Skiena’s lectures
+color: red
+created: 20210711163401846
+icon: {{$:/core/images/video}}
+image: $:/heiban.png
+link: 
+linkcolor: <<colour primary>>
+modified: 20220701153814174
+tags: Planning Examples Course
+title: Steven Skiena’s lectures
+tmap.id: 162d5f8d-a225-44d1-83b8-1ccab4852b58
+
+!! 课程目录
+
+@@.list-tree
+* 
+** 
+* 
+@@

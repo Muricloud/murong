@@ -1,0 +1,10 @@
+caption: 连接
+created: 20210530021555746
+modified: 20210530023222250
+tags: XP-tutorials
+title: Syncthing-settings-connections
+tmap.id: cf979cb2-9592-4f9a-ac5c-c7ae65559783
+
+内网建议不要勾选全球发现和 NAT 遍历。一个内网一个外网建议开启
+
+---

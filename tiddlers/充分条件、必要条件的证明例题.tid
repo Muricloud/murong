@@ -1,0 +1,38 @@
+created: 20230705080247742
+modified: 20230705082613373
+tags: 
+title: 充分条件、必要条件的证明例题
+tmap.id: b79163e9-a721-445e-ab7f-e71042088fac
+
+求证：关于x的方程$$x^2+mx+1=0$$有两个负实根的充要条件是$$m \geq 2$$.
+
+<$details summary="答案" open="no">
+<div class=green-box>
+首先在头脑里把题目梳理成“p是q的充要条件”这种形式
+</div>
+$$m \geq 2$$ 是 方程$$x^2+mx+1=0$$有两个负实根的充要条件。<br>
+
+充分性：$$p \Rightarrow q$$<br>
+必要性：$$q \Rightarrow p$$<br>
+
+<$details summary="正式解答" open="no">
+充分性：<br>
+$$ \because m \geq 2 ,$$<br>
+$$ \therefore \Delta=m^2-4 \geq0 ,$$<br>
+由韦达定理得，$$x_1+x_2=-m，x_1·x_2=1$$<br>
+由$$x_1·x_2=1$$，可知$$x_1,x_2$$同正同负<br>
+又由$$x_1+x_2=-m,-m\leq -2 $$,可知$$x_1,x_2$$只能同时为同负数<br>
+$$ \therefore 方程x^2+mx+1=0有两个负实根 $$<br>
+<br>
+必要性：<br>
+$$\because  方程x^2+mx+1=0有两个负实根 $$<br>
+$$ \therefore \Delta=m^2-4 \geq0 ,$$<br>
+解的：$$m \geq 2 或 m \leq -2$$<br>
+又$$\because  x_1,x_2均小于零，x_1+x_2<0 $$<br>
+$$ \therefore -m < 0 ,则m>0$$<br>
+$$ \therefore 只能取m \geq 2 $$<br>
+
+综上所得，x的方程$$x^2+mx+1=0$$有两个负实根的充要条件是$$m \geq 2$$
+</$details>
+
+</$details>

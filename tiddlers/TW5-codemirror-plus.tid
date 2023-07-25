@@ -1,0 +1,19 @@
+caption: TW5-codemirror-plus
+created: 20220817115459612
+linkcolor: 
+modified: 20220819085916343
+moscow: M
+tags: [[Community Plugins]] [[Plugin Card]]
+title: TW5-codemirror-plus
+tmap.id: 0e21ab9c-c526-4ab3-a2e5-11ea44b0058e
+url: https://github.com/adithya-badidey/TW5-codemirror-plus
+
+{{!!url}}
+
+An attempt to make a better writing experience for TW using codemirror.
+
+<div class="blue-box">
+
+TW5-CodeMirror-Enhanced: https://github.com/Gk0Wk/TW5-CodeMirror-Enhanced
+
+</div>

@@ -1,0 +1,64 @@
+created: 20230716131941467
+modified: 20230716132017534
+tags: 
+title: 图像的左右平移
+tmap.id: 9578b5d3-1afd-4433-9d03-d914a81f1c6e
+
+例题1<br>
+$$①$$ $$f(x)=x^2  \Rightarrow	f(x-2)=(x-2)^2$$ <br>$$f(x)$$图像是怎么平移得到的$$f(x-2)$$函数图像的？$$(\quad\quad)$$<br><br>
+$$②$$ $$f(x)=x^2  \Rightarrow	f(x+2)=(x+2)^2$$ <br>$$f(x)$$图像是怎么平移得到的$$f(x+2)$$函数图像的？$$(\quad\quad)$$<br><br>
+$$③$$ $$f(x-2)=(x-2)^2  \Rightarrow	f(x+2)=(x+2)^2$$ <br>$$f(x-2)$$图像是怎么平移得到的$$f(x+2)$$函数图像的？$$(\quad\quad)$$<br><br>
+<$details summary="图像代码" open="no">
+<<codes src:"""f_{1}:y=x^2
+f_{2}:y=(x-2)^2
+f_{3}:y=(x+2)^2
+""">>
+</$details>
+
+例题2<br>
+$$①$$ $$f(x)=-x-2  \Rightarrow	g(x)=-x+2$$ <br>$$f(x)$$图像是怎么平移得到的$$g(x)$$函数图像的？$$(\quad\quad)$$<br><br>
+
+$$②$$ $$f(x)=-2(2x-2)  \Rightarrow	g(x)=-4x+2$$ <br>$$f(x)$$图像是怎么平移得到的$$g(x)$$函数图像的？$$(\quad\quad)$$<br><br>
+
+$$③$$ $$f(x)=2(-2x+2)  \Rightarrow	g(x)=-4x+2$$ <br>$$f(x)$$图像是怎么平移得到的$$g(x)$$函数图像的？$$(\quad\quad)$$<br><br>
+<$details summary="图像代码" open="no">
+<<codes src:"""f_{1}:y=-x-2
+f_{2}:y=-x+2
+f_{3}:y=-2(2x-2)
+f_{4}:y=-4x+2
+f_{5}:y=2(-2x+2)
+""">>
+</$details>
+
+
+
+<div class=green-box>
+函数左右平移的步骤：<br>
+1、先把解析式中的 $$x$$，用一个小括号括起来$$(x)$$。<br>
+2、然后利用平移的口诀''“左加右减”''。<br>
+3、最后把括号展开<br>
+</div>
+
+
+
+例如：<br>
+已知$$f(x)=-2x+2 $$，把函数图像向右平移3个单位，得到的函数解析式为： <br>
+<$details summary="解析" open="no">
+
+$$-2(x)+2$$<br>
+$$-2(x-3)+2$$<br>
+$$-2x+8$$<br>
+所以得到的函数解析式为：$$-2x+8$$<br><br>
+</$details>
+
+已知$$f(x)=-2x+2 $$，通过平移得到函数解析式$$-2x-3$$，请问是怎么平移的？<br>
+<$details summary="解析" open="no">
+
+$$-2(x)+2$$<br>
+$$-2(x+B)+2=-2x-3$$<br>
+$$-2x-2B+2=-2x-3$$<br>
+$$-2B+2=-3$$<br>
+$$B=\frac{5}{2}$$<br>
+最后可以代入验证一下，验证正确。<br>
+$$f(x)$$向左平移了 $$\frac{5}{2}$$ 个单位
+</$details>

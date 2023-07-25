@@ -1,0 +1,23 @@
+caption: list-links：带链接列表宏
+created: 20140917083515996
+modified: 20200901042844535
+tags: 中 Macros [[Core Macros]] TiddlyWiki
+title: list-links Macro
+tmap.id: a933e05d-f323-40fc-9b44-643503ef1991
+
+<<.def list-links>> [[宏|Macros]]返回[[选定条目|Title Selection]]的格式化链接列表 。
+
+如果条目有一个<<.field caption>>（字幕标题）字段，则会显示该字段而不是条目的标题。
+
+!! 参数
+
+;filter
+: 一个[[过滤器|Filters]]，选择包含哪些条目
+;type
+: 用于整个列表元素的HTML元素，默认为 `ul`（无序列表）
+;subtype
+: 用于每个列表项目的HTML元素，默认为 `li`
+;class
+: 一个应用于整个列表元素的[[CSS|Cascading Style Sheets]]类
+
+<<.macro-examples "list-links">>

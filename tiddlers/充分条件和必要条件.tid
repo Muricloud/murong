@@ -1,0 +1,47 @@
+created: 20230704005213943
+modified: 20230704013620586
+tags: 
+title: 充分条件和必要条件
+tmap.id: 672d5697-ebf6-4642-8507-d1b7115d9afe
+
+!! 条件与集合如何等价
+利用集合间的包含关系进行判断：<br>
+如果满足条件p和结论q的元素构成的集合分别为A和B，那么<br>
+<table>
+<tr>
+<td>p是q的充分条件</td>
+<td>$$p \Rightarrow q$$</td>
+<td>$$ A \subseteq B $$</td>
+</tr>
+<tr>
+<td>p是q的必要条件</td>
+<td>$$q \Rightarrow p$$</td>
+<td>$$B \subseteq A$$</td>
+</tr>
+<tr>
+<td>p是q的充要条件</td>
+<td>$$q = p$$</td>
+<td>$$ A = B$$</td>
+</tr>
+<tr>
+<td>p是q的充分不必要条件</td>
+<td>$$p\Rightarrow q,p \cancel{\Leftarrow} q$$</td>
+<td>$$ A \subsetneq B$$</td>
+</tr>
+<tr>
+<td>p是q的必要不充分条件</td>
+<td>$$p\cancel{\Rightarrow} q,p \Leftarrow q$$</td>
+<td>$$ B \subsetneq A$$</td>
+</tr>
+</table>
+
+!! 怎么去记住？
+必要条件 等于 大的集合<br>
+充分条件 等于 小的集合<br>
+
+口诀：准备充分的人还是小。
+
+!! 做阅读理解
+1、p的充分条件是q<br>
+2、p是q的必要条件<br>
+

@@ -1,0 +1,14 @@
+caption: Timer
+created: 20210620033516732
+modified: 20220819085842817
+tags: [[Community Plugins]] [[Plugin Card]] XP-tutorials
+title: Timer by Eric Shulman
+tmap.id: dd990932-e536-4e92-8683-57314bc15941
+url: http://tiddlytools.com/timer.html
+
+{{!!url}}
+
+TiddlyTools Time & Info - Calendars, alarms, timers clocks for TiddlyWiki
+
+* [[TiddlyTools/Time/Clocks]]
+* [[TiddlyTools/Time/Calendar]]

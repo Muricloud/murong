@@ -1,0 +1,48 @@
+created: 20230630235538572
+modified: 20230701000827388
+tags: $:/tags/SideBar
+title: 运动学公式代码
+tmap.id: 246c3302-9d92-435b-9acb-b27b4117e9ad
+
+<table>
+<th>代码</th>
+<th>公式</th>
+<tr>
+<td><<codes src:""" $$v_t=v_0+at   \	\	 ...\textcircled{1}
+$$
+""">></td>
+<td>$$v_t=v_0+at  \	\	 ...\textcircled{1}
+
+$$</td>
+</tr>
+<tr>
+<td><<codes src:""" $$v_t^2-v_0^2=2ax  \ \ ...\textcircled{1}
+$$
+""">></td>
+<td>$$v_t^2-v_0^2=2ax    \	\	 ...\textcircled{1}
+$$</td>
+</tr>
+<tr>
+<td><<codes src:""" $$x=v_0t+\frac{1}{2}at^2  \ \ ...\textcircled{1}
+$$
+""">></td>
+<td>$$x=v_0t+\frac{1}{2}at^2    \	\	 ...\textcircled{1}
+$$</td>
+</tr>
+<tr>
+<td><<codes src:""" $$\overline{v}=v_{\frac{t}{2}}=\frac{v_0+v_1}{2}  \ \ ...\textcircled{1}
+$$
+""">></td>
+<td>$$\overline{v}=v_{\frac{t}{2}}=\frac{v_0+v_1}{2}    \	\	 ...\textcircled{1}
+$$</td>
+</tr>
+<tr>
+<td><<codes src:""" $$\overline{v} = \frac{v_0+v_t}{2}  \ \ ...\textcircled{1}
+$$
+""">></td>
+<td>$$\overline{v} = \frac{v_0+v_t}{2}    \	\	 ...\textcircled{1}
+$$</td>
+</tr>
+</table>
+
+

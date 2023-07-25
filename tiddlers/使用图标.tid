@@ -1,0 +1,10 @@
+caption: {{$:/core/images/globe}} 使用图标
+created: 20220904011422927
+list: 默认图标库 [[Font Awesome]] 制作图标
+modified: 20220904012558768
+tags: 新手入门指南 XP-tutorials
+title: 使用图标
+tmap.id: f087301f-2765-4b60-9887-2d6d61e21e50
+type: text/vnd.tiddlywiki
+
+<<tabs "[tag[使用图标]]" "默认图标库" "$:/state/tab/icons">>

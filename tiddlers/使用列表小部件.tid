@@ -1,0 +1,22 @@
+created: 20211214094513475
+modified: 20211214234134381
+tags: [[WikiText 应用实例]] XP-tutorials
+title: 使用列表小部件
+tmap.id: 589990e7-01f9-4c01-8b88-7aa112845ac5
+
+[[列表小部件|ListWidget]]显示与[[条目过滤器|Filters]]相匹配的条目序列：
+
+简单的列表：
+
+```bash
+<$list filter="[tag[ListWidget]sort[title]]"/>
+```
+
+自定义项目输出：
+
+<<wikitext-example-without-html 
+src:"""<$list filter="[tag[ListWidget]sort[title]]">
+<<currentTiddler>>
+{{||$:/core/ui/ViewTemplate/tags}}
+</$list>
+""">>

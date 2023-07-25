@@ -1,0 +1,9 @@
+created: 20200426212303072
+modified: 20200901042808900
+tags: [[Installing Timimi]] XP-tutorials
+title: linux-install
+tmap.id: cf29a78b-d933-44bd-b21f-401ffba19e75
+
+* 从 {{releasepage}} 上下载 ''timimi-2-1-1-Linux''
+* 双击运行【如果您的操作系统要求确认，请选择“运行”】。
+* 在询问时选择适当的浏览器。

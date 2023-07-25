@@ -1,0 +1,28 @@
+caption: 服务器版本
+created: 20210421133023956
+modified: 20210715093709883
+tags: XP-tutorials
+title: 服务器版本上引用外部文件
+tmap.id: 8a36347f-0361-4b07-ba8a-b29199d4d5f1
+
+对比单文件版本，在 [[服务器版本|TiddlyWiki on Node.js]] 上，不能引用[[维基文件夹|TiddlyWikiFolders]]外的本地文件，只能引用网络文件。
+
+! 引用网络文件
+
+第一种方法，一个简单的链接地址：
+
+```
+[[TiddlyWiki Editions|https://tiddlywiki.com/static/Editions.html]]
+```
+
+第二种方式，新建「[[外部引用条目]]」，`_canonical_uri` 字段使用网络地址即可。
+
+<br>
+
+''相关说明''
+
+---
+
+通过拖拽将文件导入到维基时，文件存储在 `/your/wikipath/tiddlers/` 下面。如果设置了[[文件归类|Customising Tiddler File Naming]]，那么会按规则存储。
+
+<<.warning """注意，如果你想在维基内部查阅电脑中的文件（比如图片），请不要尝试 [[创建本地文件/文件夹的快捷方式|Linux 上创建快捷方式]] 放到 `/your/wikipath/tiddlers/` 下。因为重启服务器后，文件将按 [[文件归类|Customising Tiddler File Naming]] 规则存储。链接文件夹内的文件（比如图片），会被移到 TiddlyWiki 内部。""">>

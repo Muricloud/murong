@@ -1,0 +1,21 @@
+created: 20230704050502671
+modified: 20230704051508104
+tags: 
+title: 全称量词与存在量词-否定的错误示范
+tmap.id: f9827883-3b79-4106-9ac8-dede0b4d6243
+
+定义：$$\forall x \in M,p(x) $$ 的否定是$$\exists x \in M,\neg p(x)$$
+
+<br><br>
+$$“ \forall x \in \{x|1 \leq x \leq 2\},x^2-k \geq 1 ” $$ 的否命题
+
+错误示范：
+<div class=red-box>
+$$ \exists x \in \{x| x \lt 1 或 x \gt 2\},x^2-k \lt 1 $$
+</div>
+<br><br>
+
+正确示范：
+<div class=green-box>
+$$ \exists x \in \{x|1 \leq x \leq 2\},x^2-k \lt 1 $$
+</div>

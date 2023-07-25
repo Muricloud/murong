@@ -1,0 +1,43 @@
+created: 20230703052544037
+modified: 20230703060551916
+tags: 
+title: 集合元素的互异性例题
+tmap.id: b7cdb1e0-8d1d-44e5-8a72-ea64fdbc24b3
+
+$$1、已知M=\{2,a,b\},N=\{2a,2,b^2\},若M=N，求a与b的值.$$
+
+<$details summary="答案" open="no">
+
+$$\{a,b\}$$<br>
+$$\{2a,b^2\}$$<br>
+
+先读取信息比如：$$b^2 >0$$<br>
+
+分析有几种情况，$$ \textcircled{1}a=2a, \textcircled{2}a=b^2$$<br>
+先看$$ \textcircled{1}a=2a$$<br>
+$$a=2a  \Rightarrow a=0 $$<br>
+$$ b=b^2 \Rightarrow b^2-b=b(b-1)=0 \Rightarrow  b=0  或 b=1$$<br>
+
+$$\because a=0 \\
+\therefore b\neq0\\
+\therefore b只能等于1$$
+$$综上：a=0,b=1$$<br>
+
+再看$$\textcircled{2}a=b^2$$<br>
+$$那么b=2a，代入得a=(2a)^2=4a^2$$<br>
+$$4a^2-a=0\\
+a(4a-1)=0\\
+a=1或a=\frac{1}{4}$$
+$$代入验证得：\\
+a=1,b=2(不符合题意，不满足互异性)\\
+a=\frac{1}{4},b=\frac{1}{2}$$
+
+<div class=green-box>
+$$综上所述：\\
+a=0,b=1 \\
+a=\frac{1}{4},b=\frac{1}{2}
+$$
+</div>
+</$details>
+
+

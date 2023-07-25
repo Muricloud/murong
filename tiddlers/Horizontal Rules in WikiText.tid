@@ -1,0 +1,13 @@
+caption: 水平分隔线
+created: 20131205160706975
+modified: 20200901042844531
+tags: 中 WikiText TiddlyWiki
+title: Horizontal Rules in WikiText
+tmap.id: 9e8ca859-8c27-49b8-9a25-500589b8af57
+type: text/vnd.tiddlywiki
+
+在一行上用三个或更多破折号，您可以划一条水平线：
+
+```
+---
+```

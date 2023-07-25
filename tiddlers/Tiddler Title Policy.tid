@@ -1,0 +1,26 @@
+caption: 条目标题策略
+created: 20150110183300000
+modified: 20200901042844570
+tags: 中 [[Improving TiddlyWiki Documentation]] TiddlyWiki
+title: Tiddler Title Policy
+tmap.id: 8df5a72a-d5dd-4ca9-8cbb-6549c4245c5a
+
+许多文档条目，特别是[[参考条目|Reference Tiddlers]]，都只与一个单一概念相关。 他们的标题应该是简洁的名词短语，比如 <<.tid "List Widget">> 或 <<.tid "Tiddler Fields">>。
+
+这个标题的每个主要单词都以大写字母开头。 次要单词诸如 <<.word and>>、<<.word or>>、<<.word the>>、<<.word to>>、<<.word with>> 等则不要。
+
+标签也遵循这种模式。
+
+如果这些标题表示物品的种类，则这种标题是复数。如 <<.tid "Keyboard Shortcuts">> 或 <<.tid "Tiddler Fields">>。 这样的标题被用于类别内更具体的条目的标签。
+
+如果一个概念是一个项目而不是一个类别，那么它的条目有一个单数的标题，例如， <<.tid "List Widget">>、<<.tid "tag Operator">>。
+
+以最具区别的部分开始一个标题。 例如，记录过滤器操作符的条目具有类似 <<.tid "addprefix Operator">> 的标题。 这有助于读者浏览链接列表来找到一个特定的条目。
+
+避免使用 <<.word the>> 字开始标题。
+
+过去，许多条目都有[[骆驼命名法|CamelCase]]的标题。 为了提高可读性，这正被逐步从文档淘汰。 不应再使用骆驼命名法的标题，即使是标签，除了像 <<.tid ~JavaScript>> 这种本身就是标准的拼法。
+
+[[指导条目|Instruction Tiddlers]]通常具有比名词短语更复杂的标题，例如，<<.tid "Ten reasons to switch to ~TiddlyWiki">>。这些标题使用了句子，即只有第一个单词（和任何专有名称）以大写字母开始。
+
+操作说明（How-to）条目的标题以 <<.word "How to">> 开头。 例如，<<.tid "How to edit a tiddler">>。 避免使用像 <<.tid "Editing tiddlers">> 这样的标题，因为不太流利的英语使用者可能会误解为是一个条目类别的名字。

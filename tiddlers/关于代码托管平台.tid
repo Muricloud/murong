@@ -1,0 +1,13 @@
+created: 20210430144904396
+modified: 20210515143219013
+tags: XP-tutorials
+title: 关于代码托管平台
+tmap.id: 3e189784-7070-4c34-b263-253dcf5fd07a
+
+推荐用 [[CODING|https://coding.net/]]，因为 [[GitHub|https://github.com/]] / [[GitLab|https://gitlab.com/]] 访问速度慢，甚至有时无法访问；而 [[Gitee|https://gitee.com/]] 的免费容量较少。
+
+<<tabs "[[CODING 和 Gitee 的差异]]
+代码托管平台产品配额
+使用技巧：同时将代码上传到各平台
+"
+[[CODING 和 Gitee 的差异]] "$:/state/tab1">>

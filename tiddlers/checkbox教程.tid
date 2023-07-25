@@ -1,0 +1,19 @@
+created: 20230604062150803
+modified: 20230604110912507
+tags: 
+title: checkbox教程
+tmap.id: e46f4d67-f4b8-404c-a883-c9ca1cd6658d
+
+\define check-muti-field(tiddle)
+<$action-listops $tiddler="$tiddle$" $field="时间" $filter="gg1"/>
+ <$action-listops $tiddler="$tiddle$" $field="color" $filter="gg"/>
+ \end
+ 
+\define uncheck-muti-field(tiddler)
+<$action-listops 
+$tiddler="$tiddler$" $field="selected-GG" $filter="dd" />
+<$action-listops $tiddler="$tiddler$" $field="selected-ff" $filter="dds" />
+ \end
+
+
+<$checkbox checkactions=<<check-muti-field yuan1>> uncheckactions=<<uncheck-muti-field  yuan1>> tiddler="yuan1"  field="ds" checked="yes" unchecked="no" default="no"> fruits</$checkbox>

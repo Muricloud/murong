@@ -1,0 +1,27 @@
+caption: WikiLabs Plugin Library
+created: 20210619120612718
+linkcolor: chocolate
+modified: 20220819085929471
+moscow: S
+tags: [[Community Plugins]] [[Plugin Card]] XP-tutorials
+title: WikiLabs by PMario
+tmap.id: fbde3103-dea1-4855-9e0e-b2bf73c8c690
+url: https://wikilabs.github.io
+
+{{!!url}}
+
+A collection of references for testing concepts around ~TiddlyWiki 5...
+
+<<<
+This is PMario's playground with ramblings about ~TiddlyWiki and related stuff.
+
+It basically is a "jump off" page to various ~TiddlyWiki sites, that show editions, themes and plugins.
+<<<
+
+<div class="blue-box">
+
+''How to use (install)''
+
+To use in other wikis, drag and drop this link to those wikis: [[Wikilabs Library (latest)|$:/config/wikilabs/PluginLibraryWL/latest]]
+
+</div>

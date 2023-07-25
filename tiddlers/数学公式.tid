@@ -1,0 +1,56 @@
+created: 20200826105617846
+modified: 20210814031411284
+tags: WikiText XP-tutorials
+title: 数学公式
+tmap.id: 234c19d1-b4f3-49b4-aa4a-7ff5078c83b2
+
+> 安装官方插件：$:/plugins/tiddlywiki/katex。
+
+当你需要在编辑器中插入数学公式时，可以使用两个美元符 `$$` 包裹 TeX 或 LaTeX 格式的数学公式来实现。（和 Markdown 一样的语法）
+
+一个简单的数学公式，求圆的面积：
+
+$$
+S=\pi r^2
+$$
+
+```
+$$
+S=\pi r^2
+$$
+```
+
+
+其他公式：
+
+$$
+x \href{why-equal.html}{=} y^2 + 1
+$$
+
+```
+$$
+x \href{why-equal.html}{=} y^2 + 1
+$$
+```
+
+
+$$ 
+x = {-b \pm \sqrt{b^2-4ac} \over 2a}. 
+$$
+
+```
+$$ 
+x = {-b \pm \sqrt{b^2-4ac} \over 2a}. 
+$$
+```
+
+
+$$
+\left [ – \frac{\hbar^2}{2 m} \frac{\partial^2}{\partial x^2} + V \right ] \Psi = i \hbar \frac{\partial}{\partial t} \Psi
+$$
+
+```
+$$
+\left [ – \frac{\hbar^2}{2 m} \frac{\partial^2}{\partial x^2} + V \right ] \Psi = i \hbar \frac{\partial}{\partial t} \Psi
+$$
+```

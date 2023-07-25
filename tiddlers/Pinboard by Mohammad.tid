@@ -1,0 +1,19 @@
+caption: Pinboard
+created: 20210620005109020
+modified: 20220819085707245
+tags: [[Community Plugins]] [[Plugin Card]] XP-tutorials
+title: Pinboard by Mohammad
+tmap.id: a6c57094-2796-49cd-9bc1-3c2d1ae3b9f9
+url: https://github.com/kookma/TW-Pinboard
+
+{{!!url}}
+
+This is a plugin to create a [[pinboard|https://en.wikipedia.org/wiki/Bulletin_board]]
+
+* a pinboard contains some notices pinned on a board
+* a notice is a tiddler tagged with `pin`
+* a notice is removed from board if it is tagged with `done`
+
+<br>
+
+* $:/plugins/kookma/pinboard

@@ -1,0 +1,62 @@
+created: 20230708230942045
+modified: 20230709001330185
+tags: 
+title: 运动的独立性
+tmap.id: 107c9d53-b7bf-45eb-8648-00211c1114f8
+
+''运动的独立性''是指''不同''维度或''方向上''的运动可以''彼此独立地进行，相互不受干扰''。<br>
+<$details summary="详细解释" open="no">
+
+在经典力学中，运动的独立性可以通过''分解运动的矢量''来理解。根据矢量分解的原理，''一个物体的运动可以被分解为沿着不同方向的多个独立的运动分量''。这些分量可以分别受到不同的力影响，并以各自的速度和加速度进行运动。
+
+例如，在平面上，一个物体可以同时具有水平方向和垂直方向的运动。''水平方向上的运动和垂直方向上的运动是相互独立的''，它们的运动状态和受到的力可以分别考虑。这意味着，物体在水平方向受到的力不会影响到其垂直方向的运动，反之亦然。
+
+运动的独立性对于分析和解决复杂的运动问题非常有用。它使得我们可以将一个复杂的运动问题分解为多个简单的独立运动，从而更容易处理和计算。同时，运动的独立性也使得我们能够更好地理解和描述物体在空间中的运动特征。
+
+</$details>
+
+<$details summary="匀速直线运动运动分解" open="no">
+<<codes src:"""t=Slider(0,10,1,1,160,false,true,true,false)
+A=(0,9)
+B=(2t,9-3t)
+C=(0,9-3t)
+D=(2t,9)
+v=vector(A,C)
+w=vector(A,D)
+f_{1}=Segment(C,B)
+f_{2}=Segment(D,B)
+ShowLabel(v,false)
+ShowLabel(w,false)
+ShowLabel(f_{1},false)
+ShowLabel(f_{2},false)
+SetTrace(B,true)
+SetTrace(C,true)
+SetTrace(D,true)
+""">>
+
+
+</$details>
+
+<$details summary="曲线运动运动分解" open="no">
+水平方向初速度：$$3m/s$$<br>
+垂直方向初速度：$$0m/s$$ , 加速度$$1 m/s^2$$
+<<codes src:"""t=Slider(0,10,1,1,160,false,true,true,false)
+A=(0,9)
+B=(3t,9-1/2t^2)
+C=(0,9-1/2t^2)
+D=(3t,9)
+v=vector(A,C)
+w=vector(A,D)
+f_{1}=Segment(C,B)
+f_{2}=Segment(D,B)
+ShowLabel(v,false)
+ShowLabel(w,false)
+ShowLabel(f_{1},false)
+ShowLabel(f_{2},false)
+SetTrace(B,true)
+SetTrace(C,true)
+SetTrace(D,true)
+""">>
+
+
+</$details>

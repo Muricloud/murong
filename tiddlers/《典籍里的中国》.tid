@@ -1,0 +1,36 @@
+background-color: #fff
+caption: 《典籍里的中国》
+color: red
+created: 20220811053932809
+icon: {{$:/core/images/video}}
+image: 1631514532411_886.jpg
+importance: 
+link: 《典籍里的中国》
+linkcolor: 
+modified: 20220811060713737
+revision: 0
+tags: Course Planning Examples
+title: 《典籍里的中国》
+tmap.id: f3aef692-cbfd-4dc2-8757-25e92093682e
+type: text/vnd.tiddlywiki
+url: https://tv.cctv.com/lm/djldzg/index.shtml
+
+[img width=400 [1631514532411_886.jpg]]
+
+!! 课程目录
+
+@@.list-tree
+
+* 《典籍里的中国》 20210212《尚书》
+* 《典籍里的中国》 20210307《天工开物》
+* 《典籍里的中国》 20210321《史记》
+* 《典籍里的中国》 20210502《本草纲目》
+* 《典籍里的中国》 20210613《论语》
+* 《典籍里的中国》 20210807《孙子兵法》
+* 《典籍里的中国》 20210814《楚辞》
+* 《典籍里的中国》20210905《徐霞客游记》
+* [[《典籍里的中国》20210912《道德经》|https://tv.cctv.com/2021/09/12/VIDEeLeCUZEZQpFgRIdllGXc210912.shtml?spm=C31267.PHLBls6HnVjy.EbOkkurqTcFG.7]]
+* 《典籍里的中国》20210920《周易》
+* 《典籍里的中国》20211010《传习录》
+
+@@

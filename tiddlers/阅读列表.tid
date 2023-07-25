@@ -1,0 +1,36 @@
+caption: {{$:/xp/images/readinglist}} 阅读列表
+created: 20210805123313716
+modified: 20220904072040471
+tags: XP-tutorials 新手入门指南
+title: 阅读列表
+tmap.id: d8dfaf26-6b85-410e-8065-79e79740b740
+
+点击查看按钮 <<.icon $:/xp/images/readinglist-add>> 将条目添加到阅读列表。（TableOfContents 中）
+
+XP 中的阅读列表，用于保存@@color:#be2e2e;最近需要重复阅读@@的条目，阅读工作完成即可清空。阅读列表支持拖拽排序和拖拽导入。你可以将任意位置的 TiddlerLinks 直接拖到阅读列表中。
+
+;为何我们需要一个阅读列表？
+:如果用户在故事河中打开了很多的条目，其中一些条目是最近需要重复阅读的，此时，将它们添加到阅读列表是一个比较明智的做法。相反，如果我们再次查看条目时，需要通过搜索或者下翻目录，势必会浪费不必要的时间。
+
+<div class="gray-box">
+
+浏览器中的收藏夹和阅读列表：
+
+* 浏览器中的阅读列表像一个暂存区（缓存），临时保存待阅读的网页，阅读工作完成即可清空；因此阅读@@color:#be2e2e;列表@@没有复杂的操作，你只能添加或者删除，不能拖拽排序，没有（也不需要）分组功能。
+* 而收藏夹，用于存放经常访问或值得收藏的网站，属于对我们比较重要的数据，需要对其进行备份。收藏夹支持分组和拖拽排序，拥有一个与标签栏一样长的收藏栏。
+
+</div>
+
+> 该功能是收藏夹（$:/plugins/kookma/favorites）的简化版。
+
+!! 安装
+
+在 [[tiddlywiki-xp_Minimal.html|我想使用 TiddlyWiki XP？]] 中，将下面 7 个条目粘贴到高级查找筛选中，导出为 json，拖到你的维基中，即可安装「阅读列表」。
+
+# $:/_xp/Stylesheet/toc-readinglist
+# $:/xp/images/readinglist
+# $:/xp/images/readinglist-add
+# $:/xp/readinglist
+# $:/xp/ui/Buttons/reading-list
+# $:/xp/ui/SideBarSegments/toc-readinglist
+# TableOfContents

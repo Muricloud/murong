@@ -1,0 +1,32 @@
+asa: 速度时间图像比较空白页
+created: 20230628012937480
+modified: 20230629080211757
+title: 速度时间图像讲解1
+tmap.id: 3410c988-f36a-4397-befb-09ab1f22a00b
+空白: no
+
+\define setf()
+<$action-setfield  asa="速度时间图像比较后"  />
+\end
+\define setg()
+<$action-setfield  asa="速度时间图像比较空白页"  />
+\end
+\define temple(name1)
+{{$name1$}}
+\end
+
+我们之前学过位移时间图像(x-t),那么通过比较(x-t图像)，你觉得(v-t图像)，我们应该学习什么内容？<br><$checkbox field="空白" checked="yes" unchecked="no" default="no" checkactions="<$macrocall $name=setf />" uncheckactions="<$macrocall $name=setg />"> 显示</$checkbox>
+
+
+<div class="left-column">
+<div class=yellow-box>
+<$macrocall $name='temple' name1={{!!asa}} />
+</div>
+
+</div>
+
+<div class="right-column">
+<div class=blue-box>
+{{位移时间图像}}
+</div>
+</div>

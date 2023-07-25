@@ -1,0 +1,31 @@
+caption: Kookma Plugin Library
+created: 20201117160603290
+linkcolor: chocolate
+modified: 20220819085639311
+moscow: M
+tags: [[Community Plugins]] [[Plugin Card]] XP-tutorials
+title: Kookma Plugin Library by Mohammad
+tmap.id: c1c2d656-f2d5-4ce6-90c0-d73f7b592439
+url: https://kookma.github.io/TW-PluginLibrary/
+
+{{!!url}}
+
+This library contains most useful plugins developed under the name [[Kookma|https://github.com/kookma]] for Tiddlywiki 5.
+
+It has two parts
+
+The plugin library introduces a very simple mechanism like Tiddlywiki Official Plugin Library to let select among the published plugins and install any number of them you like.
+
+
+<div class="blue-box">
+
+''How to use (install)''
+
+# Simply drag and drop [[$:/config/KookmaPluginLibrary]] to your wiki<br>
+# Open $:/ControlPanel in your wiki<br>
+# Goto Plugins tab<br>
+# Click on the ''Get more plugins'' button<br>
+# Under ''Kookma Plugin Library'' click Open plugin library<br>
+# In the list of plugins appeared, click install on those plugins you like to install in your wiki
+
+</div>

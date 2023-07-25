@@ -1,0 +1,57 @@
+created: 20230601122841525
+modified: 20230623143446406
+tags: 模板代码
+title: 常用的样式
+tmap.id: e363df33-b044-4b2d-88a6-f4b86a8ff9b6
+
+\define divColor(color)
+<tr>
+<td>
+<div class="$color$" style="width:100px">$color$</div>
+</td>
+<td>
+<<codes src:"""<div class=$color$ style="width:100px">$color$
+</div>
+""">>
+</td>
+</tr>
+\end
+
+<table>
+<th>颜色</th>
+<th>代码</th>
+<<divColor gray-box>>
+<<divColor yellow-box>>
+<<divColor green-box>>
+<<divColor purple-box>>
+<<divColor blue-box>>
+
+<tr>
+<td>
+<div class="twocolumns" style="margin:15px 0;padding:0 0 0 24px">
+<div class="blue-box" style="width:50px">1
+</div>
+<div class="green-box" style="width:50px">2
+</div>
+</div>
+</td>
+
+<td>
+<<codes src:"""<div class="twocolumns" style="margin:15px 0;padding:0 0 0 24px">
+<div class="blue-box" style="width:50px">
+</div>
+<div class="green-box" style="width:50px">
+</div>
+</div>
+""">>
+</td>
+</tr>
+<tr>
+<td>
+<div class="red-box" style="width: 100px; margin: 0 auto;">相对页面居中对齐</div>
+</td>
+<td>
+<<codes src:"""<div class="red-box" style="width: 100px; margin: 0 auto;">相对页面居中对齐</div>
+""">>
+</td>
+</tr>

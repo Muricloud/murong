@@ -1,0 +1,8 @@
+created: 20230623120529234
+modified: 20230701000307452
+tags: 
+title: 运动学公式(v0,vt,v平均)
+tmap.id: 03799fda-219b-4b9c-8219-2dd57921ce8e
+
+$$ \overline{v} = \frac{v_0+v_t}{2}
+$$

@@ -1,0 +1,66 @@
+created: 20210530013127236
+modified: 20220626085718335
+tags: XP-tutorials
+title: 快速上手 Syncthing
+tmap.id: 965ba151-ff43-4977-b88c-dc518e29aa13
+
+!! 运行 Syncthing
+
+下载 [[Syncthing|https://syncthing.net/downloads/]] 后，直接运行 syncthing 即可，非常简单。桌面端会自动弹出配置页面，一般为 http://127.0.0.1:8384/，支持 HTTPS 连接。
+
+<div class="gray-box">
+
+* ''[[SyncTrayzor|https://github.com/canton7/SyncTrayzor/releases/latest]]:'' Windows 图形界面增强版应用程序包
+* ''[[syncthing-macos|https://github.com/syncthing/syncthing-macos/releases/latest]]:'' macOS 应用程序包
+* Ubuntu 上直接安装的通常不是最新版。可以下载最新版，将文件 syncthing 拷贝到 `/usr/bin/` 下。在终端中输入 `syncthing` 启动服务，<kbd>ctrl-C</kbd> 取消运行。
+
+</div>
+
+!! 配置 Syncthing
+
+可以修改配置文件，也可以直接在浏览器配置，当前后者更方便。操作 → 设置
+
+<<tabs "Syncthing-settings-general Syncthing-settings-gui Syncthing-settings-connections" "Syncthing-settings-connections" "$:/state/tab1">>
+
+<div class="gray-box">
+
+在 VPS 上部署时需要修改配置文件，位于 /root/.config/syncthing/config.xml
+
+将里面的 IP 地址（默认 127.0.0.1）修改为你的 IP 就能远程访问了。
+
+<address>127.0.0.1:8384</address>
+
+</div>
+
+!! 添加远程设备
+
+Syncthing 为每一个设备都提供了一个唯一的「设备标识」（右上角，操作 > 显示 ID），只需要在其他设备添加此标识，即将两个设备连接了起来。
+
+<div class="gray-box">
+
+在 Android 手机 App 上，切换到 `DEVICES`，然后点击右上角加号进入添加远程设备界面，点击二维码图标扫描电脑端的二维码，即可将手机和电脑连接起来。
+
+</div>
+
+!! 添加同步文件夹
+
+Syncthing 要求共享文件夹标识需要保持一致，设置路径后，勾选「共享」下面的设备，文件夹内的内容就自动在多设备间同步了。此外，还支持版本控制功能（通常不启用），支持设置「忽略模式」，「高级」中可设置「文件夹类型」「完整扫描间隔」。
+
+<div class="gray-box">
+
+!! 示范：添加一个同步文件夹 Portal（传送门）
+
+# 电脑上移除默认创建的文件夹（Default Folder），选项 → 移除 → 是。（移除文件夹不会删除任何文件）
+# 「添加文件夹」Portal：
+#* 文件夹标签：Portal
+#* 文件夹 ID：p2p-portal
+#* 文件夹路径：/DATA/Phone/Portal（下面有一个 test 文件）
+# 「共享」下面勾选手机，点击「保存」按钮。
+# 手机 App 中进入 ''Web GUI''，点击 ''Add'' 按钮，然后对文件夹进行设置，「文件夹路径」中在文件夹前加一个下划线 `_portal`（文件管理器中会显示在前面），点击 ''Save'' 按钮后 Syncthing 即开始同步。
+# 返回 App 主界面，点击 Portal 右边的文件夹图标打开目录，看到有一个 test 文件，说明已经同步完成了。
+
+</div><div class="red-box">
+
+''注意：''当存储空间低于 ''设置'' → ''常规'' 中「最低可用磁盘空间」时，同步将不会进行。
+
+</div>

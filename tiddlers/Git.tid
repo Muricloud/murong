@@ -1,0 +1,22 @@
+created: 20220406143640478
+modified: 20220407045131532
+tags: 维基维护工具 XP-tutorials
+title: Git
+tmap.id: dfd6f447-ffd1-4119-99c4-7ce4e2052d2b
+
+\define annot(text) //<small class="tc-muted">$text$</small>//
+
+Git 是一个版本管理工具。
+
+搞会其中四个动作，就可以维护维基了。
+
+# git clone <<annot 将云端仓库克隆下来>>
+# git push <<annot 将本地数据装进仓库后，推送到云端>>
+# git pull <<annot 从云端拉取更新>>
+# git gc <<annot "垃圾收集 (garbage collect)。可以理解为清理垃圾">>
+
+
+See also:
+
+* [[关于代码托管平台]]
+* [[代码托管平台产品配额]]

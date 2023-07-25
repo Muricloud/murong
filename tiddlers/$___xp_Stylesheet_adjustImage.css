@@ -1,0 +1,32 @@
+.img {
+    width: 300px;
+    height: 200px;
+}
+
+/* Alignment 对齐方式
+ * https://www.jb51.net/css/134690.html
+ */
+
+.limg {
+    display: inline;
+    float: left;
+    padding-right: 16px;
+}
+
+.rimg {
+    display: inline;
+    float: right;
+    padding-left: 16px;
+}
+
+.cimg {
+    clear: both;
+    display: block;
+    margin: auto;
+}
+
+/* 添加阴影 */
+
+.simg {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}

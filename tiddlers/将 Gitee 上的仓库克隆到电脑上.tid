@@ -1,0 +1,34 @@
+created: 20210517160115691
+modified: 20220714043847150
+tags: 维基存储方案 XP-tutorials
+title: 将 Gitee 上的仓库克隆到电脑上
+tmap.id: 843b3a1c-75ce-473d-8fc1-8610fb157ff0
+
+将主仓库 mywiki 以及「自定义插件库」克隆下来：
+
+```bash
+cd /DATA/TW
+git clone git@gitee.com:NAME/MyPluginStore.git
+cd wikiSites
+git clone git@gitee.com:NAME/mywiki.git
+cd mywiki
+echo "# mywiki" >> README.md
+```
+
+将其他仓库全部添加为 mywiki 的子模块：
+
+```bash
+git submodule add git@gitee.com:YOURNAME/mywiki-private.git tiddlers/private
+git submodule add git@gitee.com:YOURNAME/mywiki-journals.git tiddlers/journals
+git submodule add git@gitee.com:YOURNAME/mywiki-images.git tiddlers/images
+```
+
+将子模块添加到 mywiki 的 .gitignore 中：
+
+```bash
+echo "tiddlers/private/" >> .gitignore
+echo "tiddlers/journals/" >> .gitignore
+echo "tiddlers/images/" >> .gitignore
+```
+
+> 如果想要删除 submodule，请参考 [[Git 中 submodule 子模块的删除]]。

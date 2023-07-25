@@ -1,0 +1,16 @@
+caption: ~TiddlyWiki
+created: 20220626084727060
+modified: 20220626094607393
+tags: [[Change List]] XP-tutorials
+title: changelist-tiddlywiki
+tmap.id: ce7ccc76-8585-4a45-b8eb-f6ed29c0e714
+
+【编辑栏按钮】修改 Quote 默认开启自动换行
+
+* $:/core/ui/EditorToolbar/quote
+
+<div class="gray-box">
+
+更多更改，请参阅 $:/xp/mtw 中的条目。
+
+</div>

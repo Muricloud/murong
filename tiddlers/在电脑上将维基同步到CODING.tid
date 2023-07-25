@@ -1,0 +1,15 @@
+caption: {{$:/images/fa5/brands/linux}} 电脑端
+created: 20200918183919735
+modified: 20220407092513745
+tags: XP-tutorials
+title: 在电脑上将维基同步到CODING
+tmap.id: 871b3684-27d5-463a-a64b-252093203e14
+
+<<tabs "
+[[一、配置 Git 以及 SSH 公钥（CODING）]]
+[[二、在电脑与 Coding 之间同步维基]]
+[[三、Coding 上开启静态网站]]
+四、重建代码仓库
+使用技巧：同时将代码上传到各平台
+"
+[[一、配置 Git 以及 SSH 公钥（CODING）]] "$:/state/tab1">>

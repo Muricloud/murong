@@ -1,0 +1,47 @@
+caption: Action Widgets
+created: 20220419044024805
+modified: 20220817111113865
+tags: Snippet
+title: snippet/ActionWidgets
+tmap.id: 710d4bc3-a2a3-429e-8581-bb5e6f859163
+
+: [[ActionWidgets|https://tiddlywiki.com/static/ActionWidgets.html]]
+
+<span style="color:red;">~SetField</span>
+
+<<codes src:"""<$button>
+<$action-setfield $tiddler="HelloThere" tags="NewTag [[Another New Tag]]" color="red"/>
+<$action-setfield $tiddler="$:/state/tab--1890574033" text="$:/core/ui/TiddlerInfo/Fields"/>
+<$action-navigate $to="HelloThere"/>
+Modify ~HelloThere
+</$button>
+""">>
+
+
+<span style="color:red;">Listops</span>
+
+<<codes src:"""<$button>
+<$list filter="[[HelloThere]]">
+<$action-listops $tags="abc -123"/>
+<$action-listops $field="myfield" $subfilter="-abc hlm"/>
+</$list>
+</$button>
+""">>
+
+
+<span style="color:red;">Delete</span>
+
+<<codes src:"""<$button>
+<$action-deletetiddler $tiddler="HelloThere"/>
+<$action-deletetiddler $filter="[tag[HelloThere]]"/>
+Delete ~HelloThere and tiddlers tagged "~HelloThere"
+</$button>
+""">>
+
+<<codes src:"""<$button>
+<$action-confirm $message="Do you wish to delete the caption and tags?">
+<$action-deletefield caption tags/>
+Delete "caption" and "tags"
+</$action-confirm>
+</$button>
+""">>

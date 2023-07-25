@@ -1,0 +1,59 @@
+caption: 后台运行 ~TiddlyWiki
+created: 20200828105935450
+modified: 20220626091853274
+tags: [[Using TiddlyWiki on Node.js]] XP-tutorials
+title: Node.js 上后台运行 TiddlyWiki
+tmap.id: 8579894d-ac70-41f7-8f68-b71b2e97893e
+type: text/vnd.tiddlywiki
+
+! Linux 上后台运行 TiddlyWiki，用 pm2 来管理进程
+
+!! 安装 pm2
+
+```bash
+sudo npm install pm2@latest -g
+```
+
+!! 搜索 tiddlywiki.js 的位置
+
+```bash
+$ find `npm root -g` -name tiddlywiki.js
+
+/usr/lib/node_modules/tiddlywiki/tiddlywiki.js
+```
+
+
+!! 修改 shell 用户配置文件
+
+<<tabs "[[修改 bash 环境变量]] [[修改 zsh 环境变量]]" [[修改 bash 环境变量]] "$:/state/tab1">>
+
+* 重启终端后，执行 wiki 命令即可。
+* （可选）`source ~/.bashrc` 或者 `source ~/.zshrc` 后，执行 wiki 命令。
+
+<div class="blue-box">
+
+通过定义函数来管理多个 Wiki 是比较方便的。将函数中的函数名、维基文件目录名进行对应的替换，来管理其他 Wiki。
+
+</div>
+
+
+!! pm2 常用命令
+
+pm2 是一个进程管理工具，可以用它来管理你的node进程，并查看node进程的状态，当然也支持性能监控，进程守护，负载均衡等功能。
+
+```bash
+pm2 list #列出所有进程/应用
+pm2 stop mynewwiki #结束 mynewwiki 进程
+pm2 stop all #结束所有进程/应用
+pm2 restart mynewwiki #重新启动进程/应用
+pm2 delete mynewwiki #删除进程/应用
+
+```
+
+启动 wiki 使用自定义的函数名。
+
+
+!! See also
+
+* [[Mac 上后台运行 TiddlyWiki|https://www.jianshu.com/p/78e3fc8859e2]]
+* [[pm2 常用命令列表|https://www.jianshu.com/p/e15fd72727fe]]

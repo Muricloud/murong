@@ -1,0 +1,16 @@
+caption: 选项卡宏（示例）
+created: 20150221211317000
+modified: 20200901042844563
+tags: 中 [[tabs Macro]] [[Macro Examples]] TiddlyWiki
+title: tabs Macro (Examples)
+tmap.id: 188f3d8e-03e7-45f4-825e-63e9637a8b8d
+type: text/vnd.tiddlywiki
+
+<$macrocall $name=".example" n="1"
+eg="""<<tabs "SampleTabOne SampleTabTwo SampleTabThree SampleTabFour" "SampleTabOne" "$:/state/tab1">>"""/>
+
+<$macrocall $name=".example" n="2"
+eg="""<<tabs "[tag[sampletab]]" "SampleTabTwo" "$:/state/tab2" "tc-vertical">>"""/>
+
+<$macrocall $name=".example" n="3"
+eg="""<<tabs "[tag[sampletab]nsort[order]]" "SampleTabThree" "$:/state/tab3" "tc-vertical">>"""/>

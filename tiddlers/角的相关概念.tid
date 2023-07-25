@@ -1,0 +1,36 @@
+created: 20230719063224231
+modified: 20230719065714241
+title: 角的相关概念
+tmap.id: 204ae908-b1e8-4d60-8886-8b2ee4e07fb0
+
+''1、角的概念：''角可以看成一条射线绕着它的端点旋转所成的图形.<br><br>
+''2、角的分类''
+<table>
+<th>类型</th>
+<th>定义</th>
+<tr>
+<td><br>正角<br>&emsp;</td>
+<td>一条射线绕其端点按<mark class="mark-red">逆时针方向</mark>旋转形成的角</td>
+</tr>
+<tr>
+<td><br>负角<br>&emsp;</td>
+<td>一条射线绕其端点按<mark class="mark-red">顺时针方向</mark>旋转形成的角</td>
+</tr>
+<tr>
+<td><br>零角<br>&emsp;</td>
+<td>一条射线没有做任何旋转,就称它形成了一个零角</td>
+</tr>
+</table>
+
+<br>
+''3、相等角与相反角''
+<br>
+(1) &nbsp;''相等角:'' 如果角 $$\alpha$$ 和角 $$\beta$$ 的<mark class="mark-orange">旋转方向</mark>相同且<mark class="mark-orange">旋转量</mark>相等那么就称 $$\alpha=\beta$$.&emsp;&emsp; <c style="color:Red;">( $$\beta$$读作：beta)</c>
+<br>
+(2) &nbsp;''相反角:'' 把射线 OA 绕端点 $$O$$ 按不同方向旋转相同的量所成的两个角叫做互为相反角,角 $$\alpha$$ 的相反角记为  $$-\alpha$$ .
+<br>
+<br>
+''4、角的加法与减法''<br>
+(1) &nbsp;设 $$\alpha$$ ,$$\beta$$ 是任意两个角,把角 $$\alpha$$ 的终边旋转角 $$\beta$$ ,这时终边所对应的角是 $$\alpha+\beta$$ <br>
+(2) &nbsp;角的减法可以转化为角的加法,即减去一个角等于加上这个角的相反角,也就是 $$\alpha-\beta = \alpha+(-\beta)$$
+<br><br>

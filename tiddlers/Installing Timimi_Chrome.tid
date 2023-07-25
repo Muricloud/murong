@@ -1,0 +1,21 @@
+caption: Chrome
+created: 20200430112334122
+icon: fa-chrome
+modified: 20211217081617792
+tags: [[Installing Timimi]] XP-tutorials
+title: Installing Timimi/Chrome
+tmap.id: 230fac53-f6fd-4c02-b207-10097d078ade
+
+!! <i class='fab fa-linux'></i> Linux
+{{Chrome addon}}
+{{linux-install}}
+
+
+!! <i class='fab fa-apple'></i> Mac
+{{Chrome addon}}
+{{mac-install}}
+
+
+!! <i class='fab fa-windows'></i> Windows
+{{Chrome addon}}
+* 从 {{releasepage}} 上下载并运行 ''timimi-2-1-1-Windows-Chrome-Chromium-Opera.exe''

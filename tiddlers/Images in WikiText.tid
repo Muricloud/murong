@@ -1,0 +1,81 @@
+caption: 图像
+created: 20131205160221762
+modified: 20221225042940880
+tags: 中 WikiText [[Working with TiddlyWiki]] TiddlyWiki
+title: Images in WikiText
+tmap.id: 7707068d-7603-497d-b7ac-dad0fe235511
+type: text/vnd.tiddlywiki
+url: https://tiddlywiki.com/static/Images%2520in%2520WikiText.html
+
+!! 图像格式
+
+用以下语法包含图像：
+
+```
+[img[Motovun Jack.jpg]]
+[img[http://tiddlywiki.com/favicon.ico]]
+```
+
+您还可以从编辑器工具栏插入图像。 点击''图片'' (<<.icon $:/core/images/picture>>) 并选择一个图片文件。
+
+还可以指定一个图片提示：
+
+```
+[img[一个解释性的提示|Motovun Jack.jpg]]
+```
+
+可以提供属性来指定CSS类和图像的宽度和高度：
+
+```
+[img width=32 [Motovun Jack.jpg]]
+[img width=32 class="tc-image" [Motovun Jack.jpg]]
+```
+
+请注意，属性可以指定为传入（transclusions）或变量引用：
+
+```
+[img width={{!!mywidth}} class=<<image-classes>> [Motovun Jack.jpg]]
+```
+
+> `{{!!mywidth}}` 为传入本条目字段 `mywidth` 中的值（需要添加字段）。
+>> 新建条目默认含有的字段有：title、tags、text、created、modified。（新建一个条目，导出为 JSON file 可以看到）
+> `<<image-classes>>` 为变量引用。
+
+图像语法是对调用 ImageWidget（图片小部件）的简写。
+
+<div class="blue-box">
+
+!! Importing Images
+
+<<.from-version "5.2.0">> 你可以直接拖动网页中的图片到维基中或者文本编辑框中，进行导入。
+
+</div>
+
+!! 通过嵌入（Transclusion）显示图像
+
+您还可以通过引用已保存的图片条目来显示图像。 这种方法的缺点是没有直接的方式来控制图像的大小。
+
+```
+{{Motovun Jack.jpg}}
+```
+
+
+!! 通过 CSS 控制图像
+
+> 该方法的主要目的是简化代码。当你需要对大多数图片进行调整时，[[使用样式表|Using Stylesheets]]是有用的。
+
+比如，新建样式条目 $:/_xp/Stylesheet/adjustImage 并添加 `$:/tags/Stylesheet` 标签。
+
+现在让我们看看效果：
+
+```bash
+[img[Motovun Jack.jpg]]
+[img width=300 height=200 [Motovun Jack.jpg]]
+[img class=img [Motovun Jack.jpg]]  # 输入代码有所简化
+[img class=rimg [Motovun Jack.jpg]]
+```
+
+[img[Motovun Jack.jpg]]
+[img width=300 height=200 [Motovun Jack.jpg]]
+[img class=img [Motovun Jack.jpg]]
+[img class=rimg [Motovun Jack.jpg]]

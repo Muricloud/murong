@@ -1,0 +1,8 @@
+created: 20230610000815033
+modified: 20230610001327452
+tags: 
+title: 卡片奖励模板
+tmap.id: 60aee7d6-3bc9-44ca-bec3-5d08e68834da
+
+<<codes src:"""<$list filter="[all[tiddlers]tag[单词]分组list[list1]proficiency[100]count[]compare:number:gt[2]then[词汇表]else[no]]" template="$:/templates/transclusion-infocard"/>
+""">>

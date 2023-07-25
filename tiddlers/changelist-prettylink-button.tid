@@ -1,0 +1,10 @@
+caption: Pretty link button
+tags: [[Change List]] XP-tutorials
+title: changelist-prettylink-button
+tmap.id: 0b008d1b-5c38-41dd-8c86-6d991ebcad9f
+
+!! $:/plugins/tg/prettylink-button
+
+修改前后缀内容：
+
+* $:/core/ui/EditorToolbar/prettylink

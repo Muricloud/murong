@@ -1,0 +1,23 @@
+caption: demo2
+created: 20220220070734728
+modified: 20220220071035729
+tags: 创建下拉框
+title: 创建下拉框/demo2
+tmap.id: b263c851-3c3e-4a6b-a128-7047b00935a8
+
+\define select-tiddler-toshow()
+<$select tiddler='$:/generated-list-demo-state'>
+<option value="$:/xp/columns/Examples/text1">正义</option>
+<option value="$:/xp/columns/Examples/text2">我们的七月</option>
+</$select>
+\end
+
+<div style="margin-bottom: 1rem;padding: 10px 28px;border-radius: 5px;box-shadow: 0.5px 1px 17px -8px #A3A5AE;">
+
+浏览条目 <<select-tiddler-toshow>>：
+
+</div>
+
+<$tiddler tiddler={{$:/generated-list-demo-state}}>
+<$transclude mode='block'/>
+</$tiddler>

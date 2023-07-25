@@ -1,0 +1,30 @@
+created: 20230515111916666
+modified: 20230601004114000
+tags: 
+title: 混联电路例题1-解析
+tmap.id: 13319d58-b590-43e0-8f5d-46f3f578ecb8
+
+{{混联电路例题1-题干}}
+<$details summary="题干信息" open="yes">
+如图所示，电源电压保持不变，电流表量程为 0~0.6A ，定值电阻 R 1 =5Ω ，灯泡 L 标有 “4V 0.4A” 字样。当开关 S 3 断开 S 1 和 S 2 闭合时，<c style="color:Red;">灯泡 L 恰好正常发光</c>；当开关 S 2 断开 S 1 和 S 3 闭合时，电流表示数为 0.3A 。不考虑温度对所有仪器电阻的影响。下列说法中正确的是（　　）
+
+</$details>
+<$details summary="选项" open="yes">
+
+A . 电源电压是 4V
+<$details summary="详解" open="no">
+
+</$details>
+B . R ,,2,, 的阻值是 10Ω
+<$details summary="详解" open="no">
+
+</$details>
+C . 灯泡 L 的电阻值是 R ,,2,, 的 2 倍
+<$details summary="详解" open="no">
+
+</$details>
+D . 当开关 S,, 2 ,,断开 S,, 1 ,,和 S ,,3,, 闭合时，电阻 R,, 2,, 消耗的电功率是 1.35W 
+<$details summary="详解" open="no">
+
+</$details>
+</$details>

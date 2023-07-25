@@ -1,0 +1,84 @@
+caption: Conditional Statement
+created: 20220419044024712
+modified: 20220817111416052
+tags: Snippet
+title: snippet/ConditionalStatement
+tmap.id: 556f453e-f9e1-4e49-967f-b9039f4f615c
+
+: [[Filter Expression|https://tiddlywiki.com/static/Filter%2520Expression.html]] / [[Conditional Operators|https://tiddlywiki.com/static/Conditional%2520Operators.html]]
+
+
+<span style="color:red;">list:</span>
+
+<<codes js src:"""<$list filter="[[$:/xp]plugin-type[plugin]]" variable="ignore">
+</$list>
+""">>
+
+<<codes src:"""<$list filter="[[$:/themes/tiddlywiki/vanilla/options/sidebarlayout]get[text]] +[else[fixed-fluid]!match[fluid-fixed]]" variable="ignore">
+<$list filter="$:/core/ui/AdvancedSearch/Filter/FilterButtons/clear">
+<$transclude/>
+</$list>
+</$list>
+""">>
+
+<<codes js src:"""<$list filter="[tag<aggregationTag>!has[draft.of]limit[1]]" emptyMessage="{{$:/aggregation/prompt}}" variable="ignore">
+</$list>
+""">>
+
+<<codes src:"""<$list filter="[all[shadows+tiddlers]tag[$:/tags/MenuBar]!has[draft.of]]">
+<$list filter="[<currentTiddler>addprefix[$:/config/plugins/menubar/MenuItems/Visibility/]get[text]] ~show +[match[show]]" variable="ignore">
+<$list filter="[<currentTiddler>has[custom-menu-content]]" variable="listItem">
+<$transclude field="custom-menu-content" mode="inline"/>
+</$list>
+</$list>
+</$list>
+""">>
+
+
+<span style="color:red;">set + reveal:</span>
+
+<<codes js src:"""<$set name="stateCode" filter="[tag<aggregationTag>!has[draft.of]limit[1]]" value="1" emptyValue="0">
+<$reveal default=<<stateCode>> type="match" text="0">
+
+</$reveal>
+<$reveal default=<<stateCode>> type="match" text="1">
+
+</$reveal>
+</$set>
+""">>
+
+
+<span style="color:red;">vars + reveal:</span>
+
+<<codes js src:"""<$vars sidebarState={{{ [[$:/state/sidebar]!is[missing]get[text]] ~yes }}}>
+<$reveal default=<<sidebarState>> type="match" text="yes">
+
+</$reveal>
+<$reveal default=<<sidebarState>> type="match" text="no">
+
+</$reveal>
+</$vars>
+""">>
+
+
+<span style="color:red;">vars + list:</span>
+
+<<codes src:"""\whitespace trim
+<$vars userInput={{{ [<editTiddler>get[text]] }}} configTiddler={{{ [[$:/state/search/currentTab]!is[missing]get[text]] ~[{$:/config/SearchResults/Default}] }}}>
+<$list filter="[<userInput>minlength{$:/config/Search/MinLength}limit[1]]" emptyMessage="<div class='tc-search-results'>{{$:/language/Search/Search/TooShort}}</div>" variable="listItem">
+
+<$tiddler tiddler=<<configTiddler>>>
+
+<$list filter="[<userInput>minlength[1]]" variable="ignore">
+<$list filter={{{ [<configTiddler>get[first-search-filter]] }}}>
+<span class={{{[<currentTiddler>addsuffix[-primaryList]] -[<searchListState>get[text]] +[then[]else[tc-list-item-selected]] }}}>
+<$transclude tiddler="$:/core/ui/ListItemTemplate"/>
+</span>
+</$list>
+</$list>
+
+</$tiddler>
+
+</$list>
+</$vars>
+""">>

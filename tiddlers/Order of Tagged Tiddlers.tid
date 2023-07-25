@@ -1,0 +1,19 @@
+caption: 标签下条目的排序
+created: 20150124125646000
+modified: 20210713022537576
+tags: 中 Tagging TiddlyWiki
+title: Order of Tagged Tiddlers
+tmap.id: 0b3004de-f7c1-442c-933c-4ef32b9915f1
+type: text/vnd.tiddlywiki
+
+! 标签下条目的排序
+
+当~TiddlyWiki生成具有特定标签的条目列表时（例如，标签丸的下拉列表），它使用以下规则来排序条目：
+
+# 按照标签条目的<<.field list>>字段中的[[声明|Title List]]给定的顺序开始。
+# 在剩下的每个条目<<.place T>>中，查找<<.field list-before>>字段。 如果其值是一个条目的标题，就把<<.place T>>排在它<<.em 之前>>。
+#* 作为特殊情况，如果该字段存在但是其值为空，则在列表的最开始处放置<<.place T>>。
+# 在剩下的每个条目<<.place T>>中，查找<<.field list-after>>字段。 如果其值是一个条目的标题，就把<<.place T>>排在它<<.em 之后>>。
+# 如果仍然剩有任何条目，请将其放置在列表末尾，按字母升序排列标题。 大写和小写字母之间的区别被忽略。
+
+具有特定标签的条目的排序，可以通过在标签下拉框内拖放来直接修改。 其底层的[[标签列表拖放宏|list-tagged-draggable Macro]]也可以在其他地方使用。

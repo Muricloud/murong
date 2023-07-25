@@ -1,0 +1,14 @@
+created: 20211124014630255
+modified: 20220626084820257
+tags: TableOfContents XP-tutorials
+title: HTML 语法
+tmap.id: a6c1d075-23c3-409d-bb69-38bac904076e
+
+<div class="gray-box">
+
+超文本标记语言（HyperText Markup Language，HTML）是一种用于创建网页的标准标记语言。标记语言是一套标记标签（markup tag）。HTML 运行在浏览器上，由浏览器来解析。[[HTML 教程|https://www.runoob.com/html/]]。
+
+</div>
+
+<<list-links "[tag[HTML 语法]sort[]]">>
+

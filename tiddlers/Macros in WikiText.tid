@@ -1,0 +1,87 @@
+caption: 宏
+created: 20131205160746466
+modified: 20211209154343480
+tags: 中 WikiText TiddlyWiki
+title: Macros in WikiText
+tmap.id: 0a950ded-479e-4e86-8306-4332ccfd1db9
+type: text/vnd.tiddlywiki
+
+! [[WikiText 中的宏|https://tiddlywiki.com/static/Macros%2520in%2520WikiText.html]]
+
+（进阶内容）
+
+<<.def macro>>（宏）是一个命名的文本片段。 WikiText 可以使用这个名字作为[[嵌入|Transclusion]]该片段的简写方式。 这样的转换称为 <<.def "macro calls">>（宏调用），并且每个调用可以提供一组不同的参数来代替片段中的特殊占位符。
+
+! 宏
+
+宏可以让您打包 WikiText 的重复片段，以便您可以轻松地重复使用它们。
+
+例如，这里是一个宏的定义，它从它的唯一标识符生成一个 ~YouTube 视频 URL：
+
+```
+\define youtube(video)
+https://www.youtube.com/watch?v=$video$
+\end
+```
+
+有了这个定义，`<<youtube 1g66s7UbyuU>>` 即生成URL https://www.youtube.com/watch?v=1g66s7UbyuU
+
+~TiddlyWiki 内核内置了多个[[核心宏|Core Macros]]。
+
+
+!! 宏定义
+
+一个[[宏|Macros]]是用一个 `\define` [[编译指令|Pragma]]定义的。像所有编译指令一样，这只能出现在条目的开始。
+
+定义的第一行指定宏名称和任何参数。每个参数都有一个名称，并且可选地使用一个默认值，如果在对宏的特定调用中没有提供值，则使用该值。下面的行包含宏的文本（即宏名称表示的代码段），直到 `\end` 本身出现在一行上：
+
+<$codeblock code={{$:/editions/tw5.com/macro-examples/say-hi}}/>
+
+|!宏名称 |!`sayhi` |<|
+|参数名称 |`name` |`address` |
+|默认值 |`兔八哥` |`兔洞山` |
+|代码段 |嗨，我是$name$，我住在$address$。 |<|
+|占位符 |`$name$` |`$address$` |
+
+或者，整个定义可以在一行中显示，而不用 `\end` 标记：
+
+```
+\define sayhi(name:"兔八哥") 嗨，我是$name$.
+```
+
+!!! 占位符
+
+代码段可以包含参数的占位符。 它们由美元符号之间的参数名称组成，比如 `$this$`。
+
+它也可以包含[[变量|Variables]]的占位符。 它们由美元符号和圆括号之间的变量名称（或宏名称）组成，如 `$(this)$`。
+
+每次调用宏时，占位符将被参数或变量的实际值替换掉：
+
+<$importvariables filter="$:/editions/tw5.com/macro-examples/say-hi-using-variables">
+<$codeblock code={{$:/editions/tw5.com/macro-examples/say-hi-using-variables}}/>
+<$macrocall $name=".example" n="1"
+eg="""<$set name="address" value="兔洞山">
+<<say-hi-using-variables>>
+</$set>"""/>
+</$importvariables>
+
+!!! 范围
+
+宏在定义它们的条目以及嵌入（transcludes）它的任何条目中有效。
+
+为了使所有的条目都可以使用宏，可以在一个条目中用 <<.tag $:/tags/Macro>> 标签定义它。
+
+
+!! 宏调用
+
+要调用一个[[宏|Macros]]，请把宏名称和任何参数值用`<<`双角括号`>>`括起来。
+
+默认情况下，参数按照与宏定义相同的顺序列出。 为了清晰或者修改顺序，一个参数可以用名字来标记。
+
+如果没有为参数指定值，则会使用宏定义中为该参数提供的默认值。 （如果未定义默认值，则该参数为空。）
+
+每个参数的值可以用 `'`单引号`'`、`"`双引号`"`、`"""`三重双引号`"""` 或者 `[[`双方括号`]]` 括起来。三重双引号允许一个值包含几乎任何东西。 如果值不包含空格或单引号或双引号，则不需要这些分界符。
+
+由于宏只是简单地参数化[[变量|Variables]]，所以可以使用相同的技术插入一个变量的值。
+
+[[示例|Macro Calls in WikiText (Examples)]]

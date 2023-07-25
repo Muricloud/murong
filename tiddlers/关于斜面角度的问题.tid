@@ -1,0 +1,60 @@
+created: 20230710025600700
+modified: 20230710054244683
+tags: 
+title: 关于斜面角度的问题
+tmap.id: f665a84b-d7fc-45db-b010-dccaefc498ef
+
+斜面角度：$$37 \degree，53 \degree，30 \degree，60 \degree，45 \degree$$最为常见
+
+<table>
+<th></th>
+<th>$$37 \degree
+$$</th>
+<th>$$53 \degree$$</th>
+<th>$$30 \degree$$</th>
+<th>$$60 \degree$$</th>
+<th>$$45 \degree$$</th>
+<tr>
+<td>$$sin
+$$</td>
+<td>$$\frac{3}{5}
+$$</td>
+<td>$$\frac{4}{5}
+$$</td>
+<td>$$\frac{1}{2}
+$$</td>
+<td>$$\frac{\sqrt 3}{2}
+$$</td>
+<td>$$\frac{\sqrt 2}{2}
+$$</td>
+</tr>
+<tr>
+<td>$$cos
+$$</td>
+<td>$$\frac{4}{5}
+$$</td>
+<td>$$\frac{3}{5}
+$$</td>
+<td>$$\frac{\sqrt 3}{2}
+$$</td>
+<td>$$\frac{1}{2}
+$$</td>
+<td>$$\frac{\sqrt 2}{2}
+$$</td>
+</tr>
+</table>
+
+
+<$details summary="怎么去记？" open="no">
+以$$37 \degree$$，$$53 \degree$$为例：<br>
+记住$$cos$$对应的临边，$$sin$$对应的对边，然后在脑袋里想一个直角三角形，短边$$\frac{3}{5}$$，长边$$\frac{4}{5}$$
+</$details>
+
+
+<br>
+<div class=purple-box>
+解题经验：<br>
+画图的时候机灵一点，不管是$$30 \degree$$，$$37 \degree$$,我们只要把斜面的角度画小一点，就能在力进行正交分解,找角度时，快速的找到了，而不用去证明两个角是相等的。<br>
+同理，在画$$53 \degree$$，$$60 \degree$$时，应该把角画大一点。
+</div>
+

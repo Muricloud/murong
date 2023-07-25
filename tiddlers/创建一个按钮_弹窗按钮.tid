@@ -1,0 +1,38 @@
+caption: 弹窗按钮
+created: 20211208133631495
+modified: 20230601124801953
+tags: 创建一个按钮 XP-tutorials 模板代码
+title: 创建一个按钮/弹窗按钮
+tmap.id: a11e9f8e-0dc6-4c79-acec-3aef9810eb71
+
+!! 点击按钮弹出某个条目
+
+<$macrocall $name="wikitext-example-without-html" src="""<$button message="tm-modal" param="用以致学">用以致学</$button>"""/>
+
+
+!! 配合 [[RevealWidget|https://tiddlywiki.com/static/RevealWidget.html]] 创建下拉弹窗
+
+<$macrocall $name="wikitext-example-without-html" 
+src="""<$set name="popupstate" value=<<qualify "$:/state/popup/demo">> >
+<$button popup=<<popupstate>> tooltip="Show popup">
+{{$:/core/images/down-arrow}} 用以致学
+</$button>
+<$reveal type="popup" state=<<popupstate>> position="below" updatePopupPosition="yes" class="tc-popup-keep" animate="yes" retain="yes" style="overflow-y:hidden;">
+<div class="tc-drop-down-wrapper">
+<div class="xp-popup tc-popup-keep" style="max-width:680px;overflow-y:hidden;">
+<div class="xp-popup-text">
+<$transclude tiddler="用以致学" mode="block"/>
+</div>
+</div>
+</div>
+</$reveal>
+</$set>
+"""/>
+
+XP 中提供了相关模板：
+
+* $:/templates/popup（显示标题）
+* $:/templates/popup-caption（显示字幕）
+* $:/templates/popup-animate（有动画效果）
+
+使用方法：`{{用以致学||$:/templates/popup}}`

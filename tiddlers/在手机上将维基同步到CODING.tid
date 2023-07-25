@@ -1,0 +1,8 @@
+caption: {{$:/images/fa5/brands/android}} 手机端
+created: 20210107135604474
+modified: 20210423053751052
+tags: XP-tutorials
+title: 在手机上将维基同步到CODING
+tmap.id: 78322343-6181-4d00-bad3-78138acc5b60
+
+<<tabs "[[一、配置 Termux（CODING）]] [[二、在手机与 Coding 之间同步维基]]" [[一、配置 Termux（CODING）]] "$:/state/tab1">>

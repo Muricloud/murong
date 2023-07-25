@@ -1,0 +1,105 @@
+created: 20230603235935423
+modified: 20230628024646214
+open: no
+tags: 单词
+title: 词汇表
+tmap.id: 6b313465-f789-4628-8cfd-dce166908c1b
+word: no
+
+\define learn-times-field(times,tiddler)
+<$action-setfield $tiddler="$tiddler$" datetime=<<dt YYYY-0MM-0DD >> times=$times color-box="yellow-box" />
+ \end
+ 
+\define noremenber-field(tiddler)
+<$action-setfield $tiddler="$tiddler$" datetime=<<dt YYYY-0MM-0DD >> color-box="red-box" />
+ \end
+
+\define remenber-field(tiddler)
+<$action-setfield $tiddler="$tiddler$" datetime=<<dt YYYY-0MM-0DD >> color-box="green-box" />
+ \end
+ 
+ 
+ \define mean-text(tiddler)
+{{$tiddler$}}
+ \end
+ 
+ \define gaokao-frequency(tiddler)
+{{$tiddler$!!高考出现次数}}
+ \end
+
+<$text text=<<dt YYYY-0MM-0DD >>/>
+
+<table>
+<th>单词</th>
+<th>次数</th>
+<th>意思</th>
+<th>不会</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+<th>6</th>
+<th>7</th>
+<th>会</th>
+<tbody>
+<$list filter="[all[shadows+tiddlers]tag[单词]分组list[list1]]" variable="listItem">
+<tr>
+<td>
+<div class={{{ [<listItem>get[color-box]] }}}  style="width:120px">
+<$link to=<<listItem>>><$text text=<<listItem>>/></$link>
+</div>
+</td>
+
+<td>
+<$macrocall $name='gaokao-frequency' tiddler=<<listItem>> />
+</td>
+
+<td><$details summary=" " open={{!!open}} >
+<$macrocall $name='mean-text' tiddler=<<listItem>> />
+</$details>
+</td>
+
+<td>
+<$checkbox tiddler=<<listItem>>  checkactions="<$macrocall $name='noremenber-field' tiddler=<<listItem>>/>"   field="proficiency"  checked="0" unchecked="no" default="no"> </$checkbox>
+</td>
+
+<td>
+<$checkbox tiddler=<<listItem>> checkactions="<$macrocall $name='learn-times-field' tiddler=<<listItem>> times='1' />" field="number1"  checked="yes" unchecked="no" default="no"> </$checkbox>
+</td>
+
+<td>
+<$checkbox tiddler=<<listItem>> checkactions="<$macrocall $name='learn-times-field' tiddler=<<listItem>> times='2' />" field="number2"  checked="yes" unchecked="no" default="no"> </$checkbox>
+</td>
+
+<td>
+<$checkbox tiddler=<<listItem>> checkactions="<$macrocall $name='learn-times-field' tiddler=<<listItem>> times='3' />" field="number3"  checked="yes" unchecked="no" default="no"> </$checkbox>
+</td>
+
+<td>
+<$checkbox tiddler=<<listItem>> checkactions="<$macrocall $name='learn-times-field' tiddler=<<listItem>> times='4' />" field="number4"  checked="yes" unchecked="no" default="no"> </$checkbox>
+</td>
+
+<td>
+<$checkbox tiddler=<<listItem>> checkactions="<$macrocall $name='learn-times-field' tiddler=<<listItem>> times='5' />" field="number5"  checked="yes" unchecked="no" default="no"> </$checkbox>
+</td>
+
+<td>
+<$checkbox tiddler=<<listItem>> checkactions="<$macrocall $name='learn-times-field' tiddler=<<listItem>> times='6' />" field="number6"  checked="yes" unchecked="no" default="no"> </$checkbox>
+</td>
+
+<td>
+<$checkbox tiddler=<<listItem>> checkactions="<$macrocall $name='learn-times-field' tiddler=<<listItem>> times='7' />" field="number7"  checked="yes" unchecked="no" default="no"> </$checkbox>
+</td>
+
+
+<td>
+<$checkbox tiddler=<<listItem>> checkactions="<$macrocall $name='remenber-field' tiddler=<<listItem>>/>"  field="proficiency"  checked="100" unchecked="no" default="no"> </$checkbox>
+</td>
+</tr>
+</$list>
+</tbody>
+</table>
+
+
+

@@ -1,0 +1,16 @@
+created: 20230720024819133
+modified: 20230720034328296
+tags: 
+title: 幂函数例题和练习
+tmap.id: b1b8bbef-1a32-4e62-8ac8-61b86acb2e34
+
+$$y=x^{\alpha}
+$$ 
+三个点：<br>
+1、已知是幂函数，$$x^\alpha$$ 前面的系数一定是<mark class="mark-red">&ensp;1 &ensp; </mark><br>
+2、求 $$\alpha$$ ,然后结合复合函数单调性，奇偶性等函数性质，求解一些问题。<br>
+3、$$y=x^{\alpha}$$，已知$$\alpha$$后，通过该函数的一些性质 求解问题。
+<br><br>
+1 $$\Rightarrow$$ p337 (右)典例(1)，p51 1,5<br>
+2 $$\Rightarrow$$ p337 (左)典例,p51 2,p51 8,p52 7<br>
+3 $$\Rightarrow$$ p337 (右)典例(2),p51 7<br>

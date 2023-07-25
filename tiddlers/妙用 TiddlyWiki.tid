@@ -1,0 +1,13 @@
+created: 20220419040912012
+modified: 20220419041853441
+tags: XP-tutorials
+title: 妙用 TiddlyWiki
+tmap.id: 63479eca-6163-4ee4-9fe1-151b31f1595e
+
+!! 使用 TiddlyWiki 进行文件标题去重
+
+创建一个条目包含标题列表，比如 `mytitlelist`，然后使用：
+
+```js
+<<list-links filter:"[enlist{mytitlelist}sort[]]" type:"ol">>
+```

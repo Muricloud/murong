@@ -1,0 +1,34 @@
+created: 20220308123147832
+modified: 20220309030129923
+tags: XP-tutorials
+title: git: Permission denied (publickey)
+tmap.id: b8b07a09-8292-4935-8478-6ac517d65bfe
+
+无法拉取仓库，错误信息为：
+
+```bash
+~/.../shared/_wiki $ git clone git@e.coding.net:keaton/wikisites/MyPluginStore.git
+
+Cloning into 'MyPluginStore'...
+
+git@e.coding.net: Permission denied (publickey).
+
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+
+and the repository exists.
+
+```
+
+解决办法：
+
+```php
+eval `ssh-agent`  // 进入bash模式
+ssh-add '~/.ssh/id_rsa'  // 添加路径，或者你创建的那个对应coding平台的pub文件
+ssh -T git@e.coding.net  // 在本地运行首次连接时的公钥认证命令
+// ssh -T git@gitee.com
+// ssh -T git@github.com
+```
+
+https://blog.csdn.net/LizequaNNN/article/details/122993981

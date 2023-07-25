@@ -1,0 +1,69 @@
+caption: Maintenance List
+created: 20230301163035072
+modified: 20230301163037148
+tags: $:/tags/MyWorks
+title: $:/plugins-my-works/maintenance-list
+
+\import $:/plugins-macros
+\whitespace trim
+\define storeTitle() $:/temp/search/plugins-maintenance-list
+\define cancel-search-actions() <$action-deletetiddler $filter=<<storeTitle>>/><$action-sendmessage $message="tm-focus-selector" $param=".xp-search-maintained-plugins input"/>
+
+\define maintainedPlugins()
+$:/plugins/xp/aggregation
+$:/plugins/xp/aggregation-aphorism
+$:/plugins/xp/aggregation-bookshelf
+$:/plugins/xp/aggregation-checklist
+$:/plugins/xp/aggregation-consumer
+$:/plugins/xp/aggregation-courses
+$:/plugins/xp/aggregation-enterprises
+$:/plugins/xp/aggregation-gtd
+$:/plugins/xp/aggregation-howtos
+$:/plugins/xp/aggregation-knowledge-system
+$:/plugins/xp/aggregation-people
+$:/plugins/xp/aggregation-plugins
+$:/plugins/xp/aggregation-snippets
+$:/plugins/xp/aggregation-software
+$:/plugins/xp/aggregation-whys
+$:/plugins/xp/columns
+$:/plugins/xp/diary
+$:/plugins/xp/emoji-button
+$:/plugins/xp/html-button
+$:/plugins/xp/leftopentab
+$:/plugins/xp/magicsidebar
+$:/plugins/xp/mark-button
+$:/plugins/xp/quickbar
+$:/plugins/xp/splashscreen
+$:/plugins/xp/switchlayout
+$:/plugins/xp/theme-changer
+$:/plugins/xp/tiddlertail
+$:/plugins/sq/Stories $:/plugins/tesseract/tekan $:/plugins/test/getplugins $:/plugins/tobibeer/inc
+$:/xp $:/xp/buttonorder $:/xp/mtw $:/xp/mcp $:/themes/xp-j $:/themes/xp-k　
+\end
+
+<div class="xp-search xp-search-maintained-plugins">
+Search all fields except text &ensp; <$macrocall $name="keyboard-driven-input"
+    tiddler=<<storeTitle>>
+    type="search"
+    tag="input"
+    focus="false"
+    inputCancelActions=<<cancel-search-actions>>/>
+<i class="tc-tiny-gap-right"/>
+<$reveal state=<<storeTitle>> type="nomatch" text="">
+<$button class="tc-btn-invisible">
+<<cancel-search-actions>>
+{{$:/core/images/close-button}}
+</$button>
+</$reveal>
+<<versionButton>>
+</div>
+
+<$vars userInput={{{ [<storeTitle>get[text]] }}} aggrFilter="[enlist<maintainedPlugins>sort[]search:-text,*<userInput>]">
+
+<div style="margin:15px 0;padding:0 0 0 24px;">
+<ol class="tc-toc tc-muted">
+<$list filter=<<aggrFilter>> template="$:/templates/list-plugins"/>
+</ol>
+</div>
+
+</$vars>

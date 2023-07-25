@@ -1,0 +1,60 @@
+created: 20230717000702272
+modified: 20230718012337746
+tags: 
+title: 幂函数图像三类九种(测试)
+tmap.id: 8d10dcb8-46d6-4d53-a349-64cee4b2244a
+
+<table>
+<th>$$ \alpha = \frac{q}{p}
+$$</th>
+<th>$$\alpha <0$$</th>
+<th>$$0< \alpha <1$$</th>
+<th>$$\alpha > 1$$</th>
+<tr>
+<td>$$p,q$$ 都是奇数</td>
+<td><$details summary=" " open="no">
+[img[幂函数九种图像1.png]]
+</$details></td>
+<td><$details summary=" " open="no">
+[img[幂函数九种图像2.png]]
+</$details></td>
+<td><$details summary=" " open="no">
+[img[幂函数九种图像3.png]]
+</$details></td>
+</tr>
+<tr>
+<td>$$p$$为奇数,$$q$$为偶数</td>
+<td><$details summary=" " open="no">
+[img[幂函数九种图像4.png]]
+</$details></td>
+<td><$details summary=" " open="no">
+[img[幂函数九种图像5.png]]
+</$details></td>
+<td><$details summary=" " open="no">
+[img[幂函数九种图像6.png]]
+</$details></td>
+</tr>
+<tr>
+<td>$$p$$为偶数,$$q$$为奇数</td>
+<td><$details summary=" " open="no">
+[img[幂函数九种图像7.png]]
+</$details></td>
+<td><$details summary=" " open="no">
+[img[幂函数九种图像8.png]]
+</$details></td>
+<td><$details summary=" " open="no">
+[img[幂函数九种图像9.png]]
+</$details></td>
+</tr>
+</table>
+
+
+
+<$details summary="图像代码" open="no">
+<<codes src:"""a=Slider(-3,3,0.5,2,200,false,true,true,false)
+f_{1}:y=x^a
+b=Slider(0,1,1/3,2,200,false,true,true,false)
+f_{2}:y=x^b
+f_{3}:y=x^(2/3)
+""">>
+</$details>

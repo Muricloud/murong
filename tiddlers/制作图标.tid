@@ -1,0 +1,29 @@
+created: 20211207112002086
+modified: 20220904011617945
+tags: XP-tutorials 使用图标
+title: 制作图标
+tmap.id: b49fb01f-2b5e-4669-b1c9-a33be74096d9
+
+[img[https://img.alicdn.com/imgextra/i3/O1CN01Mn65HV1FfSEzR6DKv_!!6000000000514-55-tps-228-59.svg]]
+
+虽然 [[iconfont-阿里巴巴矢量图标库|https://www.iconfont.cn/]] 中有很多图标，而且都是免费。但是，有时我们需要参照 <<tag "$:/tags/Image">> 修改一个图标，或者自己设计一个图标。
+
+
+!! 如何制作一个 SVG 图标？
+
+''可缩放矢量图形（Scalable Vector Graphics，[[SVG|https://developer.mozilla.org/zh-CN/docs/Web/SVG]]）''，是一种使用 [[XML|https://developer.mozilla.org/zh-CN/docs/Web/XML/XML_Introduction]] 来描述二维图形和绘图程序的语言。
+
+推荐使用 Inkscape 来绘制或编辑 SVG。相关教程可在哔哩哔哩进行学习（随便找一个高赞高收藏的就行）：
+
+<div style="font-size:0.7em;margin:1.5em 3em;">
+<a href="https://search.bilibili.com/all?keyword=svg%E6%95%99%E7%A8%8B" class="tc-btn-big-green" style="border-radius:4px;background-color:#66CC66;" target="_blank" rel="noopener noreferrer">
+{{$:/core/images/video}} 【哔哩哔哩】SVG 教程
+</a>
+<a href="https://search.bilibili.com/all?keyword=Inkscape%E6%95%99%E7%A8%8B" class="tc-btn-big-green" style="border-radius:4px;background-color:#36a2d6;" target="_blank" rel="noopener noreferrer">
+{{$:/core/images/video}} 【哔哩哔哩】Inkscape 教程
+</a>
+</div>
+
+另外，推荐一个 {{extlink/code}} 插件：
+
+* ''[[SVG|https://marketplace.visualstudio.com/items?itemName=jock.svg]]'' - SVG Coding, Minify, Pretty, Preview All-In-One

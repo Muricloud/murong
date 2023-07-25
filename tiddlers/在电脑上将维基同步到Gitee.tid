@@ -1,0 +1,13 @@
+caption: {{$:/images/fa5/brands/linux}} 电脑端
+created: 20210107135115833
+modified: 20220407092513745
+tags: XP-tutorials
+title: 在电脑上将维基同步到Gitee
+tmap.id: fe6d1405-8848-4c9f-bcce-77bd50b17088
+
+<<tabs "[[一、配置 Git 以及 SSH 公钥（Gitee）]]
+[[二、在电脑与 Gitee 之间同步维基]]
+[[三、Gitee 上开启静态网站]]
+四、重建代码仓库
+使用技巧：同时将代码上传到各平台
+" "一、配置 Git 以及 SSH 公钥（Gitee）" "$:/state/tab1">>

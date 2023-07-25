@@ -1,0 +1,73 @@
+caption: 新建中文服务器版
+created: 20200829114334983
+modified: 20220903082236655
+tags: [[Using TiddlyWiki on Node.js]] XP-tutorials
+title: Node.js 上创建中文服务器版
+tmap.id: 4d897804-34f0-48a7-93cf-2c26685c6bc0
+type: text/vnd.tiddlywiki
+
+虽然 Node.js 上的 TiddlyWiki 自带很多版本，但主要使用 server 版。为了方便，可以创建一个中文服务器版，默认语言为中文简体，并添加自己常用的插件。
+
+!! 启动
+
+* `tiddlywiki zh-server --init server` 以 server 为模板创建 zh-server
+* `tiddlywiki zh-server --listen port=8090` 启动 zh-server
+* 在你的浏览器中访问 http://127.0.0.1:8090/
+
+
+!! 配置
+
+# 参阅「[[文件归类|Customising Tiddler File Naming]]」选项卡，设置文件存储到文件系统时的归类规则
+# `vim zh-server/tiddlywiki.info` 编辑 tiddlywiki.info 安装插件，参照 [[xp-tiddlywiki.info]]（详见「[[管理插件|管理插件（服务器版）]]」选项卡）
+# 重启 zh-server：<kbd>ctrl-C</kbd> 关闭，`tiddlywiki zh-server --listen port=8090` 启动
+# 设置 TiddlyWiki 的语言为简体中文
+# 配置其他内容。
+
+
+!! 设为模板
+
+; 方法一（推荐）
+: 设置操作系统[[环境变量|Environment Variables on Node.js]] `TIDDLYWIKI_EDITION_PATH`，放到自定义版本库中。<div>
+
+<$details summary="Details" open="no">
+
+比如 Linux 上，`vim ~/.bashrc` 添加：
+
+```
+export TIDDLYWIKI_EDITION_PATH="/DATA/TW/MyEditions"
+```
+
+然后 `source ~/.bashrc` 或者重启终端。
+
+将 ''zh-server'' 文件夹拷贝到 `/DATA/TW/MyEditions` 下即可。
+
+</$details></div>
+
+; 方法二
+: 直接拷贝到官方版本库中。有副作用，更新 TW 会重置官方版本库。<div>
+
+<$details summary="Details" open="no">
+
+将 zh-server 同步到版本库中：
+
+```bash
+sudo rsync -avq --delete zh-server `npm root -g`/tiddlywiki/editions/
+```
+
+<<<
+
+如果用 cp 命令，要先删除版本库中存在的版本：
+
+```bash
+sudo rm -fr `npm root -g`/tiddlywiki/editions/zh-server
+sudo cp -r zh-server `npm root -g`/tiddlywiki/editions/
+```
+
+这是因为，如果当前版本中 `呆瓜.tid` 被删除了，如果只运行 cp 命令，这个文件依然呆在版本库中。
+<<<
+
+</$details></div>
+
+搭建时，用 `--init zh-server` 即可。
+
+> 你也可以将 ~TiddlyWiki XP 服务器版本 {{download xp server}} 放入版本库中作为模板。

@@ -1,0 +1,20 @@
+caption: Relink
+created: 20210619134504821
+modified: 20220819085734275
+moscow: M
+tags: [[Community Plugins]] [[Plugin Card]] XP-tutorials
+title: Relink by Flibbles
+tmap.id: 288fcf85-b9f2-4411-8c9d-42614fb56875
+url: https://github.com/flibbles/tw5-relink
+
+{{!!url}}
+
+Flexibility when relinking renamed tiddlers
+
+When renaming a tiddler, Relink can update the fields, filters, and widgets of all other tiddlers. However, it works through whitelisting.
+
+It's already configured to update tiddler titles for all core widgets, filters, and fields, but the whitelists can be customized for each of this in the configuration panel.
+
+* $:/plugins/flibbles/relink
+** $:/plugins/flibbles/relink-markdown
+** $:/plugins/flibbles/relink-titles

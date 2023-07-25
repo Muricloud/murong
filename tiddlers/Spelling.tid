@@ -1,0 +1,19 @@
+caption: 拼写法
+created: 20150110182900000
+modified: 20200901042844556
+tags: 中 [[Improving TiddlyWiki Documentation]] TiddlyWiki
+title: Spelling
+tmap.id: de7fb96c-cfb8-40a8-bd7c-a00c8f2e0c5b
+
+由于~TiddlyWiki是英国出身，其英文文档使用[[英国拼写优先于美国拼写|http://en.wikipedia.org/wiki/American_and_British_English_spelling_differences]] 
+
+如 <<.word customise>> 被拼写为 <<.word -ise>>，而不是 <<.word -ize>>。 除非用于代码中的保留字（如在CSS或JavaScript中），否则诸如 <<.word colour>> 之类的词也将使用英式英语拼写。
+
+标准技术缩略词是用大写首字母，不带圆点： 如 <<.word HTML>>，而不是 <<.word html>> 或 <<.word H.T.M.L.>> 。
+
+避免任意缩写词语和句子。 但以下缩写是可以接受的：
+
+|!缩写 |!含义 |!注释 |
+|e.g. |例如 |每个字母后面加点 |
+|i.e. |也就是说 |每个字母后面加点 |
+|etc |等等 |没有点 |

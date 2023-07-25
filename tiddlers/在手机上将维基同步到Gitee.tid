@@ -1,0 +1,8 @@
+caption: {{$:/images/fa5/brands/android}} 手机端
+created: 20200918183729560
+modified: 20210423053751053
+tags: XP-tutorials
+title: 在手机上将维基同步到Gitee
+tmap.id: 32b07069-6017-4cd6-9424-e82d6a16fe0a
+
+<<tabs "[[一、配置 Termux]] [[二、在手机与 Gitee 之间同步维基]]" [[一、配置 Termux]] "$:/state/tab1">>

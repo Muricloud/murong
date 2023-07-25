@@ -1,0 +1,28 @@
+caption: 使用图章
+created: 20160618090057124
+modified: 20220819093318603
+tags: 中 TiddlyWiki [[Editor toolbar]]
+title: Using Stamp
+tmap.id: 5f84373b-698f-444f-93d8-0b8c4eaf04e0
+type: text/vnd.tiddlywiki
+url: https://tiddlywiki.com/static/Using%2520Stamp.html
+
+您可以使用工具栏上的图章插入预先配置的文本片段。 点击 ''图章'' (<<.icon $:/core/images/stamp>>) 并选择一个片段。
+
+''创建一个片段''：
+
+# 点击''图章'' (<<.icon $:/core/images/stamp>>)
+# 用“//添加您自己的//”菜单选项创建一个片段条目
+# 为条目键入一些片段的文本，以及在菜单中显示用的标题（在条目的caption字段中设置）
+# 点击''确定''按钮 <<.icon $:/core/images/done-button>>
+
+''提示：''您也可以使用侧边栏中的''新条目''按钮 <<.icon $:/core/images/new-button>> 创建一个片段条目，并添加标签 ''~$:/tags/TextEditor/Snippet''
+
+
+!!<<.from-version "5.1.20">> Adding a prefix and/or suffix to a selection
+
+比如，可以参考 list-tree 创建一个包裹选择文本的图章：
+
+* $:/language/Snippets/list-tree
+* $:/language/Snippets/list-tree/prefix
+* $:/language/Snippets/list-tree/suffix

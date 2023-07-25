@@ -1,0 +1,10 @@
+caption: 删除多余字段
+created: 20220627091707662
+due: 
+modified: 20220627092237507
+tags: $:/q1 GTD done
+title: $:/gtd/20220627091707662
+
+从 server 版中拖到单文件版本中的条目，含有 bag 字段。
+
+`[has[bag]!prefix[$]]`

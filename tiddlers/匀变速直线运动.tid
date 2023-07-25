@@ -1,0 +1,60 @@
+created: 20230628010133172
+modified: 20230629131641774
+title: 匀变速直线运动
+tmap.id: 25909364-16a2-4469-918f-8d481b3d96f7
+
+''匀变速直线运动 ''分为 ''匀加速直线运动'' 和 ''匀减速直线运动''。
+<$details summary="那什么情况下是匀加速直线运动，什么情况下是匀减速直线运动呢？" open="no">
+大家思考一下：是不是a>0是匀加速直线运动，a<0是匀减速直线运动呢？
+<$details summary="看一个演示" open="no">
+我们以向右为正方向<br>
+A球：$$v_0=5\ m/s,a=1\ m/s^2$$<br>
+B球：$$v_0=5\ m/s,a=-1\ m/s^2$$<br>
+C球：$$v_0=-5\ m/s,a=1\ m/s^2$$<br>
+D球：$$v_0=-5\ m/s,a=-1\ m/s^2$$<br>
+<br>
+哪些球是<br>
+匀加速直线运动：<br>
+匀减速直线运动：<br>
+一段过程是匀减速，一段过程是匀加速：
+<$details summary="代码" open="no">
+<<codes src:"""t=Slider(0,10,1,2,10,false,true,true,false)
+v_{A}=5
+a_{A}=1
+v_{B}=5
+a_{B}=-1
+v_{C}=-5
+a_{C}=1
+v_{D}=-5
+a_{D}=-1
+x_{A}=v_{A}t+1/2a_{A}t^2
+x_{B}=v_{B}t+1/2a_{B}t^2
+x_{C}=v_{C}t+1/2a_{C}t^2
+x_{D}=v_{D}t+1/2a_{D}t^2
+A=(x_{A},10)
+B=(x_{B},20)
+C=(x_{C},30)
+D=(x_{D},40)
+SetTrace(A,true)
+SetTrace(B,true)
+SetTrace(C,true)
+SetTrace(D,true)
+SetVisibleInView(t,1,false)
+""">>
+</$details>
+<$details summary="答案" open="no">
+哪些球是<br>
+匀加速直线运动：A,D<br>
+匀减速直线运动：无<br>
+一段过程是匀减速，一段过程是匀加速：B,C
+</$details>
+</$details>
+</$details>
+
+<$details summary="总结：什么情况下做匀加速直线运动，匀减速直线运动" open="no">
+<div class=green-box>
+{{判断是匀加速或匀减速直线运动}}
+[[例题|速度和加速度的正、负情况,对物 体运动性质的判断例题]]
+<br>速度、加速度（同号、异号）
+</div>
+</$details>

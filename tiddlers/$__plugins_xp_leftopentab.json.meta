@@ -1,0 +1,12 @@
+author: kl
+created: 20210218055056916
+dependents: $:/plugins/sq/Stories $:/plugins/felixhayashi/tiddlymap $:/plugins/felixhayashi/vis $:/plugins/felixhayashi/hotzone
+description: A button to put the open tab to the left
+list: readme
+modified: 20230224000215285
+name: LeftOpenTab
+plugin-type: plugin
+revision: 0
+title: $:/plugins/xp/leftopentab
+type: application/json
+version: 0.2.3

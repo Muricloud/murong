@@ -1,0 +1,20 @@
+background-color: #fff
+caption: Stanford CS 144
+color: red
+created: 20210711163528404
+icon: {{$:/core/images/video}}
+image: $:/heiban.png
+link: 
+linkcolor: <<colour primary>>
+modified: 20220701153813004
+tags: Planning Examples Course
+title: Stanford CS 144
+tmap.id: 8c5e7ea5-dc09-44da-a824-890fff4c2056
+
+!! 课程目录
+
+@@.list-tree
+* 
+** 
+* 
+@@

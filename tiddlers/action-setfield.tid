@@ -1,0 +1,8 @@
+created: 20230609141834567
+modified: 20230609142036243
+tags: 
+title: action-setfield
+tmap.id: 8cd1bca4-4f57-4a06-8d29-8f5cd4bd438e
+
+<<codes src:"""<$action-setfield $tiddler="$tiddler$" color="red" />
+""">>

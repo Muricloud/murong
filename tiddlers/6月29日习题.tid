@@ -1,0 +1,36 @@
+created: 20230630063647813
+modified: 20230630070047096
+tags: 
+title: 6月29日习题
+tmap.id: c54e3938-2ad7-4129-887c-13a688d96252
+
+长为 $$l$$ 的高速列车在平直轨道上正常行驶，速率为 $$v _0 $$，要通过前方一长为 $$L$$ 的隧道，当列车的任一部分处于隧道内时，列车速率都不允许超过$$ v （ v < v _0 ）$$。已知列车加速和减速时加速度的大小分别为 $$a$$ 和 $$2 a$$ ，则列车从减速开始至回到正常行驶速率 $$v _0$$ 所用时间至少为（ ） 
+<br><br>
+A. $$\frac{v_0-v}{2a}+\frac{L+l}{v}$$<br><br>
+B. $$\frac{v_0-v}{a}+\frac{L+2l}{v}$$<br> <br>
+C. $$\frac{3(v_0-v)}{2a}+\frac{L+l}{v}$$<br> <br> D. $$\frac{3(v_0-v)}{a}+\frac{L+2l}{v}$$<br>   <br>
+<$details summary="答案" open="no">
+
+答案：C
+<br><br>
+先看一下：
+<div style="width:300px">
+[[解计算题的步骤]]
+</div>
+
+
+[img[6月29日习题图1.png]]
+
+$$v=v_0-at_1  \	\	 ...\textcircled{1}
+\ \\
+\ \\
+l+L=vt_2\	\	 ...\textcircled{2}
+\ \\
+\ \\
+v_0=v+2at_3\	\	 ...\textcircled{3}
+\ \\
+\ \\
+t=t_1+t_2+t_3
+$$
+
+</$details>

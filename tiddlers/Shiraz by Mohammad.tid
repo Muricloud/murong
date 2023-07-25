@@ -1,0 +1,35 @@
+caption: Shiraz
+created: 20210619132738353
+modified: 20220819085742356
+moscow: M
+tags: [[Community Plugins]] [[Plugin Card]] XP-tutorials
+title: Shiraz by Mohammad
+tmap.id: 94fe44f8-a227-4877-bc17-696cdb5d3d2b
+url: https://kookma.github.io/TW-Shiraz/
+
+{{!!url}}
+
+Shiraz plugin is a very small in size and framework to create stylish contents in Tiddlywiki. 
+
+Shiraz plugin contains extended markups, macros, styles, and many customization to empty Tiddlywiki and can be used as a ''starter kit''. 
+
+Some of Shiraz features are:
+
+* Customized elements like, alerts, cards, panels, badges
+* Dynamic tables
+* Sortable tables
+* Display on demand, slider, and details
+* Images, basic image macros, slidein, and overlay images, polaroid and pretty images
+* Table customization tools
+* Sticky footer
+* Multi columns tiddler
+* Multi column story river
+* List search
+* Badge status
+* Notebook style
+* Test utilities
+* Stylish buttons
+
+Adding Shiraz plugin to any Tiddlywiki converts it to a full production tool. Shiraz uses modified CSS classes from [[Bootstrap|https://getbootstrap.com/]].
+
+* $:/plugins/kookma/shiraz

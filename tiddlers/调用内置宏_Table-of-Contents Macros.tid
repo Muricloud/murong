@@ -1,0 +1,18 @@
+caption: Table-of-Contents Macros
+created: 20211208220050828
+modified: 20220626085956039
+tags: XP-tutorials 调用内置宏
+title: 调用内置宏/Table-of-Contents Macros
+tmap.id: ebf9c13f-7502-483d-834c-05486849947a
+
+<div class="gray-box">
+
+[[Table-of-Contents Macros]] 用于通过分析标签生成条目链接树。定义在 $:/core/macros/toc 中。
+
+</div>
+
+!! 代码实例
+
+为了展示效果，前面几个示例的根标签为 <<.tag Contents>>；选项卡式示例使用本文档的实际目录根标签 TableOfContents。
+
+<<tabs "[tag[常用目录宏]remove[常用目录宏]nsort[order]]" "Example Table of Contents: Ordered List" "$:/state/tab/toc-macros" >>

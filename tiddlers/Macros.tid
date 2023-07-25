@@ -1,0 +1,32 @@
+caption: 宏
+created: 20140211171341271
+modified: 20220819093318594
+tags: 中 Concepts Reference TiddlyWiki
+title: Macros
+tmap.id: 66b436cd-c992-4c17-9d63-e1dbcadbb090
+type: text/vnd.tiddlywiki
+url: https://tiddlywiki.com/static/Macros.html
+
+<<.def macro>>（宏）是一个命名的文本片段。 WikiText可以使用这个名字作为[[嵌入|Transclusion]]该片段的简写方式。 这样的转换称为 <<.def "macro calls">>（宏调用），并且每个调用可以提供一组不同的参数来代替片段中的特殊占位符。
+
+有关语法，请参阅[[WikiText中的宏|Macros in WikiText]].
+
+大多数宏实际上只是参数化的[[变量|Variables]]。
+
+它们是使用 `\define` [[编译指令|Pragma]]创建的。 （在幕后，这被转换成一个<<.wlink SetWidget>>，即宏和变量是同一枚硬币的两面。）
+
+代码片段及其传入的参数值被视为简单的字符串，没有WikiText的含义，至少在占位符被填充并且宏调用返回之前如此。 这意味着宏可以组装并返回~WikiText组件的完整语法，比如一个[[链接|Linking in WikiText]]。 （进一步的讨论参见[[嵌入和代换|Transclusion and Substitution]]。）
+
+由宏调用返回的字符串是与周围的~WikiText组件分开来解析的。 因此，若要想插入一个特殊的字符序列（如`[[`或`<`）而又不触发其正常的~WikiText语义，一个安全的方式就是将其包装在一个宏中。
+
+在片段本身中，唯一要探测的标记是 `$name$` （宏参数的占位符）和 `$(name)$`（[[变量|Variables]]的占位符）。
+
+<<.mlink dumpvariables>>（列出变量）宏列出了在部件树中该位置可用的所有变量（包括宏）。
+
+可以使用一个 <<.wlink ImportVariablesWidget>>（导入变量部件）将宏定义复制到[[部件树|Widgets]]的其他分支。~TiddlyWiki在内部使用这种技术来实现全局宏 -- 也就是在带有 <<.tag $:/tags/Macro>> 标签的条目中定义的宏。
+
+为了获得最大的灵活性，宏也可以写成~JavaScript模块。参见 <<.js-macro-link "written as JavaScript modules">>。
+
+围绕一个[[嵌入|Transclusion]]设置[[变量|Variables]]，可以产生与参数化的宏调用类似的效果。
+
+~TiddlyWiki内核内置了多个[[核心宏|Core Macros]]。

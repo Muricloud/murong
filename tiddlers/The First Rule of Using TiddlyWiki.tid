@@ -1,0 +1,38 @@
+caption: 使用TiddlyWiki的第一条规则
+created: 20140419132828051
+modified: 20200901042844566
+tags: 中 [[Working with TiddlyWiki]] TiddlyWiki
+title: The First Rule of Using TiddlyWiki
+tmap.id: 0d7066d7-240b-4652-a092-730840e71a89
+type: text/vnd.tiddlywiki
+
+! 使用TiddlyWiki的第一条规则
+
+!! 恐怖故事
+
+TiddlyWiki用户常常会在讨论组中报告关于个人数据丢失的令人心碎的故事：
+
+> 我的整个TiddlyWiki刚刚被删除，当保存一个条目时Firefox崩溃了。
+
+https://groups.google.com/d/topic/tiddlywiki/oG2L7OXhUoI/discussion
+
+> 我最后一次使用是昨天晚上在家里的Windows 7桌面上，打上复选标记停止编辑我的最后一个条目，然后通过TiddlyFox保存，然后弹出我的USB驱动器。 我今天早上来上班，插上我的USB，输入我的TW5密码，尝试了多次都打不开。 我查看我的TW5的HTML文件，注意到我的文件大小不再是3MB……而是80KB。 这使我相信我失去了一切。
+
+https://groups.google.com/d/topic/tiddlywiki/SXStDJ0ntGI/discussion
+
+不要让它发生在你身上！
+
+!! 使用TiddlyWiki的第一条规则是：
+
+<p style="font-size:40pt;line-height:48pt;font-weight:700;color:red;">
+备份您的数据！
+</p>
+
+TiddlyWiki是一个非常灵活的，可定制的系统，让你牢牢掌控自己的数据。 在TiddlyWiki的开发过程中，每一个细节都要考虑到，确保它是保存最有价值数据的安全场所，但降低数据丢失风险的最终责任归属于用户。
+
+确保数据安全的最佳方法是实施严格的备份机制：
+
+* 考虑使用像Dropbox这样的服务来不断将您的个人数据备份到云端。 （Dropbox [[有一个灵巧的功能|https://www.dropbox.com/help/11]]，能够跟踪文件的以前版本）
+* 在升级到新版本的TiddlyWiki之前保留备份
+* 预见并保护自己免于最坏的情况：如果您的USB存储棒或硬盘驱动器出现故障该怎么办？ 如果您的电脑遭到勒索软件病毒感染该怎么办？
+* 实行防御性和冗余性：例如，采取多个备份并将它们保存在不同的物理位置

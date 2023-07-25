@@ -1,0 +1,68 @@
+created: 20210418052942756
+modified: 20230301161014037
+tags: XP-tutorials
+title: Building XP
+tmap.id: fa3048ed-f95f-44da-952c-06a2945b4fbe
+
+# 下载 {{download empty edition}}，并进行压缩备份
+# 拖动 ''empty.html'' 到 TiddlyDesktop 中打开，[[下载|如何下载 TiddlyWiki XP 中的所有插件？]] ''~PluginforSingleFileVersion.zip''，将 minimal 下所有插件进行拖动导入，拷贝一份命名为 ''tiddlywiki-xp_Minimal.html''；然后，将 full 下所有插件进行拖动导入，拷贝一份命名为 ''tiddlywiki-xp_Full.html''。
+# 测试：检查各项功能是否有异常。
+# 撰写[[入门教程|新手入门指南]]。将文件命名为 ''tiddlywiki-xp_Tutorials.html'',,（此为 Tutorials 版本）,,
+#* 教程条目打上标签 <<tag "XP-tutorials">>；来自官方文档的条目打上标签 <<tag "TiddlyWiki">>；示例条目打上标签 <<tag "Examples">>；测试条目打上标签 <<tag "test">>
+# 完成构建
+
+
+!! 更新
+
+<div class="gray-box">
+
+''教程更新''　先将 Tutorials 版本压缩备份，内容修改完毕后，将文件拖到 ''tiddlywiki-xp_Full.html'' 上导入教程内容，并重命名为 ''tiddlywiki-xp_Tutorials.html''。
+
+</div>
+
+<div class="purple-box">
+
+''插件更新''
+
+* 拥有在线插件库的插件，可以直接更新。
+* 其他插件，参考「[[手动更新插件]]」，检查并删除改写插件的用户条目。或者，将新插件放到 ~PluginforSingleFileVersion 中，「重新构建」一遍。
+
+> 对于 Tutorials 版本，还得注意一下，如果新插件改名字了，拖动 ''tiddlywiki-xp_Tutorials.html'' 文件到 ''tiddlywiki-xp_Full.html'' 中导入内容前，一定要检查文件列表，取消勾选旧插件。
+
+</div>
+
+<div class="green-box">
+
+''动手实践''　如果能从 Empty Edition 手动构建出 ~TiddlyWiki XP，那说明你已经入门啦。
+
+
+<$details summary="逆向测试" open="no">
+
+通过“逆向”工作，可以将 ''tiddlywiki-xp_Tutorials.html'' 还原为 Empty Edition。
+
+将下面这个表达式，粘贴到侧边栏 <<.icon $:/core/images/advanced-search-button>>[[高级搜索|$:/AdvancedSearch]] -> ''筛选''中：
+
+<<codes src:"""[all[tiddlers]remove[$:/boot/boot.css
+$:/boot/boot.js
+$:/boot/bootprefix.js
+$:/core
+$:/library/sjcl.js
+$:/themes/tiddlywiki/snowwhite
+$:/themes/tiddlywiki/vanilla]]
+""">>
+
+点击删除按钮，即可恢复到 Empty Edition。
+
+<div class="blue-box">
+
+该操作的意思就是，删掉所有后面添加的内容，包括：
+
+# 插件：`[prefix[$:/xp]] [prefix[$:/themes/xp]] [prefix[$:/plugins]]`
+# 教程：`[tag[XP-tutorials]] [tag[TiddlyWiki]] [tag[Examples]] [tag[test]]`
+# 其他孤立条目 `[all[orphans]]` ，还有系统条目
+
+</div>
+
+</$details>
+
+</div>

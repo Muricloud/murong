@@ -1,0 +1,16 @@
+caption: colour-picker：颜色选择器宏
+created: 20160418152741901
+modified: 20200901042844517
+tags: 中 Macros [[Core Macros]] TiddlyWiki
+title: colour-picker Macro
+tmap.id: ee117e68-c732-45b8-876b-ba46c865b7a5
+type: text/vnd.tiddlywiki
+
+<<.def colour-picker>>（颜色选择器）[[宏|Macros]]显示交互式颜色选择器，如核心位图编辑器中所示。
+
+!! 参数
+
+;actions -- 动作
+: WikiText在用户选择颜色时应执行的操作部件。 在文本中，变量 `colour-picker-value` 包含所选的颜色。
+
+<<.macro-examples "colour-picker">>

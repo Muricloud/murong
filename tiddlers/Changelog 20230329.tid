@@ -1,0 +1,30 @@
+caption: 20230329
+created: 20230329123640563
+modified: 20230329125330194
+tags: Changelog
+title: Changelog 20230329
+tmap.id: a7930de7-50ea-4565-9f87-b4218f5e27a9
+
+!!!.t 主要内容
+
+# 两个好用的模板被添加到了 $:/DailyNotes 中。
+# 可拖拽的 <<.icon $:/core/images/export-button>> [[导出按钮|$:/core/macros/export]]。拖到目标维基中，即可导入对应的条目选集。
+# 修复浏览视图下编辑器的一些问题（所有相关插件）。特别指出，[[GTD|$:/plugins/xp/aggregation-gtd]] 的 Easy Edit Button 现在用起来真的很 easy。
+# 其他更新：插件更新、文档更新。
+
+!!!.p 插件变更
+
+更新了插件：<$details summary="Details" open="no">
+
+//注意：此处只罗列我维护的插件。//
+
+# $:/plugins/xp/aggregation 0.4.3
+# $:/plugins/xp/aggregation-aphorism 0.3.2
+# $:/plugins/xp/aggregation-gtd 0.3.2
+# $:/plugins/xp/diary 0.3.3
+# $:/plugins/xp/quickbar 0.2.6
+# $:/plugins/xp/tiddlertail 0.0.5
+
+</$details>
+
+> 注意事项：[[手动更新插件]]。

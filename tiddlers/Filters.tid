@@ -1,0 +1,27 @@
+caption: 过滤器
+created: 20130827080000000
+list: [[Introduction to filter notation]] [[Filter Syntax]]
+modified: 20210423053751039
+tags: 中 Reference Concepts TiddlyWiki
+title: Filters
+tmap.id: c5b3e6cf-f191-4fa3-bdc6-df43db454ba8
+type: text/vnd.tiddlywiki
+
+! 过滤器
+
+你可以把TiddlyWiki想象成一个数据库，其中的记录是条目。 数据库通常提供了一种发现哪些记录与给定模式相匹配的方法，而在~TiddlyWiki中这是通过过滤器来完成的。
+
+<<.def filter>>（过滤器）是一个简洁的符号，用于选择特定[[条目的集合|Title Selection]]，这被称为<<.def "output">>（输出）。 每当~TiddlyWiki遇到一个过滤器，它就会计算output（输出）。 然后，可以对这些条目进一步完成诸如[[计数|CountWidget]]或[[列表|ListWidget]]之类的操作。
+
+以下示例将过滤器传递给<<.mlink list-links>>（链接列表）宏，以显示标题以字母H开头的所有条目的列表：
+
+> `<<list-links "[prefix[H]]">>`
+
+当条目在wiki（维基）中被添加和删除时，过滤器的输出可随之修改。 ~TiddlyWiki即时重新计算并自动更新任何基于过滤器的计数或列表。
+
+[[高级搜索|$:/AdvancedSearch]]有一个<<.advancedsearch-tab Filter>>标签，可以轻松实验过滤器。
+
+;了解更多：
+* [[过滤器符号简介|Introduction to filter notation]] -- 一步一步的演练
+* [[过滤器语法|https://tiddlywiki.com/static/Filter%2520Syntax.html]] -- 详细的技术规则
+* [[过滤器操作符|https://tiddlywiki.com/static/Filter%2520Operators.html]] -- 可用的过滤方法

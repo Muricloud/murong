@@ -1,0 +1,64 @@
+caption: 20220904
+created: 20220904025820831
+modified: 20220904025835697
+tags: Changelog
+title: Changelog 20220904
+tmap.id: 609a3894-9108-4818-a622-18cca2de70da
+
+<div class="yellow-box">
+
+XP 单文件版细分为 Minimal 和 Full 两个版本。Minimal 版本只包含了显示 XP 界面不可或缺的插件。Full 版本主要用于本教程进行展示，Full 版本中有些插件并不是每个人都需要。建议使用 Minimal 版本，在 Minimal 上安装自己需要的插件。
+
+</div>
+
+!!!.p 插件变更
+
+新增了插件：<$details summary="Details" open="no">
+
+# $:/plugins/adithyab/cmplus
+# $:/plugins/bimlas/kin-filter
+# $:/plugins/kookma/kara
+# $:/plugins/kookma/refnotes
+# $:/plugins/tobibeer/inc
+# $:/plugins/xp/tiddlertail
+
+</$details>
+
+更新了插件：<$details summary="Details" open="no">
+
+# $:/plugins/sq/Stories
+# $:/plugins/xp/aggregation
+# $:/plugins/xp/aggregation-aphorism
+# $:/plugins/xp/aggregation-bookshelf
+# $:/plugins/xp/aggregation-checklist
+# $:/plugins/xp/aggregation-consumer
+# $:/plugins/xp/aggregation-courses
+# $:/plugins/xp/aggregation-enterprises
+# $:/plugins/xp/aggregation-gtd
+# $:/plugins/xp/aggregation-howtos
+# $:/plugins/xp/aggregation-people
+# $:/plugins/xp/aggregation-plugins
+# $:/plugins/xp/aggregation-snippets
+# $:/plugins/xp/aggregation-software
+# $:/plugins/xp/aggregation-whys
+# $:/plugins/xp/diary
+# $:/plugins/xp/leftopentab
+# $:/plugins/xp/mark-button
+# $:/plugins/xp/quickbar
+# $:/plugins/xp/managetags
+# $:/plugins/xp/switchlayout
+# $:/plugins/xp/theme-changer
+
+</$details>
+
+> 注意事项：[[手动更新插件]]。
+
+
+!!!.t 主要内容
+
+# 使用编辑器工具栏按钮或者图章中的 [[inc|$:/plugins/tobibeer/inc]] 嵌入条目，当鼠标悬浮于嵌入块时，可打开条目。
+# 使用 $:/DailyNotes 进行每日一记。
+# 使用 [[tiddlertail|$:/plugins/xp/tiddlertail]] 在底部查看条目信息。详见插件 readme。
+# [[聚合插件|$:/plugins/xp/aggregation]] 中新增了 [[批量操作|$:/xp/ui/SideBar/BatchOperation]]（侧边栏 Batch 标签页）。一种快速创建数据表格的方法：「批量创建」出一组条目，然后使用「动态表格」编辑数据。
+# 在 [[CHECKLIST]] 中创建检查清单，纵享丝滑。
+# 其他更新：插件更新、文档更新。

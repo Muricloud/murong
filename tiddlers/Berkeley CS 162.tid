@@ -1,0 +1,20 @@
+background-color: #fff
+caption: Berkeley CS 162
+color: red
+created: 20210711163506910
+icon: {{$:/core/images/video}}
+image: $:/heiban.png
+link: 
+linkcolor: <<colour primary>>
+modified: 20220701153659589
+tags: Planning Examples Course
+title: Berkeley CS 162
+tmap.id: 3f756bd2-3e8d-437e-bee9-353bdb96d592
+
+!! 课程目录
+
+@@.list-tree
+* 
+** 
+* 
+@@

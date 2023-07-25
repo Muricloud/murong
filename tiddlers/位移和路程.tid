@@ -1,0 +1,81 @@
+created: 20230618063455092
+modified: 20230628133259988
+title: 位移和路程
+tmap.id: 50b11724-08fd-4cca-a308-af72db78c708
+
+<div class="green-box">
+
+ ''位移：从初位置到末位置的有向线段。''是一个[[矢量|矢量和标量]]<br>
+ ''路程：真实的轨迹长度'' 。是一个[[标量|矢量和标量]] &emsp;&emsp;,,注意：[[平均速度]] 和[[平均速率]],,
+</div>
+（1）小明从A点，沿着路径S，走到了B点。路径S是不是就是小明的位移？
+<div style="width:300px">
+[img[位移1.png]]
+</div> 
+<$details summary="是" open="no">
+错误。<br>
+什么是线段？线段是不是一定要是直的
+</$details>
+<$details summary="不是" open="no">
+对的。<br>
+那么位移应该是什么样的？画出来
+<$details summary="画出来" open="no">
+
+<div style="width:300px">
+[img[位移AB.png]]
+</div> 
+线段AB才是小明走过的位移
+</$details>
+
+</$details>
+<$details summary="思考" open="no">
+<div style="width:300px">
+[img[位移AB.png]]
+</div> 
+
+1、哪个字母表示路程？<br>
+2、路程和位移大小谁大？<br>
+3、路程和位移谁大？
+<$details summary="回答3个问题" open="no">
+1、S<br>
+2、路程大<br>
+3、路程和位移不能比较大小，因为路程是标量，位移是矢量，标量和矢量不能比较大小。<c style="color:Crimson;">注意：位移大小是标量</c><br>
+</$details>
+</$details>
+
+（2）小明，李华同时从A点出发，沿着操场跑步，小明跑了5圈，李华跑了4圈半。（跑道半径为R)
+
+<div class="left-column">
+
+* 画出小明的位移 、李华的位移
+* 求小明的位移大小 、李华的位移大小
+* 求小明的路程、李华的路程
+
+</div>
+
+<div class="right-column">
+<div style="width:300px">
+[img[操场跑步位移图1.png]]
+</div> 
+</div>
+
+<$details summary="位移大小和路程的关系" open="no">
+物体的运动过程中，路程总是大于等于位移的大小。<br>
+<$details summary="关于路程等于位移的大小的几种讲法，判断一下对错？" open="no">
+1、直线运动里面，路程等于位移大小。（ ）<br>
+2、匀速直线运动里面，路程等于位移大小。（ ）<br>
+3、匀变速直线运动里面，路程等于位移大小。（ ）<br>
+4、单向直线运动，路程等于位移的大小（ ）<br>
+<$details summary="对的有哪些，哪一个总结性最好?" open="no">
+对的：2、4。<br>
+<c style="color:Red;">''单向直线运动，路程等于位移的大小。''</c>最能概括路程等于位移的大小的情况。
+
+</$details>
+
+
+</$details>
+
+
+
+
+</$details>

@@ -1,0 +1,28 @@
+caption: 参考条目
+created: 20141226192500000
+modified: 20200901042844549
+tags: 中 [[Improving TiddlyWiki Documentation]] TiddlyWiki
+title: Reference Tiddlers
+tmap.id: bca36037-1d85-4b7b-be8a-891b8de361e5
+
+<<.def "参考条目">> 以综合的、相互关联的方式提供原始信息。 读者可能是一个中级或专家用户。
+
+有几个子类别：
+
+; 概念
+* 与定义一起构成词汇表
+
+; 用户手册
+* 介绍~WikiText功能的技术细节
+* 子分类：消息，操作符，小部件，等等
+
+; 开发者手册
+* 介绍~TiddlyWiki内部架构的技术细节
+
+参考资料是用简洁、正式的风格写成的，避免提到读者，而是关注~TiddlyWiki本身的行为如何。 被动语态通常才是合适的：
+
+* <<.word "the template is specified as a tiddler">> 而不是 <<.word "specify the template as a tiddler">>
+* <<.word "the widget can be used for various purposes">> 而不是 <<.word "you can use the widget for various purposes">>
+* 但是 <<.word "this widget has several possible uses">> 就比较好，因为它不那么费解且更简洁。
+
+大多数简约动词形式在参考条目中都是避免使用的。 但是那些以 <<.word "n't">> 为后缀的词语（<<.word "aren't">>、<<.word "doesn't">>、<<.word "hasn't">>、<<.word "isn't">>，等等）是可以接受的，因为它们使得 <<.word not>> 这个词不容易被意外地忽略。

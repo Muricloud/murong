@@ -1,0 +1,45 @@
+caption: Alert with horizontal divider
+created: 20180821132907233
+creator: Mohammad
+modified: 20200901042808894
+tags: alert doc XP-tutorials
+title: demo/alert-hline
+tmap.id: ff946637-8ff5-4c0f-8151-ef13d05222f0
+type: text/vnd.tiddlywiki
+
+!! Alert with horizontal divider
+Alert with horizontal line creates a divider and divides text in two separate parts. The syntax is as below (just use a `---` whenever you like and divide your alert in two parts).
+
+!! Examples
+The below example shows a simple alert with horizontal divider.
+
+```
+<<alert primary """
+! Alert Primary
+Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.
+
+---
+Whenever you need to, be sure to use margin utilities to keep things nice and tidy.""">>
+```
+
+<<alert primary """
+! Alert Primary
+Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.
+
+---
+Whenever you need to, be sure to use margin utilities to keep things nice and tidy.""">>
+
+
+!! Other example
+You can put other widgets and components inside alert. The below example contains text styles and custom class for heading one.
+
+<$macrocall $name="wikitext-example-without-html" 
+src="""<<alert secondary "
+!.h3 Sample wikitext
+This is a code `y=x`. It is ''easy'' to add other //wikitext// here, like ordered, unordered lists, etc. This code also uses a custom class for heading one.
+
+---
+This is just for illusteration! There are more examples." width:60%>>
+"""/>
+
+

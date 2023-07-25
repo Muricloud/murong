@@ -1,0 +1,41 @@
+created: 20230704024757395
+modified: 20230704033241465
+tags: 
+title: 恒成立和有解的情况比较
+tmap.id: 961e0827-08e7-4a84-ad60-64d2e922a1d2
+
+$$f(a),g(b)$$
+
+<table>
+<tr>
+<td>$$f(a) \leq g(b)恒成立$$</td>
+<td>$$f(a)_{max} \leq g(b)_{min}$$</td>
+</tr>
+<tr>
+<td>$$f(a) \geq g(b)恒成立$$</td>
+<td>$$f(a)_{min} \geq g(b)_{max}$$</td>
+</tr>
+<tr>
+<td>$$f(a)\leq g(b)有解$$</td>
+<td>$$f(a)_{min} \leq g(b)_{max}$$</td>
+</tr>
+<tr>
+<td>$$f(a) \geq g(b)有解$$</td>
+<td>$$f(a)_{max} \geq g(b)_{min}$$</td>
+</tr>
+</table>
+
+实际上只有两种情况，<br><br>
+恒成立时:$$max<min$$<br>
+ 有 解 时:$$min<max$$
+ 
+ <$details summary="举例" open="no">
+
+f(a) 取 {3，4，5} <br>
+{1，2，3，4，5，6，7}<br>
+g(b)不同的情况可以取哪些值<br>
+$$f(a) \leq g(b)恒成立 \Rightarrow f(a)_{ max} \leq g(b)_{min} \Rightarrow$$ {6,7},{6},{7} <br>
+$$f(a) \leq g(b)有解 \Rightarrow f(a)_{ min} \leq g(b)_{max} \Rightarrow$$ {3,5},{2,5},{1,7} 等等<br>
+哪些不行呢？{1，2}
+
+</$details>

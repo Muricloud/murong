@@ -1,0 +1,163 @@
+created: 20210517135212503
+modified: 20210715090504981
+tags: XP-tutorials 维基存储方案
+title: 在手机上维护维基
+tmap.id: e330721a-57b6-4026-b47a-91553acc0b2b
+
+!! 维基的维护
+
+为了便于在手机上进行维护，在家目录添加 [[.bashrc]] 文件。（该文件主要包含一些简化的指令，根据需要自行修改或者添加指令）
+
+```bash
+$ cd ~
+$ pwd
+/data/data/com.termux/files/home
+$ vim .bashrc # 可在电脑上新建文件 bashrc，编辑好后拷贝到手机 Download，然后用下方 cpb 中的命令配置
+$ source .bashrc
+```
+
+现在可以在 Termux 中使用简化的指令进行快速操作。
+
+切换目录：
+
+* `wp` 切换到 _wiki 目录下（wikipath 的简称）
+* `cdd` 切换到手机 Download 下
+
+拷贝配置：
+
+* `cpb` 将 Download 下的 bashrc 文件拷贝到家目录 <div><$details summary="cpb 命令内容" open="no">
+
+```bash
+cp $HOME/storage/shared/Download/bashrc ~/.bashrc
+source ~/.bashrc
+```
+</$details></div>
+
+
+使用 pm2 管理维基：
+
+* `mywiki` 在浏览器中打开维基 mywiki
+* `resetmy` 重置 mywiki（会删除工作区中的内容修改）<div><$details summary="resetmy 命令内容" open="no">
+
+```bash
+# 删除进程 mywiki，并重置 mywiki 的工作区
+pm2 delete mywiki
+cd $HOME/storage/shared/_wiki/mywiki
+git checkout .
+```
+</$details></div>
+* <div>
+
+```bash
+pm2 list           # 列出所有进程/应用
+pm2 stop mywiki    # 结束 mywiki 进程
+pm2 restart mywiki # 重新启动进程/应用
+pm2 delete mywiki  # 删除进程/应用
+pm2 stop all       # 结束所有进程，简化为 pms
+pm2 delete all     # 删除所有进程，简化为 pmd
+```
+</div>
+
+拉取更新：
+
+* `pullp` 从云端拉取 ~MyPluginStore 的更新
+* `pullmy` 从云端拉取 mywiki 的更新 <div><$details summary="pullmy 命令内容" open="no">
+
+```bash
+cd $HOME/storage/shared/_wiki/mywiki
+echo -e "\033[0;31;1m↓ mywiki\033[0m"
+git pull
+
+cd tiddlers/private
+echo -e "\033[0;31;1m↓ mywiki-private\033[0m"
+git pull
+
+cd ../journals
+echo -e "\033[0;31;1m↓ mywiki-journals\033[0m"
+git pull
+
+cd ../images
+echo -e "\033[0;31;1m↓ mywiki-images\033[0m"
+git pull
+
+cd ..
+```
+</$details></div>
+
+推送更新：
+
+* `pushmy` 将 mywiki 推送到云端 <div><$details summary="pushmy 命令内容" open="no">
+
+```bash
+cd $HOME/storage/shared/_wiki/mywiki
+echo -e "\033[0;31;1m+ mywiki\033[0m"
+git add . && git commit -m "Updates from phone" && git push origin master
+
+cd tiddlers/private
+echo -e "\033[0;31;1m++ mywiki-private\033[0m"
+git add . && git commit -m "Updates from phone" && git push origin master
+
+cd ../journals
+echo -e "\033[0;31;1m++ mywiki-journals\033[0m"
+git add . && git commit -m "Updates from phone" && git push origin master
+
+cd ../images
+echo -e "\033[0;31;1m++ mywiki-images\033[0m"
+git add . && git commit -m "Updates from phone" && git push origin master
+
+cd ..
+```
+</$details></div>
+
+更新软件
+
+* `up` 更新源
+* `upg` 升级软件包
+* `inpkg` 安装 TiddlyWiki 以及相关软件 <div><$details summary="inpkg 命令内容" open="no">
+
+```bash
+pkg install nodejs openssh git vim
+npm install -g tiddlywiki
+npm install pm2@latest -g
+```
+</$details></div>
+* `uppkg` 升级 TiddlyWiki 以及相关软件 <div><$details summary="uppkg 命令内容" open="no">
+
+```bash
+npm install -g npm
+npm update -g tiddlywiki
+npm install pm2@latest -g
+pm2 update
+```
+</$details></div>
+
+
+!! 放弃本地维基的修改
+
+如果在电脑上推送了更新，而我们在手机上查看过维基，那么无法将更新从云端上拉取下来：
+
+```bash
+~/.../_wiki/mywiki $ pullmy
+↓ mywiki
+Updating 5a5dc3e..9f68665
+error: Your local changes to the following files would be overwritten by merge:
+        tiddlers/_system/StoryList.tid
+Please commit your changes or stash them before you merge.
+Aborting
+```
+
+该冲突是由于在 Node.js 上查阅维基时产生了状态更新文件（StoryList.tid）导致的。即，本地工作区中的版本和本地的 master 不一致，所以 `git pull` 提示你：请先处理掉本地工作区中的新内容，再来找我！
+
+此时，我们需要放弃本地工作区中的修改，然后再拉取。
+
+操作方法是使用 git 进行重置，用暂存区中的版本替换工作区中的版本：
+
+```bash
+git checkout .
+```
+
+由于在 [[.bashrc]] 文件中添加了相关 Alias 指令，所以可以简化为：
+
+```bash
+gco .
+```

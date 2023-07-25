@@ -1,0 +1,16 @@
+caption: tree：目录树宏
+created: 20170628164534981
+modified: 20200901042844577
+tags: 中 Macros [[Core Macros]] TiddlyWiki
+title: tree Macro
+tmap.id: ea418161-e66a-4269-959e-f9455ceebcd6
+type: text/vnd.tiddlywiki
+
+<<.def tree>>（文件目录树）[[宏|Macros]]呈现基于条目标题的可展开树视图。
+
+!! 参数
+
+;prefix -- 前缀
+: 要生成的树的前缀，例如 `$:/`
+
+<<.macro-examples "tree">>

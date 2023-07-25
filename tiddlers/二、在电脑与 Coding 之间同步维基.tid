@@ -1,0 +1,77 @@
+created: 20200918200152336
+modified: 20220714021118055
+tags: XP-tutorials 维基存储方案
+title: 二、在电脑与 Coding 之间同步维基
+tmap.id: d50b914a-3fa7-4a91-a15f-38f39a8f30fd
+
+!! Coding 上创建代码仓库
+
+创建 wikiSites 项目：
+
+* 【创建项目】>【模板-代码托管项目】> 项目名：wikiSites >【完成创建】。
+
+在项目中创建仓库 mywiki：
+
+* 【代码仓库】>【创建代码仓库】> 仓库名称：mywiki >【确定】。
+
+在项目中创建仓库 ~MyPluginStore，用来存储「[[自定义插件库|Node.js 下安装自定义插件]]」。
+
+<div class="red-box">
+
+''注意''：由于 CODING [[代码托管平台|关于代码托管平台]] Git 单仓库容量为 2 G，可能很快就满了。所以应该提前规划好，将维基中某些内容[[分仓库存储|使用技巧：维基内容分仓库存储]]。
+
+</div>
+
+为了将 mywiki 的内容分仓库存储，在项目中创建其他仓库 `mywiki-private` `mywiki-journals` `mywiki-images`。
+
+
+!! 将仓库克隆到电脑上
+
+{{将 CODING 上的仓库克隆到电脑上}}
+
+
+!! 设定文件归类规则 <sup style="color:Red;">重要</sup>
+
+由于这里是新维基，所以直接从 Node.js 的 server 中将 tiddlywiki.info 文件拷贝出来用：
+
+```bash
+cp /usr/lib/node_modules/tiddlywiki/editions/server/tiddlywiki.info ./ 
+```
+
+> 如果之前已经创建了维基，可以拷贝自己维基的 tiddlywiki.info 文件
+
+现在启动 mywiki：
+
+```bash
+tiddlywiki ../mywiki --listen
+```
+
+在维基中创建 $:/config/FileSystemPaths 条目，编写「[[文件归类规则|Customising Tiddler File Naming]]」。示范内容为：
+
+{{$:/config/FileSystemPaths.example}}
+
+对于未设定归类规则的老用户，可将原来的维基导出为 HTML 文件，然后拖到设定了归类规则的新维基中，导入全部内容。
+
+> 导出为 HTML 可以使用 [[build.sh]] 脚本；或者打开维基点击保存按钮中的「Save snapshot for offline use」。
+
+
+!! 将维基推送到 Coding
+
+为了方便推送，自建一个 [[deploy.sh]] 脚本。
+
+```bash
+vim deploy.sh # 或者用 VSCode：code deploy.sh
+chmod 755 deploy.sh
+./deploy.sh  Write your commit message here
+```
+
+
+!! 从 Coding 上拉取更新
+
+为了方便，自建一个 [[pull.sh]] 脚本。
+
+```bash
+vim pull.sh
+chmod 755 pull.sh
+./pull.sh
+```

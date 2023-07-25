@@ -1,0 +1,103 @@
+caption: {{$:/core/images/edit-button}} 编辑条目
+created: 20200731102559555
+modified: 20220904065318904
+tags: XP-tutorials 新手入门指南
+title: 编辑条目
+tmap.id: 0e38ac2c-f283-475a-a8fb-3448562178c7
+
+\define tv-config-toolbar-text() yes
+\define openCpCodeMirror()
+<$action-setfield $tiddler="$:/state/tab-1749438307" $value="$:/core/ui/ControlPanel/Settings"/>
+<$action-setfield $tiddler="$:/state/tab--697582678" $value="$:/core/ui/ControlPanel/Settings/CodeMirror"/>
+<$action-navigate $to="$:/ControlPanel"/>
+\end
+\define openCpEditorTypes()
+<$action-setfield $tiddler="$:/state/tab-1749438307" $value="$:/core/ui/ControlPanel/Info"/>
+<$action-setfield $tiddler="$:/state/tab--2112689675" $value="$:/core/ui/ControlPanel/Advanced"/>
+<$action-setfield $tiddler="$:/state/tab--959111941" $value="$:/core/ui/ControlPanel/EditorTypes"/>
+<$action-navigate $to="$:/ControlPanel"/>
+\end
+
+要编辑现有的条目，请点击条目右上方的 <<.icon $:/core/images/edit-button>> 按钮。
+
+
+!! 草稿模式
+
+当您创建新的条目或编辑现有的条目时，条目将进入草稿模式。 它提供了一个控制面板，可用多种方式修改条目。 它从上到下有如下几个部分：
+
+* ''标题字段'' - 使用它来改变条目的标题
+* ''标签选择器'' - 使用它来添加或删除标签。 当您在框中输入标签名称时，下拉列表将显示所有匹配的现有标签。 您可以从此列表中选择或创建一个全新的标签。 然后点击''添加''按钮或按 <kbd>Enter</kbd> 键将标签添加到条目。 每个标签都显示为彩色药丸状。 点击标签丸上的"×"可移除该标签。
+* ''文本区域'' - 用它来编辑条目的主体内容。 点击''预览''按钮（<<.icon $:/core/images/preview-closed>>/<<.icon $:/core/images/preview-open>>）预览你的编辑将会呈现的样子。
+* ''类型选择器'' - 当需要以特殊方式（如图像）显示条目时使用此选项。 请参阅 ContentType 以获取选项列表。 默认是`text/vnd.tiddlywiki`，这意味着条目包含 WikiText（维基化文本）。
+* ''字段选择器'' - 使用它来添加或删除条目上的字段（又叫栏位）。 例如，如果您正在编辑用于标记其他条目的标签条目，则可以添加一个[[「list」字段|ListField]]来更改本标签下的条目的列表顺序
+
+
+!! 编辑器工具栏
+
+编辑器工具栏（[[Editor toolbar|https://tiddlywiki.com/static/Editor%2520toolbar.html]]）是一个帮助您轻松设置文本格式的工具栏。在编辑模式下，它出现在 tiddler 中文本输入字段的上方。
+
+工具栏里除了标准的 WikiText 格式化按钮，还有其他按钮，比如：
+
+<<list-links "[tag[Editor toolbar]sort[title]]">>
+
+另外，工具栏中的按钮基本都拥有[[键盘快捷键]]，利用快捷键可以更高效地进行编辑操作。
+
+> （进阶内容）[[How to create dynamic editor toolbar buttons|https://tiddlywiki.com/static/How%2520to%2520create%2520dynamic%2520editor%2520toolbar%2520buttons.html]]
+
+
+!! ~CodeMirror
+
+XP 默认使用 ~CodeMirror 编辑器。您可以在 <$button actions=<<openCpCodeMirror>>>{{$:/core/images/options-button}} ~CodeMirror</$button> 中进行设置，比如启用自动换行、显示行号、高亮当前行等。在 <$button actions=<<openCpEditorTypes>>>{{$:/core/images/options-button}} Editor Type</$button> 中查看不同文本类型默认调用的编辑器。
+
+<div class="gray-box">
+
+''提示''：新手需要学习使用[[快捷键|$:/plugins/tiddlywiki/codemirror/keyboard]]，比如 <kbd>ctrl-[</kbd> 减少文本缩进，<kbd>ctrl-]</kbd> 增加文本缩进，非常方便进行代码对齐。
+
+</div>
+
+
+!! ~WikiText 语法
+
+想要灵活组织内容，[[WikiText 语法|WikiText]]是必须要学好的。可以利用[[双栏]]进行练习（点击按钮 {{$:/xp/ui/Buttons/maximize-river}} 可以最大化故事河），一栏显示 [[WikiText 语法|WikiText]] ，另一栏对照着练习。但一边写文章，一边学语法，这种[[用以致学]]的方式是最有效的。也就是说：
+
+* 先浏览一遍语法，对语法的输出效果建立一个初步印象，然后开始写文章。
+* 当需要某个语法来组织内容时，就去翻看 [[WikiText 语法|WikiText]]（现学现用）。就这样，多写文章，语法自然就掌握了。
+* 千万不要想着把所有语法都学会，再来写文章，大错特错！学语法需要循序渐进，一口一口慢慢吃，想一口吃个胖子，那就是急于求成、操之过急！
+
+> 另见 [[WikiText 应用实例]]
+
+
+!! Markdown
+
+有些新用户可能习惯使用 Markdown 语法，Markdown 和 WikiText 有区别，当你搞清楚它们之间的区别后，根据自己的用途选择使用何种[[文本类型|ContentType]]。
+
+这里有一些插件，可以进行格式转换：
+
+* https://cdaven.github.io/tiddlywiki/ - Markdown export plugin
+* https://github.com/tiddly-gittly/md-to-tid
+* https://tw-cpl.netlify.app/#linonetwo%2Fmarkdown-transformer
+
+
+!! 保存、取消或删除
+
+完成编辑后，单击条目右上角的按钮：
+
+* ''确定''按钮 (<<.icon $:/core/images/done-button>>) 将您的更改保存到这个条目并离开草稿模式。 如果您的维基被配置为[[自动保存|AutoSave]]，您的更改将被永久保存。 否则它们只会暂时存储在您的网络浏览器缓存中，此时如果您没有先在侧边栏上点击主''保存更改''按钮 (<<.icon $:/core/images/save-button>>) 而又关闭了整个~TiddlyWiki网页，就会丢失您所做的更改！
+* ''取消''按钮 (<<.icon $:/core/images/cancel-button>>) 放弃您的更改（经您确认之后）并离开草稿模式。
+* ''删除''按钮 (<<.icon $:/core/images/delete-button>>) 删除整个条目（经您确认后）。
+
+
+!! Note
+
+侧边栏 Note 中可以记录一些临时的笔记。对于一些小笔记，新建一个条目再记录，稍显麻烦！
+
+
+!! TODO
+
+如果你没有足够的时间编辑内容，可以使用图章中的 ''TODO'' 进行任务标记。[[TODO]] 条目会列出待编辑的条目。（在搜索框中输入 TODO 按 Enter 键即可打开）
+
+<<TODO """
+* item1
+* item2
+* item3
+""">>

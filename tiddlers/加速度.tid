@@ -1,0 +1,47 @@
+created: 20230627080709447
+modified: 20230629084941439
+title: 加速度
+tmap.id: e084ef8e-5ddd-4be0-acea-ac10f9ac10f1
+
+''加速度''：单位时间内的速度变化量，描述物体运动速度''变化快慢''的物理量。单位：$$ m/s^2$$  &emsp;&emsp;^^[[compare：加速度和速度的概念|比较一下速度和加速度的概念]]^^
+
+''加速度的公式：''
+<div class="red-box" style="width: 200px; margin: 0 auto;">
+{{加速度公式}}
+</div>
+
+
+<$details summary="演示匀速直线运动和匀加速直线运动。" open="no">
+A球，匀速直线运动：$$v=5 \ m/s$$<br>
+B球，匀加速直线运动：$$ (初速度)v_0=0 \ m/s,a=1\ m/s^2$$<br>
+C球，匀减速直线运动：$$(初速度)v_0=10m/s, a=-1\ m/s^2$$<br>
+
+<$details summary="演示代码" open="no">
+
+<<codes src:"""t=Slider(0,10,1,2,10,false,true,true,false)
+v=5
+a=1
+A=(vt,10)
+B=(1/2at^2,20)
+C=(10t-1/2at^2,30)
+SetTrace(A,true)
+SetTrace(B,true)
+SetTrace(C,true)
+SetVisibleInView(t,1,false)
+""">>
+
+</$details>
+
+<$details summary="能看出什么" open="no">
+A球，匀速直线运动：单位时间内的位移没变<br>
+B球，匀加速直线运动：单位时间内的位移越来越大了，是不是也代表单位时间内的速度在增大<br>
+C球，匀减速直线运动：单位时间内的位移越来越小了，是不是也代表单位时间内的速度在减小<br>
+
+</$details>
+</$details>
+<hr>
+[[匀变速直线运动]]
+<hr>
+[[速度时间图像]]
+<hr>
+[[加速度公式变形]]

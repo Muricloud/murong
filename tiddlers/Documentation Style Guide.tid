@@ -1,0 +1,24 @@
+caption: 文档样式指南
+created: 20140904164608166
+modified: 20220819093318586
+tags: 中 [[Improving TiddlyWiki Documentation]] TiddlyWiki
+title: Documentation Style Guide
+tmap.id: 53e1f7bb-c5e1-484a-944d-9fecb3c0504d
+type: text/vnd.tiddlywiki
+url: https://tiddlywiki.com/static/Documentation%2520Style%2520Guide.html
+
+~TiddlyWiki的文档力图遵循一致的编辑风格。 它有两个主要领域，每个领域都有自己的基调和受众：
+
+* [[指导条目|Instruction Tiddlers]]
+* [[参考条目|Reference Tiddlers]]
+
+我们保持两个领域不同。 这既避免了吓退新手，同时也提供了专家用户需要的信息能快速访问。
+
+其他主题：
+
+* [[条目标题策略|Tiddler Title Policy]]
+* [[条目结构|Tiddler Structure]]
+* [[拼写法|Spelling]]
+* [[排版|Typography]]
+* [[文档宏|Documentation Macros]]
+* [[技术散文风格|Technical Prose Style]]

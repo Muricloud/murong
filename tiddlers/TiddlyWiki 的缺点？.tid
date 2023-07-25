@@ -1,0 +1,6 @@
+tags: FAQ XP-tutorials
+title: TiddlyWiki 的缺点？
+tmap.id: 9fb9a6d1-ac26-4ab3-9021-8559de5dabf7
+
+* TiddlyWiki 没有云服务，软件数据不能自动多端同步。这是所有离线笔记软件的“特点”吧，只能靠其他方法同步。
+*> 而另外一款知识管理软件 [[Obsidian|https://obsidian.md/pricing]]，有收费的数据同步服务（Obsidian Sync）可供用户选择。

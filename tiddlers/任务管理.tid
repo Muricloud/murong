@@ -1,0 +1,54 @@
+caption: {{$:/core/images/timestamp-on}} 任务管理
+created: 20200731124403012
+modified: 20220904064652530
+tags: XP-tutorials 新手入门指南
+title: 任务管理
+tmap.id: 7ede80f3-22f3-4030-a356-1b5813018fdf
+
+! GettingThingsDone
+
+一款 GTD 任务管理工具，请阅读插件 $:/plugins/xp/aggregation-gtd 中的 readme。
+
+
+! Todolist
+
+侧边栏 [[Todo|$:/xp/ui/SideBar/Todolist]] 选项卡：一个非常简洁的 Todolist。
+
+> 来自插件 $:/plugins/kookma/todolist。
+
+
+! Kara
+
+一个非常简洁的 Checklist。见 [[CHECKLIST]]。
+
+> 来自插件 $:/plugins/kookma/kara。
+
+
+! Checklist
+
+在内容中创建检查清单
+
+```
+!! My first list
+
+[ ] Item 1
+[x] Item 2
+
+!! My second list
+
+[x] Item 3
+[x] Item 4
+```
+
+
+;.r 下面部分为展示内容：
+
+
+! 钉板
+
+{{钉板}}
+
+
+! 看板
+
+{{Kanban}}

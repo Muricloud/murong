@@ -1,0 +1,14 @@
+caption: Context Search
+created: 20210619133856384
+modified: 20220819085519106
+moscow: M
+tags: [[Community Plugins]] [[Plugin Card]] XP-tutorials
+title: Context Search by Danielo Rodrigez
+tmap.id: f986234e-264a-4063-82f1-e7ebf87a2f21
+url: https://github.com/danielo515/TW5-contextPlugin
+
+{{!!url}}
+
+provides visual highlight of search results.
+
+* $:/plugins/danielo515/ContextPlugin

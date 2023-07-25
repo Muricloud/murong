@@ -1,0 +1,27 @@
+caption: 运行多个 ~TiddlyWiki
+created: 20200829113011142
+modified: 20220626091909652
+tags: [[Using TiddlyWiki on Node.js]] XP-tutorials
+title: Node.js 上运行多个 tiddlywiki
+tmap.id: e75b7c49-b784-48f9-8a9f-8d46342475d5
+type: text/vnd.tiddlywiki
+
+<div class="blue-box">
+
+修改端口号来运行多个 tiddlywiki。
+
+</div>
+
+```
+tiddlywiki wiki1 --listen
+```
+
+> 这会将 wiki1 在默认 listen 端口号 8080 上打开。
+
+```
+tiddlywiki wiki2 --listen port=8090
+```
+
+> 这会将 wiki2 在端口号 8090 上打开。
+
+此时，同时打开了两个 wiki，可以通过对应的端口号访问。

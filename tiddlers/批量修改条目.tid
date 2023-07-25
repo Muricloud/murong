@@ -1,0 +1,67 @@
+caption: {{$:/plugins/nico/projectify/images/funnel}} 批量修改
+created: 20200809065727928
+modified: 20220904095624800
+tags: XP-tutorials 新手入门指南
+title: 批量修改条目
+tmap.id: fc031b56-fdab-4885-bb03-23287687ab53
+
+在侧边栏 {{$:/plugins/kookma/commander/images/file-alt}}[[Commander|$:/Commander]] 选项卡中进行批量修改（或者 $:/FilterBuilder 中调出 Commander）。该功能由插件 $:/plugins/kookma/commander 提供。
+
+!! 批量修改标签
+
+将 `XP-tutorials` 修改为 `Tutorials`：
+
+* 打开侧边栏 [[Commander|$:/Commander]] 选项卡。
+* 输入 `[tag[XP-tutorials]]` 显示[[用户条目|$:/help/TiddlerType]]中具有标签 <<tag [[XP-tutorials]]>> 的条目。 
+* 选择 Tag -> Replace tags，Old tag 选择 `XP-tutorials`，New tag 输入 `Tutorials`，点击按钮 <button>Replace tag</button>。
+
+删除 `TiddlyWiki` 标签：
+
+* 输入 `[tag[TiddlyWiki]]` 显示用户条目中具有标签 <<tag [[TiddlyWiki]]>> 的条目。 
+* 选择 Tag -> Add remove tags，Old tag 选择 `TiddlyWiki`，点击按钮 <button>Remove old tag</button>。
+
+<div class="gray-box">
+
+其他字段在 ''Field'' 选项卡中进行修改！
+
+</div>
+
+
+!! 批量删除条目
+
+* 输入 `[tag[Tutorials]]` 显示用户条目中具有 标签 <<tag [[Tutorials]]>>的条目。 
+* 选择 Tiddler -> Delete tiddlers -> <button>Delete these tiddlers</button>。
+
+> [[高级搜索|$:/AdvancedSearch]] 的「过滤器」选项卡，也可以进行批量删除。
+
+
+!! 批量修改内容
+
+在 Commander 中搜索关键词，并切换到 Snr（Search and replcae）选项卡，Tiddler title 中选择一个条目，默认对 text 字段内容进行操作：
+
+* ''first match'' + <$button>Replace</$button>：逐个替换当前条目中的匹配项
+* ''first match'' + <$button>Replace all</$button>：逐个替换所有目标条目中的匹配项
+* ''global match'' + <$button>Replace</$button>：替换当前条目中的所有匹配项
+* ''global match'' + <$button>Replace all</$button>：替换所有目标条目中的所有匹配项
+
+<div class="gray-box">
+
+在维基外部，可借助其他工具进行查找替换。比如：
+
+* 单文件版本，可以用 {{extlink/code}} 等文本编辑器打开，进行批量修改替换。
+* 服务器版本，在 Linux / Mac 上可以用 sed / awk 命令搭配 grep 命令，进行批量修改替换。这里展示 [[grep 的一点基础用法|sed配合grep批量替换文件中的字串]]。
+*> sed / awk 是文本处理工具；grep 是文本搜索工具；
+
+</div><div class="red-box">
+
+''批量替换注意事项''
+
+# 操作前备份数据
+# 替换前最好浏览一遍，替换后还要检查
+# 注意区别字母大小写
+# 有时候逐个检查替换，虽然看起来很笨，却是最稳妥的办法。一键批量替换出错的概率很高！
+# 复制粘贴一段文本进行多处替换，也是容易出错的。笨办法虽然慢，但保证代码的正确，也挺重要的。
+
+</div>
+
+{{妙用 TiddlyWiki}}

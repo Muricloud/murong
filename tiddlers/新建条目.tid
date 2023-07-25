@@ -1,0 +1,35 @@
+caption: {{$:/core/images/new-button}} 新建条目
+created: 20200802011646004
+modified: 20230301151741207
+tags: XP-tutorials 新手入门指南
+title: 新建条目
+tmap.id: d24de4f5-661a-4435-80de-da4112ec89be
+
+点击边栏页面工具栏上的按钮新建条目，或者使用快捷键。
+
+* {{$:/core/ui/Buttons/new-tiddler}} 新建独立条目 <kbd>alt-N</kbd>
+* {{$:/core/ui/Buttons/new-journal}} 新建日志 <kbd>alt-J</kbd>
+* {{$:/plugins/tiddlywiki/markdown/new-markdown-button}} 新建 Markdown <kbd>alt-M</kbd>
+
+也可以单击指向一个尚不存在的条目链接。 不存在的条目的链接以[[蓝色斜体|blue italics]]显示。
+
+!! 目录表（Contents）
+
+可以通过以下步骤将自定义的[[目录表|Table-of-Contents Macros]]添加到边栏中：
+
+# 创建一个叫做 [[TableOfContents]] 的条目
+# 给它添加标签 ''~$:/tags/SideBar''
+# 设置文本为 <div><pre><code><$text text="""
+<div class="tc-table-of-contents">
+
+<<toc-selective-expandable 'TableOfContents'>>
+
+</div>"""/></code></pre></div>
+# 添加一个 ''caption'' 字段，内容为 ''目录''
+# 添加一个 ''list-after'' 字段，内容为 ''~$:/core/ui/SideBar/Open''
+
+!! 维护目录表
+
+创建一个主条目，只需给条目打上 `TableOfContents` 标签。或者通过 [[QuickBar|$:/plugins/xp/quickbar]] 中的 New 进行创建，选择 <span class="tc-btn-icon">{{$:/core/images/new-button}}</span> new main tiddler。
+
+要创建子条目，请使用父条目的名称作为它们的标签。一个简单的方法是从条目工具栏中选择''添加子条目'' <<.icon $:/core/images/new-here-button>>。

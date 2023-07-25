@@ -1,0 +1,33 @@
+created: 20210517150238293
+modified: 20220714043847149
+tags: 维基存储方案 XP-tutorials
+title: 将 CODING 上的仓库克隆到电脑上
+tmap.id: 1b407dc3-f25f-4384-aefe-e07a053c0629
+
+将主仓库 mywiki 以及「自定义插件库」克隆下来：
+
+```bash
+cd /DATA/TW
+git clone git@e.coding.net:NAME/wikisites/MyPluginStore.git
+cd wikiSites
+git clone git@e.coding.net:NAME/wikisites/mywiki.git
+cd mywiki
+echo "# mywiki" >> README.md
+```
+
+将其他仓库全部添加为 mywiki 的子模块：
+
+```bash
+git submodule add git@e.coding.net:NAME/wikisites/mywiki-private.git tiddlers/private
+git submodule add git@e.coding.net:NAME/wikisites/mywiki-journals.git tiddlers/journals
+git submodule add git@e.coding.net:NAME/wikisites/mywiki-images.git tiddlers/images
+```
+将子模块添加到 mywiki 的 .gitignore 中：
+
+```bash
+echo "tiddlers/private/" >> .gitignore
+echo "tiddlers/journals/" >> .gitignore
+echo "tiddlers/images/" >> .gitignore
+```
+
+> 如果想要删除 submodule，请参考 [[Git 中 submodule 子模块的删除]]。

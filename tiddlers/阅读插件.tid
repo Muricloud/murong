@@ -1,0 +1,22 @@
+created: 20230616064630259
+modified: 20230616085856118
+tags: 
+title: 阅读插件
+tmap.id: 6a10a168-61fe-4c38-95cf-635acf2bdd62
+
+\define addScores()
+<$action-setfield  scores={{{[{!!scores}add[1]]}}}  />
+\end
+
+\define subScores()
+<$action-setfield  scores={{{[{!!scores}add[-1]]}}}  />
+\end
+
+\define splitPara(paraNum,paraTopic,paraContent)
+<$details summary=<<$paraTopic$>> open={{!!$paraNum$}} actions="<$macrocall $name=macro1 />" >
+<<$paraContent$>>
+<div class=blue-box style="width:120px;height:40px" >
+<$checkbox field="$paraNum$" checked="yes" unchecked="no" default="no" checkactions="<$macrocall $name=addScores />" uncheckactions="<$macrocall $name=subScores />"> 阅读标记</$checkbox>
+</div>
+</$details>
+\end

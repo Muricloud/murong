@@ -1,0 +1,13 @@
+caption: 条目的哲学思想
+created: 20131128075743966
+modified: 20200901042844547
+tags: 中 TiddlyWiki
+title: Philosophy of Tiddlers
+tmap.id: 6494c811-1f54-449d-b5af-52bd665d5690
+type: text/vnd.tiddlywiki
+
+记录和组织信息的目的是为了可以再次使用。 记录信息的价值与其可以被重复使用的容易程度成正比。
+
+[[条目|Tiddlers]]的哲学思想是，我们通过将信息分割成最小的语义上有意义的单元，利用[[它们之间丰富的关系模型|Structuring TiddlyWiki]]，从而最大化信息的可复用性。 然后，我们再通过聚合和构思来把片段编排在一起，以呈现具有叙述性的故事。
+
+TiddlyWiki渴望为条目提供一种代数，一种表达和探索信息项之间关系的简洁方式。

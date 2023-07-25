@@ -1,0 +1,25 @@
+created: 20230706092905227
+modified: 20230706095503564
+tags: 
+title: 不等式-待定系数法求取值范围
+tmap.id: d25cea86-b182-4e99-8d9c-b01337d81a6e
+
+''不等式-待定系数法求取值范围的一般过程：<br><br>''
+已知 $$a \leq Ax+By\leq b$$, $$c\leq Cx+Dy\leq d$$，求$$Ex+Fy$$的取值范围.<br>
+
+$$设: Ex+Fy = m(Ax+By)+n(Cx+Dy) = (mA+nC)x+(mB+nD)y \\
+\ \\
+ \begin{align*} 
+ \begin{cases}
+E&=mA+nC \\
+F&=mB+nD
+\end{cases}
+\end{align*}
+
+$$
+$$
+解得:m,n$$
+
+
+<br><br>
+[[不等式-待定系数法求取值范围例题1]]

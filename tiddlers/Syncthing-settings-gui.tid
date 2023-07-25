@@ -1,0 +1,13 @@
+caption: 图形用户界面
+created: 20210530021528911
+modified: 20210530023428022
+tags: XP-tutorials
+title: Syncthing-settings-gui
+tmap.id: d9741449-4683-4b0b-a0f1-967a70ccfeb7
+
+在公网上使用 Syncthing，记得添加管理员和密码：
+
+* 图形管理界面用户名：root
+* 图形管理界面密码：<按照安全密码规则设定密码>
+
+---

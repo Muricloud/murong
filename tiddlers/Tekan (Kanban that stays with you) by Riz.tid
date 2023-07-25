@@ -1,0 +1,15 @@
+caption: Tekan
+created: 20210619080810828
+modified: 20220819085755357
+tags: [[Plugin Card]] XP-tutorials [[Community Plugins]]
+title: Tekan (Kanban that stays with you) by Riz
+tmap.id: 2d24c06b-bb16-4f69-93d9-76c7183eafc9
+url: https://ibnishak.github.io/Tesseract/projects/tekan/Tekan.html
+
+{{!!url}}
+
+A Kanban implementation for TiddlyWiki with a familiar look and feel (see the [[demo|https://ibnishak.github.io/Tesseract/projects/tekan/]]).
+
+> This is Tekan, a TW based kanban. The easiest way to know tekan is to use it. So let us begin, shall we?
+
+* $:/plugins/tesseract/tekan ,,@@color:Red;//modified//@@,,

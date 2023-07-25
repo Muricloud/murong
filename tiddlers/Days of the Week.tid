@@ -1,0 +1,15 @@
+created: 20150117192110000
+list: Monday Thursday Wednesday Friday Tuesday Saturday Sunday
+modified: 20200901042844520
+my-special-list: [[listed Operator (Examples)]]
+short: Mon Tue Wed Thu Fri Sat Sun
+tags: 中 TiddlyWiki
+title: Days of the Week
+tmap.id: 6ff172e6-8ad8-443d-82ee-2e1e0dd6033b
+type: text/vnd.tiddlywiki
+
+<<.this-is-operator-example>>
+
+它有一个<<.field list>>字段包含以下项目：
+
+<<list-links "[list[]]">>

@@ -1,0 +1,20 @@
+created: 20220406143445182
+modified: 20230604000909129
+tags: TableOfContents XP-tutorials
+title: 维基维护工具
+tmap.id: 4b34ae87-4727-40f2-8bf4-647bf19d45b2
+
+维护维基所需要的一些软件：
+
+* 数据同步：[[Git]] / [[Syncthing]]
+* 数据加密：[[VeraCrypt]] / [[Gocryptfs|Ubuntu 上安装使用 gocryptfs 加密工具]]
+* 数据备份：[[Nutstore]] 等网盘……
+
+
+其他辅助软件：
+
+* 文本/代码编辑器：[[Visual Studio Code]]
+* 文件管理器：Double Commander / Thunar
+* 文件传输：[[Warpinator]]
+* 搜索文件：FSearch / Everything
+* 搜索替换：Grep / Sed

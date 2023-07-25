@@ -1,0 +1,10 @@
+caption: 影子条目（默认条目）
+created: 20171210094516443
+modified: 20210418065928566
+tags: 中 Concepts TiddlyWiki
+title: ShadowTiddlers
+tmap.id: 34c61b4a-c430-4312-883d-de4ea8d09ac5
+
+ShadowTiddlers（影子条目、默认条目）是从[[插件|Plugins]]中加载的条目。 不像普通的条目，它们在大多数名单中不会出现。
+
+影子条目可以用一个同名的普通条目覆写。 如果该条目随后被删除，则原来的影子条目会自动恢复。

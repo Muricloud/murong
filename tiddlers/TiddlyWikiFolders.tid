@@ -1,0 +1,42 @@
+caption: TiddlyWiki文件夹
+created: 20130825214200000
+modified: 20200901042844576
+tags: 中 [[TiddlyWiki on Node.js]] TiddlyWiki
+title: TiddlyWikiFolders
+tmap.id: 58c744a5-a0f9-4ca6-b9bf-74c7993580b1
+type: text/vnd.tiddlywiki
+
+除了传统的单一文件维基，[[基于Node.js的TiddlyWiki|TiddlyWiki on Node.js]] 支持单个条目文件作为一个文件夹存储的维基。
+
+!! 维基文件夹结构
+
+维基文件夹可以包含以下文件和文件夹：
+
+* ''tiddlywiki.info'' - 包含维基元数据的JSON文件 -- 参阅 [[tiddlywiki.info Files]]
+* ''\tiddlers'' - 包含维基条目文件的文件夹，由这些文件构成维基
+* ''\plugins'' - 包含维基中各[[插件文件夹|PluginFolders]]的文件夹
+* ''\languages'' - 包含维基中各语言[[插件文件夹|PluginFolders]]的文件夹
+* ''\themes'' - 包含维基中各主题[[插件文件夹|PluginFolders]]的文件夹
+
+只有 ''tiddlywiki.info'' 文件是必需的，其他一切都是可选的。 以上未列出的任何文件和文件夹都将被忽略。
+
+!!! 插件处理
+
+要在浏览器中使用，只需要把插件包含在维基中。 对于在服务器上生成的维基，TiddlyWikiFolders可以包含一个 [[tiddlywiki.info文件|tiddlywiki.info Files]] ，用于标识要包含在此维基中的插件：
+
+```
+{
+	"plugins": [
+		"tiddlywiki/slider",
+		"tiddlytools/chooser"
+	]
+}
+```
+
+插件名称是指 TiddlyWiki5 的根目录下 `plugins` 文件夹中列出的插件文件夹的名称。 插件也可以通过将它们复制到维基自己的 `plugins` 子文件夹中从而手动包含。
+
+!!! 处理 `tiddlers（条目）` 文件夹
+
+启动时，`tiddlers` 文件夹中的所有 TiddlerFiles（条目文件） 都会被读入维基。 对于TiddlerFiles，子文件夹会被递归扫描。 除非 [[另行配置|Customising Tiddler File Naming]]，新创建的条目（tiddlers）将直接存储在 `tiddlers` 文件夹下的 TiddlerFiles 中。
+
+`tiddlers` 文件夹中的子文件夹的默认处理可以通过提供一个名为 `tiddlywiki.files` 的JSON文件来覆盖 - 请参阅 [[tiddlywiki.files Files]]。

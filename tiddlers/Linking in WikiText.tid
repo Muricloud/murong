@@ -1,0 +1,84 @@
+caption: 链接
+created: 20131205155230596
+modified: 20220819093318592
+tags: 中 WikiText TiddlyWiki
+title: Linking in WikiText
+tmap.id: 3de30992-8351-4992-8140-29471ea5c558
+type: text/vnd.tiddlywiki
+url: https://tiddlywiki.com/static/Linking%2520in%2520WikiText.html
+
+WikiText的关键功能是能够链接到其他条目或外部网站。
+
+!! 手动链接
+
+按标题链接给一个条目：
+
+```
+[[Tiddler Title]]
+```
+
+链接到条目并指定链接显示的文本：
+
+```
+[[显示的链接标题|Tiddler Title]]
+```
+
+您还可以从编辑器工具栏创建链接。 点击''链接'' (<<.icon $:/core/images/link>>)，然后搜索并选择一个条目。
+
+!! 驼峰式（~CamelCase）链接
+
+对于符合CamelCase规则（大写字母出现在单词中部）的条目标题，只需键入标题不用带双方括号即可自动创建链接。
+
+你可以通过在前面加 `~`来阻止被自动识别为驼峰式链接。 例如：
+
+```
+* ~HelloThere 不是一个链接
+* ~http://google.com/ 是一个链接
+```
+
+* ~HelloThere 不是一个链接
+* ~http://google.com/ 是一个链接
+
+<div class="gray-box">
+
+''相关设置''
+
+* [[禁用自动 WikiLink]]
+
+</div>
+
+
+!! 外部链接
+
+要链接到外部[[资源|https://en.wikipedia.org/wiki/Web_resource]] ，如网站或文件，请键入其//完整//  [[URL|https://en.wikipedia.org/wiki/URL]]，包括[[URI方案|https://en.wikipedia.org/wiki/URI_scheme]]，如协议（例如`http://`、`file://`）或`mailto`：
+
+```
+http://tiddlywiki.com/
+[[TW5|http://tiddlywiki.com/]]
+[[我的邮件|mailto:me@where.net]]
+```
+
+为了使此语法正常工作，URL必须被识别为URL。 否则，它将被视为条目标题。 因此，如果你要想使用相对路径链接到可定位的资源，请使用扩展语法：
+
+```
+[ext[Open file|index.html]]
+[ext[Open file|./index.html]]
+[ext[Open file|../README.md]]
+```
+
+扩展语法当然也适用于完整的URL，但在这种情况下，它不是必需的：
+
+```
+[ext[http://tiddlywiki.com]]
+[ext[TW5|http://tiddlywiki.com]]
+```
+
+您还可以使用扩展语法强制外部链接：
+
+```
+[ext[Donate|bitcoin:1aabbdd....?amount=0.001]]
+```
+
+!! 定制条目链接
+
+有关用于实现条目链接的底层小部件的详细信息，请参阅LinkWidget，包括可用于自定义其行为的宏。

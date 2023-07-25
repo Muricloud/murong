@@ -1,0 +1,38 @@
+created: 20210107134725218
+modified: 20220309010223379
+tags: XP-tutorials
+title: 一、配置 Git 以及 SSH 公钥（Gitee）
+tmap.id: a7a738db-1c47-4466-a6fc-ffe9bb920fe1
+
+第一，配置个人的用户名称和电子邮件地址。
+
+命令如下：
+
+```bash
+$ git config --global user.name "[name]"
+$ git config --global user.email "[email address]"
+$ git config --global color.ui auto
+$ git config --global core.autocrlf false # Linux
+```
+
+第二，[[SSH 公钥设置|https://gitee.com/help/articles/4191#article-header0]]。
+
+查看公钥：
+
+```bash
+cat ~/.ssh/id_rsa.pub
+```
+
+不存在，则生成公钥（一路回车）：
+
+```bash
+ssh-keygen -m PEM -t ed25519 -C "your.email@example.com"
+```
+
+> 更多信息见：[[SSH 生成公钥]]
+
+注册/登录 [[Gitee|https://gitee.com/signup]] ，通过主页右上角 「个人设置」->「安全设置」->「SSH公钥」->「添加公钥」 ，添加生成的 public key 添加到当前账户中。
+
+[img width=900 [gitee上添加ssh公钥.webp]]
+
+将 `id_rsa.pub` 中的内容填写到【公钥】中，公钥标题按需填写即可。

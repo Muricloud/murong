@@ -1,0 +1,43 @@
+created: 20200828145035723
+modified: 20210419091101975
+tags: XP-tutorials
+title: 管理插件（单文件版）
+tmap.id: 5d7ebbf1-ac07-4cad-9ee5-22811759fa78
+
+将TiddlyWiki作为单独的HTML文件使用时请遵循以下说明：
+
+: 创建当前TiddlyWiki HTML文件的备份（[[以防万一|The First Rule of Using TiddlyWiki]]）
+
+! 从插件库安装插件
+
+# 在浏览器中打开你的TiddlyWiki
+# 打开[[控制面板|$:/ControlPanel]] <<.icon $:/core/images/options-button>>，点击''插件''标签，然后点击''获取更多插件''按钮 <<.icon $:/core/images/download-button>> 
+# 点击''打开插件库'' <<.icon $:/core/images/chevron-right>>  打开官方的插件库
+# 当库列表加载后：
+## 在''插件''、''主题''和''语言''标签中进行选择
+## 使用''搜索''框搜索插件的详细信息
+# 点击''安装''按钮安装一个插件
+# 保存你的TiddlyWiki <<.icon $:/core/images/save-button>>
+# ''刷新页面，以便TiddlyWiki加载新的插件'' <<.icon $:/core/images/refresh-button>>
+# 该插件现在应该可以使用了
+
+
+! 手动安装一个插件
+
+# 在浏览器中打开你的TiddlyWiki
+# 在另一个浏览器窗口中，找到插件的链接，例如 [[$:/plugins/tiddlywiki/example]]。您通常会在插件的主页上找到这些链接（例如，https://tiddlywiki.com/plugins/tiddlywiki/katex/）
+# 将链接 [[$:/plugins/tiddlywiki/example]] 拖到包含您的TiddlyWiki的浏览器窗口
+# 保存你的TiddlyWiki (<<.icon $:/core/images/save-button>>)
+# ''刷新页面，以便TiddlyWiki加载新的插件'' <<.icon $:/core/images/refresh-button>>
+# 该插件现在应该可以使用了
+
+
+! 卸载一个插件
+
+# 打开[[控制面板|$:/ControlPanel]] <<.icon $:/core/images/options-button>>，并转到''插件''选项卡
+# 点击你想删除的插件，打开它的条目
+# 点击''更多''按钮 <<.icon $:/core/images/down-arrow>>  并''删除'' <<.icon $:/core/images/delete-button>> 该条目
+# 保存你的TiddlyWiki <<.icon $:/core/images/save-button>>
+# ''刷新页面，以便TiddlyWiki加载新的插件'' <<.icon $:/core/images/refresh-button>>
+# 该插件现在应该被删除了
+

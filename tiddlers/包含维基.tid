@@ -1,0 +1,26 @@
+created: 20210128090054885
+modified: 20220626092500527
+tags: XP-tutorials
+title: 包含维基
+tmap.id: 629b0525-d521-4f83-8090-377f9824df47
+
+includeWikis 让我们可以在一个维基中阅读其他维基的内容（其他维基不需要启动），下方是一个例子，详见 [[tiddlywiki.info Files]]。
+
+''举例：''
+
+在 test 文件夹下有三个维基：mywiki、chinese 和 english。要在 mywiki 中访问 chinese / english 的内容，可以在 mywiki 的 tiddlywiki.info 中的 `"plugins"` 后添加如下内容：
+
+
+```
+	"includeWikis": [
+		{"path": "../chinese", "read-only": true},
+		{"path": "../english", "read-only": true}
+	],
+```
+
+
+<div class="red-box">
+
+''注意：''如果包含一个不存在的维基，将导致本维基无法正常启动！如果出现无法启动，请删除无效的配置。
+
+</div>

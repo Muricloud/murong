@@ -1,0 +1,8 @@
+created: 20140912145543340
+modified: 20210713101523754
+tags: TiddlyWiki Examples
+title: SampleNotification
+tmap.id: d533d310-ca82-408b-8965-6117f534d61b
+type: text/vnd.tiddlywiki
+
+{{$:/core/images/done-button}} This is a notification!

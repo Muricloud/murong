@@ -1,0 +1,37 @@
+caption: {{$:/xp/images/annotation}} 批注
+created: 20220123124455132
+list: [[Annotate Button/示例]] [[Annotate Button/设置]] [[Annotate Button/杂谈]]
+modified: 20220904003454584
+tags: XP-tutorials 新手入门指南
+title: Annotate Button
+tmap.id: cc7763cd-c7b5-42dc-9839-112fb9062a51
+
+可以利用 [[Refnotes|Refnotes by Mohammad]] 或 [[Dynannotate|Dynannotate Plugin]] 在 TW 中做批注。
+
+<div class="gray-box">
+
+官方插件 [[Dynannotate|$:/plugins/tiddlywiki/dynannotate]] 的一些注意事项：
+
+* 最大的问题是，改了标记批注的文本，则需重新创建批注。也就是说，Dynannotate 适合用来对不变的内容做批注。比如 TiddlyWiki 电子书（类似于 PDF 电子书）。或者，演示 TiddlyWiki 文档时，提供一个高亮文本的功能。
+* 设置了 `Using Dynannotate in the view template` 后，无法查看插件条目。这个需要修改视图模板：
+** $:/core/ui/ViewTemplate/body
+** $:/config/ViewTemplateBodyFilters/plugin
+* Dynannotate 与 [[appear|$:/plugins/tobibeer/appear]] 插件不兼容。
+
+</div>
+
+
+仿照 Dynannotate，XP 中提供了 <<.icon $:/xp/images/annotation>> [[annotate|$:/xp/ui/EditorToolbar/annotate]] 按钮（编辑器工具栏）用于创建批注。格式为：
+
+:`<<annotate """text""" "storeTiddler">>`
+
+<<<.br
+''text'': 需要做批注的文本。
+''storeTiddler'': 存储批注内容的 tiddler
+<<<
+
+使用 annotate 宏的好处是，你可以修改 `text` 部分的内容，不会使批注失效。（annotate 宏实际上就是一个下拉按钮，见 $:/xp/macros/annotation。）
+
+为了便于查看一个条目的所有批注，建议安装插件 $:/plugins/xp/tiddlertail。
+
+<<tabs "[tag[Annotate Button]]" "Annotate Button/示例" "$:/state/tab5">>

@@ -1,0 +1,30 @@
+caption: Preview
+created: 20210619153012629
+linkcolor: <<colour muted-foreground>>
+modified: 20220819085715411
+tags: [[Community Plugins]] [[Plugin Card]] XP-tutorials
+title: Preview by Tobias Beer
+tmap.id: 6cc1631f-bad6-43e6-b0db-a4c868e40dc3
+url: https://github.com/tobibeer/tw5-preview
+
+{{!!url}}
+
+Shows a tiddler preview when hovering internal links
+
+* $:/plugins/tobibeer/preview
+** $:/plugins/tobibeer/appear
+
+<div class="yellow-box">
+
+注意：[[menubar 与 preview 不兼容]] ([[quickbar|$:/plugins/xp/quickbar]] 类似) / [[dynannotate 与 appear 不兼容]]
+
+</div><div class="red-box">
+
+该插件已被踢出 XP。感觉悬浮弹窗预览不实用，价值不大，安装以后几乎用不到。反而成为负担，比如与 quickbar 不兼容，相当尴尬。
+
+</div>
+
+!!  插件改动
+
+{{changelist-preview}}
+{{changelist-appear}}

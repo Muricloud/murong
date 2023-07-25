@@ -1,0 +1,65 @@
+created: 20220407073041091
+modified: 20220714043634595
+tags: XP-tutorials [[Shell Script]]
+title: rebuild-submodule-1.sh
+tmap.id: bf7561cb-72b3-4eaa-8b47-af5af48f4c81
+
+```bash
+#!/usr/bin/env bash
+# rebuild-submodule-1.sh
+# 该脚本会删除所有历史记录！
+
+USERNAME='呆瓜'
+WIKIPATH='/DATA/TW/wikiSites/mywiki'
+LOGFILE='commit_deleted.log'
+SUBMODULE='mywiki-private'
+SUBDIR='tiddlers/private'
+
+# If a command fails then the deploy stops
+set -e  
+
+#######################################
+# 重建子仓库
+#######################################
+
+echo -e "\n\033[0;31;1m++ $USERNAME/$SUBMODULE\033[0m"
+cd $WIKIPATH/$SUBDIR
+
+# 删除历史记录
+#--------------------------------------
+if [ ! -f "$LOGFILE" ]; then
+    touch $LOGFILE
+fi
+echo -e "`git log --graph --pretty=format:"%cd %s" --date=format:"%F %T"`\n" | cat - $LOGFILE > temp && mv temp $LOGFILE
+git add -A
+git stash
+git checkout --orphan latest_branch
+git stash pop
+git add -A
+msg="Initial commit"
+if [ -n "$*" ]; then
+    msg="$*"
+fi
+git commit -am "$msg"
+git branch -D master
+git branch -m master
+#--------------------------------------
+
+# 清理垃圾
+#--------------------------------------
+cd $WIKIPATH
+git filter-branch --index-filter 'git rm -r --cached --ignore-unmatch .git/modules/$SUBMODULE/objects/pack/pack-*.pack' --prune-empty
+cd $WIKIPATH/$SUBDIR
+git for-each-ref --format='delete %(refname)' refs/original | git update-ref --stdin
+git reflog expire --expire=now --all
+git gc --aggressive --prune=now
+#--------------------------------------
+
+# PUSH
+#--------------------------------------
+echo -e "\n\033[0;32mDeploying updates to remote repository...\033[0m"
+git push -f origin master
+#--------------------------------------
+echo -e "\033[0;32mDone!\033[0m"
+
+```

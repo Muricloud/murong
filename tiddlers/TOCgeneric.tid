@@ -1,0 +1,15 @@
+caption: TOCgeneric
+created: 20220723102241139
+modified: 20220819085857955
+revision: 0
+tags: [[Community Plugins]] [[Plugin Card]]
+title: TOCgeneric
+tmap.id: 0aec496a-8060-41e3-8f37-46ecbeac2cb6
+type: text/vnd.tiddlywiki
+url: https://hchaase.github.io/HC-Plugins/#TOC-Generic%20Introduction
+
+{{!!url}}
+
+adds extended TOC to the bottom of tiddlers
+
+$:/plugins/HCHaase/TOCgeneric

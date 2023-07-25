@@ -1,0 +1,25 @@
+caption: 格式化文本
+created: 20211214232204883
+modified: 20220626225658139
+tags: XP-tutorials [[使用 HTML 代码]]
+title: 使用 HTML 代码/格式化文本
+tmap.id: 0da8b09d-aa04-45b3-808e-b0d8a2387262
+
+!! 格式化文本
+
+<<wikitext-example-without-html 
+src:"""这是一段普通文本……
+
+<span class="tc-muted">这段文本将使用 tc-muted 中定义的字体颜色。</span>
+
+<i class="tc-muted">斜体：这段文本将使用 tc-muted 中定义的字体颜色。</i>
+
+<small class="tc-muted">变小：这段文本将使用 tc-muted 中定义的字体颜色。</small>
+
+<b class="tc-muted">粗体：这段文本将使用 tc-muted 中定义的字体颜色。</b>
+""">>
+
+
+!! 将内容显示为多栏
+
+参见 $:/plugins/xp/columns。

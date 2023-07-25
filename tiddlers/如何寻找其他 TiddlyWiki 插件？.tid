@@ -1,0 +1,15 @@
+created: 20220626083923056
+modified: 20220626084033760
+tags: XP-tutorials
+title: 如何寻找其他 TiddlyWiki 插件？
+tmap.id: 3f7af301-9614-4c7e-8309-af49e43739cc
+
+除了[[官方插件库|$:/core/ui/ControlPanel/Plugins/AddPlugins]]，您还可以在这些地方寻找插件：
+
+# 中文社区插件库（Chinese Plugin Library）
+#* 国内加速版：https://tw-cpl.netlify.app
+#* GitHubPage：https://tiddly-gittly.github.io/TiddlyWiki-CPL
+# 官方文档中的 [[Community Plugins|https://tiddlywiki.com/static/Community%2520Plugins.html]]；
+# 在 [[Community Links Aggregator|https://tiddlywiki.com/static/Community%2520Links%2520Aggregator.html]] 中搜索「关键词」；
+# 在 [[TiddlyWiki Toolmap|https://tiddlywiki.com/static/%2522TiddlyWiki%2520Toolmap%2522%2520by%2520David%2520Gifford.html]] 中搜索「关键词」；
+# 或者在代码托管平台进行搜索。比如 [[GitHub]]。

@@ -1,0 +1,13 @@
+created: 20141001132300000
+linkcolor: red
+list: [[Custom styles by data-tags]] [[Custom styles by data-tiddler-title]]
+modified: 20220819093318588
+tags: [[Customise TiddlyWiki]] Examples TiddlyWiki Howto
+title: How to apply custom styles
+tmap.id: ea5cfbb2-973f-4719-af8e-ce1a17cd255e
+type: text/vnd.tiddlywiki
+url: https://tiddlywiki.com/static/How%2520to%2520apply%2520custom%2520styles.html
+
+There are several ways to apply custom styles.
+
+<<list-links filter:"[tag[How to apply custom styles]]">>

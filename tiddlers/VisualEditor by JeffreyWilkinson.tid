@@ -1,0 +1,16 @@
+caption: Visual Editor
+created: 20220618032248166
+linkcolor: 
+modified: 20220819085926541
+revision: 0
+tags: [[Community Plugins]] [[Plugin Card]]
+title: VisualEditor by JeffreyWilkinson
+tmap.id: 49f69279-0080-4e54-ad6c-3cf779dd59d9
+type: text/vnd.tiddlywiki
+url: http://bjtools.tiddlyspot.com/#VisualEditor
+
+{{!!url}}
+
+ckeditor adapter plugin
+
+$:/plugins/bj/visualeditor

@@ -1,0 +1,9 @@
+caption: 版本号宏（示例）
+created: 20150221214110000
+modified: 20200901042844580
+tags: 中 [[version Macro]] [[Macro Examples]] TiddlyWiki
+title: version Macro (Examples)
+tmap.id: 29597ac2-b634-46d1-9f90-3d94a9dacfb6
+type: text/vnd.tiddlywiki
+
+<$macrocall $name=".example" n="1" eg="""版本号：<<version>>"""/>

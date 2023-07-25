@@ -1,0 +1,12 @@
+author: kl
+created: 20210706074123255
+dependents: 
+description: Display content in multiple columns using CSS
+list: readme
+modified: 20220810131842881
+name: Columns
+plugin-type: plugin
+revision: 0
+title: $:/plugins/xp/columns
+type: application/json
+version: 0.2.1

@@ -1,0 +1,67 @@
+caption: 音频
+created: 20141018131647392
+modified: 20230604110902067
+tags: 中 Features WikiText TiddlyWiki
+title: Audios in WikiText
+tmap.id: 2652de37-7467-48fa-baf4-3febe046742e
+type: text/vnd.tiddlywiki
+url: https://tiddlywiki.com/static/Audio.html
+
+音频文件可以用与[[图像|Images in WikiText]]非常类似的方式并入到 TiddlyWiki 中。
+
+!! 嵌入音频
+
+小的音频文件可以直接嵌入到 TiddlyWiki 中。 嵌入不适用于大文件（超过几百 k 字节），因为它会增大 TiddlyWiki 文件的大小。
+
+例如，[[TiddlyWiki.mp3]] 条目包含单词“TiddlyWiki”的 MP3 录音。 如果您访问该条目，您应该能看到一个播放录音的音频播放器。
+
+您也可以嵌入音频文件。 例如：
+
+```
+{{TiddlyWiki.mp3}}
+```
+
+{{TiddlyWiki.mp3}}
+
+
+!! 外部音频
+
+外部音频条目使用 ''_canonical_uri'' 字段指向外部音频文件/流媒体，并锁住其 ''text'' 字段。 这极大地减小了它们的尺寸，但仍允许回放。
+
+例如 [[Caruso - Ave Maria]]（卡鲁索 - 圣母颂）条目指向一个托管在 http://archive.org 上的在线录音： 
+
+```
+{{Caruso - Ave Maria}}
+```
+
+{{Caruso - Ave Maria}}
+
+
+!!! 使用 HTML5 `<audio>` 元素
+
+下面是一个将音频嵌入到 HTML 文档的例子。
+
+```html
+<audio src="/test/audio.ogg">
+  你的浏览器不支持 audio 标签。
+</audio>
+```
+
+src 属性可以设置为一个音频文件的 URL 或者本地文件的路径。
+
+```html
+<audio src="audio.mp3" preload="none" controls loop>
+  你的浏览器不支持 audio 标签。
+</audio>
+```
+
+这个例子的代码中使用了 HTML 的“audio”元素的一些属性：
+
+* ''controls'' : 为网页中的音频显示标准的 HTML5 控制器。
+* ''loop'' : 使音频自动重复播放。
+* ''preload'' : 属性用来缓冲 audio 元素的大文件，有三个属性值可供设置：
+** "none" 不缓冲文件
+** "auto" 缓冲音频文件
+** "metadata" 仅仅缓冲文件的元数据
+
+> 参阅 [[HTML5 <audio> 元素|https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/audio]]，和 [[使用 HTML5 音频和视频|https://developer.mozilla.org/zh-CN/docs/Web/Guide/HTML/Using_HTML5_audio_and_video]]。

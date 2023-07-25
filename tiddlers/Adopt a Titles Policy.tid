@@ -1,0 +1,15 @@
+caption: 采用的标题策略
+created: 20130825103300000
+modified: 20200901042844516
+tags: 中 [[Improving TiddlyWiki Documentation]] TiddlyWiki
+title: Adopt a Titles Policy
+tmap.id: 6d0edc04-85c5-4a41-80f9-0c5653834a1b
+type: text/vnd.tiddlywiki
+
+随着TiddlyWiki文档中的结构变得越来越复杂，可能难以保持条目的标题一致性。 例如，定义术语应该用复数还是单数？ 是用[[骆驼命名法|CamelCase]]还是分开的单词？
+
+记录正式的标题策略可以帮助减少混淆。 例如，这个维基的标题策略记录在[[文档样式指南|Documentation Style Guide]]中。
+
+!! 系统条目标题
+
+一个很有用的惯例是，为您创建的任何系统条目使用前缀 `$:/_` ，以确保它们能在侧边栏中系统条目列表的顶部。

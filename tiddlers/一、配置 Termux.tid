@@ -1,0 +1,23 @@
+color: #F06292
+created: 20200920204129722
+modified: 20210715091236338
+tags: [[TiddlyWiki on Node.js]] XP-tutorials
+title: 一、配置 Termux
+tmap.id: 151fc280-a31e-44c4-b4da-914244f106ea
+type: text/vnd.tiddlywiki
+
+> 确保已安装 [[Node.js on Termux|Serving TW5 from Android]]
+
+!! 安装必备软件
+
+```bash
+pkg install openssh git vim
+npm install pm2@latest -g
+```
+
+
+!! 配置 Git 以及 SSH 公钥
+
+参阅电脑端的操作：[[配置 Git 以及 SSH 公钥（Gitee）|一、配置 Git 以及 SSH 公钥（Gitee）]]
+
+> 这里是在手机端生成新密钥，用新密钥连接远程的 Gitee 仓库。

@@ -1,0 +1,47 @@
+caption: 常用命令
+created: 20131219100520659
+modified: 20200901042808906
+tags: [[TiddlyWiki on Node.js]] XP-tutorials
+title: Using TiddlyWiki on Node.js
+tmap.id: 4b5a6592-5f03-4455-8849-d2ebb41cbda3
+type: text/vnd.tiddlywiki
+
+!! 常用命令
+
+TiddlyWiki5 可以在命令行中使用，去执行基于 TiddlyWikiFolders、TiddlerFiles 和 TiddlyWikiFiles 的广泛的操作。终端上输入 `tiddlywiki` 查看相关命令。
+
+例如，以下命令从 TiddlyWiki HTML 文件加载条目，然后将其中一个保存在静态 HTML 中：
+
+```
+tiddlywiki --verbose --load mywiki.html --rendertiddler ReadMe ./readme.html
+```
+
+tiddlywiki 的命令语法如下：
+
+```
+tiddlywiki [+<pluginname> | ++<pluginpath>] [<wikipath>] [--<command> [<arg>[,<arg>]]]
+```
+
+从命令行运行 `tiddlywiki` 将启动TiddlyWiki内核，加载核心插件并建立一个空的维基存储区。 然后从左到右依次处理命令行参数。 参数用空格分隔。
+
+<<.from-version "5.1.20">> 首先，可以有零个或多个插件引用，前缀为 `+` 表示插件名称，或 `++` 表示插件文件夹的路径。除了 [[TiddlyWiki 文件夹|TiddlyWikiFolders]]中指定的插件外，还会加载这些插件。
+
+第一个参数是要加载的 [[TiddlyWiki文件夹|TiddlyWikiFolders]] 的可选路径。 如果不存在，则使用当前目录。
+
+命令及其跟随的各个参数，每个命令由前缀 `--` 标识。
+
+例如:
+
+```
+tiddlywiki --version
+tiddlywiki +plugins/tiddlywiki/filesystem +plugins/tiddlywiki/tiddlyweb mywiki --listen
+tiddlywiki ++./MyPluginStore mywiki --listen
+```
+
+<<.from-version "5.1.18">> 像 ListenCommand 这样支持大量参数的命令可以使用 NamedCommandParameters 来减少麻烦。例如：
+
+```
+tiddlywiki wikipath --listen username=jeremy port=8090
+```
+
+有关可用命令的完整列表，请参见 [[Commands]]。

@@ -1,0 +1,10 @@
+caption: 标签丸宏（示例）
+created: 20150221211317000
+modified: 20200901042844564
+tags: 中 [[tag Macro]] [[Macro Examples]] TiddlyWiki
+title: tag Macro (Examples)
+tmap.id: 7c866545-a172-4217-ad2e-f7240a873509
+type: text/vnd.tiddlywiki
+
+<$macrocall $name=".example" n="1" eg="""<<tag>>"""/>
+<$macrocall $name=".example" n="2" eg="""<<tag Concepts>>"""/>

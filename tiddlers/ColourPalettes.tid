@@ -1,0 +1,33 @@
+caption: 调色板
+created: 20140216102454178
+modified: 20210423053751037
+tags: 中 Concepts TiddlyWiki
+title: ColourPalettes
+tmap.id: cf4349a3-1623-49f0-bb43-fb82a607ca88
+type: text/vnd.tiddlywiki
+
+调色板是一个[[数据条目|DataTiddlers]]，为一组颜色名称中的每一个提供[[CSS]]颜色值（如''yellow''、''#fe0''等），如下所示：
+
+```
+page-background: #fe0
+table-border: #ccc
+...
+```
+
+若干调色板是核心的构成部分。 系统条目[[$:/palette]]总是包含当前所选调色板的标题。 您可以使用边栏中“工具”选项卡上的''调色板''按钮 {{$:/core/images/palette}} 更改调色板。
+
+要从当前调色板中检索指定的颜色名称的值，例如用在样式表条目中，请使用 <<.mlink colour>> 宏：
+
+```
+<<colour page-background>>
+```
+
+调色板条目应该有以下字段：
+
+|!名称 |!值 |
+|title |标题，通常以 `$:/` 开头 |
+|type |类型，值为 `application/x-tiddler-dictionary` |
+|tags |标签，值为 `$:/tags/Palette` |
+|name |要显示在调色板浏览器中的名称 |
+|description |要显示在调色板浏览器中的说明 |
+|text |文本，`名称:值` 格式的颜色定义 |

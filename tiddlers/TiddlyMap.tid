@@ -1,0 +1,43 @@
+caption: {{$:/xp/images/tiddlymap}} TiddlyMap
+created: 20200731124255535
+modified: 20220903153549876
+tags: XP-tutorials 新手入门指南
+title: TiddlyMap
+tmap.id: c2112f02-27a2-4a80-bc92-a5a5aa646a52
+
+\define tv-config-toolbar-text() yes
+\define openCpAppearance()
+<$action-setfield $tiddler="$:/state/tab-1749438307" $value="$:/core/ui/ControlPanel/Appearance"/>
+<$action-setfield $tiddler="$:/state/tab--1963855381" $value="$:/themes/tiddlywiki/vanilla/themetweaks"/>
+<$action-navigate $to="$:/ControlPanel"/>
+\end
+
+<<thumbnail-right link:"TiddlyMap" image:"TiddlyMap.png" caption:"~TiddlyMap" icon:"{{$:/core/images/link}}" color:"red">>
+
+[[TiddlyMap|https://github.com/felixhayashi/TW5-TiddlyMap]] 是一个 TiddlyWiki 插件，它把你最喜欢的个人笔记软件变成了 Wiki-Concept-Map 的混合体。是的，你可以同时做这两件事：绘制地图和以 wiki 的方式记录知识。~TiddlyMap 允许你可视化地链接和创建 wiki 主题，以创建可点击的图形，例如概念图或依赖图。此外，它还会自动可视化你的主题结构，让你立即掌握主题和关系。
+
+详细使用方法参见教程：
+
+* [[【视频】TiddlyMap Tutorial|https://search.bilibili.com/all?keyword=TiddlyMap]]
+* [[官方教程文档|http://tiddlymap.org/#Documentation]]
+
+
+<div class="red-box">
+
+''注意事项：''
+
+如果 <$button actions=<<openCpAppearance>>>{{$:/core/images/options-button}} ~ThemeTweaks</$button> 中启用了 [[Sticky titles|$:/themes/tiddlywiki/vanilla/options/stickytitles]]，那么只能点击故事河中第一个条目中的地图切换全屏模式；如果条目不在第一，可以在开启列表中将其拖到第一。或者使用边栏中的 Map 进行浏览。
+
+如果不慎点击条目中地图切换全屏模式后，无法使用维基。
+
+# <kbd>ctrl-S</kbd> 可保存维基
+# <kbd>ctrl-R</kbd> 刷新维基
+
+</div>
+<div class="gray-box">
+
+''实用技巧''　用按钮 {{$:/xp/switchlayout/images/left-arrow}} 扩展边栏，可以更方便地使用边栏中的这些选项卡：
+
+<<tabs "Map Live Commander AdvancedSearch">>
+
+</div>

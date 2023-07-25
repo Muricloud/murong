@@ -1,0 +1,9 @@
+created: 20200804032451667
+modified: 20220219162153619
+tags: XP-tutorials 新手入门指南
+title: XP 构建流程
+tmap.id: 3cca3231-2054-4225-8054-57201e98561a
+
+!! 构建
+
+<<tabs "[[Building XP]] [[Building XP Server]]" [[Building XP]] "$:/state/tab">>

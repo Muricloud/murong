@@ -1,0 +1,36 @@
+created: 20200920152658418
+modified: 20220626092703421
+tags: XP-tutorials 维基存储方案
+title: 二、在手机与 Coding 之间同步维基
+tmap.id: 6d36cc0a-19df-404c-8a70-fa3cf1514105
+
+> 方法同于 [[在电脑与 Coding 之间同步维基|二、在电脑与 Coding 之间同步维基]]
+
+!! 将仓库克隆到手机上
+
+打开 Android 手机的文件管理器，进入''内部存储''，创建文件夹 `_wiki`。（名称前面加了下划线，这样文件夹可以显示在最前面）
+
+进入 Termux，将主仓库 mywiki 以及「自定义插件库」克隆下来：
+
+```bash
+cd $HOME/storage/shared/_wiki
+git clone git@e.coding.net:NAME/wikisites/mywiki.git
+git clone git@e.coding.net:NAME/wikisites/MyPluginStore.git
+cd mywiki
+```
+
+将其他仓库也克隆下来：
+
+```bash
+git submodule add -f git@e.coding.net:NAME/wikisites/mywiki-private.git tiddlers/private
+git submodule add -f git@e.coding.net:NAME/wikisites/mywiki-journals.git tiddlers/journals
+git submodule add -f git@e.coding.net:NAME/wikisites/mywiki-images.git tiddlers/images
+```
+
+<div class="red-box">
+
+如果遇到无法拉取仓库的情况，请参阅 [[git: Permission denied (publickey)]]
+
+</div>
+
+{{在手机上维护维基}}

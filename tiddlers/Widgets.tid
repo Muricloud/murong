@@ -1,0 +1,22 @@
+caption: 部件
+created: 20140908130500000
+modified: 20220819093318604
+tags: 中 Concepts Reference TiddlyWiki
+title: Widgets
+tmap.id: 7bc476c0-8d42-4c15-9f75-4a0cf7021a6c
+type: text/vnd.tiddlywiki
+url: https://tiddlywiki.com/static/Widgets.html
+
+~TiddlyWiki的显示是由一个底层的<<.def widgets>>（部件）集合驱动的。 它们被组织成树形结构：每个部件都有一个父部件和零或多个子部件。
+
+~TiddlyWiki通过解析条目（tiddlers）的维基文本（WikiText）生成这个<<.def "widget tree">>（部件树）。 WikiText语法的每个组件，甚至包括普通文本的平常状况，都会生成相应的小部件。 部件树是一种中间表示，随后被渲染成实际的显示。
+
+部件类似于HTML文档中的元素。 事实上，WikiText中的HTML标签会生成专门的<<.def "element widgets">>（元素小部件）。
+
+每类小部件都为整体功能提供了特定的功能，例如<<.wlink2 "显示一个图像" ImageWidget>>或<<.wlink2 "按钮" ButtonWidget>>，<<.wlink2 "调用一个宏" MacroCallWidget>>或<<.wlink2 "从其他地方引用并嵌入文本" TranscludeWidget>>，或者[[将一小段文本标记为标题|HTML in WikiText]]等。
+
+更专业的小部件使用通用的[[部件语法|Widgets in WikiText]]作为他们唯一可能的WikiText（维基文本）表示。
+
+内核中内置了以下类别的小部件：
+
+<<list-links "[tag[Widgets]]">>

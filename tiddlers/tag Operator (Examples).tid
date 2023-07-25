@@ -1,0 +1,11 @@
+created: 20150124122400000
+modified: 20210713025107381
+tags: [[tag Operator]] [[Operator Examples]] TiddlyWiki
+title: tag Operator (Examples)
+tmap.id: ea4f2e5f-bc52-4ee7-83d5-43ff5be79501
+type: text/vnd.tiddlywiki
+
+<<.operator-example 1 "[tag[task]]">>
+<<.operator-example 2 "[tag[task]!tag[done]]">>
+<<.operator-example 3 "[!tag[task]]">>
+<<.operator-example 4 "[all[shadows]tag[$:/tags/Stylesheet]]">>

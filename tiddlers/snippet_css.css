@@ -1,0 +1,71 @@
+/*
+* 不换行
+* 溢出显示省略号
+*/
+white-space: nowrap !important;
+overflow: hidden;
+text-overflow: ellipsis !important;
+
+/* 强制换行 */
+word-break: break-all;
+
+/* 显示滚动条 */
+overflow-y: auto;
+-webkit-overflow-scrolling: touch;
+
+/* 隐藏滚动条 */
+/* chrome */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+/* firefox */
+.hide-scrollbar {
+  scrollbar-width: none;
+}
+
+/*
+** 透明度效果
+*/
+
+.tc-tiddler-title {
+  background: rgba(255, 255, 255, 0.5) !important;
+  backdrop-filter: blur(10px) !important;
+}
+
+nav.tc-quickbar {
+  opacity: 0.75;
+}
+
+nav.tc-quickbar:hover {
+  opacity: 1;
+}
+
+/*
+** cyan color
+*/
+
+element.style {
+    cursor: pointer;
+    z-index: 2;
+    position: relative;
+    opacity: 1;
+    transition: all 250ms linear 0ms;
+    pointer-events: auto;
+}
+style attribute {
+    display: inline-block;
+    border-radius: 2px;
+    line-height: normal;
+    position: relative;
+    width: max-content;
+    height: max-content;
+    transition: all 250ms linear 0ms;
+    box-shadow: rgb(207 236 245 / 50%) 2px 0px 0px 0px, rgb(207 236 245 / 50%) -2px 0px 0px 0px;
+    background-color: rgba(207, 236, 245, 0.5);
+}
+
+/*
+** dark theme color green
+*/
+
+color: #03CEA4;

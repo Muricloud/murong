@@ -1,0 +1,14 @@
+caption: 官方文档
+created: 20211214234953879
+modified: 20211215104359807
+tags: 创建一个宏 XP-tutorials
+title: 创建一个宏/tw5.com
+tmap.id: ce139db7-dcaf-4570-b3ab-e27a95a526e0
+
+可以借鉴官方文档中的宏，使用下面的过滤器查看文件：
+
+: `[prefix[$:/editions/tw5.com/]suffix[macros]]`
+
+以下为本文档中含有的：
+
+<<list-links '[prefix[$:/editions/tw5.com/]suffix[macros]]'>>

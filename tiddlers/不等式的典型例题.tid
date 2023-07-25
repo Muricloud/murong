@@ -1,0 +1,14 @@
+created: 20230705014235858
+modified: 20230705024227819
+tags: 
+title: 不等式的典型例题
+tmap.id: 3b5d156b-220d-4500-b303-4f1a3351f81c
+
+$$已知 -1 \leq x+y \leq 1 , 1 \leq x-y \leq 3,则3x-2y的取值范围是 ( )$$<br><br>
+$$A.2 \leq 3x-2y \leq 8 $$<br>
+$$B.3 \leq 3x-2y \leq 8 $$<br>
+$$C.2 \leq 3x-2y \leq 7 $$<br>
+$$D.5 \leq 3x-2y \leq 10 $$<br>
+
+错误的做法：<br>
+为什么大家首先会想到这种做法呢？大家有

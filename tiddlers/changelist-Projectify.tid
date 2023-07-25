@@ -1,0 +1,17 @@
+caption: Projectify
+created: 20220626153153243
+modified: 20220626153156061
+tags: [[Change List]] XP-tutorials
+title: changelist-Projectify
+tmap.id: ca537c59-a33d-4e5d-9374-5569bc447fc6
+
+!! $:/plugins/nico/projectify
+
+将下面两项移出侧边栏：
+
+* $:/plugins/nico/projectify/ui/sidebar/Projects
+* $:/plugins/nico/projectify/ui/sidebar/Upcoming
+
+【查看工具栏】删除按钮中的 list-before 排序（用 <<tag $:/tags/ViewToolbar>> 中的 list 字段进行排序）：
+
+* $:/plugins/nico/projectify/ui/buttons/ToggleTodo

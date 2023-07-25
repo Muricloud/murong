@@ -1,0 +1,13 @@
+caption: Highlight
+created: 20210619145742545
+modified: 20220819083008813
+moscow: M
+tags: [[Plugin Card]] OfficialPlugins XP-tutorials
+title: Highlight Plugin
+tmap.id: 49bd9cd3-9196-463e-aba2-4eb5a2700024
+
+[ext[https://tiddlywiki.com/plugins/tiddlywiki/highlight|plugins/tiddlywiki/highlight]]
+
+The Highlight plugin provides the ability to apply syntax colouring to text.
+
+* $:/plugins/tiddlywiki/highlight

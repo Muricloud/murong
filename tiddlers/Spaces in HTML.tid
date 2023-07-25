@@ -1,0 +1,61 @@
+created: 20211124135140377
+modified: 20211208081406788
+tags: [[HTML 语法]] XP-tutorials
+title: Spaces in HTML
+tmap.id: c8ed9fa7-85b1-47af-9929-5d5dddd07b58
+
+!! HTML 中的空格
+
+When separating words or other elements, you’re not limited just to a regular and non-breaking space. The [[list of available white space characters|https://en.wikipedia.org/wiki/Whitespace_character#Unicode]] is very long. Here are some of the most commonly used ones:
+
+|Name                  |HTML Entity     |Example {nn(space)mm} 		|h
+|Non-breaking space    |`&nbsp;`        |nn&nbsp;mm                |
+|En space              |`&ensp;`        |nn&ensp;mm                |
+|Em space              |`&emsp;`        |nn&emsp;mm                |
+|Narrow no-break space |`&#8239;`       |nn&#8239;mm               |
+|thin space            |`&thinsp;`      |nn&thinsp;mm              |
+|zero-width non-joiner  |`&zwnj;`       |nn&zwnj;mm                |
+|zero-width joiner      |`&zwj;`        |nn&zwj;mm                 |
+
+
+!!! NBSP
+
+''non-breaking space'' (no-break space) is used in programming and word processing to create a space in a line that cannot be broken by word wrap. With HTML, `&nbsp;` allows you to create multiple spaces that are visible on a web page and not only in the source code.
+
+不换行空格。一个空格符只代表一个空格，如果要多个空格就需要敲多个 `&nbsp;` 空格符，该空格占据宽度受字体影响明显而强烈。
+
+!!! ENSP
+
+''en space''. Also known as "nut". Width of one en. HTML/XML named entity: `&ensp;`
+
+半角空格。en是字体排印学的计量单位，为em宽度的一半。根据定义，它等同于字体度的一半（如16px字体中就是8px），其占据的宽度正好是1/2个中文宽度，而且基本上不受字体影响。
+
+!!! EMSP
+
+''em space''. Also known as "mutton". Width of one em. HTML/XML named entity: `&emsp;`
+
+全角空格。em是字体排印学的计量单位，相当于当前指定的点数。例如，1em在16px的字体中就是16px。其占据的宽度正好是1个中文宽度，而且基本上不受字体影响。
+
+!!! THINSP
+
+''thin space''. one-fifth (sometimes one-sixth) of an em wide. Recommended for use as a thousands separator for measures made with SI units. Unlike U+2002 to U+2008, its width may get adjusted in typesetting. HTML/XML named entity: `&thinsp;`
+
+窄空格。该空格长得比较瘦弱，身体单薄，占据的宽度比较小。它是em之六分之一宽。
+
+!!! ZWNJ
+
+''zero-width non-joiner''. When placed between two characters that would otherwise be connected, a ZWNJ causes them to be printed in their final and initial forms, respectively. HTML/XML named entity: `&zwnj;`
+
+零宽不连字。`&zwnj` 是一个不打印字符，放在电子文本的两个字符之间，抑制本来会发生的连字，而是以这两个字符原本的字形来绘制。
+
+!!! ZWJ
+
+''zero-width joiner''. When placed between two characters that would otherwise not be connected, a ZWJ causes them to be printed in their connected forms. Can also be used to display joining forms in isolation. Depending on whether a ligature or conjunct is expected by default, can either induce (as in emoji and in Sinhala) or suppress (as in Devanagari) substitution with a single glyph, whilst still permitting use of individual joining forms (unlike ZWNJ). HTML/XML named entity: `&zwj;`
+
+零宽连字。`&zwj` 是一个不打印字符，放在某些需要复杂排版语言（如阿拉伯语、印地语）的两个字符之间，使得这两个本不会发生连字的字符产生了连字效果。
+
+
+!! See also 
+
+* [[&nbsp and HTML Space Challenges and Tricks|https://mailtrap.io/blog/nbsp/]]
+* [[html空格代码是什么？html空格代码怎么写？（总结）|https://www.php.cn/div-tutorial-409469.html]]

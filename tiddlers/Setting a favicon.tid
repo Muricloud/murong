@@ -1,0 +1,19 @@
+caption: 设置网站图标
+created: 20131224074240979
+modified: 20211207131311948
+tags: Examples TiddlyWiki [[Customise TiddlyWiki]] Howto
+title: Setting a favicon
+tmap.id: 30983bb9-efc5-499e-8c3b-92aefb4aff75
+type: text/vnd.tiddlywiki
+
+"favicons" 是大多数浏览器显示的小图标，可帮助用户识别网站。
+
+!! favicons 在浏览器中
+
+当TiddlyWiki在浏览器中启动时，它会查找名为 [[$:/favicon.ico]] 的条目，并将其动态用作页面的图标。 如果你修改图片，那么favicon会立即改变以反映它。
+
+!! favicons 在服务器上
+
+在服务器上，ServerCommand 将在 `/favicon.ico` 路径上提供 [[$:/favicon.ico]] 条目。
+
+

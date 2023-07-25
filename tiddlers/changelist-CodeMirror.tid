@@ -1,0 +1,23 @@
+caption: CodeMirror
+tags: [[Change List]] XP-tutorials
+title: changelist-CodeMirror
+tmap.id: 1b4e9eb9-d18d-4a12-8b46-44299eb5e38a
+
+\define tv-config-toolbar-text() yes
+\define openCpCodeMirror()
+<$action-setfield $tiddler="$:/state/tab-1749438307" $value="$:/core/ui/ControlPanel/Settings"/>
+<$action-setfield $tiddler="$:/state/tab--697582678" $value="$:/core/ui/ControlPanel/Settings/CodeMirror"/>
+<$action-navigate $to="$:/ControlPanel"/>
+\end
+
+
+!! $:/plugins/tiddlywiki/codemirror
+
+!! 修改设置
+
+在 <$button actions=<<openCpCodeMirror>>>{{$:/core/images/options-button}} ~CodeMirror</$button> 中，勾选 ''Enable line numbers''、''Highlight active line''。
+
+修改文件为：
+
+* $:/config/codemirror/lineNumbers
+* $:/config/codemirror/styleActiveLine

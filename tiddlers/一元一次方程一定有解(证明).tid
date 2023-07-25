@@ -1,0 +1,14 @@
+created: 20230624005313401
+modified: 20230624005843816
+tags: 
+title: 一元一次方程一定有解(证明)
+tmap.id: d4403a84-ab0a-4c88-89aa-293ec7ae2fb4
+
+$$
+
+\begin{align*} 
+Ax&=B (A\neq0) \\
+x&= \frac{B}{A}
+\end{align*}
+
+$$

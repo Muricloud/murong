@@ -1,0 +1,12 @@
+caption: 可选择
+created: 20150221201907000
+modified: 20211209055643049
+order: 4
+tags: 中 table-of-contents-example TiddlyWiki 常用目录宏
+title: Example Table of Contents: Selectively Expandable
+tmap.id: f5b9db64-4984-494d-8108-8651155d97e3
+
+<$macrocall $name=".example" n="1"
+eg="""<div class="tc-table-of-contents">
+<<toc-selective-expandable "Contents">>
+</div>"""/>

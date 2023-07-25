@@ -1,0 +1,20 @@
+caption: 加密
+created: 20130825160900000
+modified: 20220711153005959
+tags: 中 Features [[Working with TiddlyWiki]] TiddlyWiki
+title: Encryption
+tmap.id: de8ad74d-9b69-4b0e-bc9d-6b45d7dae9da
+type: text/vnd.tiddlywiki
+
+当用作单个 HTML 文件时，TiddlyWiki5 允许使用[[斯坦福 JavaScript 加密库|Stanford JavaScript Crypto Library]]加密内容。
+
+# 切换到侧边栏的''工具（Tools）''标签，并找到带有挂锁图标的按钮
+# 如果按钮被标记为 <<.icon $:/core/images/unlocked-padlock>>''设置密码''，那么当前 wiki 未加密。 点击按钮将提示输入一个密码，用于加密后续的保存
+# 如果按钮被标记为 <<.icon $:/core/images/locked-padlock>>''清除密码''，那么当前 wiki 已经被加密。 点击按钮将删除密码，后续保存将被解密
+# 或者，在文本编辑器（如 {{extlink/code}}）中打开保存的 `.html` 文件，并验证您的数据是否已加密
+# 在浏览器中打开文件。 在显示内容之前，系统会提示您输入密码
+
+请注意，TiddlyWiki 还有两个其他不相关的功能涉及到密码/加密：
+
+* 保存到 TiddlySpot 时设置密码的功能。 这是在''控制面板'' <<.icon $:/core/images/options-button>> 的''保存''选项卡中完成的。
+* 通过 [[Node.js|TiddlyWiki on Node.js]] 服务器配置使用标准 HTTP 基本认证的功能。 这是在命令行上用 ServerCommand 完成的。 结合 SSL，可以获得与 Google 或 Dropbox 等在线服务相同级别的传输加密，但是磁盘上的数据不会被加密。

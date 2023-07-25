@@ -1,0 +1,30 @@
+created: 20230618102447952
+modified: 20230627113010579
+tags: 
+title: 向量的加法
+tmap.id: 32f80b21-d8fa-496b-8ab2-095256a64568
+
+''向量的加法，两重首尾相连。''
+<$details summary="看图" open="no">
+
+现在有$$ \vec{a} $$ , $$ \vec{b} $$<br>
+<div style="width:300px">
+[img[向量a和向量b.png]]
+</div>
+<hr>
+那么求$$ \vec{a} + \vec{b} $$？<br>
+记住"''首尾相连''",将向量$$ \vec{b} $$平移，$$ \vec{a} $$箭头指向$$ \vec{b} $$的箭尾，<div class="red-box">
+箭头指箭尾，这是第一重的首尾相连
+</div>
+画出$$ \vec{a} + \vec{b} $$：
+<div style="width:300px">
+[img[a向量加b向量.png]]
+</div>
+<div class="red-box">
+不管有多少个向量相加，最后相加得到的向量，一定是第一个向量的起始点和最后一个向量的终点相连，这是第二重的首尾相连。
+</div>
+例如：
+<div style="width:300px">
+[img[向量abcd相加.png]]
+</div>
+</$details>

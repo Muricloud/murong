@@ -1,0 +1,16 @@
+caption: Utility
+created: 20210619133211115
+modified: 20220819085922128
+moscow: S
+tags: [[Community Plugins]] [[Plugin Card]] XP-tutorials
+title: Utility by Mohammad
+tmap.id: 5c48bbce-7dc1-4d20-8c4b-fefe80eb3a9a
+url: https://kookma.github.io/TW-Utility/
+
+{{!!url}}
+
+The utility plugin objective is to provide set of tools for developers and authors. 
+
+These tools include simple transclusions, show raw contents of tiddlers, author tools, wikitext macros, show fields in view mode, etc.
+
+* $:/plugins/kookma/utility

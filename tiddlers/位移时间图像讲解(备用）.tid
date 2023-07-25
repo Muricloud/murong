@@ -1,0 +1,117 @@
+created: 20230626142258838
+modified: 20230629012344516
+title: 位移时间图像讲解(备用）
+tmap.id: 80e5948f-bebb-4180-9e1c-8210095e2d14
+
+什么是位移时间（x-t）图像？
+<$details summary="揭晓答案" open="no">
+坐标系里面，横坐标是时间，纵坐标是位移的图像
+</$details>
+<$details summary="看图" open="no">
+
+<div class="left-column">
+<div style="width:300px">
+数学里面的直角坐标系
+[img[直角坐标系xy.png]]
+</div>
+</div>
+
+<div class="right-column">
+物理里面x-t图像
+<div style="width:300px">
+[img[位移时间坐标系.png]]
+</div>
+</div>
+</$details>
+<$details summary="想一下为什么要把数学直角坐标系和x-t图像放在一起比较？" open="no">
+在图像这个问题上，可以说，数学是比物理更高层次的抽象，物理图像是数学图像的具体化，所以在解释物理图像的时候，我们要去强调一个<c style="color:Red;">物理意义</c>。但是我们又可以借助<c style="color:Red;">数学的工具</c>去探索物理图像。<br><br>
+为什么怎么讲？
+</$details>
+<$details summary="来看一下初中学过的数学图像？" open="no">
+<div style="width:300px">
+[img[直线图像求斜率.png]]
+</div>
+<$details summary="大家会想到什么？接下来会求什么？" open="no">
+直线的方程：？<br>
+斜率：？<br>
+<$details summary=" " open="no">
+求直线方程：<br>
+<div class=green-box>
+
+方法一：设方程，把点代入，待定系数法求
+$$设:y=kx+b
+
+\ \\
+把A(0,1)，B(2,4) 代入得
+\ \\
+ \begin{align*} 
+ \begin{cases}
+1=b
+\ \\
+4=2k+b
+\end{cases}
+\end{align*}
+\ \\
+解的：k= \frac{3}{2},b=1
+\ \\
+直线的方程：y=\frac{3}{2}x+1
+$$
+</div>
+
+<div class=blue-box>
+
+方法二：先求斜率，再把点代入
+<div style="width:300px; margin: 0 auto;">
+[img[直角三角形求斜率.png]]
+</div>
+$$k= \frac{3}{2}
+\ \\
+\ \\
+y=\frac{3}{2}x+b
+\ \\
+\ \\
+把A(0,1) 代入得:b=1
+\ \\
+
+
+\ \\
+直线的方程：y=\frac{3}{2}x+1
+$$
+</div>
+
+''直线的方程：''$$y=\frac{3}{2}x+1$$<br><br>
+''斜率：''$$\frac{3}{2}$$<br>
+</$details>
+</$details>
+</$details>
+<$details summary="下面通过数学工具，去探索一下物理图像上的物理意义" open="no">
+
+数学工具：
+
+* 斜率
+* 横轴的交点
+* (...)
+<$details summary="那么在x-t图像里面,斜率代表什么？" open="no">
+$$ \frac{ \Delta x}{\Delta t} = ?
+$$
+<$details summary="?" open="no">
+$$ v= \frac{ \Delta x}{\Delta t} 
+$$
+</$details>
+
+<div class=red-box>所以在x-t图像里面''斜率''就''代表速度''。
+</div>
+</$details>
+<$details summary="与横轴的交点代表什么？" open="no">
+在学习运动初期，我们在描述物体运动的时候，会先选定一个正方向。
+[img[图片.png]]
+<br>
+哪些点位移为正，哪些为负？<br>
+<$details summary="在x-t图像上怎么知道物体位移的正负呢？" open="no">
+[img[位移时间图像正方向讲解.png]]
+
+
+</$details>
+</$details>
+</$details>
+

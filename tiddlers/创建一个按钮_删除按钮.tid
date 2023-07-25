@@ -1,0 +1,33 @@
+caption: 删除按钮
+created: 20220221115635774
+modified: 20230609154344252
+tags: 创建一个按钮 XP-tutorials
+title: 创建一个按钮/删除按钮
+tmap.id: 5e377339-0831-457b-8cb8-a13ff5118ba5
+
+删除条目可以使用：
+
+# 删除条目部件消息 [[WidgetMessage|https://tiddlywiki.com/static/WidgetMessage%253A%2520tm-delete-tiddler.html]]: `tm-delete-tiddler`
+# 删除条目动作部件 [[ActionDeleteTiddlerWidget|https://tiddlywiki.com/static/ActionDeleteTiddlerWidget.html]]: `action-deletetiddler`
+
+区别在于，执行部件消息需要确认后才能得到结果；而执行动作部件直接得到结果。请看示例。
+
+
+!! 确认后删除条目：
+
+<$macrocall $name="wikitext-example-without-html" 
+src="""<$button>
+<$action-sendmessage $message="tm-delete-tiddler" $param="HelloThere"/>
+Delete "~HelloThere"
+</$button>
+"""/>
+
+
+!! 立刻删除条目，无需确认：
+
+<$macrocall $name="wikitext-example-without-html" 
+src="""<$button>
+<$action-deletetiddler $tiddler="HelloThere"/>
+Delete "~HelloThere"
+</$button>
+"""/>

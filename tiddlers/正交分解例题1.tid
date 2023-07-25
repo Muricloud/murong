@@ -1,0 +1,40 @@
+created: 20230709053043932
+modified: 20230709123906559
+tags: 
+title: 正交分解例题1
+tmap.id: ca421ac6-032f-4378-8d26-4ddc97d50ed6
+
+已知质量为$$m$$的物体，以速度$$v_0$$冲上斜面(斜面$$37^。$$，斜面无限长，斜面粗糙，动摩擦因数$$\mu = 0.2$$），求物体达到最高点时，最高点离水平面的高度$$h$$。
+
+<div style="width:300px">
+[img[正交分解例图1.png]]
+</div>
+
+<$details summary="受力分析图" open="no">
+<div style="width:300px">
+[img[正交分解例图2.png]]
+</div>
+</$details>
+<$details summary="正交分解图" open="no">
+<div style="width:300px">
+[img[正交分解例图3.png]]
+</div>
+</$details>
+<$details summary="标准的解答" open="no">
+
+$$F_N=mgcos 37^。  \	\	 ...\textcircled{1} 
+\ \\
+\ \\
+mgsin37^。+ \mu F_N=ma ...\textcircled{2} 
+\ \\
+\ \\
+0-v_0^2=2ax ...\textcircled{3} 
+\ \\
+\ \\
+h=xsin 37^。 ...\textcircled{4} 
+\ \\
+\ \\
+解得：x=?
+$$
+</$details>
+

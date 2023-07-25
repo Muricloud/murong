@@ -1,0 +1,11 @@
+author: kl
+created: 20210409015904280
+dependents: 
+description: Modifications to the TiddlyWiki official plugin
+modified: 20230311115819491
+name: MTW
+plugin-type: plugin
+revision: 0
+title: $:/xp/mtw
+type: application/json
+version: 0.2.3

@@ -1,0 +1,17 @@
+created: 20210421071021537
+modified: 20210423053751055
+tags: XP-tutorials
+title: 外部引用条目
+tmap.id: 0c5a81b1-c40d-459c-923a-ac03c6e6e3ff
+
+TiddlyWiki 中「[[外部引用条目]]」这个概念，其意思类似于「[[外部图像|ExternalImages]]」。就是创建一个相应内容类型的条目，并添加一个 `_canonical_uri` 字段，存储指向实际文件位置的 URI。条目本身不包含文件的源代码。
+
+创建一个「外部引用条目」的步骤为：
+
+# 新建一个条目，标题随意命名或者使用文件名
+# 选择 / 填入相应[[内容的类型|ContentType]]（比如 `image/png`），
+# 添加 `_canonical_uri` 字段，值为引用文件的地址。（本地文件使用相对地址，比如 `./ext/img/sample.png`；网络文件使用其网址即可。）
+# 保存条目
+
+
+> 参阅 [[如何嵌入 PDF 和其他文件|How to embed PDF and other documents]]。

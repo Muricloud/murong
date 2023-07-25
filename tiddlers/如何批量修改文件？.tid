@@ -1,0 +1,19 @@
+created: 20210702234616025
+linkcolor: red
+modified: 20220701153849374
+tags: Documents Examples Howto
+title: 如何批量修改文件？
+tmap.id: a807811d-f1ef-4cb1-a0cb-4c20f97e94ed
+type: text/vnd.tiddlywiki
+
+（TiddlyWiki 服务器版使用者）
+
+* 在 Linux / Mac 上可以用 sed / awk 命令搭配 grep 命令，进行批量修改替换。这里展示[[一点基础用法|sed配合grep批量替换文件中的字串]]。
+*> sed / awk 是文本处理工具；grep 是文本搜索工具；
+
+
+<div class="gray-box">
+
+有时你想查看最近一段时间修改了哪些文件，可以使用 Linux [[find 命令|http://c.biancheng.net/view/779.html]]查找文件。参阅 [[Find 命令根据时间查找文件]]。
+
+</div>

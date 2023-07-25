@@ -1,0 +1,52 @@
+created: 20210429071155065
+modified: 20210430174811552
+tags: XP-tutorials
+title: Gitee 产品配额说明
+tmap.id: e0fa97bc-5cab-4be8-824b-1f4868904b20
+
+码云使用容量说明 http://git.mydoc.io/?t=224387
+
+! 社区版（个人用户）
+
+* 用户总仓库容量为 5 GB
+* Git 单仓库容量上限为 1 GB
+* 单文件最大 100 MB
+* 允许创建 1000 个仓库，不限制公私有。
+
+成员人数
+
+* 私有项目 5 人成员上限
+
+访问 [[仓库空间信息 - Gitee.com|https://gitee.com/profile/repo_info]]，查看当前帐号名下所有仓库的空间占用情况。
+
+
+<$details summary="Gitee 仓库提示信息一栏" open="no">
+
+仓库容量超过 500 MB 警示
+
+```bash
+remote: Powered by GITEE.COM [GNK-5.0]
+remote: Recommended to reduce the repository size
+remote: This repository(including wiki) size 608.60 MB exceeds 500.00 MB
+remote: HelpLink: https://gitee.com/help/articles/4232
+
+```
+
+单文件大小超过 50 MB warning
+
+```bash
+remote: Powered by GITEE.COM [GNK-5.0]
+remote: warning: This repository has 2 files larger than 50.00 MB
+remote: The size information of several files as follows: 
+remote: File f9530f3bcb731ea06460db399655ba52fc77651e 50.15  MB MB
+remote: File 19506f17bfd7d30f371545a1e8578c4aa182a7a2 67.21  MB MB
+```
+
+单文件大小超过 100 MB error
+
+```bash
+remote: Powered by GITEE.COM [GNK-5.0]
+remote: error: File: fc8fc6b22b4a06f54f5268f68a7cb792afcb9fe4 178.42 MB, exceeds 100.00 MB.
+
+```
+</$details>

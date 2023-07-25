@@ -1,0 +1,19 @@
+caption: TiddlyMap
+created: 20210619134222077
+modified: 20220819085815023
+moscow: M
+tags: [[Community Plugins]] [[Plugin Card]] XP-tutorials
+title: TiddlyMap by Felix Küppers
+tmap.id: fa8544f5-a940-45b3-8c99-c46607ded829
+url: https://github.com/felixhayashi/TW5-TiddlyMap
+
+{{!!url}}
+
+Map drawing and topic visualization for your wiki.
+
+(demo [[here|http://tiddlymap.org/]]) 
+
+* $:/plugins/felixhayashi/tiddlymap
+** $:/plugins/felixhayashi/hotzone
+** $:/plugins/felixhayashi/topstoryview
+** $:/plugins/felixhayashi/vis

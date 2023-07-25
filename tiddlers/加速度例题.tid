@@ -1,0 +1,51 @@
+created: 20230629025630893
+modified: 20230629034132400
+tags: 
+title: 加速度例题
+tmap.id: 1c751496-d1e5-4ae0-9f55-bd69078d1585
+
+
+<$details summary="例题1" open="no">
+（多选）由$$a=\frac{\Delta v}{\Delta t}$$可知  （ ）<br>
+A. a与$$\Delta v$$成正比<br>
+B. 物体加速度大小由$$\Delta v$$决定<br>
+C. a的方向与$$\Delta v$$方向相同<br>
+D. $$\frac{\Delta v}{\Delta t}$$加速度变化率，就是加速度<br>
+
+<$details summary="答案" open="no">
+答案：A,C,D<br>
+A.$$\Delta t$$时间没有负数，y=kx,k>0,成正比。<br>
+B.物体加速度大小由$$\Delta v$$和$$\Delta t$$的比率决定<br>
+C. $$\Delta v$$矢量，$$\Delta t$$标量且是正的，所以a的方向与$$\Delta v$$方向相同<br>
+D. $$\frac{\Delta v}{\Delta t}$$加速度变化率，就是加速度。对的，<c style="color:Red;">提醒注意：</c>变化率和变化量这两种表达的区别。[[速度]]<br>
+
+</$details>
+
+
+</$details>
+
+
+<$details summary="例题2" open="no">
+若汽车的加速度方向与速度方向相反，当加速度增大时 (  )<br>
+A.汽车速度增加得越来越慢<br>
+B.汽车速度增加得越来越快<br>
+C.汽车速度减小得越来越快<br>
+D.汽车速度减小得越来越慢<br>
+
+<$details summary="答案" open="no">
+
+答案：C<br>
+
+$$公式：v_t=v_0+at$$<br>
+当a<0时，at是个负数<br>
+$$公式：v_t=v_0-|at|$$<br>
+$$a\uparrow  \Rightarrow |at|\uparrow $$<br>
+$$公式：v_t()=v_0-|at|\uparrow $$<br>
+<$details summary="向上，向下" open="no">
+$$公式：v_t(\downarrow )=v_0-|at|\uparrow $$<br>
+</$details>
+所以汽车速度增加、减小是由加速度方向与速度方向决定的<br>
+是增加或者减小 是 越来越快、越来越慢 是加速度增大，减小决定的。
+
+</$details>
+</$details>

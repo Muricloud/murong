@@ -1,0 +1,34 @@
+created: 20230616055934003
+modified: 20230629024948325
+tags: 
+title: 速度
+tmap.id: 133e3e1a-6693-432e-b4ec-0e612e129eaa
+
+速度：单位时间内的位移变化量，用于描述物体位置变化快慢的物理量，还有物体运动的方向。单位：$$ m/s$$
+
+
+速度公式:
+<div class="red-box" style="width: 200px; margin: 0 auto;">{{速度公式}}</div>
+
+
+''瞬时速度：''
+<div class="green-box">
+$$ \Delta t \rightarrow 0 \ 时,\Delta x 很小很小，v就是瞬时速度
+$$
+</div>
+$$ \Delta t \rightarrow 0 \ $$读作：Delta t 趋向于零
+<br><br>
+
+''平均速度：''
+<div class="green-box">
+$$ \Delta t =具体的值时,\Delta x 也会是一个具体的值，这时候v就是平均速度
+$$
+</div>
+注意：实际生活中，包括物理实验中，求瞬时速度，就是在一个很短的时间内(比如：0.1s),测量出位移，然后用位移除以时间。
+
+<br>
+<$details summary="思考：瞬时速度和平均速度是标量还是矢量？" open="no">
+
+''都是矢量''，因为位移变化量是矢量，时间是标量，矢量除以标量，还是矢量。
+
+</$details>

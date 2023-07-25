@@ -1,0 +1,17 @@
+created: 20210316051128178
+modified: 20210316064359434
+tags: XP-tutorials
+title: 禁用自动 WikiLink
+tmap.id: 2f478515-2dae-47d3-8c4d-2d0709fdddd4
+
+TiddlyWiki 默认自动会把符合 CamelCase 的文本替换为条目链接，称为 WikiLinks 或者 WikiWords 。一般来说你可以用 `~WikiText` 来禁止链接，但是对于长篇文章这样做实在辛苦。网上流传的的方法是直接禁用 WikiLink 功能，但这样之前用 ~ 禁用的链接又会显示出 ~ 符号。
+
+一个既能让之前的 ~ 不显示，同时也不会有自动链接的方法是（@@color:Red;操作前请备份数据@@）：
+
+* 点击搜索框旁边的图标进入 AdvancedSearch
+* 搜索 $:/core/modules/parsers/wikiparser/rules/wikilink.js ，或者点击 $:/core 再找到这个条目，点击进入编辑
+* 系统会提示 ''这是一个修改过的默认条目。删除此条目可以还原为 $:/core 插件中的默认版本。 ''
+* 找到最后面的 `return [{return [{ type: "link",`，在这一行上面加上一行 `return [{type: "text", text: linkText}];`，以便在本要返回链接的时候返回纯文本
+
+
+> 内容来自 [[TiddlyWiki - 知识管理系统|https://www.npc.ink/2480.html]]

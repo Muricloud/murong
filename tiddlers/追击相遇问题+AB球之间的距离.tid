@@ -1,0 +1,94 @@
+created: 20230617102553738
+modified: 20230617102648193
+tags: 
+title: 追击相遇问题+AB球之间的距离
+tmap.id: 34b5ba3e-9af7-414a-b90c-ad138db7ae73
+
+
+追击相遇问题+AB球之间的距离
+<<codes src:"""
+import matplotlib.pyplot as plt
+import numpy as np
+from matplotlib.animation import FuncAnimation
+
+# 初始化参数
+a = 1  # 小球 B 的加速度为 1m/s^2
+v_a = 5  # 小球 A 的速度为 5m/s
+s_b_0 = 5  # 小球 B 的初始位移为 5m
+
+# 创建画布和子图对象
+fig, ax = plt.subplots()
+
+# 绘制小球 A 的初始点
+s_a_0 = 0
+s_a_text = ax.text(0, s_a_0-0.5, 'A', ha='center', fontsize=12, color='r')
+
+# 绘制小球 B 的初始点
+s_b_0_x = 5
+s_b_0_y = s_b_0
+s_b_text = ax.text(s_b_0_x, s_b_0_y-0.5, 'B', ha='center', fontsize=12, color='b')
+
+# 创建小球 A 和小球 B 的轨迹线对象
+line_a, = ax.plot([], [], 'r')
+line_b, = ax.plot([], [], 'b')
+
+# 绘制小球 A 和小球 B 之间的线段
+line_ab, = ax.plot([], [], 'y--')
+
+# 获取小球 A 和小球 B 的坐标位置
+x_a, y_a = s_a_text.get_position()
+x_b, y_b = s_b_text.get_position()
+
+# 设置坐标系范围和标签
+ax.set_xlim([0, 10])
+ax.set_ylim([0, 50])
+ax.set_xlabel('time (s)')
+ax.set_ylabel('position (m)')
+
+# 计算小球 A 和小球 B 的位置
+t = np.linspace(0, 10, 100)  # 模拟时间范围为 0 到 10 秒，分成 100 个时间点
+s_a = v_a * t
+s_b = s_b_0 + 0.5 * a * t**2
+
+# 定义一个标记，用于判断是否暂停
+paused = False
+i_count = 0
+
+# 动画函数，每次更新小球的位置和轨迹线
+def update(i):
+    global paused
+    global i_count
+    if not paused:
+        print(i_count)
+        s_a_i = s_a[i_count]
+        s_b_i = s_b[i_count]
+        line_a.set_data(t[:i_count+1], s_a[:i_count+1])
+        line_b.set_data(t[:i_count+1], s_b[:i_count+1])
+        s_a_text.set_position([t[i_count], s_a_i-0.5])
+        s_b_text.set_position([t[i_count], s_b_i-0.5])
+
+        x_a, y_a = s_a_text.get_position()
+        x_b, y_b = s_b_text.get_position()
+        line_ab.set_data([x_a, x_b], [y_a, y_b])
+        if i_count<=98:
+             i_count=i_count+1
+        else:
+             i_count=0
+    return line_a, line_b, s_a_text, s_b_text
+
+# 定义键盘事件处理函数，用于暂停和继续动画
+def on_key_press(event):
+    global paused
+    if event.key == ' ':
+        paused = not paused
+
+# 将键盘事件处理函数绑定到画布上
+fig.canvas.mpl_connect('key_press_event', on_key_press)
+
+# 创建动画对象
+ani = FuncAnimation(fig, update, frames=100, interval=100)
+
+# 显示动画
+plt.show()
+
+""">>

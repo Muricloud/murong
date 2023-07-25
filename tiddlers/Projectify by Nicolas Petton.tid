@@ -1,0 +1,28 @@
+caption: Projectify
+created: 20210619132021637
+modified: 20220819085724808
+moscow: S
+tags: [[Community Plugins]] [[Plugin Card]] XP-tutorials
+title: Projectify by Nicolas Petton
+tmap.id: 633332e8-2217-4460-b55c-79742ec00804
+url: https://github.com/NicolasPetton/Projectify
+
+{{!!url}}
+
+Project & todo management for TiddlyWiki.
+
+Projectify is a TiddlyWiki plugin for managing projects & todo lists,
+inspired by products like [[Todoist|https://todoist.com]] and [[Basecamp|https://basecamp.com]].
+
+Projectify features:
+
+* An inbox for collecting tasks and thoughts
+* Projects to structure tasks together into separate todo-lists
+* Support for scheduling tasks
+* A dashboard to quickly view all projects, the inbox, or scheduled tasks
+
+<br>
+
+* $:/plugins/nico/projectify
+** $:/plugins/nico/projectify-zh-Hans
+** $:/plugins/nico/shields

@@ -1,0 +1,12 @@
+caption: 排序
+created: 20150221201942000
+modified: 20200901042844524
+order: 3
+tags: 中 table-of-contents-example TiddlyWiki
+title: Example Table of Contents: Sorted Expandable
+tmap.id: 6f0e1628-39f3-4c8e-9b77-d2eec3d68374
+
+<$macrocall $name=".example" n="1"
+eg="""<div class="tc-table-of-contents">
+<<toc-expandable "Contents" "sort[title]">>
+</div>"""/>

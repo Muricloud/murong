@@ -1,0 +1,31 @@
+caption: {{$:/core/images/tag-button}} 系统标签
+created: 20200801105620806
+modified: 20220219162153611
+tags: XP-tutorials 新手入门指南
+title: 认识系统标签
+tmap.id: 36dce32c-b88e-43d4-802f-00a163850aa3
+
+!! [[页面和条目布局自定义|Page and tiddler layout customisation]]
+
+
+可以通过给条目添加相应的系统标签，让其显示在对应的地方。而删掉标签则取消显示。
+
+* 比如，给 TableOfContents 添加系统标签 `$:/tags/SideBar`，该条目就会显示在侧边栏。
+* 比如，将 [[Tags|$:/core/ui/MoreSideBar/Tags]] 选项卡默认的 `$:/tags/MoreSideBar` 替换为 `$:/tags/SideBar`，就可以将其移到侧边栏主选项卡。
+
+可以使用 `list-after` or `list-before` 定义 tab 顺序。
+
+* 比如要将 Tags 放到 More 后面，就给 Tags 条目添加字段 `list-after`，并填入值 `$:/core/ui/SideBar/More`。
+
+一些常见的标签：
+
+|查看工具栏（View Toolbar） |<<tag $:/tags/ViewToolbar>> |
+|编辑工具栏（Edit Toolbar） |<<tag $:/tags/EditToolbar>> |
+|编辑器工具栏（Editor Toolbar） |<<tag $:/tags/EditorToolbar>> |
+|页面工具栏（Page Toolbar） |<<tag $:/tags/PageControls>> |
+|侧边栏（Side Bar） |<<tag $:/tags/SideBar>> |
+|~MoreSideBar |<<tag $:/tags/MoreSideBar>> |
+
+详见 [[系统标签|SystemTags]]。
+
+> 点击选项卡上的链接图标 <<.icon $:/core/images/link>> 打开条目，可以查看它有什么标签。

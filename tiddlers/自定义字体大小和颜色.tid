@@ -1,0 +1,34 @@
+created: 20181223062514266
+modified: 20210714064848962
+tags: 自定义 Examples [[How to apply custom styles]]
+title: 自定义字体大小和颜色
+tmap.id: 541b2d72-814f-4bd4-9ba7-a982c5de9eb3
+
+!! 使用 CSS 设置字体大小和颜色
+
+```
+<p style="font-size:20pt;line-height:34pt;font-weight:700;color:red;">
+这是红色！
+</p>
+```
+
+<p style="color:red;">
+这是红色！
+</p>
+
+<p style="font-size:20pt;line-height:34pt;font-weight:700;color:gray;">
+这是灰色！
+</p>
+
+<p style="font-size:20pt;line-height:34pt;font-weight:700;color:blue;">
+这是蓝色！
+</p>
+
+<p style="font-size:20pt;line-height:34pt;font-weight:700;color:green;">
+这是绿色！
+</p>
+
+
+!! 常用的十二颜色
+
+red（红）， white（白），black（黑），green（绿），yellow（黄），blue（蓝），purple（紫），gray（灰），brown（棕），tan(褐色)，syan(青色)

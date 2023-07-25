@@ -1,0 +1,22 @@
+created: 20220626084935496
+modified: 20220903053533519
+tags: FAQ XP-tutorials
+title: TiddlyWiki 教程？
+tmap.id: fd3a96d8-6d46-4b73-84bb-98e60afda289
+
+<div class="gray-box">
+
+学习 TiddlyWiki 最重要的就是学会使用 WikiText，牢记这一点。那么，新手阶段的重点就是使用 WikiText 记笔记。因为 WikiText 内容量还是蛮多的，XP 中将少部分标记为「进阶内容」，表示该部分的内容可以放到后面慢慢学，先学习最简单的基础语法。
+
+TiddlyWiki 的官方文档很棒，但对新手不友好！因为里面混杂了入门教程和进阶教程。对于新手，既不熟悉文档框架，又抓不到学习重点，随意阅读容易撞到墙（无法理解的进阶教程），这会造成很大的心理压力和学习压力。而且官方文档内容量太大，普通用户不可能去阅读整个文档！站在用户角度，最好能单独整理出一份普通用户能阅读完的基础教程。站在开发者角度，又要开发（时间成本大），又要维护文档，真的不容易！
+
+</div>
+
+除了 XP，还可参阅其他教程：
+
+* [[TiddlyWiki 教程合集（全 8 集）「视频」|https://www.bilibili.com/video/BV1Ep4y1879z]]
+* [[使用 TiddlyWiki 打造轻便个人 Wiki 知识库|http://blog.dimpurr.com/tiddly-wiki/]]
+* [[太微中文教程|https://tw-cn.netlify.app/]]
+* [[Grok TiddlyWiki|https://groktiddlywiki.com/read/]]
+
+> 郑重申明：XP 为入门教程，当你入门了，你最明智的做法应该是去阅读官方文档。

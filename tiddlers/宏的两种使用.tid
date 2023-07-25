@@ -1,0 +1,30 @@
+created: 20230609132613371
+modified: 20230609135221000
+tags: 模板代码
+title: 宏的两种使用
+tmap.id: d113a21e-3f6f-4b33-b4ba-50060ee09428
+
+\define mymacro(name,age)
+我的名字是 $name$，年龄为 $age$。
+\end
+
+<$macrocall $name="mymacro" name="James" age="19"/>
+<br>
+<<mymacro fff 45>>
+
+<<codes src:"""\define mymacro(name,age)
+我的名字是 $name$，年龄为 $age$。
+\end
+
+<$macrocall $name="mymacro" name="James" age="19"/>
+<br>
+<<mymacro fff 45>>
+
+
+\define check-muti-field(tiddler)
+<$action-listops $tiddler="$tiddler$" $field="时间" $filter="gg2"/>
+ <$action-listops $tiddler="$tiddler$" $field="color" $filter="red"/>
+ \end
+
+<$checkbox tiddler=<<listItem>> checkactions="<$macrocall $name='check-muti-field' tiddler=<<listItem>> />" field="第"  checked="yes" unchecked="no" default="no"> </$checkbox>
+""">>

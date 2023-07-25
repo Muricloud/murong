@@ -1,0 +1,42 @@
+caption: Termux 简介
+created: 20211217083159975
+modified: 20211217084701860
+tags: [[TiddlyWiki on Node.js]] TiddlyWiki
+title: Serving TW5 from Android/简介
+tmap.id: acb5b13f-265b-4068-9b89-a254bd04a0d8
+type: text/vnd.tiddlywiki
+
+* 从 [[Google Play Store|https://play.google.com/store/apps/details?id=com.termux]] 或 [[Fdroid|https://f-droid.org/en/packages/com.termux/]]（推荐）下载并安装 Termux
+* 打开 termux 逐个执行以下命令
+
+```
+apt update
+apt upgrade
+apt install nodejs
+npm install -g tiddlywiki
+```
+
+* 如果您需要从內部存储建立/服务 ''~TiddlyWiki on Node.js''，则需要通过在 termux 执行以下指令来授予 termux 存储权限
+
+```
+termux-setup-storage
+```
+
+* 现在，您可以在内部存储中建立和服务 ''~TiddlyWiki on Node.js'' 。在以下的范例中，使用者正在其内部资料夹中建立一个名为 "mynewwiki" 的新维基。
+
+```
+cd storage/shared
+tiddlywiki mynewwiki --init server
+tiddlywiki mynewwiki --listen
+```
+
+* 在您的浏览器中访问 http://127.0.0.1:8080/
+* 一旦监听，只要 //Termux// 未关闭，您可以在任何时候通过您最喜欢的 Web 浏览器访问您的 wiki，只要指向预期的地址和端口。
+
+
+---
+
+* 有关 ~TiddlyWiki on Node.js 的更多信息，请参阅[[在 Node.js 上安装 TiddlyWiki|Installing TiddlyWiki on Node.js]]
+* 有关 termux 的详细信息和提示，请参阅 [[Termux wiki|https://wiki.termux.com/wiki/Main_Page]]
+
+<<.tip "在 //Termux// 中，您不妨安装 //git//、//emacs// 或 //vi//，以便编辑和维护单个条目档案。这大概也需要为你的 Android 附加功能更强大的键盘，像是[[骇客用的键盘|https://github.com/klausw/hackerskeyboard/]]（{{download hackerskeyboard}}）应用程序或蓝牙外部设备。">>

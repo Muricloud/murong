@@ -1,0 +1,70 @@
+created: 20230630070905053
+modified: 20230701065406876
+title: 相遇追击问题
+tmap.id: a21c22d9-c760-4b1c-a1b8-ceb92cd596ea
+
+同向而行<br>
+向相而行<br>
+
+相遇一般利用位移相等列等式<br>
+临界条件，一般以速度为突破口，速度相等时，是最常见的临界条件。<br>
+注意匀减速直线运动，可能速度减到零就停止下来了。<br>
+结合一维和二维(v-t图像)，把运动过程理顺。<br>
+
+<$details summary="从同一地点，同时，同向而行，一个从静止开始做匀加速直线运动，一个做匀速直线运动" open="no">
+
+A球：静止开始匀加速直线运动，$$a=1m/s^2$$<br>
+B球：匀速直线运动，$$v=4m/s$$<br>
+
+
+<<codes src:"""t=Slider(0,10,1,1,10,false,true,true,false)
+a_{A}=1
+v_{B}=4
+
+x_{A}=1/2a_{A}t^2
+x_{B}=v_{B} t
+
+A=(t,x_{A})
+B=(t,x_{B})
+f_{1}:y=1/2a_{A}x^2
+f_{2}:y=v_{B} x
+ShowLabel(f_{1},false)
+ShowLabel(f_{2},false)
+SetTrace(A,true)
+SetTrace(B,true)
+SetColor(B,red)
+SetVisibleInView(t,1,false)
+x_{3}=x_{B} - x_{A}
+Text(x_{3})
+""">>
+
+</$details>
+
+<$details summary="同时，同向而行，A匀速直线运动,B静止开始匀加速，B在A前面5m" open="no">
+
+A球：静止开始匀加速直线运动，$$a=1m/s^2$$<br>
+B球：匀速直线运动，$$v=4m/s$$<br>
+
+
+<<codes src:"""t=Slider(0,10,1,1,10,false,true,true,false)
+a_{A}=1
+v_{B}=4
+
+x_{A}=5+1/2a_{A}t^2
+x_{B}=v_{B} t
+
+A=(t,x_{A})
+B=(t,x_{B})
+f_{1}:y=5+1/2a_{A}x^2
+f_{2}:y=v_{B} x
+ShowLabel(f_{1},false)
+ShowLabel(f_{2},false)
+SetTrace(A,true)
+SetTrace(B,true)
+SetColor(B,red)
+SetVisibleInView(t,1,false)
+x_{3}=x_{B} - x_{A}
+Text(x_{3})
+""">>
+
+</$details>

@@ -1,0 +1,36 @@
+created: 20200918192736483
+modified: 20220309010204104
+tags: XP-tutorials
+title: 一、配置 Git 以及 SSH 公钥（CODING）
+tmap.id: d86be2b6-3382-4118-b4fb-5dc245b2a629
+
+第一，配置个人的用户名称和电子邮件地址。
+
+```bash
+$ git config --global user.name "[name]"
+$ git config --global user.email "[email address]"
+$ git config --global color.ui auto
+$ git config --global core.autocrlf false # Linux
+```
+
+第二，[[配置 SSH 公钥|https://help.coding.net/docs/project/features/ssh.html]]。
+
+查看公钥：
+
+```bash
+cat ~/.ssh/id_rsa.pub
+```
+
+不存在，则生成公钥（一路回车）：
+
+```bash
+ssh-keygen -m PEM -t ed25519 -C "your.email@example.com"
+```
+
+> 更多信息见：[[SSH 生成公钥]]
+
+注册/登录 [[CODING|https://e.coding.net/signup]] ，点击右上角【个人设置】，选择菜单【SSH 公钥】，点击【新增公钥】按钮。
+
+[img[https://help-assets.codehub.cn/enterprise/20191230144203.png]]
+
+将 `id_rsa.pub` 中的内容填写到【公钥内容】一栏，公钥名称按需填写即可。

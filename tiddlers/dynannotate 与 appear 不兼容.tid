@@ -1,0 +1,19 @@
+created: 20220626092640361
+modified: 20220626092641725
+tags: XP-tutorials
+title: dynannotate 与 appear 不兼容
+tmap.id: fbb9d396-265e-4714-932b-fb9724082573
+
+''问题描述：''同时使用两个插件，将导致错误弹窗。
+
+<div class="red-box">
+
+!! Internal JavaScript Error
+
+Well, this is embarrassing. It is recommended that you restart TiddlyWiki by refreshing your browser
+
+Uncaught TypeError: Cannot read property 'offsetLeft' of null
+
+</div>
+
+''解决办法：''不知道怎么解决。但好在一般不启用 Dynannotate 插件。

@@ -1,0 +1,14 @@
+caption: Tidgraph
+created: 20210620022901556
+modified: 20220819085838783
+moscow: S
+tags: [[Community Plugins]] [[Plugin Card]] XP-tutorials
+title: Tidgraph by ihm4u
+tmap.id: e0c1e34e-7aac-4dd6-bf07-b3fa2747a3ab
+url: https://ihm4u.github.io/tw5plugs/
+
+{{!!url}}
+
+Easy tiddler graphs for TW5
+
+* $:/plugins/ihm/tidgraph

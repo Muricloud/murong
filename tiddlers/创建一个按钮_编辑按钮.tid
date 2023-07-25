@@ -1,0 +1,37 @@
+caption: 编辑按钮
+created: 20220221123157797
+modified: 20220904052346440
+tags: 创建一个按钮 XP-tutorials
+title: 创建一个按钮/编辑按钮
+tmap.id: 8553f20c-9e3e-4cad-99db-a56cdb366a84
+
+编辑条目字段可以使用：
+
+# 设置字段动作部件 [[ActionSetFieldWidget|https://tiddlywiki.com/static/ActionSetFieldWidget.html]]: `action-setfield`
+# 列表操纵动作部件 [[ActionListopsWidget|https://tiddlywiki.com/static/ActionListopsWidget.html]]: `action-listops`
+# 删除字段动作部件 [[ActionDeleteFieldWidget|https://tiddlywiki.com/static/ActionDeleteFieldWidget.html]]: `action-deletefield`
+
+
+!! 设置字段
+
+<$macrocall $name="wikitext-example-without-html" 
+src="""<$button>
+<$action-setfield $tiddler="HelloThere" tags="MoreTag [[Further More Tags]]" color="green"/>
+<$action-sendmessage $message="tm-edit-tiddler" $param="HelloThere"/>
+Edit ~HelloThere
+</$button>
+"""/>
+
+
+!! 删除字段
+
+<$macrocall $name="wikitext-example-without-html" 
+src="""<$button>
+<$action-confirm $message="Do you wish to delete the modified and tags?">
+<$action-deletefield $tiddler="HelloThere" modified tags/>
+Delete "modified" and "tags" from ~HelloThere
+</$action-confirm>
+</$button>
+"""/>
+
+> 删除 created/modified 需要先关闭时间戳（$:/core/ui/Buttons/timestamp）。

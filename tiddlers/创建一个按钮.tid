@@ -1,0 +1,10 @@
+created: 20211208103720275
+list: 创建一个按钮 创建一个按钮/导航按钮 创建一个按钮/弹窗按钮 创建一个按钮/新建按钮 创建一个按钮/编辑按钮 创建一个按钮/删除按钮 创建一个按钮/按钮显示样式
+modified: 20220221123228919
+tags: [[WikiText 应用实例]] 创建一个按钮 XP-tutorials
+title: 创建一个按钮
+tmap.id: 187acd21-a609-46b0-a633-482f795454af
+
+[[按钮小部件|ButtonWidget]]显示一个 HTML `<button>` 元素，单击时可以执行可选操作的组合。
+
+<<tabs "[tag[创建一个按钮]remove[创建一个按钮]]" "创建一个按钮/导航按钮" "$:/state/tab/create-a-button" >>

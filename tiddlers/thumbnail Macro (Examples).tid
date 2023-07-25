@@ -1,0 +1,16 @@
+caption: 缩略图宏（示例）
+created: 20150325171700344
+modified: 20230609133622355
+tags: 中 [[thumbnail Macro]] [[Macro Examples]] TiddlyWiki
+title: thumbnail Macro (Examples)
+tmap.id: ec5f08e9-bb33-4ddd-9411-ed52962e62a7
+type: text/vnd.tiddlywiki
+
+!! 示例
+
+以下是一个用于创建浮动在文本右侧的视频缩略图的 `thumbnail-right` 宏示例 
+
+<$macrocall $name=".example" n="1" eg="""
+<<thumbnail-right link:"Introduction Video" image:"Introduction Video Thumbnail.jpg" caption:"~TiddlyWiki简介" icon:"{{$:/core/images/video}}" color:"red">>
+帝高阳之苗裔兮，朕皇考曰伯庸。摄提贞于孟陬兮，惟庚寅吾以降。皇览揆余初度兮，肇锡余以嘉名：名余曰正则兮，字余曰灵均。纷吾既有此内美兮，又重之以修能。扈江离与辟芷兮，纫秋兰以为佩。汩余若将不及兮，恐年岁之不吾与。朝搴阰之木兰兮，夕揽洲之宿莽。日月忽其不淹兮，春与秋其代序。惟草木之零落兮，恐美人之迟暮。(惟 通：唯)不抚壮而弃秽兮，何不改乎此度?乘骐骥以驰骋兮，来吾道夫先路！昔三后之纯粹兮，固众芳之所在。杂申椒与菌桂兮，岂惟纫夫蕙茝！彼尧、舜之耿介兮，既遵道而得路。何桀纣之猖披兮，夫惟捷径以窘步。惟夫党人之偷乐兮，路幽昧以险隘。岂余身之殚殃兮，恐皇舆之败绩！
+"""/>

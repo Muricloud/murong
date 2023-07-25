@@ -1,0 +1,10 @@
+created: 20230706075125087
+modified: 20230706075457868
+tags: 
+title: 二次函数顶点式
+tmap.id: 500f00fc-67ef-4b42-a204-6bcdac6bcd51
+
+$$y=a(x-h)^2+k$$
+<br><br>
+容易求对称轴: $$x=h$$<br>
+容易求最值：最值 = $$k$$

@@ -1,0 +1,27 @@
+created: 20230601122054260
+modified: 20230601122419195
+tags: 模板代码
+title: 子故事河
+tmap.id: c288ba7a-1d61-4d49-ad7e-3f63dc5072d9
+
+
+```
+同一个故事河会一起展开和收缩，要想分别展开和收缩就要修改
+navigator和list里面都要修改
+story="MySubStoryList" history="MySubHistoryList"
+注释：能修改的 [[TableOfContents]]
+```
+<br>
+<c style="color:Red;">代码:</c>
+<<codes src:"""<$navigator story="MySubStoryList" history="MySubHistoryList">
+
+<$list
+  filter="[list[MySubStoryList]]"
+  history="MySubHistoryList"
+  template={{$:/config/ui/ViewTemplate}}
+  editTemplate={{$:/config/ui/EditTemplate}}
+  storyview="classic"
+  emptyMessage="<p>Click this link to get started: [[TableOfContents]]</p>"/>
+
+</$navigator>
+""">>

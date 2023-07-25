@@ -1,0 +1,13 @@
+caption: GoldenDict
+color: 
+created: 20211006063411434
+description: GoldenDict is an open-source dictionary program that gives translations of words and phrases for different languages. It allows the use of several popular dictionary file formats simultaneously and without conversion.
+modified: 20220819092503514
+moscow: M
+purpose: 查词翻译
+tags: Windows macOS Linux Android iOS 教育 Examples [[Must have]] Software
+title: GoldenDict
+tmap.id: c83d656d-1b03-4392-97dc-3f68da132844
+url: https://sourceforge.net/projects/goldendict/
+
+{{!!description}}

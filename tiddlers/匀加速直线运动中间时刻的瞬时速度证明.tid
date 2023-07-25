@@ -1,0 +1,42 @@
+created: 20230630104649369
+modified: 20230630105729020
+tags: 
+title: 匀加速直线运动中间时刻的瞬时速度证明
+tmap.id: 632acc07-614c-47dd-9fd2-ad0e2e9a625b
+
+匀加速直线运动中间时刻的瞬时速度证明
+
+$$v_t=v_0+at 
+\ \\
+\ \\
+v_{\frac{t}{2}}=v_0+a*\frac{t}{2}
+\ \\
+\ \\
+2v_{\frac{t}{2}}=2v_0+at
+\ \\
+\ \\
+2v_{\frac{t}{2}}-2v_0=v_t-v_0
+\ \\
+\ \\
+v_{\frac{t}{2}}=\frac{v_0+v_t}{2}
+$$
+
+
+如果是匀加速直线运动$$\frac{m}{n}$$时刻的瞬时速度证明呢？
+$$v_t=v_0+at 
+\ \\
+\ \\
+v_{\frac{m}{n}t}=v_0+a*\frac{m}{n}t
+\ \\
+\ \\
+\frac{n}{m}v_{\frac{m}{n}t}=\frac{n}{m}v_0+at
+\ \\
+\ \\
+\frac{n}{m}v_{\frac{m}{n}t}-\frac{n}{m}v_0=v_t-v_0
+\ \\
+\ \\
+\frac{n}{m}v_{\frac{m}{n}t}=v_t+\frac{n-m}{m}v_0
+\ \\
+\ \\
+v_{\frac{m}{n}t}=\frac{m}{n}v_t+\frac{n-m}{n}v_0
+$$

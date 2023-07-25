@@ -1,0 +1,22 @@
+caption: 授权许可
+created: 20170127221457627
+modified: 20210423053751043
+tags: 中 About TiddlyWiki
+title: License
+tmap.id: b7a17285-2d20-4312-bc86-6243b94a30e6
+type: text/vnd.tiddlywiki
+
+TiddlyWiki的发布遵循[[宽松的 BSD 3-Clause 许可|https://opensource.org/licenses/BSD-3-Clause]]，它保存于[[默认条目|ShadowTiddlers]][[$:/core/copyright.txt]]中：
+
+<div style="font-size: 0.5em;line-height:1.4;">
+
+{{$:/core/copyright.txt}}
+
+</div>
+
+
+通俗地讲，授权声明是说，你可以拿来TiddlyWiki用它做任何你想做的事情，而不必对TiddlyWiki的创作者或其他任何人承担任何特许费用或其他法律义务。 对等的条件是，像TiddlyWiki这样的开源项目没有担保或保证。你不能为由于使用TiddlyWiki而遭受的任何损失或损害控告TiddlyWiki的贡献者，即使导致你的数据丢失的悲剧涉及到TiddlyWiki。
+
+谨请您对该项目作出归属，但这样做并非您的义务。
+
+为避免疑义，您选择存储在您自己的TiddlyWiki副本中的任何信息都属于您的; 使用TiddlyWiki发布内容不会改变您对该内容拥有的任何权利。

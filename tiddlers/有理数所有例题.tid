@@ -1,0 +1,23 @@
+created: 20230513081545263
+modified: 20230513142849630
+tags: 有理数
+title: 有理数所有例题
+tmap.id: ad5cd528-3b63-4241-a540-46710d068f49
+
+<table>
+<tbody>
+<$list filter="[all[shadows+tiddlers]tag[有理数]has[有理数]有理数[例题]]" variable="listItem">
+<tr>
+<td><$link to=<<listItem>>><$list filter="[<listItem>removeprefix[有理数]]"variable="listItem1"><$text text=<<listItem1>>/></$list></$link></td>
+<td></td>
+
+</tr>
+</$list>
+</tbody>
+</table>
+
+<$list filter="[all[shadows+tiddlers]tag[有理数]has[有理数]有理数[例题]]" variable="listItem">
+<<listItem>>
+</$list>
+
+<$text text="dsds"/>

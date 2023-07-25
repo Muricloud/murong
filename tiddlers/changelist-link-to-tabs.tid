@@ -1,0 +1,12 @@
+caption: Link to Tabs
+created: 20220422114318485
+modified: 20220422114326128
+tags: [[Change List]] XP-tutorials
+title: changelist-link-to-tabs
+tmap.id: e46c3f55-03f3-49f8-9239-a274bc738ee3
+
+!! $:/plugins/wikilabs/link-to-tabs
+
+修复了水平标签页选中时出现下划线的问题
+
+* $:/_xp/Stylesheet/community-plugins

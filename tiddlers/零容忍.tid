@@ -1,0 +1,30 @@
+background-color: #fff
+caption: 零容忍
+color: red
+created: 20220801114008507
+icon: {{$:/core/images/video}}
+image: e91eccbbbfd0e790ebe264a32649bdde.png
+importance: 
+link: 零容忍
+linkcolor: 
+modified: 20220801123030962
+revision: 0
+tags: Course Planning Examples
+title: 零容忍
+tmap.id: e110e299-b7f4-4d9f-a2da-a9deff75f581
+type: text/vnd.tiddlywiki
+url: https://tv.cctv.com/2022/01/11/VIDArRQlT6Qqw58HjNIsMZOg220111.shtml
+
+[img[e91eccbbbfd0e790ebe264a32649bdde.png]]
+
+!! 课程目录
+
+@@.list-tree
+
+* 《零容忍》 第1集 不负十四亿
+* 《零容忍》 第2集 打虎拍蝇
+* 《零容忍》 第3集 惩前毖后
+* 《零容忍》 第4集 系统施治
+* 《零容忍》 第5集 永远在路上
+
+@@

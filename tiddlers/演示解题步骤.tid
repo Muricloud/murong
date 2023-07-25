@@ -1,0 +1,21 @@
+created: 20230629090724093
+modified: 20230629092815679
+tags: 
+title: 演示解题步骤
+tmap.id: c217bbb7-390c-417c-8492-6d90a45192a0
+
+画图：
+<div style="width:400px">
+[img[演示解题步骤图1.png]]
+$$
+v_1=v_0+a_1t_1 \ ... \textcircled{1}\\
+\ \\
+v_2=v_1+a_2t_2 \ ... \textcircled{2}\\
+\ \\
+t=t_1+t_2 \ ... \textcircled{3}\\
+\ \\
+由\textcircled{1}，\textcircled{2}，\textcircled{3}得，t=52s
+$$
+</div>
+
+

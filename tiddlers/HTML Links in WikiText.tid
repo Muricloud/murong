@@ -1,0 +1,20 @@
+caption: WikiText中的HTMI链接
+created: 20161021101834041
+modified: 20220819093318589
+tags: 中 [[HTML in WikiText]] TiddlyWiki
+title: HTML Links in WikiText
+tmap.id: 25ac4635-c4f9-4341-bd1b-4c7f099c6a90
+type: text/vnd.tiddlywiki
+url: https://tiddlywiki.com/static/HTML%2520Links%2520in%2520WikiText.html
+
+能够创建到外部资源的HTML链接通常是有用的。 例如，这里 `href` 属性的值将被设置为MyLinkDestination条目的值：
+
+```
+<a href={{MyLinkDestination}}>链接</a>
+```
+
+然而，这样做存在无法预料的安全问题，意味着在大多数情况下，链接应该将 `rel` 属性设置为 `noopener noreferrer`，来维护私有TiddlyWiki（例如在Dropbox上）的URL隐私。 有关更多信息，请参阅 https://mathiasbynens.github.io/rel-noopener/ 。
+
+```
+<a href={{MyLinkDestination}} rel="noopener noreferrer">链接</a>
+```

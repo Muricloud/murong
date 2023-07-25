@@ -1,0 +1,184 @@
+caption: {{$:/core/images/advanced-search-button}} 搜索条目
+created: 20200731102609315
+modified: 20230301161518441
+tags: XP-tutorials 新手入门指南
+title: 搜索条目
+tmap.id: af97dd5c-b4f1-4329-ad13-f915b2241fde
+
+当条目很多时，你只能像使用浏览器那样，输入关键词去搜索条目。在 ~TiddlyWiki 中搜索既快速又灵活。
+
+!! 标准搜索
+
+* 使用快捷键 <kbd>ctrl-shift-F</kbd> 在侧边栏的搜索框中搜索。 
+
+://（请注意，直到您点击搜索框右侧的“x”删除搜索结果，边栏中的搜索结果选项卡才会被隐藏）//
+
+* 使用快捷键 <kbd>ctrl-P</kbd> 打开 [[Command Palette|$:/plugins/souk21/commandpalette]] 进行搜索。（浏览器上按键如果冲突可能会没反应）
+
+
+!! 高级搜索
+
+点击搜索框右侧的放大镜图标 <<.icon $:/core/images/advanced-search-button>> 将打开[[高级搜索|$:/AdvancedSearch]]（快捷键 <kbd>ctrl-shift-A</kbd>）。 默认包含四个选项卡：
+
+* ''标准'' 选项卡包含了在侧边栏中的搜索框的另一个实例
+* ''系统'' 选项卡允许您将搜索限定在[[系统条目|https://tiddlywiki.com/static/SystemTiddlers.html]]
+* ''默认'' 选项卡允许您将搜索限定在[[默认条目|https://tiddlywiki.com/static/ShadowTiddlers.html]]
+* ''筛选'' 选项卡本身并不是一个搜索框，而是一种获取符合该[[过滤器|Filters]]描述的特定标准的所有条目的列表的方法。
+*> 务必要掌握 [[过滤器|Filters]] 的使用，它可以高效地管理条目。
+*''内容搜索'' 选项卡相比于''标准''选项卡，会直接显示条目中的内容。功能来自插件 $:/plugins/danielo515/ContextPlugin
+*''Query'' 选项卡允许您进行[[多词查询|$:/xp/query/help]]。功能来自插件 $:/plugins/xp/aggregation
+
+<div class="gray-box">
+
+相关设置：[[禁用搜索最小字数限制]]
+
+</div>
+
+要运用好高级搜索，首先得搞清楚 [[TiddlyWiki 中条目的类别|$:/help/TiddlerType]]。
+
+''搜索时常用的快捷键：''
+
+|<kbd>ctrl-shift-F</kbd> |侧边栏搜索框中查找 |
+|<kbd>ctrl-shift-A</kbd> |打开高级查找 |
+|<kbd>ctrl-shift-S</kbd> |打开侧边栏中的高级查找 |
+|<kbd>ctrl-shift-Right</kbd> |切换到下一个页签 |
+|<kbd>ctrl-shift-Left</kbd> |切换到上一个页签 |
+|<kbd>Home</kbd> |将光标移至文本开头 |
+|<kbd>End</kbd> |将光标移至文本末尾 |
+|<kbd>alt-Enter</kbd> |在高级查找中查看结果 |
+|<kbd>Enter</kbd> |打开给定条目 |
+|<kbd>Escape</kbd> |清空输入框 |
+|<kbd>ctrl-P</kbd> |Open the command palette |
+
+> 注：快捷键同样适用于 [[QuickBar|$:/plugins/xp/quickbar]] 中的搜索框。<br>另外，QuickBar 中允许你更改搜索范围 <<.icon $:/xp/images/scope>>，或许可以提高搜索效率。（[[自定义搜索范围|$:/xp/quickbar/Search/scope]]）
+
+
+!! 过滤器
+
+> 在 ''筛选'' 中使用[[过滤器|Filters]]。
+
+过滤器是由被称为 [[runs（运行块）|https://tiddlywiki.com/static/Filter%2520Run.html]]和 [[steps（步骤）|https://tiddlywiki.com/static/Filter%2520Step.html]]组建的[[表达式|https://tiddlywiki.com/static/Filter%2520Expression.html]]。过滤器以空输出开始。它从左到右处理运行（runs），逐步修改输出结果。我们用下面这个过滤器表达式来快速理解：
+
+: ''<span style="color:red;">[</span>''all[<span style="color:green;">shadows+tiddlers</span>]tag[<span style="color:green;">~$:/tags/Filter</span>]''<span style="color:red;">]</span>'' ''<span style="color:red;">[</span>''tag[<span style="color:green;">Filter</span>]''<span style="color:red;">]</span>'' +''<span style="color:red;">[</span>''sort[<span style="color:green;">title</span>]''<span style="color:red;">]</span>''
+
+这个表达式含有三个运行块：
+
+# `[all[shadows+tiddlers]tag[$:/tags/Filter]]`
+# `[tag[Filter]]`
+# `[sort[title]]`
+
+运行块之间使用空格隔开。最后一个运行块含有前缀 `+`，表示接收前面运行块的输出作为输入。
+
+第一个运行块含有两个操作步骤：`all[shadows+tiddlers]` 和 `tag[$:/tags/Filter]`。
+
+可以看出来，步骤的基本格式为：`operator[parameter]` 即 `操作符[参数]`。
+
+操作符的缺省值为 `title`。而 `all` 操作符要放在运行块的第一个步骤。
+
+<<<.tc-big-quote
+''重要：'' 没有给出任何输入标题的[[过滤器运行块|https://tiddlywiki.com/static/Filter%2520Run.html]]，其第一个[[步骤|https://tiddlywiki.com/static/Filter%2520Step.html]]接收 <a href="https://tiddlywiki.com/static/all%2520Operator.html" target="_blank">[all[tiddlers]]</a> 的输出作为其输入。
+<<<
+
+步骤从左到右进行处理。对于每个后续步骤，其输入都是上一步的输出。
+
+所以，这个过滤器表达式是这样运行的：
+
+# 运行第一个运行块：第一个步骤得到[[所有条目|$:/help/TiddlerType]]的标题列表 ➡️ 第二个步骤得到其中含有标签 `$:/tags/Filter` 的条目。
+# 运行第二个运行块：该运行块没有给出任何输入标题，所以该运行块实际将执行 `[all[tiddlers]tag[Filter]]`。第一个步骤得到所有用户条目的标题列表 ➡️ 第二个步骤得到其中含有标签 `Filter` 的条目。由于该运行块没有 `+` 或 `-` 前缀，所以它的输出标题会被[[主导式追加|https://tiddlywiki.com/static/Dominant%2520Append.html]]到前一个运行块的输出中。 
+# 运行最后一个运行块：将前面两个运行块得到的结果作为输入，执行步骤按标题排序后输出。
+
+
+!!! 使用举例：
+
+以下 8 个搜索常用的[[过滤器操作符|https://tiddlywiki.com/static/Filter%2520Operators.html]]，建议优先掌握（动手试验）：
+
+|操作符 |过滤器示例 |输出 |h
+|![[tag|https://tiddlywiki.com/static/tag%2520Operator.html]] |`[tag[XP-tutorials]]` |[[用户条目|$:/help/TiddlerType]]：其中含有标签 <<tag [[XP-tutorials]]>> 的条目。|
+|~|`[tag[test]!tag[keep]]` |用户条目：其中含有 <<tag test>> 标签但不含有 <<tag keep>> 标签的条目。 |
+|![[all|https://tiddlywiki.com/static/all%2520Operator.html]] |`[all[shadows+tiddlers]tag[test]]` |[[所有条目|$:/help/TiddlerType]]：其中含有标签 test 的条目。 |
+|![[search|https://tiddlywiki.com/static/search%2520Operator.html]] |`[all[shadows+tiddlers]search[test]]` |所有条目：搜索标题、文本、标签中含 test 的条目（不区分大小写） |
+|~|`[all[shadows+tiddlers]search:title[test]]` |所有条目：搜索标题中含 test 的条目。 |
+|~|`[all[shadows+tiddlers]search:-text,*[test]]` |所有条目：排除文本字段，搜索其他所有字段中含 test 的条目。 |
+|![[sort|https://tiddlywiki.com/static/sort%2520Operator.html]] |`[tag[test]sort[title]]` |用户条目：将其中含有 test 标签的条目按标题排序后输出。 |
+|![[prefix|https://tiddlywiki.com/static/prefix%2520Operator.html]] |`[suffix[Macro]!prefix[$:/]]` |用户条目：其中标题以 Macro 结尾且开头不为 `$:/` 的条目。 |
+|![[suffix|https://tiddlywiki.com/static/suffix%2520Operator.html]] |~|~|
+|![[has|https://tiddlywiki.com/static/has%2520Operator.html]] |`[has:field[link]]` |用户条目：其中含有字段 `link` 的条目。不管字段值是否为空 |
+|![[is|https://tiddlywiki.com/static/is%2520Operator.html]] |`[!is[system]tag[Journal]]` |用户条目：剔除其中的系统条目，显示含有 Journal 标签的条目  |
+
+<<<
+<$vars lingo-base="$:/language/Search/">
+[[QuickBar|$:/plugins/xp/quickbar]] 中的搜索框允许「<<lingo Filter/Hint>>」。
+</$vars>
+
+[[regexp Operator|https://tiddlywiki.com/static/regexp%2520Operator.html]] 的教程：[[RegExp in Tiddlywiki by Mohammad|https://tiddlywiki.com/static/RegExp%2520in%2520Tiddlywiki%2520by%2520Mohammad.html]]
+
+<<<
+
+
+!! <mark class="mark-greenyellow">Filter Builder</mark>
+
+掌握了大多数常用的过滤器操作符后，你将打开一扇新的大门，迎来空前的效率提升，进入多任务处理的新时代。
+
+然而，手动输入整个筛选表达式的效率太低。为了使整个操作过程更加丝滑，你可以利用「筛选表达式构建器」（$:/FilterBuilder）快速构建一个。用于：
+
+* 内容呈现。
+* 批量阅读。
+* 批量管理：增删改查。
+
+> 这些可能是你在其他笔记软件中，永远无法体会到的！
+
+!!! 体验一下批量管理的威力
+
+如果现在让你把 XP 中的：
+
+```css
+<div class="red-box">
+内容
+</div>
+```
+
+修改为：
+
+```css
+<mark class="red-box">
+内容
+</mark>
+```
+
+!!! 你会怎么做？
+
+盒子里面装的「内容」是不一样的，所以不能直接批量替换。我的方法是：
+
+# 先将 `<div class="red-box">` 批量替换为 `<mark class="red-box">`。<$details summary="详细步骤" open="no">
+
+# 打开边栏 {{$:/plugins/kookma/commander/images/file-alt}}[[Commander|$:/Commander]] 选项卡，使用按钮 {{$:/xp/ui/Buttons/switchlayout}} 将布局切换为「固定故事河」。
+# Combo search 中输入 `<div class="red-box">`
+# 选择 ''Snr'' 选项卡：
+#* Search and Replace > Search text: `<div class="red-box">`
+#* Search and Replace > Replace with: `<mark class="red-box">`
+#* Search flags > 选中 ''global match''。
+# 点击 <$button>Replace all</$button> 替换所有目标条目中的所有匹配项。
+
+</$details>
+
+# 搜索出含有 `<mark class="red-box">` 的条目，然后将这些条目在故事河中全部打开。<$details summary="详细步骤" open="no">
+
+# 使用按钮 {{$:/xp/ui/Buttons/switchlayout}} 将布局切换为「固定侧边栏」。
+# 打开 $:/FilterBuilder（快捷键 <kbd>ctrl-shift-X</kbd>），点击 <$button class="fb-btn btn-small">Initialize</$button> 按钮
+# 在 Search 项目的下拉菜单中，选择精确匹配 ''all exact match''；输入框中输入 `<mark class="red-box">`
+# 点击 <$button tooltip="Open all tiddlers and close others" class="fb-btn btn-small">open all</$button> 将结果列表在故事河中打开
+
+</$details>
+
+# 点击 QuickBar 中的页面工具按钮 {{$:/xp/ui/Buttons/edit-all}}，编辑所有条目。
+# 使用 <kbd>ctrl-F</kbd> 打开浏览器搜索框，逐个搜索 `<mark class="red-box">`，然后将 `</div>` 修改为 `</mark>`。完成后，点击 QuickBar 中按钮 {{$:/xp/ui/Buttons/edit-all}} 退出编辑。
+
+
+<div class="blue-box">
+
+觉得这个条目内容有点多，不方便回到条目顶部？
+
+# 你可以在左边栏「开启」列表中点击当前条目的链接，立马回到顶部。
+# 或者，在 <<.icon $:/core/images/options-button>> [[ViewToolbar|$:/core/ui/ControlPanel/Toolbars/ViewToolbar]] 中勾选 ''go tiddler top''，「导航栏」位于条目的右侧。为了看起来简洁，默认你看不到任何变化，只有鼠标悬浮于条目右侧时才会有轻微高亮。点击「导航栏」回到条目顶部。
+
+</div>

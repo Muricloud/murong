@@ -1,0 +1,26 @@
+caption: 变量
+created: 20141002133113496
+modified: 20220819093318603
+tags: 中 Concepts Reference TiddlyWiki
+title: Variables
+tmap.id: 9f1ac5d6-7663-469b-9036-ccb103dd9ad8
+type: text/vnd.tiddlywiki
+url: https://tiddlywiki.com/static/Variables.html
+
+一个<<.def variable>>（变量）是可以在[[部件树|Widgets]]的特定分支中通过名称访问的文本片段。 这个片段被称为变量的<<.def value>>（值）。
+
+使用<<.wlink SetWidget>>部件来定义一个新变量，然后该部件的任何子节点都可以使用该变量，包括嵌入的内容。 一个<<.wid set>>部件可以重用一个已有的名字，从而在部件的子元素期间绑定一个不同的片段到这个名字。
+
+<<.wlink ListWidget>>部件还会设置一个特殊的变量（默认为<<.var currentTiddler>>），依次指向每个列出的标题。
+
+有关如何使用变量的概述，请参阅[[WikiText中的变量|Variables in WikiText]]。
+
+尽管术语称<<.word variable>>（变量），但每个片段都是一个常量字符串。表现出的可变性实际上是部件树的不同部分中存在同名的多个变量的结果。
+
+[[宏|Macros]]是一种特殊的变量形式，其值可以包含占位符，每当调用宏时，该占位符都用参数填充。
+
+对于它们本身，片段<<.em 不会>>被作为WikiText解析。 但是，变量引用会将一个片段嵌入到一个文本，在文本中<<.em 也许会>>发生~WikiText解析。 在一个片段中，唯一的检测标记，对于宏参数嵌入是 `$name$`，而对于变量嵌入是 `$(name)$`。
+
+<<.mlink dumpvariables>>（列示变量）宏列出了部件树中该位置上可用的所有变量（包括宏）。
+
+~TiddlyWiki的内核内置了[[多个变量|Core Variables]]。

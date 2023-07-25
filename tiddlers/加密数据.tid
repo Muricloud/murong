@@ -1,0 +1,53 @@
+caption: {{$:/core/images/locked-padlock}} 加密数据
+created: 20200731140917280
+modified: 20220903121427579
+tags: XP-tutorials 新手入门指南
+title: 加密数据
+tmap.id: d55adf73-917e-4814-ba0d-ac600398e280
+
+!! 加密存储（通用）
+
+//方法适用于单文件版和服务器版。//
+
+<div class="gray-box">
+
+每周都会有黑客入侵和数据丢失的新闻，所以存在云上的数据并不总是安全的。你必须对自己的数据负责，进行加密存储。
+
+</div>
+
+方法一：使用 VeraCrypt 加密软件
+
+:很多人都在用该软件，教程自己搜一下。
+
+方法二：使用 [[Gocryptfs|https://github.com/rfjakob/gocryptfs/]] 加密软件
+
+:详细操作参见 [[Ubuntu 上安装使用 gocryptfs 加密工具]]。
+
+<div class="gray-box">
+
+两类软件的差别
+
+* VeraCrypt 相当于在本地电脑中创建了一个数据保险箱
+* Gocryptfs 加密的数据，既能放在本地电脑，也能进行云存储，比如上传到网盘
+
+也就是说，如果只将数据进行本地加密存储，那么推荐使用 VeraCrypt；如果数据要进行云存储，那么只能使用 Gocryptfs 这类软件。
+
+> 还有一种简单的加密方式：创建带有密码的压缩包。这种方式操作简单，但不方便管理维护很多的文件。
+
+</div>
+
+!! 单文件版
+
+{{Encryption}}
+
+!! 多个条目
+
+在侧边栏选项卡 <<.icon $:/xp/images/batch-encryption>> Batch/Encryption 中使用[[过滤器|Filters]]检索条目，进行批量加解密。比如，使用 `[tag[Journal]]` 过滤出[[用户条目|$:/help/TiddlerType]]中含有 `Journal` 标签的条目，进行批量加密。
+
+每次手动输入「过滤器」是非常烦人的，可以点击搜索框旁边的下拉菜单，创建一个过滤器（Add a filter）或者创建一个加密面板（Create an encryption panel）。
+
+!! 单个条目
+
+查看工具栏按钮 {{$:/plugins/danielo515/encryptTiddler/crypt-button}} Encrypt/Decrypt tiddler 可以对单个条目进行快速加密。但此功能不常用，所以默认不显示。你可以在右边栏 XP 中开启：
+
+: <$checkbox tiddler="$:/plugins/danielo515/encryptTiddler/crypt-button" tag="$:/tags/ViewToolbar"> [[Show encryption button|$:/plugins/danielo515/encryptTiddler/crypt-button]] </$checkbox>

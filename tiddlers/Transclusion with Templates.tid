@@ -1,0 +1,62 @@
+caption: WikiText中使用模板嵌入
+created: 20141129210304238
+modified: 20210713052721659
+tags: 中 [[Transclusion in WikiText]] TiddlyWiki
+title: Transclusion with Templates
+tmap.id: 4cb2060f-94c1-42fa-b356-eedb712affbd
+
+!! 介绍
+
+在[[嵌入基本用法|Transclusion Basic Usage]]里，我们已经看到如何将提条目A的内容包含到条目B中。现在假设条目A包含：
+
+```
+@@background-color:yellow;
+嗨，我的标题是{{!!title}}
+@@
+```
+
+这使得条目A以黄色背景显示其标题（请参阅[[WikiText中的样式和类|Styles and Classes in WikiText]]了解CSS样式）。 假设一下，你想要在条目B中以同样的方式显示标题。但是你不想复制/粘贴样式指令，因为你可能想稍后改变背景颜色，并且想要在条目中保持一致。 这看起来就像是一个典型的嵌入的例子，所以我们试着用 ``{{A}}`` 来替换条目B中的条目A。 您应该看到在条目B中的以下内容：
+
+
+<<<
+@@background-color:yellow;
+嗨，我的标题是A
+@@
+<<<
+
+样式按预期方式应用，但标题是错误的：我们希望 ``{{!!title}}`` 引用目标条目B，而不是源条目A 。
+
+解决办法就是用//模板//。在这种情况下，源条目A被称为[[模板条目|TemplateTiddlers]]，并且使用符号 ``{{||A}}`` 将它//应用//于条目B。 不同之处在于，任何没有明确指定引用条目的TextReference（文本引用）都应用于[[当前条目|Current Tiddler]]，即目标条目。 结果，条目B现在看起来恰如预期的那样：
+
+<<<
+@@background-color:yellow;
+嗨，我的标题是B
+@@
+<<<
+
+!! 用法
+
+通过模板转换就像应用一个蒙版：假设源条目包含通用的引用（如蒙版眼孔），这些将被替换为目标条目值（如戴着面具的人的眼睛）。
+
+模板可以应用到任何条目，不一定是当前的。 这是通过使用完整符号 ``{{<target>||<template>}}`` 来实现的。 默认的 ``<target>`` 是[[当前条目|Current Tiddler]]（这是我们在上面的例子中使用的）。
+
+!! 示例
+
+!!! 用一个预定义的模板来很好地呈现标签
+
+您可以应用系统模板 ``$:/core/ui/TagTemplate`` 到一个标签，以便看到它呈现为一个带下拉菜单的标签丸：
+
+```
+{{Transclusion||$:/core/ui/TagTemplate}}
+```
+
+呈现为 {{Transclusion||$:/core/ui/TagTemplate}}
+
+另请参阅：
+
+* [[WikiText中的嵌入|Transclusion in WikiText]]
+* [[嵌入的基本用法|Transclusion Basic Usage]]
+* [[文本引用|TextReference]]
+* [[模板条目|TemplateTiddlers]]
+* [[嵌入部件|TranscludeWidget]]
+* [[当前条目|Current Tiddler]]

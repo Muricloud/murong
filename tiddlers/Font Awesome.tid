@@ -1,0 +1,61 @@
+created: 20200809072841809
+modified: 20220904011632142
+tags: XP-tutorials 使用图标
+title: Font Awesome
+tmap.id: 740e26ad-732b-4b28-945c-8409e9f782c9
+
+Font Awesome 字体为您提供可缩放矢量图标，它可以被定制大小、颜色、阴影以及任何可以用 CSS 的样式。使用方法详见 [[Font Awesome 基本用法|https://fa5.dashgame.com/#/%E6%96%87%E6%A1%A3/%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95]]。具体有哪些图标，参阅 [[TW5FontAwesome demo wiki|https://thediveo.github.io/TW5FontAwesome/output/fontawesome.html]]。
+
+> 该功能由插件 $:/plugins/TheDiveO/FontAwesome 提供。
+
+
+!! 作为条目 Icon
+
+比如，新建一个条目 [[fa-chrome]]，内容为：
+
+```html
+<i class='fab fa-chrome fa-1x'></i>
+```
+
+然后，在 [[Installing Timimi/Chrome]] 条目的 `icon` 字段中填入值 `fa-chrome`。
+
+
+!! 条目中引用
+
+例 1：
+<<wikitext-example-without-html 
+src:"""<i class='fab fa-linux fa-2x'></i> Linux
+<i class='fab fa-apple fa-2x'></i> Mac
+<i class='fab fa-windows fa-2x'></i> Windows
+""">>
+
+例 2：
+<$macrocall $name="wikitext-example-without-html" 
+src="""<<fa-lbadge glyph:"fa-linux" fam:"fab">>
+<<fa-lbadge glyph:"fa-apple" fam:"fab">>
+<<fa-lbadge glyph:"fa-windows" fam:"fab">>
+"""/>
+
+<br><br>
+例 3：
+<$macrocall $name="wikitext-example-without-html" 
+src="""<<fa-lbox glyph:"fa-linux" fam:"fab">> Linux
+<<fa-lbox glyph:"fa-apple" fam:"fab">> Mac
+<<fa-lbox glyph:"fa-windows" fam:"fab">> Windows
+"""/>
+
+例 4：
+<<wikitext-example-without-html 
+src:"""<span style="font-size: 3em; color: Tomato;">
+<i class="fas fa-camera"></i>
+</span>
+<span style="font-size: 48px; color: Dodgerblue;">
+<i class="fas fa-camera"></i>
+</span>
+<span style="font-size: 3rem; color: Mediumslateblue;">
+<i class="fas fa-camera"></i>
+</span>
+""">>
+
+
+> 另见 [[Font Awesome 5 Free SVGs for TiddlyWiki|http://fa5-free-svg.tiddlyspot.com/]]

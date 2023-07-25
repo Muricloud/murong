@@ -1,0 +1,65 @@
+caption: Table-of-Contents：目录表宏
+created: 20140919155729620
+modified: 20200901042844559
+tags: 中 Macros [[Core Macros]] TiddlyWiki
+title: Table-of-Contents Macros
+tmap.id: e7913560-60fb-4ed6-82f7-5a3fb68a2074
+type: text/vnd.tiddlywiki
+
+~TiddlyWiki提供了几个宏，用于通过分析[[标签|Tagging]]生成条目链接树：
+
+;<<.var toc>>
+: 一个简单的树
+;<<.var toc-expandable>>
+: 所有分支都可以展开和折叠的树
+;<<.var toc-selective-expandable>>
+: 一棵树，其中的非空分支可以展开和折叠
+;<<.var toc-tabbed-internal-nav>> 和 <<.var toc-tabbed-external-nav>>
+: 双面板浏览器：
+:* 左边，是一个可选择可展开的树，其行为像一组竖排的页签
+:* 右边，是用户在树中选择的条目的内容
+
+这两者之间的差异在于当用户在''右''侧面板中单击链接时会发生什么情况：
+
+;<<.var toc-tabbed-internal-nav>>
+: 目标条目出现在右侧面板，替换包含该链接的条目
+;<<.var toc-tabbed-external-nav>>
+: 目标条目以正常方式出现（取决于用户配置的故事视图）
+
+!! 结构
+
+树的顶层由携带指定标签的条目组成，称为<<.def "root tag">>（根标签）。 以这些根标签为标签的条目构成下一个层级，依此类推。
+
+在每个级别上的条目，都可以按照它们在父标签条目的 <<.field list>> 字段里的顺序来排序。 它们也可以按照宏的 <<.param sort>> 参数来排序。
+
+树中会显示条目的 <<.field caption>>（字幕标题）字段，如果有的话；否则，则显示条目的标题。
+
+树中的每个条目通常显示为链接。 为了抑制这种情况，请给条目设一个其值为 <<.value no>> 的 <<.field toc-link>> 字段。 在[[目录宏示例|Table-of-Contents Macros (Examples)]]中，SecondThree条目就是这样设置的。 单击树中这样的条目只会导致其分支展开或折叠。
+
+目录表是作为一个HTML有序列表被生成的。 `<ol>` 元素总是有 `tc-toc` 类。 可展开的树有附加类 `tc-toc-expandable`。 可选择可展开的树（包括双面板浏览器中的树）具有 `tc-toc-selective-expandable` 类。
+
+要在侧边栏中显示目录，请参见[[如何将新标签添加到侧边栏|How to add a new tab to the sidebar]]。
+
+!! 参数
+
+;tag
+: 标识树顶层的根标签
+;sort
+: 可选的额外[[过滤器步骤|Filter Step]]，例如 `sort[title]`
+
+这两个参数合并成一个[[过滤器表达式|Filter Expression]]，像这样：
+
+> `[tag[$tag$]$sort$]`
+
+<<.var toc-tabbed-internal-nav>> 和 <<.var toc-tabbed-external-nav>> 还有额外的参数：
+
+;selectedTiddler
+: [[状态条目|StateMechanism]]的标题，标注当前选定的条目，默认为 `$:/temp/toc/selectedTiddler`。建议用一个[[系统条目|SystemTiddlers]]
+;unselectedText
+: 当树中没有被选择的条目时显示的文本
+;missingText
+: 如果选定的条目不存在时要显示的文本
+;template
+: 可选，要用作[[模板|TemplateTiddlers]]的条目的标题，用于将所选的条目嵌入到右侧面板
+
+[[示例|Table-of-Contents Macros (Examples)]]

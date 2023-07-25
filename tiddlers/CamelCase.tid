@@ -1,0 +1,8 @@
+caption: 驼峰式链接
+created: 20130828185300000
+modified: 20200901042844517
+tags: 中 Definitions TiddlyWiki
+title: CamelCase
+tmap.id: dd2b4e8b-4ba9-4088-9c7f-45b64db08abd
+
+CamelCase是由一个短语形成的，大写每个单词的首字母，然后把这些词拼凑在一起形成一个单词。 大多数维基使用CamelCase来表示应该自动变成链接的短语。

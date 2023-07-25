@@ -1,0 +1,28 @@
+created: 20211214102358238
+modified: 20230610061327701
+tags: [[WikiText 应用实例]] XP-tutorials
+title: 嵌入条目
+tmap.id: a409c1a3-1501-40f0-bf79-c89f86eb11a5
+
+嵌入有两种方式，一种是使用 `{{MyTiddler}}` transcludes a single tiddler；第二种方式是使用 TranscludeWidget（嵌入部件）。
+
+第一种方式用的最多，这里展示高级用法 [[使用模板嵌入|Transclusion with Templates]]：
+
+```
+{{TiddlyWiki||$:/templates/transclusion}}
+{{TiddlyWiki||$:/templates/transclusion-caption}}
+{{TiddlyWiki||$:/templates/transclusion-datetime}}
+{{TiddlyWiki||$:/templates/transclusion-summary}}
+```
+
+将列表结果格式化为表格：
+
+* [[Formatting List Results as Tables|https://tiddlywiki.com/static/Formatting%2520List%2520Results%2520as%2520Tables%2520(no%2520CSS).html]]
+
+```css
+<div class="twocolumns" style="margin:15px 0;padding:0 0 0 24px;align-items:left;">
+
+{{{ [tag[Howto]tag[TiddlyWiki]!has[draft.of]sort[]] ||$:/templates/popup}}}
+
+</div>
+```

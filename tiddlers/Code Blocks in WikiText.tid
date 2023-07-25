@@ -1,0 +1,29 @@
+caption: 代码块
+created: 20131205160047557
+modified: 20220819093318579
+tags: 中 WikiText TiddlyWiki
+title: Code Blocks in WikiText
+tmap.id: cd75aceb-d778-4aec-b421-49835de601a9
+type: text/vnd.tiddlywiki
+url: https://tiddlywiki.com/static/Code%2520Blocks%2520in%2520WikiText.html
+
+多行代码使用三个反引号 <code>&#96;&#96;&#96;</code> 标记代码块（<<.icon $:/core/images/mono-block>>），快捷键 <kbd>ctrl-shift-M</kbd>：
+
+正确的版本是：
+
+<pre>
+这是一个普通的段落
+
+&#96;&#96;&#96;
+这将是等宽的
+&#96;&#96;&#96;
+</pre>
+
+这是错误的：
+
+<pre>
+这是一个普通的段落
+&#96;&#96;&#96;
+这将是等宽的
+&#96;&#96;&#96;
+</pre>

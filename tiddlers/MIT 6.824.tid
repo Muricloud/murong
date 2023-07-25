@@ -1,0 +1,21 @@
+background-color: #fff
+caption: MIT 6.824
+color: red
+created: 20210711163623425
+icon: {{$:/core/images/video}}
+image: $:/heiban.png
+link: 
+linkcolor: <<colour primary>>
+modified: 20220701153805370
+tags: Planning Examples Course
+title: MIT 6.824
+tmap.id: afeeb6bf-4345-453f-98cd-cf0b2e9428cc
+
+!! 课程目录
+
+@@.list-tree
+* 
+** 
+* 
+@@
+

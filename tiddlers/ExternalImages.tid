@@ -1,0 +1,71 @@
+caption: 外部图像
+created: 20140610213500000
+modified: 20210423053751039
+tags: 中 Concepts Features TiddlyWiki
+title: ExternalImages
+tmap.id: fa6866ec-6876-465b-a86f-28caddfd6f0a
+type: text/vnd.tiddlywiki
+
+TiddlyWiki中的外部图像是指向图像网址（URI）的条目，而不是嵌入完整的图像数据。 它们可以比嵌入式图像执行得更好，特别是对于数量较多或尺寸较大的图像。 但是，使用它们打破了TiddlyWiki的单一文件模式。
+
+外部图像在浏览器用使用。 它们可以在构建TiddlyWiki时，由Node.js配置创建，也可以在浏览器中手动创建。
+
+!! 什么是外部图像
+
+外部图像是一个普通的图像条目，有一个包含图像的URI的 ''_canonical_uri'' 字段。 该URI路径可以是绝对的，或者是相对于HTML文档的。 如果提供了规范的URI，则条目的''text''（正文）字段将被忽略，所以也应该省略。
+
+!! 手动创建外部图像
+
+要手动创建外部图像，只需使用适当的图像内容类型创建条目，并添加一个 ''_canonical_uri'' 字段，存储指向实际图像位置的URI。
+
+''重要：''仔细检查你的拼写。``_canonical_uri``写作[[URI|https://en.wikipedia.org/wiki/URI#The_relationship_between_URIs.2C_URLs.2C_and_URNs]]，而不是URL。
+
+!! 在Node.js下创建外部图像
+
+以下步骤用于创建一个维基的静态HTML文件版本，附带一个 ''images'' 文件夹，其中包含被引用的外部图像：
+
+# 以通常的方式在 TiddlyWikiFolders 中创建图像条目
+# 作为单独的文件保存图像（按照惯例是保存在名为 ''images'' 的子文件夹中）
+# 通过给他们一个 ''_canonical_uri'' 字段外部化图像条目
+# 保存主HTML文件
+
+请注意，图像文件在被外部化之前必须被保存。 将它们外部化会破坏内存中维基存储副本的''text''（正文）字段，这意味着保存它们的尝试将失败。
+
+有关示例，请参阅“externalimages”构建对象的''tw5.com''维基演示：
+
+```
+--savetiddlers [is[image]] images
+--setfield [is[image]] _canonical_uri $:/core/templates/canonical-uri-external-image text/plain
+--setfield [is[image]] text "" text/plain
+--rendertiddler $:/core/save/all externalimages.html text/plain
+```
+
+!!! 保存单独的图像文件
+
+以下 `--savetiddlers` 命令可用于将Wiki图像保存到 ''images'' 子文件夹中：
+
+```
+--savetiddlers [is[image]] images
+```
+
+!!! 外部化图像条目
+
+使用两个 `--setfield` 命令：第一个将 ''_canonical_uri'' 字段设置为从条目的标题派生的URI，第二个清除 text 字段。
+
+```
+--setfield [is[image]] _canonical_uri $:/core/templates/canonical-uri-external-image text/plain
+--setfield [is[image]] text "" text/plain
+```
+
+模板条目 [[$:/core/templates/canonical-uri-external-image]] 包含：
+<pre>
+
+<$view tiddler="$:/core/templates/canonical-uri-external-image" field="text" format="text"/>
+
+</pre>
+
+请注意，这些操作会修改维基存储区中的条目，因此可能会影响后续命令的操作。
+
+!! 使用外部图像
+
+您不能直接在浏览器中编辑外部图像，除了更改URI字段指向不同的图像。

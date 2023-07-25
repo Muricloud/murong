@@ -1,0 +1,79 @@
+created: 20210107162152107
+modified: 20220714043634593
+tags: XP-tutorials [[Shell Script]]
+title: deploy2gitee.sh
+tmap.id: 0c4f96c8-5488-4c8e-a69e-7b370180ee5c
+
+```bash
+#!/usr/bin/env bash
+# deploy.sh
+
+USERNAME='呆瓜'
+REPOSITORYNAME='mywiki'
+SOURCE='https://gitee.com/呆瓜/mywiki'
+WIKIPATH='/DATA/TW/wikiSites/mywiki'
+SUBMODULE1='mywiki-private'
+SUBDIR1='tiddlers/private'
+SUBMODULE2='mywiki-journals'
+SUBDIR2='tiddlers/journals'
+SUBMODULE3='mywiki-images'
+SUBDIR3='tiddlers/images'
+
+# If a command fails then the deploy stops
+set -e
+
+printf "\033[0;32mDeploying updates to Gitee...\033[0m\n"
+
+# PUSH
+#--------------------------------------
+# Commit Message
+msg="Initial commit"
+if [ -n "$*" ]; then
+    msg="$*"
+fi
+#--------------------------------------
+# 子仓库：一
+echo -e "\n\033[0;31;1m++ $SUBMODULE1\033[0m"
+cd $WIKIPATH/$SUBDIR1
+git add .
+git commit -m "$msg"
+git gc --prune=now
+git push origin master
+# 二
+echo -e "\n\033[0;31;1m++ $SUBMODULE2\033[0m"
+cd $WIKIPATH/$SUBDIR2
+git add .
+git commit -m "$msg"
+git gc --prune=now
+git push origin master
+# 三
+echo -e "\n\033[0;31;1m++ $SUBMODULE3\033[0m"
+cd $WIKIPATH/$SUBDIR3
+git add .
+git commit -m "$msg"
+git gc --prune=now
+git push origin master
+#--------------------------------------
+# 主仓库
+echo -e "\033[0;31;1m+ $USERNAME/$REPOSITORYNAME\033[0m"
+cd $WIKIPATH
+##
+# Build html
+# echo -e "\033[0;31;1m--build index.html\033[0m"
+# bash build.sh
+##
+# Add changes to git
+git add .
+# Commit changes
+git commit -m "$msg"
+# Cleanup unnecessary files and optimize the local repository
+git gc --prune=now
+# Update the remote repository
+git push origin master
+#--------------------------------------
+echo -e "\033[0;32mDone!\033[0m"
+
+echo -e "\n\033[0;33mGitee Pages\033[0m: \033[0;34mhttps://gitee.com/$USERNAME/$REPOSITORYNAME/pages\033[0m"
+echo -e "Please go to Gitee to update the site manually!\nSee also: https://gitee.com/help/articles/4136#article-header0"
+
+```

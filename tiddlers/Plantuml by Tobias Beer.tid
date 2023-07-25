@@ -1,0 +1,13 @@
+caption: Plantuml
+created: 20210630014209266
+modified: 20220819085711302
+tags: [[Community Plugins]] [[Plugin Card]] Charts Diagrams XP-tutorials
+title: Plantuml by Tobias Beer
+tmap.id: 29ebab4f-bd29-430a-8ba5-ce059850153a
+url: https://tobibeer.github.io/tw5-plugins/#plantuml
+
+{{!!url}}
+
+Render plantuml diagrams online as image or text
+
+* $:/plugins/tobibeer/plantuml

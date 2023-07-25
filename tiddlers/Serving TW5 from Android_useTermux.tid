@@ -1,0 +1,53 @@
+caption: Termux 使用技巧
+created: 20211217083339501
+modified: 20211217084736953
+tags: [[TiddlyWiki on Node.js]] XP-tutorials
+title: Serving TW5 from Android/useTermux
+tmap.id: 21378d9a-e332-41e6-b66a-5ead6d80e7e5
+type: text/vnd.tiddlywiki
+
+* [[Termux 高级终端安装使用配置教程|https://www.sqlsec.com/2018/05/termux.html]]
+
+!!! 基本操作
+
+* ''长按屏幕''：显示菜单项（包括复制、粘贴、更多）
+* ''会话管理''：左边右滑显示隐藏式导航栏，可以新建、切换、重命名会话session和调用弹出输入法
+
+!!! 常用按键
+
+[img[https://image.3001.net/images/20200418/15872018464605.png]]
+
+按键栏提供了PC端常用的按键，如: ESC键、Tab键、CTR键、ALT键等，可以提高操作效率。使用快捷键 `音量+`+`Q键`（或者`K键`）隐藏或者显示按键栏。
+
+* `Ctrl + A` -> 将光标移动到行首
+* `Ctrl + C` -> 中止当前进程
+* `Ctrl + D` -> 注销终端会话
+* `Ctrl + E` -> 将光标移动到行尾
+* `Ctrl + K` -> 从光标删除到行尾
+* `Ctrl + U` -> 从光标删除到行首
+* `Ctrl + L` -> 清除终端
+
+`音量加键`也可以作为产生特定输入的`特殊键`：
+
+* `音量加 + W` -> 向上箭头键
+* `音量加 + A` -> 向左箭头键
+* `音量加 + S` -> 向下箭头键
+* `音量加 + D` -> 向右箭头键
+* `音量加 + P` -> 上一页
+* `音量加 + N` -> 下一页
+
+!!! 基本命令
+
+Termux 除了支持 `apt` 命令外，还在此基础上封装了`pkg` 命令，`pkg` 命令向下兼容 `apt` 命令。
+
+```bash
+pkg search <query>              # 搜索包
+pkg install <package>           # 安装包
+pkg uninstall <package>         # 卸载包
+pkg reinstall <package>         # 重新安装包
+pkg update                      # 更新源
+pkg upgrade                     # 升级软件包
+pkg list-installed              # 列出已经安装的包
+pkg show <package>              # 显示某个包的详细信息
+pkg files <package>             # 显示某个包的相关文件夹路径
+```

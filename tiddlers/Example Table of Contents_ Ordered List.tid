@@ -1,0 +1,11 @@
+caption: 有序列表
+created: 20211209054937842
+modified: 20211209055311179
+order: 0
+tags: 中 TiddlyWiki XP-tutorials 常用目录宏
+title: Example Table of Contents: Ordered List
+tmap.id: e3069206-04d9-4259-99b0-e80528e6b493
+
+<$macrocall $name=".example" n="1"
+eg="""<<toc "Contents">>
+"""/>

@@ -1,0 +1,36 @@
+caption: {{$:/xp/images/aggregation}} 构建知识体系
+created: 20210630063348796
+modified: 20220626111335758
+tags: XP-tutorials 新手入门指南
+title: Building a Knowledge System
+tmap.id: 80a27b7d-7e7b-4d2c-ba8d-bf0c8cd0dd28
+type: text/vnd.tiddlywiki
+
+为了更加方便地构建知识体系，XP 中包含以下聚合主题：
+
+|<<.icon $:/xp/images/intelligence>> [[知识体系图|MAP OF KNOWLEDGE SYSTEM]] |使用 TiddlyMap 罗列构建一个知识体系所需学习的知识（通常为图书和视频课程）。范例：[[计算机科学核心知识体系]] |
+|<<.icon $:/xp/images/bookshelf>> [[BOOKSHELF]] |管理图书内容 |
+|<<.icon $:/xp/images/courses>> [[COURSES]] |管理视频课程 |
+|<<.icon $:/xp/images/guide>> [[HOWTOs]] |记录操作指南 |
+|<<.icon $:/xp/images/why>> [[WHYs]] |记录因果问题 |
+
+还有一些其他聚合主题：
+
+|<<.icon $:/xp/images/done>> [[GettingThingsDone]] |任务管理工具（强烈推荐使用） |
+|<<.icon $:/xp/images/aphorism>> [[APHORISM]] |记录文本片段（强烈推荐使用） |
+|<<.icon $:/xp/images/people>> [[PEOPLE]] |记录人物 |
+|<<.icon $:/xp/images/programs>> [[SOFTWARE]] |收集自己需要的软件 |
+|<<.icon $:/xp/images/plugin>> [[PLUGINS]] |收集和管理自己的 TiddlyWiki 插件 |
+|<<.icon $:/xp/images/wikitext>> [[SNIPPETS]] |记录常用的 WikiText 代码片段 |
+|<<.icon $:/xp/images/consumer>> [[CONSUMER]] |记录消费者问题 |
+|<<.icon $:/xp/images/enterprises>> [[ENTERPRISES]] |记录企业 |
+|<<.icon $:/xp/images/checklist>> [[CHECKLIST]] |创建检查清单 |
+
+
+<div class="blue-box">
+
+不需要的聚合主题，可以禁用或删除：
+
+<<list-links "[plugin-type[plugin]prefix[$:/plugins/xp/aggregation]sort[]]">>
+
+</div>

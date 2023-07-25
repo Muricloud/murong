@@ -1,0 +1,13 @@
+caption: KaTeX
+created: 20210619145844751
+modified: 20220819083026035
+moscow: S
+tags: [[Plugin Card]] OfficialPlugins XP-tutorials
+title: KaTeX Plugin
+tmap.id: 38dd0d1c-798f-4c40-9460-8516daa2e6b1
+
+[ext[https://tiddlywiki.com/plugins/tiddlywiki/katex|plugins/tiddlywiki/katex]]
+
+This plugin adds the ability to display mathematical notation written in ~LaTeX.
+
+* $:/plugins/tiddlywiki/katex

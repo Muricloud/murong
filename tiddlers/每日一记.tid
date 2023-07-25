@@ -1,0 +1,30 @@
+caption: {{$:/xp/images/daily}} 每日一记
+created: 20210321133303054
+modified: 20220904035836340
+tags: XP-tutorials 新手入门指南
+title: 每日一记
+tmap.id: 75f4046c-ebde-4731-8967-ef0c277110b7
+
+<<.icon $:/xp/images/diary>>[[Diary|$:/plugins/xp/diary]] 在边栏中提供了一个日记列表。以及 $:/DailyNotes 进行每日一记。
+
+!! 新建日记
+
+* 该按钮会自动为日记条目添加 `class="journal"`。（见 $:/xp/diary/Stylesheet/journal）
+* 根据个人喜好，自定义标题格式（[[DateFormat|https://tiddlywiki.com/static/DateFormat.html]]），编辑 $:/config/NewJournal/Title：<div>
+
+|!日期格式 |!输出效果 |!备注 |
+|`DDth MMM YYYY` |14th April 2022 |英文默认 |
+|`YYYY年0MM月0DD日` |2022年04月14日 |中文默认 |
+|`YYYY0MM0DD` |20220414 | |
+|`YYYY/0MM/0DD` |2022/04/14 | |
+|`YYYY-0MM-0DD` |2022-04-14 | |
+</div>
+
+!! 加密日记
+
+* 「加密日记」是加密带有 `Journal` 标签的所有非系统条目。注意，解密时可以不用输入「确认密码」。
+* 「加密私密日记」则是加密所有日记中含有标签 `Private` 的条目。
+
+!! 卡片视图
+
+* 以卡片的形式浏览或搜索日记。

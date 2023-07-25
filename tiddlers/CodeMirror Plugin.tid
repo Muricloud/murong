@@ -1,0 +1,21 @@
+caption: CodeMirror
+created: 20210619144844794
+modified: 20220819082816277
+moscow: M
+tags: [[Plugin Card]] OfficialPlugins XP-tutorials
+title: CodeMirror Plugin
+tmap.id: 23d3f7f2-7d36-4a09-b27e-be722de9f3d1
+
+The CodeMirror plugin adds a sophisticated web-based editor to TiddlyWiki.
+
+See [ext[https://tiddlywiki.com/plugins/tiddlywiki/codemirror|plugins/tiddlywiki/codemirror]] for a demo.
+
+* $:/plugins/tiddlywiki/codemirror
+** $:/plugins/tiddlywiki/codemirror-autocomplete
+** $:/plugins/tiddlywiki/codemirror-closebrackets
+** $:/plugins/tiddlywiki/codemirror-closetag
+** $:/plugins/tiddlywiki/codemirror-mode-css
+** $:/plugins/tiddlywiki/codemirror-mode-markdown
+** $:/plugins/tiddlywiki/codemirror-mode-xml
+** $:/plugins/tiddlywiki/codemirror-search-replace
+** ~~~CodeMirror Fullscreen~~

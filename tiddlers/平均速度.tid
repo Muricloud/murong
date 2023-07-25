@@ -1,0 +1,16 @@
+created: 20230626140920033
+modified: 20230626142303191
+title: 平均速度
+tmap.id: 1c2e73e9-e653-4880-a6f9-57934dfbc661
+
+''平均速度公式：''
+<div class="red-box" style="width: 200px; margin: 0 auto;">{{平均速度公式}}</div>
+
+''也可以写成：''
+<div class="red-box" style="width: 200px; margin: 0 auto;">$$
+\overline{v} = \frac{ \Delta x}{ \Delta
+ t}
+$$</div>
+
+<br>
+''平均速度'' 等于物体在一段时间内的位移除以该时间。

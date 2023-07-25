@@ -1,0 +1,50 @@
+caption: 条目的字段
+created: 20130825213300000
+modified: 20200901042844570
+tags: 中 Concepts TiddlyWiki
+title: TiddlerFields
+tmap.id: 52d86236-42b6-4ef5-8123-5ea9d14a102c
+type: text/vnd.tiddlywiki
+
+\define lingo-base() $:/language/Docs/Fields/
+
+! 条目的字段
+
+TiddlerFields（条目的字段）是构成[[条目|Tiddlers]]的“名:值”对。 字段名称必须是小写字母、数字或字符`-`（短划线）、`_`（下划线）和`.` （句点）。
+
+标准字段：
+
+|!字段名 |!参见 |!描述 |
+|`title` |TitleField |<<lingo title>> |
+|`text` |TextField |<<lingo text>> |
+|`modified` |ModifiedField |<<lingo modified>> |
+|`modifier` |ModifierField |<<lingo modifier>> |
+|`created` |CreatedField |<<lingo created>> |
+|`creator` |CreatorField |<<lingo creator>> |
+|`tags` |TagsField |<<lingo tags>> |
+|`type` |TypeField |<<lingo type>> |
+|`list` |ListField |<<lingo list>> |
+|`caption` |CaptionField |<<lingo caption>> |
+
+内核使用的其他字段：
+
+|!字段名 |!参见 |!描述 |
+|`color` |ColorField |<<lingo color>> |
+|`description` |DescriptionField |<<lingo description>> |
+|`draft.of` |DraftOfField |<<lingo draft.of>> |
+|`draft.title` |DraftTitleField |<<lingo draft.title>> |
+|`footer` |FooterField |<<lingo footer>> |
+|`library` |LibraryField |<<lingo library>> |
+|`name` |NameField |<<lingo name>> |
+|`plugin-priority` |PluginPriorityField |<<lingo plugin-priority>> |
+|`plugin-type` |PluginTypeField |<<lingo plugin-type>> |
+|`source` |SourceField |<<lingo source>> |
+|`subtitle` |SubtitleField |<<lingo subtitle>> |
+
+TiddlyWebAdaptor（Tiddly网络适配器）使用的一些字段：
+
+|!字段名 |!参见 |!描述 |
+|`bag` |BagField |<<lingo bag>> |
+|`revision` |RevisionField |<<lingo revision>> |
+
+请参阅[[控制面板|$:/ControlPanel]]{{$:/core/images/options-button}}的''信息>高级>条目栏位''选项卡，详细了解本维基中使用的字段。

@@ -1,0 +1,40 @@
+caption: tabs Macro
+created: 20211209063119561
+modified: 20220716083909629
+tags: XP-tutorials 调用内置宏
+title: 调用内置宏/tabs Macro
+tmap.id: e0580074-75d3-4cc1-b10f-4d6699162b46
+
+<div class="gray-box">
+
+[[tabs Macro]] 将[[条目选集|Title Selection]]呈现为用户可以在其间切换的一组选项卡。定义在 $:/core/macros/tabs 中。常用格式为：
+
+: `<<tabs "tabsList" "default" "state" "class">>`
+
+* ''tabsList''：选项卡列表。可以是一个[[标题选集|Title Selection]]，或者一个[[过滤器|Filters]]。
+* ''default''：默认选中的选项卡
+* ''state''：记录选项卡的选中状态
+* ''class''：缺省值显示为水平选项卡；填入 `tc-vertical` 可以显示为垂直选项卡
+
+</div>
+
+!! 代码实例
+
+{{tabs Macro (Examples)}}
+
+
+!! 使用模板
+
+自定义选项卡中条目的呈现方式：
+
+<$macrocall $name=".example" n="1"
+eg="""<$list filter="[tag[GTD]!has[draft.of]!sort[created]limit[1]]">
+<$macrocall
+  $name="tabs"
+  tabsList="[tag[GTD]!has[draft.of]!sort[created]]"
+  default={{!!title}}
+  template="$:/templates/tabs"
+  class="tc-vertical"
+/>
+</$list>
+"""/>

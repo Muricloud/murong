@@ -1,0 +1,13 @@
+caption: Tiddlytime
+created: 20210620040457050
+modified: 20220819085818877
+tags: [[Community Plugins]] [[Plugin Card]] XP-tutorials
+title: Tiddlytime Button
+tmap.id: c1107c0f-c7d7-4d9d-8448-3f885bfd90fa
+url: http://tiddlytime.tiddlyspot.com/
+
+{{!!url}}
+
+TiddlyTime Button - for current time and transcluding it where needed
+
+* $:/plugins/ajh/tiddlytime

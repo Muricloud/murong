@@ -1,0 +1,194 @@
+created: 20210512031754689
+modified: 20220904050539230
+tags: XP-tutorials 新手入门指南
+title: 开发插件
+tmap.id: bdf0e413-3035-4a81-8337-ea34fdf9e047
+
+当在 TiddlyWiki 中添加自定义功能时，不妨将其开发为插件。单文件版本中可以使用 [[Gatha Studio Workspace]] 进行插件开发。我习惯在 [[Server 版|TiddlyWiki on Node.js]]上进行开发，开发好后一键导出就可以放到单文件版本中了。
+
+插件通常具有 `$:/plugins/<publisher>/<name>` 形式的标题。 作为 TiddlyWiki 核心组成部分发行的插件具有 `$:/plugins/tiddlywiki/<name>` 形式的标题。参阅 [[PluginMechanism|https://tiddlywiki.com/static/PluginMechanism.html]]。
+
+「纸上得来终觉浅，绝知此事要躬行」，让我们通过创建一个测试插件，来对插件有一个感性的认知。
+
+! 创建一个测试插件
+
+<div class="gray-box">
+
+* 一个名叫 test 的人 ，创建了一个名叫 ~GetPlugins 的插件。
+* 该插件将 [[AddPlugins|$:/core/ui/ControlPanel/Plugins/AddPlugins]] 制作为页面工具栏按钮 <<tag "$:/tags/PageControls">>。
+* 该插件使用 [[MIT 开源软件许可协议|https://spdx.org/licenses/MIT]]。
+
+</div>
+
+
+!! 1. 创建开发环境
+
+* `cd /DATA/TW` 进入工作目录
+* `tiddlywiki dev --init server` 以 server 为模板创建 dev
+* `tiddlywiki dev --listen` 启动 dev，浏览器中访问 http://127.0.0.1:8080/
+* 设置文件存储到文件系统时的归类规则（[[Customising Tiddler File Naming|https://tiddlywiki.com/static/Customising%2520Tiddler%2520File%2520Naming.html]]），新建条目 $:/config/FileSystemPaths：<div>
+
+```
+[is[system]!has[draft.of]removeprefix[$:/]addprefix[_system/]]
+[is[draft]search-replace:g:regexp[/|\\],[_]addprefix[drafts/]]
+[!tag[externalnote]addprefix[wiki/]]
+```
+</div>
+* <kbd>ctrl-C</kbd> 关闭 dev
+
+
+!! 2. 开发插件
+
+!!!.v 创建插件文件夹
+
+>「[[自定义插件库|Node.js 下安装自定义插件]]」的位置为 `/DATA/TW/MyPluginStore`。
+
+首先创建一个插件文件夹（PluginFolders）：
+
+```bash
+cd /DATA/TW/MyPluginStore
+# <publisher>
+mkdir test
+cd test
+# <name>
+mkdir getplugins
+cd getplugins
+```
+
+使用 {{extlink/code}} 创建 plugin.info 文件，其中包含了插件的元数据。`code plugin.info`：
+
+```json
+{
+	"title": "$:/plugins/test/getplugins",
+	"name": "GetPlugins",
+	"description": "Quick access to the online plugins",
+	"list": "readme license",
+	"source": "https://github.com/test/tw5-getplugins",
+	"version": "0.0.1",
+	"core-version": ">=5.0.0",
+	"plugin-type": "plugin",
+	"parent-plugin": "",
+	"dependents": "",
+	"type": "application/json",
+	"author": "test",
+	"created": "20210515074733403",
+	"modified": "20210515074733403"
+}
+```
+
+> 关于插件的字段，请参阅 [[Plugin Fields|https://tiddlywiki.com/static/Plugin%2520Fields.html]]
+
+
+!!!.v 编写插件内容
+
+向开发环境中添加该插件 `cd /DATA/TW && vim dev/tiddlywiki.info`：
+
+```
+    "plugins": [
+        "tiddlywiki/tiddlyweb",
+        "tiddlywiki/filesystem",
+        "tiddlywiki/highlight",
+        "test/getplugins"
+    ],
+```
+
+启动 dev：
+
+```
+tiddlywiki dev --listen
+```
+
+此时 $:/plugins/test/getplugins 内容为空。
+
+现在，新建下面的条目，编写插件内容：
+
+* $:/plugins/test/getplugins/button
+* $:/plugins/test/getplugins/icon
+* $:/plugins/test/getplugins/readme
+* $:/plugins/test/getplugins/license
+* $:/plugins/test/getplugins/history
+
+> [[license|LICENSE]] 放在源代码仓库中，插件里放一个链接即可。关于版本日志（history / changelog），可以参照 [[TiddlyWiki Releases|https://tiddlywiki.com/static/TiddlyWiki%2520Releases.html]]，放到展示文件中。
+> 使用[[过滤|Filters]]可以查看最近修改过的条目，比如最近两天：`[days[-2]has[modified]!sort[modified]!prefix[$:/state]!prefix[$:/temp]]`
+
+<kbd>ctrl-C</kbd> 关闭 dev。
+
+将插件条目拷贝到插件文件夹：
+
+```bash
+rsync -avzuP ./dev/tiddlers/_system/plugins/test/getplugins/ ./MyPluginStore/test/getplugins
+```
+
+前期主要关注功能的实现，功能实现以后要审核代码质量，改进代码。
+
+新建的插件条目可能会包含一些多余的字段，推荐删除。比如：
+
+```json
+created: 20210513030957469
+creator: test
+modified: 20210514142402497
+modifier: test
+tags: 
+type: text/vnd.tiddlywiki
+```
+
+<div class="gray-box">
+
+!!! 这些字段为何多余？
+
+* 插件的创建和修改信息，放到 plugin.info 文件中即可，插件条目中含有这些字段纯属多余；
+* 此处的 `tags` 字段值明显为空，没有必要保留；
+* TiddlyWiki5 默认的文件类型就是 `text/vnd.tiddlywiki`，所以可以省略。
+
+!!! 快速删除时间信息
+
+可以制作一个按钮：
+
+```
+<$button> deletefield created/modified
+<$action-confirm $message="Are you sure to execute?">
+<$action-setfield $tiddler="$:/config/TimestampDisable" $value="yes"/>
+<$list filter="[[$:/plugins/test/getplugins]plugintiddlers[]]" variable="listItem">
+<$action-deletefield $tiddler=<<listItem>> created modified/>
+</$list>
+<$action-setfield $tiddler="$:/config/TimestampDisable" $value="no"/>
+</$action-confirm>
+</$button>
+```
+
+</div>
+
+除了条目的字段，代码内容可能也需要精简。比如，一个 SVG 图片就可以参照 $:/core/images/home-button 精简代码。
+
+精简代码后，不仅使代码更加简洁易读，也使插件体积变小了。
+
+
+!!!.v 测试
+
+插件开发完毕后，需要进行测试，确定该插件与 TiddlyWiki 和其他插件是兼容的。
+
+```bash
+# 在空白版本中测试
+tiddlywiki test --init server
+tiddlywiki +plugins/test/getplugins test --listen
+
+# 在插件版本中测试
+tiddlywiki fulltest --init full
+# 添加自定义插件库中的所有插件并测试
+vim fulltest/tiddlywiki.info
+tiddlywiki fulltest --listen
+```
+
+此时，发现一个 bug，按钮在 [[Tools|$:/core/ui/SideBar/Tools]] 中没有解释文字。参考其他按钮参加即可。
+
+
+!! 3. 上传到代码托管平台
+
+为了维护插件，将代码放到[[代码托管平台|代码托管平台产品配额]]上。比如，到 GitHub 上创建仓库 tw5-getplugins。
+
+
+! More information
+
+* [[Developers]]
+* https://tiddlywiki.com/dev/ == `tiddlywiki --editions | grep dev`
+* [[Developing plugins using Node.js and GitHub|https://tiddlywiki.com/dev/#Developing%20plugins%20using%20Node.js%20and%20GitHub]]

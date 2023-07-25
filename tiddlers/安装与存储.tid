@@ -1,0 +1,44 @@
+caption: {{$:/images/fa5/brands/linux}} 安装与存储
+created: 20200828175646861
+modified: 20230301142137397
+tags: XP-tutorials 新手入门指南
+title: 安装与存储
+tmap.id: bbf02ee9-18d4-4ae7-9bc3-0b0b7d243c78
+
+[[使用 TiddlyWiki 的第一条规则|The First Rule of Using TiddlyWiki]]
+
+!! 单文件版
+
+* 下载：{{download empty edition}}
+* 保存 ~TiddlyWiki：
+** 使用 [[Timimi|https://github.com/ibnishak/Timimi/releases]]，参阅[[安装方法|Installing Timimi]]。
+** 使用 [[TiddlyDesktop|https://github.com/Jermolene/TiddlyDesktop]]（[[使用 TiddlyDesktop 遇到的问题]]）
+** 其他：参阅官方 [[Saving|https://tiddlywiki.com/#Saving]]
+* [[版本升级|Upgrading]]
+* [[管理插件（单文件版）]]
+* 存储方案：
+** 将维基存储在 [[CODING|https://coding.net/]] / [[Gitee|https://gitee.com/]] 等[[代码托管平台|关于代码托管平台]]。（[[代码托管平台产品配额]]）
+**> HTML 单文件版本允许用户直接 [[Saving to a Git service|https://tiddlywiki.com/static/Saving%2520to%2520a%2520Git%2520service.html]]。比如配置了 GitHub 后，点击保存按钮就会将文件直接上传到 GitHub。<br>但大家不要浪费时间尝试这种方法！因为这种方法需要保证时刻联着网，断网你就不能保存。况且，每次保存都上传，似乎也挺没必要的。<br>推荐直接使用 [[Git]] 软件来管理，手动控制上传。
+** 或者利用 [[Syncthing]] 这样的 P2P（[[对等网络]]）文件同步工具，在手机和电脑之间同步维基。（可借助其他云同步笔记先收集资料）
+**> 存储容量为 128G 的手机，存储 20G 维基笔记应该没有压力。
+** 使用[[坚果云|https://www.jianguoyun.com/]]等网盘，进行数据备份。
+
+
+!! 服务器版（推荐）
+
+* 电脑端：
+** 使用[[太记（太微桌面版）|https://github.com/tiddly-gittly/TidGi-Desktop/releases]]（[[太微中文教程|https://tw-cn.netlify.app/]]）
+** [[在 Node.js 上安装 TiddlyWiki|TiddlyWiki on Node.js]]
+* 手机端：[[Node.js on Termux|Serving TW5 from Android]]
+* 存储方案：
+** 将维基存储在 [[CODING|https://coding.net/]] / [[Gitee|https://gitee.com/]] 等[[代码托管平台|关于代码托管平台]]。
+** 或者利用 [[Syncthing]] 这样的 P2P（[[对等网络]]）文件同步工具，在手机和电脑之间同步维基。（可借助其他云同步笔记先收集资料）
+** 使用[[坚果云|https://www.jianguoyun.com/]]等网盘，进行数据备份。
+* 搭配方案：
+** TiddlyWiki 维基软件 + [[Hugo]] 静态网站 ([[Online Course Template|https://hugo-online-course.netlify.app/]]) + Coding 代码托管，可以相互搭配。
+
+
+!! 存储方案示例：
+
+* [[将维基存储到 Coding]]（推荐）
+* [[将维基存储到 Gitee]]

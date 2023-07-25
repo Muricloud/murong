@@ -1,0 +1,63 @@
+created: 20230716132715171
+modified: 20230716141926791
+title: 函数的对称
+tmap.id: d79eb703-34fa-4c51-9f9a-7d9c4fa377e4
+
+''关于 $$y$$ 轴对称<br>''
+<mark class="mark-red">$$f(x)$$ 与 $$f(-x)$$ </mark><br><br>
+$$f(x)=(x-2)^2$$ ,那么$$f(-x)$$的解析式是 $$(\quad \quad \quad)$$<br>
+<$details summary="画图" open="no">
+
+<<codes src:"""
+f_{1}:y=(x-2)^2
+f_{2}:f_{1}(-x)
+""">>
+
+$$f(x)=2x^2-3x+4$$ 的函数图像<br> 
+和 $$f(-x)$$ 的函数图像<br>
+<<codes src:"""f_{1}:y=2x^2-3x+4
+f_{2}:f_{1}(-x)
+""">>
+
+</$details>
+
+
+<br>
+''关于 $$x$$ 轴对称<br>''
+<mark class="mark-red">$$f(x)$$ 与 $$-f(x)$$ </mark><br><br>
+$$f(x)=(x-2)^2$$ ,那么$$-f(x)$$的解析式是 $$(\quad \quad \quad)$$<br>
+
+<$details summary="画图" open="no">
+
+<<codes src:"""
+f_{1}:y=(x-2)^2
+f_{2}:-f_{1}(x)
+""">>
+
+$$f(x)=2x^2-3x+4$$ 的函数图像<br> 
+和 $$-f(x)$$ 的函数图像<br>
+<<codes src:"""f_{1}:y=2x^2-3x+4
+f_{2}:-f_{1}(x)
+""">>
+
+</$details>
+
+
+<br>
+''关于原点对称<br>''
+<mark class="mark-red">$$f(x)$$ 与 $$-f(-x)$$ </mark><br><br>
+$$f(x)=(x-2)^2$$ ,那么$$-f(-x)$$的解析式是 $$(\quad \quad \quad)$$<br>
+<$details summary="画图" open="no">
+
+<<codes src:"""
+f_{1}:y=(x-2)^2
+f_{2}:-f_{1}(-x)
+""">>
+
+$$f(x)=2x^2-3x+4$$ 的函数图像<br> 
+和 $$-f(-x)$$ 的函数图像<br>
+<<codes src:"""f_{1}:y=2x^2-3x+4
+f_{2}:-f_{1}(-x)
+""">>
+
+</$details>

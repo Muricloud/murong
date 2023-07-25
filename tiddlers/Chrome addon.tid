@@ -1,0 +1,9 @@
+created: 20200426211923076
+modified: 20200901042808892
+tags: [[Installing Timimi]] XP-tutorials
+title: Chrome addon
+tmap.id: f3644603-ca6b-406c-a0c8-8f036c1260bd
+
+* 在 [ext[Chrome Web Store|https://chrome.google.com/webstore/detail/timimi/mnggafnmmhdoplbffagjihajeeikgbcg]] 中安装 Timimi 扩展
+* 打开 chrome 浏览器中的 More Tools > Extensions > Timimi > Details
+* 勾选 ''Allow access to file URLs''。

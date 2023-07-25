@@ -1,0 +1,18 @@
+caption: 格式化
+created: 20131205155959399
+modified: 20210419091734338
+tags: 中 WikiText TiddlyWiki
+title: Formatting in WikiText
+tmap.id: 2b2dac9d-d8d1-4d02-9363-4074d6026dc4
+type: text/vnd.tiddlywiki
+
+可用的字符格式包括：
+
+* <code>&#96;反引号&#96;</code> 用于 `代码块` (<<.icon $:/core/images/mono-line>>)
+** 另外， <code>&#96;&#96;双反引号允许 &#96;插入&#96; 反引号&#96;&#96;</code>
+* `''两个英文单引号''` 用于 ''粗体文本''  (<<.icon $:/core/images/bold>>)
+* `//两个斜杠//` 用于 //斜体文本// (<<.icon $:/core/images/italic>>)
+* `__两个英文下划线__` 用于 __下划线文本__ (<<.icon $:/core/images/underline>>)
+* `^^两个英文上角符号^^` 用于 ^^上标^^ 文本 (<<.icon $:/core/images/superscript>>)
+* `,,两个英文逗号,,` 用于 ,,下标,, 文本 (<<.icon $:/core/images/subscript>>)
+* `~~两个波浪线~~` 用于 ~~带删除线~~ 文本 (<<.icon $:/core/images/strikethrough>>)

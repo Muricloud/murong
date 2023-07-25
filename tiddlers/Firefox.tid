@@ -1,0 +1,16 @@
+caption: {{fa-firefox}} Firefox
+color: blue
+created: 20210921095413517
+description: Firefox Browser — Fast, Private & Free — from Mozilla
+icon: fa-firefox
+modified: 20220819092442985
+moscow: S
+purpose: 浏览网页
+revision: 0
+tags: Linux 浏览器 macOS Windows Examples [[Should have]] Software
+title: Firefox
+tmap.id: cd47b695-6cfc-48ef-a8c9-8db8d2443f5c
+type: text/vnd.tiddlywiki
+url: https://www.mozilla.org/en-US/firefox/new/
+
+{{!!description}}

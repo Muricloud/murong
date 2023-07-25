@@ -1,0 +1,101 @@
+created: 20230627104010329
+modified: 20230628072759107
+tags: 
+title: 常见的位移时间图像（基础版）
+tmap.id: f0519bb3-ca30-435c-86dd-65e0a7eeb74e
+
+<$details summary="例题1" open="no">
+<div style="width:300px">
+[img[常见位移时间图像辨析1.png]]
+</div>
+看图回答下面问题：<br>
+AB、BC、CD、DE、EF五段运动。<br>
+1、匀速直线运动<br>
+2、静止<br>
+3、速度相等<br>
+4、速度方向改变<br>
+5、速度最大<br>
+<$details summary="答案" open="no">
+AB、BC、CD、DE、EF五段运动。<br>
+1、匀速直线运动：AB、CD、DE、EF<br>
+2、静止：BC<br>
+3、速度相等：AB=EF、CD=DE<br>
+4、速度方向改变: CD、EF<br>
+5、速度最大: AB、EF<br>
+
+
+</$details>
+<$details summary="代码" open="no">
+<<codes src:"""A=(0,0)
+B=(2,4)
+C=(6,4)
+D=(10,0)
+E=(14,-4)
+F=(16,0)
+a=Segment(A,B)
+b=Segment(B,C)
+c=Segment(C,D)
+d=Segment(D,E)
+e=Segment(E,F)
+ShowLabel(a,false)
+ShowLabel(b,false)
+ShowLabel(c,false)
+ShowLabel(d,false)
+ShowLabel(e,false)
+""">>
+</$details>
+</$details>
+<$details summary="例题2" open="no">
+
+
+<div style="width:300px">
+[img[位移时间图像比较速度大学.png]]
+</div>
+看图回答下面问题：<br>
+AB、BC、CD、EF四段运动。<br>
+速度大小怎么排序？
+<$details summary="答案" open="no">
+AB<BC<CD<EF
+</$details>
+<$details summary="代码" open="no">
+<<codes src:"""A=(0,0)
+B=(4,4)
+C=(6,8)
+D=(8,14)
+E=(8,2)
+F=(10,-6)
+a=Segment(A,B)
+b=Segment(B,C)
+c=Segment(C,D)
+e=Segment(E,F)
+ShowLabel(a,false)
+ShowLabel(b,false)
+ShowLabel(c,false)
+ShowLabel(e,false)
+""">>
+</$details>
+
+</$details>
+<$details summary="例题3" open="no">
+
+<div style="width:300px">
+[img[位移时间图像里面三个点的速度比较.png]]
+</div>
+看图回答下面问题：<br>
+A,B,C三个点的速度大小比较？
+<$details summary="答案" open="no">
+$$v_A<v_B<v_C$$<br>
+<$details summary="三个点的速度是瞬时速度还是平均速度？" open="no">
+瞬时速度。	求一点的速度都是瞬时速度,因为点是没有尺寸大小的，相当于无穷小。
+</$details>
+</$details>
+<$details summary="代码" open="no">
+<<codes src:"""f:y=x^2 (x>0)
+A=(2,f(2))
+B=(3,f(3))
+C=(4,f(4))
+ShowLabel(f,false)
+""">>
+</$details>
+</$details>
+

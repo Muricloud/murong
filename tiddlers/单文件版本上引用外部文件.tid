@@ -1,0 +1,102 @@
+caption: 单文件版本
+created: 20210421132959183
+modified: 20210711145058388
+tags: XP-tutorials
+title: 单文件版本上引用外部文件
+tmap.id: e3221796-bd13-4de9-b9a7-16a346de6594
+
+导入大量「大体积条目」（比如图像、PDF文档等）会显著减慢 TiddlyWiki 的[[性能|Performance]]。所以这些大文件最好放在 HTML 文档外部，然后进行引用。
+
+下面将根据文件类型来介绍，如何引用本地文件。（网络文件使用其网址即可）
+
+@@color:Green;在 HTML 文件旁边创建存储文件夹，将文件进行分类存储@@，比如：
+
+```bash
+ext
+├── audio
+├── doc  # documents
+├── img  # images
+├── other
+├── prog # program
+└── video
+```
+
+
+! 引用图片
+
+第一种方式，使用相对路径直接引用： 
+
+```html
+[img width=64 [一个解释性的提示|ext/img/sample.jpg]]
+```
+
+第二种方式，创建[[外部引用条目]]进行引用：
+
+* 新建一个条目：[[sample.jpg]]
+* 选择[[内容的类型|ContentType]]为：`image/jpeg`
+* 添加 `_canonical_uri` 字段，值为：`ext/img/sample.jpg`
+
+```html
+{{sample.jpg}}
+[img width=64 [一个解释性的提示|sample.jpg]]
+```
+
+
+! 引用 PDF
+
+第一种方式，使用相对路径直接引用，让浏览器打开文件：
+
+```html
+[ext[Open file|ext/doc/sample.pdf]]
+```
+
+第二种方式，创建[[外部引用条目]]进行引用：
+
+* 新建一个条目：[[sample.pdf]]
+* 选择[[内容的类型|ContentType]]为：`application/pdf`
+* 添加 `_canonical_uri` 字段，值为：`ext/doc/sample.pdf`
+
+```html
+{{sample.pdf}}
+[[一个解释性的提示|sample.pdf]]
+```
+
+> 参阅 [[如何嵌入 PDF 和其他文件|How to embed PDF and other documents]]
+
+
+! 引用音频和视频
+
+第一种方式，使用 HTML 语法直接引用：
+
+{{引用音频和视频文件的简洁写法}}
+
+> 详细内容访问 [[音频|Audios in WikiText]] 和 [[视频|Videos in WikiText]]。
+
+第二种方式，创建[[外部引用条目]]进行引用：
+
+* 新建条目：[[sample.mp3|]] 或者 [[sample.mp4]] 
+* 输入[[内容的类型|ContentType]]为：`audio/mp3` 或者 `video/mp4`
+* 添加 `_canonical_uri` 字段，值为：`ext/audio/sample.mp3` 或者 `ext/video/sample.mp4`
+
+```html
+{{sample.mp3}}
+{{sample.mp4}}
+```
+
+
+! 其他文件
+
+其他文件，（要使用相对路径链接到可定位的资源）请使用扩展语法：
+
+```html
+[ext[Open file|index.html]]
+[ext[Open file|./index.html]]
+[ext[Open file|../README.md]]
+```
+
+让您的浏览器来决定如何打开这些文件。
+
+
+! 相关插件
+
+* [[外部附件插件|External Attachments Plugin]]

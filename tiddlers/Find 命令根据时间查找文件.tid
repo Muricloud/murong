@@ -1,0 +1,58 @@
+created: 20210714105221235
+modified: 20220626092635613
+tags: Examples
+title: Find 命令根据时间查找文件
+tmap.id: c5418ffe-2cee-4d27-87b3-8734d23e4405
+
+!! 相关参数
+
+```
+-mtime -n/n/+n
+	查找系统中最后 n*24 小时被改变文件数据的文件。-n 表示 n 天以内，+n 表示 n 天以前。（此处的「天」指一天的时间，即 24h）
+-mmin n
+	查找系统中最后 N 分钟被改变文件数据的文件
+	
+Numeric arguments can be specified as
+	+n     for greater than n,
+	-n     for less than n,
+	n      for exactly n.
+```
+
+
+!! 基本用法
+
+查找当前目录下 30 分钟内修改过的文件：
+
+```
+find . -mmin -30
+```
+
+查找 1 天内（time<1*24）修改过的文件：
+
+```
+find . -mtime -1
+```
+
+查找前天（time=1*24~2*24）修改过的文件：
+
+```
+find . -mtime 1
+```
+
+查找 1 天前（time>1*24）修改过的文件：
+
+```
+find . -mtime +1
+```
+
+<div class="red-box">
+
+''注意''：
+
+如果使用 VSCode 等编辑器直接修改条目文件，则该条目拥有“两个修改时间”：一个是 modified 字段记录的修改时间，另一个是操作系统记录的文件修改时间（mtime）。
+
+问题来了，TiddlyWiki 中依靠 `modified` 字段的时间操作符（[[days Operator|https://tiddlywiki.com/static/days%2520Operator.html]] 等），都产生了误差。假如编辑的是一个 10 年前的普通条目，它并不会显示在最近（Recent）列表中。只有该条目在 TiddlyWiki 中被修改后，时间才会同步（modified=mtime）。
+
+不过不必惊慌，可以说此误差不会影响任何使用体验。我们一般都不会在 TiddlyWiki 中使用时间去查找文件，如果是日志条目，可能创建时间用的多一点。其他普通条目，基本上使用搜索关键词进行查找，或者使用目录、标签查找。
+
+</div>

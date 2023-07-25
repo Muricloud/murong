@@ -1,0 +1,50 @@
+caption: Alert-leftbar macro
+created: 20191002175412214
+creator: Mohammad
+modified: 20200901042808894
+tags: alert doc XP-tutorials
+title: demo/alert-leftbar-macro
+tmap.id: 344516d0-5f4c-469a-bbfb-1fcaee4ce538
+type: text/vnd.tiddlywiki
+
+!! Alert-leftbar macro
+This macro is the same as alert except, it has different visual style. The `alert-leftbar` uses a colored left border (left bar)
+
+
+
+!! Syntax
+
+```
+<<alert-leftbar typ:"primary" src:"" width:"100%", class:"">>
+```
+
+!! Content and attributes
+|!Attributes |!Type |!Description |
+|type |optional|a bootstrap contextual classes (e.g. primary, secondary,...). The default value is `primary` |
+|src |required|the text to be shown as alert|
+|width |optional|the width of element, default is `100%`|
+|class |optional|extra css class e.g for adding font weight, etc.|
+
+<<alert primary "''Note'': Most classes used in creating leftbar have the `!important` attribute. So, pay attention to not use //extra classes// sets borders, background and colors." >>
+
+
+!! Example
+<$macrocall $name="wikitext-example-without-html" 
+src="""<<alert-leftbar primary "primary alert" width:60%>>
+<<alert-leftbar secondary "secondary alert" width:60%>>
+<<alert-leftbar success "success alert" width:60%>>
+<<alert-leftbar warning "warning alert" width:60%>>
+<<alert-leftbar danger "danger alert" width:60%>>
+<<alert-leftbar info "info alert" width:60%>>
+<<alert-leftbar light "light alert" width:60%>>
+<<alert-leftbar dark "dark alert" width:60%>>
+"""/>
+
+!! Use extra class
+The below example adds `font-weight-bold`.
+
+<$macrocall $name="wikitext-example-without-html" 
+src="""<<alert-leftbar primary src:"Leftbar alert primary" class:"font-weight-bold">>
+"""/>
+
+See more examples at [[demo/alert-advanced]]

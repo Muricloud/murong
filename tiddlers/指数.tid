@@ -1,0 +1,59 @@
+created: 20230717044716655
+modified: 20230718025156190
+tags: 
+title: 指数
+tmap.id: 1e4fb0f2-248a-4abc-9f85-58d30feb7661
+
+
+
+<div class="colmask doublepage">
+	<div class="colleft">
+		<div class="col1">
+
+		''$$n$$ 次方根 <br>''
+概念：如果 $$x^n=a$$ , 那么 $$x$$ 叫做 $$a$$ 的  $$n$$ 次方根，其中 $$n>1$$,且 $$n \in N^*$$<br><br>
+性质：<br>
+当 $$n$$ 为奇数时，$$a>0,x=\sqrt[n]{a}>0$$<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+$$a<0,x=\sqrt[n]{a}<0$$<br>
+
+当 $$n$$ 为偶数时，$$a<0$$ ,偶次方根无意义<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+$$a>0,x=\tiny{土}$$$$\sqrt[n]{a}<0$$<br>
+
+		</div>
+		<div class="col2">
+<$details summary="n为奇数(图)" open="no">
+[img[幂函数九种图像2.png]]
+</$details>
+
+<$details summary="n为偶数(图)" open="no">
+[img[幂函数九种图像8.png]]
+</$details>	
+			
+
+		</div>
+	</div>
+</div>
+
+<hr>
+''根式<br>''
+定义：式子 $$\sqrt[n]{a}$$ 叫做根式，这里 $$n$$ 叫做根指数， $$a$$ 叫做被开方数<br>
+
+性质：<br><br>
+$$(\sqrt[n]{a})^n = a$$<br><br>
+当 $$n$$ 为奇数时，$$\sqrt[n]{a^n}=a$$<br>
+当 $$n$$ 为偶数时，$$\sqrt[n]{a^n}=|a|=  \begin{cases}a，a \geq 0 \\-a，a \lt 0\end{cases}$$<br>
+
+<hr>
+''指数幂的运算性质<br>''
+
+正数的正分数指数幂：$$a^{\frac{m}{n}} =\sqrt[n]{a^m}(a>0,m,n \in N^*,n>1)$$<br><br>
+正数的负分数指数幂：$$a^{-\frac{m}{n}} =\frac{1}{a^{\frac{m}{n}}} = \frac{1}{\sqrt[n]{a^m}}(a>0,m,n \in N^*,n>1)$$<br><br>
+实数指数幂的运算性质:<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+$$a^r a^s=a^{r+s} (a>0,r,s \in R)$$<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+$$(a^r)^s=a^{rs} (a>0,r,s \in R)$$<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+$$(ab)^r=a^r b^r (a>0,r,s \in R)$$<br>

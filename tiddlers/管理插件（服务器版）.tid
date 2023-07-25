@@ -1,0 +1,63 @@
+created: 20200829050933617
+modified: 20220817231738274
+tags: XP-tutorials
+title: 管理插件（服务器版）
+tmap.id: d5f6d8ae-f2c8-4d20-88b9-9a8fce56c523
+
+! 从官方插件库安装插件
+
+在Node.js下使用TiddlyWiki时请遵循以下说明：
+
+# 使用[[控制面板|$:/ControlPanel]]的''插件''选项卡标识你想要安装的插件（但''不要''从这里安装插件）。 插件是由他们的类型（即语言，主题或插件）和他们的发行商以及标题来标识的。 例如，`$:/plugins/tiddlywiki/internals` 被称为 ''tiddlywiki/internals''
+# 退出服务器，如果它正在运行
+# 编辑 `tiddlywiki.info` 文件（它是JSON格式）并找到 `plugins` `languages` 和 `themes` 部分（见下文）
+# 添加对应于您想要添加的插件的条目。 注意保留逗号以分隔项目，但不要用逗号来结束列表中的最后一项
+# 重新启动服务器
+
+```
+{
+	"plugins": [
+		"tiddlywiki/codemirror"
+	],
+	"languages": [
+		"zh-Hans"
+	],
+	"themes": [
+		"tiddlywiki/vanilla",
+		"tiddlywiki/snowwhite"
+	]
+}
+```
+
+
+! 安装自定义插件
+
+<<{ [[Node.js 下安装自定义插件]]>>
+
+<div class="gray-box">
+
+实时查看当前含有的插件：[[Currently Installed Plugins|$:/plugins-currently-installed]]。
+
+</div>
+
+
+! 卸载一个插件
+
+在Node.js下使用TiddlyWiki时请遵循以下说明：
+
+# 退出服务器，如果它正在运行
+# 编辑`tiddlywiki.info`文件（它是JSON格式）并找到`plugins`和`themes`部分（见下文）
+# 删除对应于您希望删除的插件的条目。 注意保留逗号来分隔项目，但不要用逗号来结束列表中的最后一项
+# 重新启动服务器
+
+```
+{
+	"plugins": [
+		"tiddlywiki/codemirror"
+	],
+	"themes": [
+		"tiddlywiki/vanilla",
+		"tiddlywiki/snowwhite"
+	]
+}
+```

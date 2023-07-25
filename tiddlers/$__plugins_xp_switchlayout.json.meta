@@ -1,0 +1,12 @@
+author: kl
+created: 20200817101613158
+dependents: 
+description: Switch sidebar layout
+list: readme
+modified: 20230224000215285
+name: Switch Layout
+plugin-type: plugin
+revision: 0
+title: $:/plugins/xp/switchlayout
+type: application/json
+version: 0.2.2

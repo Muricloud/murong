@@ -1,0 +1,82 @@
+caption: link--链接部件
+created: 20131024141900000
+modified: 20211207071117214
+tags: 中 Widgets TiddlyWiki
+title: LinkWidget
+tmap.id: 8bc66a53-bf2a-4741-81d3-27248771a091
+type: text/vnd.tiddlywiki
+
+!! 链接部件
+
+`link` 小部件生成到条目的链接。（使用HTML `<a>` 元素生成外部链接）。
+
+!! 内容和属性
+
+|!属性|!描述|
+|to |链接到目标条目的标题 （默认到[[当前条目|Current Tiddler]]） |
+|aria-label |可选的可达性（Accessibility）标签 |
+|tooltip |可选的WikiText提示 |
+|tabindex |可选的[[标签索引|https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/tabIndex]]序号 |
+|draggable |“yes”表示启用链接可拖动（默认为“yes”） |
+|tag |可选的用于覆盖默认的“a”元素的标签 |
+
+链接小部件的内容在 `<a>` 标签中呈现。 可拖动功能相当于使用DraggableWidget，其''tiddler''属性设置为链接目标。
+
+tooltip（提示）属性的默认值由<<.vlink tv-wikilink-tooltip>>变量提供。
+
+这意味着您可以通过以下几种方式控制链接的工具提示（tooltip）文本：
+
+```
+<$link to="HelloThere" tooltip="定制的提示">链接1</$link>
+
+<$set name="tv-wikilink-tooltip" value="我是到{{!!title}}的链接">
+<$link to="HelloThere">链接2</$link>
+</$set>
+
+```
+
+效果如下：
+
+<$link to="新手入门指南" tooltip="定制的提示">链接1</$link>
+
+<$set name="tv-wikilink-tooltip" value="我是到{{!!title}}的链接">
+<$link to="新手入门指南">链接2</$link>
+</$set>
+
+请注意，提示呈现为当前被设置为链接目标的条目。
+
+一个非常有用的惯例是这样设置工具提示（tooltip）：
+
+```
+\define tv-wikilink-tooltip()
+<$transclude field="tooltip"><$transclude field="title"/></$transclude>
+\end
+```
+
+这导致以目标条目的 ''tooltip'' 字段作为链接的工具提示。 如果字段不存在，则使用标题。
+
+!! CSS 类
+
+* `tc-tiddlylink` - 应用于所有链接
+* `tc-tiddlylink-external` - 应用于外部非条目链接
+* `tc-tiddlylink-internal` - 应用于条目链接
+* `tc-tiddlylink-missing` - 应用于目标条目不存在时的条目链接
+* `tc-tiddlylink-resolves` - 应用于目标条目存在时的条目链接
+
+!! `href` 生成
+
+以下过程用于生成HTML `<a>` 元素的 `href` 属性：
+
+# 如果定义了<<.vlink tv-get-export-link>>，则调用它以将目标条目标题转换为 `href` 值
+#* 在实践中，只能使用 [[JavaScript宏|Macros]] 
+# <<.from-version "5.1.15">> 如果定义了 <<.vlink tv-filter-export-link>> ，则将其解释为将目标条目标题转换为 `href` 值的过滤器
+# 如果定义了<<.vlink tv-wikilink-template>>，则将其视为一个专用宏体，可以将目标条目标题有限转换为 `href` 值
+# 其他情况下，目标条目标题是URI编码，用以创建 `href`
+
+!! 配置变量
+
+* <<.vlink tv-wikilinks>>
+* <<.vlink tv-filter-export-link>>
+* <<.vlink tv-wikilink-template>>
+* <<.vlink tv-wikilink-tooltip>>
+* <<.vlink tv-get-export-link>>

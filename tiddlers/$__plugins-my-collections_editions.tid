@@ -1,0 +1,34 @@
+caption: 发行版
+created: 20220802084704919
+modified: 20220903115806452
+revision: 0
+tags: 
+title: $:/plugins-my-collections/editions
+type: text/vnd.tiddlywiki
+
+! 官方版本
+
+https://tiddlywiki.com/static/Editions.html
+
+
+! 社区版本
+
+https://tiddlywiki.com/static/Community%2520Editions.html
+
+* [[TiddlyMemo|https://tiddlymemo.org/]] - TiddlyMemo uses advanced Incremental Learning concepts to make it your powerful second brain for acquiring lifelong knowledge.
+* [[TWE-Mehregan|https://github.com/kookma/TWE-Mehregan]]
+* [[Stroll|https://giffmex.org/stroll/stroll.html]] - A Roam-like experience in a free, downloadable file
+* [[Zettelkasten - The public musings of Soren Bjornstad|https://zettelkasten.sorenbjornstad.com/]]
+* [[Projectify|https://github.com/NicolasPetton/Projectify]] - a project management app for TiddlyWiki, inspired by products like Todoist and Basecamp.
+* [[NoteSelf|https://noteself.org/]] - ~NoteSelf is your personal, private, customizable, Evernote-like experience.
+* [[The Memory Keeper|http://craigsturgeon.com/mk/example/Churchill-Example.html]]
+* [[TiddlyWiki for Scholars|http://tw5.scholars.tiddlyspot.com/]]
+
+! 特别版本
+
+* [[Daily Notes|https://www.techlifeweb.com/tiddlywiki/dailynotes.html]] - Interstitial Journaling.
+** 2 plugins: [[TWCrosslinks|https://techlifeweb.com/tiddlywiki/tw5tribalknowledge/static/TWCrosslinks.html]] and [[Daily Notes|https://techlifeweb.com/tiddlywiki/tw5tribalknowledge/static/Daily%2520Notes.html]]
+* [[Tekkan One|https://ibnishak.github.io/Tekkan/]] - Tekkan One is a cross-platform Kanban solution that can be used offline.
+* [[Tix|https://tid.li/tw5/test/tix.html]] - New Tiddler Layout 
+
+> 更多社区插件、主题，请参阅 [[Community|https://tiddlywiki.com/#Community]]

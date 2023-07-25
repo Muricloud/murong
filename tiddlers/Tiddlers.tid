@@ -1,0 +1,15 @@
+caption: 条目
+created: 20130825213500000
+modified: 20200901042844571
+tags: 中 Concepts TiddlyWiki
+title: Tiddlers
+tmap.id: 111d4ce4-b900-4c77-aaea-794eb48c4162
+type: text/vnd.tiddlywiki
+
+Tiddlers（条目）是 TiddlyWiki 的基本信息单元。 Tiddlers 越小其工作的越好，有利于把他们通过不同的方式组织在一起以便重复使用。
+
+“tiddler” 是一个非正式的英国单词，意思是一条小鱼，通常是一个棒棒鱼或鲤鱼。 其他系统具有类似的概念，通用名称如 “items（项目）”、“entries（条目）”、“entities（实体）”、“nodes（节点）” 或者 “records（记录）”。TiddlyWiki 认为，独特的模糊概念比一般的模糊概念更好些。
+
+在内部，tiddlers（条目）是一个有唯一名称的字段列表。 唯一必有的字段是 `title`（标题）字段，但有用的 tiddlers 还应有一个 `text`（内容） 字段，以及 TiddlerFields 中列出的一些或全部标准字段。
+
+Tiddlers 在 TiddlyWiki 中无处不在。 它们用于存储从 JavaScript 代码模块到与用户界面相关的设置及状态等所有内容。

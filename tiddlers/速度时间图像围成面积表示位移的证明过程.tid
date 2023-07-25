@@ -1,0 +1,25 @@
+created: 20230629060255740
+modified: 20230629060326647
+tags: 
+title: 速度时间图像围成面积表示位移的证明过程
+tmap.id: 6a3c70aa-e75c-4c47-876d-dd24c5bcb6b1
+
+
+$$v_1=v_0+a*1*\Delta t \\
+v_2=v_0+a*2*\Delta t \\
+v_3=v_0+a*3*\Delta t \\
+v_{n-1}=v_0+a*(n-1)*\Delta t \\
+\ \\
+\ \\
+v_0\Delta t+v_1\Delta t+v_2\Delta t+...+v_{n-1}\Delta t=(v_0+v_1+v_2+...+v_{n-1})\Delta t\\
+S_1=(v_0+v_1+v_2+...+v_{n-1})\Delta t=(n*v_0+\frac{1+(n-1)}{2}*(n-1)*a*\Delta t)*\Delta t
+$$
+
+$$\frac{(1+(n-1))}{2}*(n-1)*a*\Delta t=\frac{1}{2}*n*(n-1)*a*\Delta t=\frac{1}{2}*a*n^2\Delta t
+$$
+
+$$
+S_1=(n*v_0+\frac{1}{2}a*n^2*\Delta t)*\Delta t\\
+S_1=n*\Delta t*v_0+\frac{1}{2}a*n^2*(\Delta t) ^2 \\
+S_1=v_0t+\frac{1}{2}at^2
+$$

@@ -1,0 +1,25 @@
+created: 20230610001651790
+modified: 20230616062320852
+tags: 
+title: 打卡
+tmap.id: 62183e71-6d12-4402-b84a-43d373b06f09
+今日打卡: 2023-06-16
+打卡天数: 6
+
+\define addDays(days)
+<$action-setfield  打卡天数={{{[[$days$]add[1]]}}}  />
+\end
+
+\define subDays(days)
+<$action-setfield  打卡天数={{{[[$days$]add[-1]]}}}  />
+\end
+
+持续打卡天数：{{!!打卡天数}}
+<$set name="days" value={{!!打卡天数}}>
+<br>
+今日打卡：
+<$checkbox field="今日打卡"  checkactions="<$macrocall $name='addDays' days=<<days>> />" uncheckactions="<$macrocall $name='subDays' days=<<days>> />" checked=<<dt YYYY-0MM-0DD >> unchecked="no" default="no"></$checkbox>
+</$set>
+
+
+

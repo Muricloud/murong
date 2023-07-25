@@ -1,0 +1,71 @@
+caption: 页面和条目布局自定义
+created: 20141120125300000
+modified: 20220819093318594
+tags: 中 [[Customise TiddlyWiki]] TiddlyWiki
+title: Page and tiddler layout customisation
+tmap.id: f5c5009f-bf2d-4ecd-87ba-a36a458dcd24
+url: https://tiddlywiki.com/static/Page%2520and%2520tiddler%2520layout%2520customisation.html
+
+! 页面和条目布局自定义
+
+许多新用户不知道的TiddlyWiki的一个主要特点，是TiddlyWiki可以被自定义的程度，只需在关键的影子条目中或在你的自定义条目中添加或删除系统标签（SystemTags）即可。
+
+* 您可以在查看或编辑模式中添加和删除条目中的默认功能（比如您发现条目小标题分散注意力，或者您想给自己添加编辑条目时能看到的提示）
+
+* 你也可以从总体页面布局中添加和删除默认功能（也许你想添加一个时钟到侧边栏，或者用自己的页面控制按钮替换其中一个）
+
+* 您还可以重新排列这些功能的显示顺序（也许您会喜欢标签在条目标题之上，或者你的TiddlyWiki副标题在页面控制按钮下方）
+
+一旦你知道你要做什么，所有这些事情实际上很容易做到。
+
+! 添加自定义的条目到用户界面
+
+您可以创建您想要的任何条目，并使用相应的SystemTags标签，则它就会出现在该位置。 例如，如果你创建一个'Reminder to self'（自我提醒）条目，添加文本“这是一个提醒” ，并为它加上`$:/tags/EditTemplate`标签，则当你编辑条目时，每个条目内都就会出现“这是一个提醒” 字样。
+
+当您要在条目或页面布局中添加要显示的新条目时，您可能还需要重新定位它，以使其准确地显示在您想要的位置。 要做到这一点，需要编辑以`$:/tags/`为前缀的相应影子条目，并将你的条目的标题插入到 list 字段的适当位置。 例如，如果您希望上述示例中的“这是一个提醒” 字样出现在编辑模式下的标签编辑器上方，请编辑
+ $:/tags/EditTemplate 条目，转到'list'字段，并在`$:/core/ui/EditTemplate/tags`之前插入`[[Reminder to self]]`。
+
+! 为ViewToolbar（查看工具栏）和页面控件创建新的按钮
+
+比方说，你有一个名为'Recipe template'（食谱模板）的骨架条目，你希望在条目的查看工具栏（ViewToolbar）中有一个按钮，用来按需创建新的配方条目。 这将需要以下步骤：
+
+# 您需要为你的按钮配一个图像。 如果没有任何系统自带图像（前缀为$:/core/images/的影子条）可为你所用，则你需要创建或获取一个SVG图像（例如，http://flaticon.com 上的一个图像），把它拖入你的文件，以使它成为一个条目，编辑该条目并调整高度和宽度为22px 。
+
+# 您需要创建包含您的条目的条目。 创建它，加上标题，并添加按钮代码（参见本条目底部的代码示例，提示你需要修改它）。 给它加上[[$:/tags/ViewToolbar]]标签。
+
+# 您将需要创建一个条目，告诉TiddlyWiki您的按钮在工具栏中应该是可见还是隐藏。 让我们以[[$:/config/ViewToolbarButtons/Visibility/Recipe]]为标题。 在文本区域输入`reveal`（显示）并保存。
+
+# 您还需要正确定位按钮。 打开 $:/tags/ViewToolbar 条目，并将按钮条目的标题插入到 list（列表）字段中的相应位置。
+
+```
+\define newHereButtonTags()
+[[$(currentTiddler)$]]
+\end
+\define newHereButton()
+<$button class=<<tv-config-toolbar-class>>>
+<$action-sendmessage
+  $message="tm-new-tiddler"
+$param="TITLE OF YOUR SKELETON BUTTON"
+title="New tiddler"
+  tags=<<newHereButtonTags>> />
+<$list filter="[<tv-config-toolbar-icons>prefix[yes]]">
+{{TITLE OF YOUR SVG IMAGE TIDDLER}}
+</$list>
+<$list filter="[<tv-config-toolbar-text>prefix[yes]]">
+<span class="tc-btn-text"><$text text="CAPTION FOR YOUR BUTTON"/></span>
+</$list>
+</$button>
+\end
+
+<<newHereButton>>
+```
+
+! 从用户界面删除影子条目
+
+在“更多 > 默认”选项卡中，您可以找到所有影子条目的列表。 在这个列表中你会发现许多带有前缀`$:/core/ui/`的条目。 这些是定义用户界面的核心条目。 这些条目标有SystemTags标签，删除或添加这些标签将调整条目和页面的布局。
+
+例如，$:/core/ui/SideBar/More 是关于侧边栏中“更多”选项卡的条目，它用SystemTag `$:/tags/SideBar` 作标签，以便它出现在边栏中。 从该条目中删除标签将从侧边栏中删除“更多”标签，重新插入边栏标签到该条目将使其重新出现在边栏中。
+
+您可以对任何具有`$:/core/ui/`前缀的核心用户界面条目使用相同的过程。 例如，从`$:/core/ui/ViewTemplate/subtitle`中移除 SystemTag `$:/tags/ViewTemplate` 将从所有的条目中删除条目副标题。
+
+如果您以这种方式修改了影子条目，您将覆盖预先安装的值。 如果你想恢复，只需删除修改的条目就可恢复潜在的影子条目。

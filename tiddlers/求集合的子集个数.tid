@@ -1,0 +1,27 @@
+created: 20230702125449082
+modified: 20230703004356879
+tags: 
+title: 求集合的子集个数
+tmap.id: 317194df-eb0b-4315-9396-8b391c481fc9
+
+$$1.假设集合A中含有n(n \in N^*)个元素,则:$$<br>
+$$(1)A的子集个数是2^n;$$<br>
+$$(2)A的非空子集个数是2^n-1;$$<br>
+$$(3)A的真子集个数是2^n-1;$$<br>
+$$(4)A的非空真子集个数是2^n-2.$$<br>
+
+<br><br>
+
+
+$$2. 设有限集合A，B中分别含有m,n个元素(m,n \in N^*),且 A \subseteq C \subseteq B ,则符合条件的有限集C的个数为 2^{n-m}. $$
+
+$$(1) A \subsetneq C \subseteq B ,则符合条件的有限集C的个数为$$ $$_______$$<br>
+$$(2) A \subseteq C \subsetneq B ,则符合条件的有限集C的个数为$$ $$_______$$<br>
+$$(3) A \subsetneq C \subsetneq B ,则符合条件的有限集C的个数为$$ $$_______$$<br>
+<$details summary="答案" open="no">
+$$(1)  2^{n-m}-1$$<br>
+$$(2)  2^{n-m}-1$$<br>
+$$(3)  2^{n-m}-2$$<br>
+
+
+</$details>

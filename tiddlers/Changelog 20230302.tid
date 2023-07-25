@@ -1,0 +1,54 @@
+caption: 20230302
+created: 20230301162156006
+modified: 20230304073658826
+tags: Changelog
+title: Changelog 20230302
+tmap.id: cb622ac5-28a8-411b-a6df-6bfdfd69a1bf
+
+!!!.t 主要内容
+
+# 您可以使用 [[Tag Handler|$:/core/ui/ViewTemplate/tags]] 管理标签（浏览视图下），方便实用。
+# 改进了 [[聚合视图|$:/plugins/xp/aggregation]] 的阅读模式。
+# 您可以[[使用 Query 进行多词查询|$:/xp/query/help]]。
+# 其他更新：插件更新、文档更新。
+
+> 特别说明：XP 中使用 [[TiddlyMap 0.17.8+10010|$:/plugins/felixhayashi/tiddlymap]]。（升级至 0.17.16+10020 后，$:/plugins/flibbles/vis-network 会使 [[tiddlertail|$:/plugins/xp/tiddlertail]] 的 map 无法使用 <kbd>ctrl</kbd> 键加鼠标滚轮缩放视图，故而进行版本回退）
+
+!!!.p 插件变更
+
+更新了插件：<$details summary="Details" open="no">
+
+//注意：此处只罗列我维护的插件。//
+
+# $:/plugins/xp/aggregation 0.4.1
+# $:/plugins/xp/aggregation-aphorism 0.3.1
+# $:/plugins/xp/aggregation-bookshelf 0.3.1
+# $:/plugins/xp/aggregation-checklist 0.3.1
+# $:/plugins/xp/aggregation-consumer 0.3.1
+# $:/plugins/xp/aggregation-courses 0.3.1
+# $:/plugins/xp/aggregation-enterprises 0.3.1
+# $:/plugins/xp/aggregation-gtd 0.3.1
+# $:/plugins/xp/aggregation-howtos 0.3.1
+# $:/plugins/xp/aggregation-knowledge-system 0.2.1
+# $:/plugins/xp/aggregation-people 0.3.1
+# $:/plugins/xp/aggregation-plugins 0.3.1
+# $:/plugins/xp/aggregation-snippets 0.3.1
+# $:/plugins/xp/aggregation-software 0.3.1
+# $:/plugins/xp/aggregation-whys 0.3.1
+# $:/plugins/xp/diary 0.3.2
+# $:/plugins/xp/html-button 0.2.2
+# $:/plugins/xp/leftopentab 0.2.3
+# $:/plugins/xp/quickbar 0.2.5
+# $:/plugins/xp/splashscreen 0.2.1
+# $:/plugins/xp/switchlayout 0.2.2
+# $:/plugins/xp/tiddlertail 0.0.4
+
+</$details>
+
+删除了插件：<$details summary="Details" open="no">
+
+* $:/plugins/xp/managetags
+
+</$details>
+
+> 注意事项：[[手动更新插件]]。

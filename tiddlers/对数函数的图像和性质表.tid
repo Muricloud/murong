@@ -1,0 +1,57 @@
+created: 20230718081550459
+modified: 20230718083457046
+tags: 
+title: 对数函数的图像和性质表
+tmap.id: 8e55fc78-64eb-4e13-b7b5-0789bacb20b3
+
+<table>
+<tr>
+    <td rowspan="2" colspan="2" align="center" valign="middle">''指数函数''</td>
+    <td colspan="3">$$y=log_ax (a>0 且 a \neq 1)
+		$$</td>
+  </tr>
+  <tr>
+    <td>$$ 0< a<1
+		$$</td>
+    <td>$$ a>1 
+		$$</td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center" valign="middle">''图像''</td>
+    <td><div style="width:200px">[img[对数函数图像a大于0.png]]
+</div>
+</td>
+		 <td><div style="width:200px">[img[对数函数图像a大于1.png]]</div></td>
+  </tr>
+	<tr>
+    <td colspan="2" align="center" valign="middle">''定义域''</td>
+    <td colspan="3">$$(0,+ \infty)
+		$$</td>
+  </tr>
+	<tr>
+    <td colspan="2" align="center" valign="middle">''值域''</td>
+    <td colspan="3">$$R
+		$$</td>
+  </tr>
+	<tr>
+    <td rowspan="5" align="center" valign="middle">''性质''</td>
+		<td align="center" valign="middle"><br>''过定点''<br>&emsp;</td>
+    <td colspan="3" align="center" valign="middle">$$过定点(1,0),即x=1时，y=0$$</td>
+  </tr>
+	<tr>
+    <td align="center" valign="middle"><br>''单调性''<br>&emsp;</td>
+		<td align="center" valign="middle">在 $$(0,+\infty) $$ 上是减函数</td>
+    <td align="center" valign="middle">在 $$(0,+\infty) $$ 上是增函数</td>
+  </tr>
+		<tr>
+    <td align="center" valign="middle"><br>''函数值<br>的变化''<br>&emsp;</td>
+		<td align="center" valign="middle"> 当$$x>1时,y<0 ;$$<br>
+		当$$0<x<1时,y>0 $$</td>
+    <td align="center" valign="middle"> 当$$x>1时,y>0 ;$$<br>
+		当$$0<x<1时,y<0 $$</td>
+  </tr>
+	<tr>
+    <td align="center" valign="middle"><br>''对称性''<br>&emsp;</td>
+		<td colspan="2" align="center" valign="middle">$$y=log_ax$$ 与 $$y=log_{\frac{1}{a}}x$$的图像关于 $$ y$$ 轴对称</td>
+  </tr>
+</table>

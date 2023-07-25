@@ -1,0 +1,28 @@
+caption: list-links-draggable：可拖动链接列表宏
+created: 20170328204925306
+modified: 20200901042844536
+tags: 中 Macros [[Core Macros]] TiddlyWiki
+title: list-links-draggable Macro
+tmap.id: f6d887e8-43e6-4c00-975f-78568d199a5f
+type: text/vnd.tiddlywiki
+
+<<.def list-links-draggable>>（可拖动链接列表）[[宏|Macros]]将条目的ListField（列表字段）呈现为可以通过[[拖放|Drag and Drop]]重新排序的链接列表。
+
+!! 参数
+
+;tiddler -- 条目
+: 包含列表的条目的标题
+;field -- 字段
+: 包含列表的字段的名称（默认为 `list`）
+;type -- 类型
+: 用于列表包装的元素标签（默认为`ul`）
+;subtype -- 下层类型
+: 用于列表项目的元素标签（默认为`li`）
+;class -- 类
+: 可选，添加到包装器元素的类，以空格分隔
+;itemTemplate -- 项目模板
+: 可选，用于呈现列表项目的模板条目的标题
+
+如果没有提供 `itemTemplate` 参数，那么列表项将被渲染为简单的链接。 在 `itemTemplate` 中，用[[currentTiddler变量|currentTiddler Variable]]引用当前列表项。
+
+<<.macro-examples "list-links-draggable">>

@@ -1,0 +1,51 @@
+created: 20200731123634238
+modified: 20230604030341617
+tags: XP-tutorials 新手入门指南
+title: 收藏夹与回收站
+tmap.id: f1758e32-a6f9-4b42-9a8d-421db6a1a01d
+
+\define show-favorites-manager()
+<$button class="tc-btn-invisible" to="$:/plugins/kookma/favorites/manager">
+{{$:/core/images/options-button}} Manager
+</$button>
+\end
+
+\define replace-delete()
+<$checkbox tiddler="$:/core/ui/Buttons/delete" field="text" checked={{$:/_xp/Settings/Buttons/trashbin}} unchecked={{$:/_xp/Settings/Buttons/delete}}>
+ Replace [[delete button|$:/core/ui/Buttons/delete]] with [[trashbin|$:/plugins/kookma/trashbin/ui/toolbar-button]]
+</$checkbox>
+\end
+
+! 收藏夹
+
+点击条目上的 {{$:/core/ui/Buttons/more-tiddler-actions}} More actions 然后选择收藏按钮 <<.icon $:/plugins/kookma/favorites/image>>，将其放入侧边栏的收藏夹中。你也可以将任意位置的 TiddlerLinks 直接拖到收藏夹中。
+
+你可以点击其中的 <<show-favorites-manager>> 管理收藏夹。
+
+> 该功能由 $:/plugins/kookma/favorites 插件提供。
+
+
+! 回收站
+
+<<.icon $:/core/images/delete-button>> delete 按钮是永久删除条目，这非常不安全。因为一旦误删数据，便无法找回！
+
+为了避免悲剧的发生，您可以考虑开启（右边栏 XP 选项卡中）下列选项：
+
+: <<replace-delete>>
+
+开启后，当你删除条目时，会将条目放入侧边栏的 <<.icon $:/plugins/kookma/trashbin/images/recycle>> 回收站中。定期删除即可。
+
+这样的设定表明了我的态度，即不建议您同时显示 delete 和 trashbin 按钮。
+
+> 该功能由 $:/plugins/kookma/trashbin 插件提供。
+
+<div class="red-box">
+
+当前插件版本下，如果删除的条目是样式条目 <<tag $:/tags/Stylesheet>>，则需要永久删除。因为呆在回收站中的样式条目，依然会生效。
+
+</div>
+<div class="gray-box">
+
+听说「太记」使用 git 进行备份，可以不用安装 Trashbin 插件。
+
+</div>

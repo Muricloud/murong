@@ -1,0 +1,59 @@
+created: 20230718022056080
+modified: 20230718083651874
+tags: 
+title: 指数函数的图像和性质测试
+tmap.id: 8431d536-6a63-43de-8c2c-97c5e3f3d2c4
+
+<table>
+<tr>
+    <td rowspan="2" colspan="2" align="center" valign="middle">''指数函数''</td>
+    <td colspan="3">$$y=a^x (a>0 且 a \neq 1)
+		$$</td>
+  </tr>
+  <tr>
+    <td>$$ 0< a<1
+		$$</td>
+    <td>$$ a>1 
+		$$</td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center" valign="middle">''图像''</td>
+    <td><$details summary=" " open="no"><div style="width:200px">[img[指数函数图像a大于0.png]]
+</div>
+</$details>
+</td>
+		 <td><$details summary=" " open="no"><div style="width:200px">[img[指数函数图像a大于1.png]]</div></$details></td>
+  </tr>
+	<tr>
+    <td colspan="2" align="center" valign="middle">''定义域''</td>
+    <td colspan="3"><$details summary=" " open="no">$$R
+		$$</$details></td>
+  </tr>
+	<tr>
+    <td colspan="2" align="center" valign="middle">''值域''</td>
+    <td colspan="3"><$details summary=" " open="no">$$(0,+ \infty)
+		$$</$details></td>
+  </tr>
+	<tr>
+    <td rowspan="5" align="center" valign="middle">''性质''</td>
+		<td align="center" valign="middle"><br>''过定点''<br>&emsp;</td>
+    <td colspan="3" align="center" valign="middle"><$details summary=" " open="no">$$过定点(0,1),即x=0时，y=1$$</$details></td>
+  </tr>
+	<tr>
+    <td align="center" valign="middle"><br>''单调性''<br>&emsp;</td>
+		<td align="center" valign="middle"><$details summary=" " open="no">在 $$R$$ 上是减函数</$details></td>
+    <td align="center" valign="middle"><$details summary=" " open="no">在 $$R$$ 上是增函数</$details></td>
+  </tr>
+		<tr>
+    <td align="center" valign="middle"><br>''函数值<br>的变化''<br>&emsp;</td>
+		<td align="center" valign="middle"> <$details summary=" " open="no">当$$x>0时,0<y<1 ;$$<br>
+		当$$x<0时,y>1 $$</$details></td>
+    <td align="center" valign="middle"> <$details summary=" " open="no">当$$x>0时,y>1 ;$$<br>
+		当$$x<0时,0<y<1 $$</$details></td>
+  </tr>
+	<tr>
+    <td align="center" valign="middle"><br>''对称性''<br>&emsp;</td>
+		<td colspan="2" align="center" valign="middle"><$details summary=" " open="no">$$y=a^x$$ 与 $$y=(\frac{1}{a})^x$$的图像关于 $$ y$$ 轴对称</$details></td>
+  </tr>
+</table>
+

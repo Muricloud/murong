@@ -1,0 +1,22 @@
+caption: 目录表宏（示例）
+created: 20150221193056000
+modified: 20200901042844560
+tags: 中 [[Table-of-Contents Macros]] [[Macro Examples]] TiddlyWiki
+title: Table-of-Contents Macros (Examples)
+tmap.id: 1a48cadf-eb57-4264-b9e8-6564b79668cb
+type: text/vnd.tiddlywiki
+
+这些示例从根标签 <<.tag Contents>> 中导出目录。
+
+您可以使用这些可点击的标签丸查看同一结构：
+
+* {{Contents||$:/core/ui/TagTemplate}}
+** {{First||$:/core/ui/TagTemplate}}
+** {{Second||$:/core/ui/TagTemplate}}
+*** {{SecondThree||$:/core/ui/TagTemplate}}
+** {{Third||$:/core/ui/TagTemplate}}
+** {{Fourth||$:/core/ui/TagTemplate}}
+
+选项卡式示例使用本文档的实际TableOfContents来代替。
+
+<<tabs "[tag[table-of-contents-example]nsort[order]]" "Example Table of Contents: Simple">>

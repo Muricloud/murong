@@ -1,0 +1,15 @@
+created: 20211208110433959
+modified: 20220817104911133
+tags: [[WikiText 应用实例]] XP-tutorials
+title: 调用内置宏
+tmap.id: 63e95c43-298f-4ca0-9f20-0ccedcb1fe9d
+url: https://tiddlywiki.com/static/Core%2520Macros.html
+
+<div class="gray-box">
+
+内置宏也就是 [[Core Macros|https://tiddlywiki.com/static/Core%2520Macros.html]]。这里我挑了一些个人常用的进行分享。
+
+</div>
+
+
+<<list-links "[tag[调用内置宏]sort[title]]">>

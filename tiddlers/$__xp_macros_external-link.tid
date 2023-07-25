@@ -1,0 +1,41 @@
+created: 20211202051946475
+modified: 20211214050222200
+revision: 0
+tags: $:/tags/Macro XP-tutorials
+title: $:/xp/macros/external-link
+type: text/vnd.tiddlywiki
+
+<!-- TEXT LINK -->
+
+\define baike(str)
+<a href="https://baike.baidu.com/item/$str$" target="_blank">百度百科</a>
+\end
+
+\define mbalib(str)
+<a href="https://wiki.mbalib.com/wiki/$str$" target="_blank">MBA智库</a>
+\end
+
+\define qcc(str)
+<a href="https://www.qcc.com/firm/$str$" target="_blank">企查查</a>
+\end
+
+\define zhihu(str)
+<a href="https://www.zhihu.com/question/$str$" target="_blank">知乎</a>
+\end
+
+
+<!-- VIDEO LINK -->
+
+\define bilibili(str)
+<a href="https://www.bilibili.com/video/$str$" target="_blank">哔哩哔哩</a>
+\end
+
+\define bilibiliButton(str,title,color:"")
+<a href="https://www.bilibili.com/video/$str$" class="tc-btn-big-green" style="border-radius:4px;background-color:$color$;" target="_blank" rel="noopener noreferrer">
+{{$:/core/images/video}} $title$
+</a>
+\end
+
+\define youtube(str)
+<a href="https://www.youtube.com/watch?v=$str$" target="_blank">YouTube</a>
+\end

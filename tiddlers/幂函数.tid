@@ -1,0 +1,100 @@
+created: 20230716091113177
+modified: 20230720024932363
+title: 幂函数
+tmap.id: 73e4ff35-5b4f-41bc-8c17-241b468ee3b5
+
+''幂函数的概念''<br>
+一般地，函数 $$y=x^{\alpha}$$ 叫做幂函数，其中 $$x$$ 是自变量，$$\alpha$$ 是常数.<br>
+,,释意：$$\alpha$$ 读作：alpha(阿尔法),,<br>
+
+问：$$y=2x^2$$ 是不是幂函数？<br>
+<$details summary="答案" open="no">
+不是的。幂函数前面的系数为1，$$y=2x^2$$ 可以说它是一个类幂函数（也就是类似幂函数），但不能说它是幂函数。
+</$details>
+
+常见幂函数图像
+<$details summary="图像" open="no">
+
+[img[常见幂函数图像.png]]
+
+</$details>
+
+<$details summary="幂函数三类九种图像" open="no">
+
+<table>
+<th>$$ \alpha = \frac{q}{p}
+$$</th>
+<th>$$\alpha <0$$</th>
+<th>$$0< \alpha <1$$</th>
+<th>$$\alpha > 1$$</th>
+<tr>
+<td>$$p,q$$ 都是奇数</td>
+<td><div style="width:200px">
+[img[幂函数九种图像1.png]]
+</div>
+</td>
+<td><div style="width:200px">
+[img[幂函数九种图像2.png]]
+</div>
+</td>
+<td><div style="width:200px">
+[img[幂函数九种图像3.png]]
+</div>
+</td>
+</tr>
+<tr>
+<td>$$p$$为奇数,$$q$$为偶数</td>
+<td><div style="width:200px">
+[img[幂函数九种图像4.png]]
+</div>
+</td>
+<td><div style="width:200px">
+[img[幂函数九种图像5.png]]
+</div>
+</td>
+<td><div style="width:200px">
+[img[幂函数九种图像6.png]]
+</div>
+</td>
+</tr>
+<tr>
+<td>$$p$$为偶数,$$q$$为奇数</td>
+<td><div style="width:200px">
+[img[幂函数九种图像7.png]]
+</div>
+</td>
+<td><div style="width:200px">
+[img[幂函数九种图像8.png]]
+</div>
+</td>
+<td><div style="width:200px">
+[img[幂函数九种图像9.png]]
+</div>
+</td>
+</tr>
+</table>
+
+</$details>
+
+<$details summary="我们如何去记忆" open="no">
+先记住三类:<br>
+$$\alpha < 0$$ , $$ 0 <\alpha < 1$$ , $$\alpha > 1$$<br>
+<div style="width:200px">
+[img[幂函数三类图像.png]]
+</div>
+<br>
+三类曲线的特点。<br>
+然后每种类型又分为三种情况：<br>
+$$ \alpha = \frac{q}{p}$$<br>
+$$p$$为奇数,$$q$$为奇数 &emsp; 奇函数 例如:$$y=x^3$$<br>
+$$p$$为奇数,$$q$$为偶数 &emsp; 偶函数 例如:$$y=x^2$$<br>
+$$p$$为偶数,$$q$$为奇数 &emsp; 只有半边 例如:$$y=x^{\frac{1}{2}}$$<br>
+
+
+
+</$details>
+
+
+
+
+[[幂函数图像三类九种(测试)]]

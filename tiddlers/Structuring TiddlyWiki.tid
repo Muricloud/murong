@@ -1,0 +1,15 @@
+caption: 结构化TiddlyWiki
+created: 20131128090536894
+modified: 20220819093318596
+tags: 中 TiddlyWiki
+title: Structuring TiddlyWiki
+tmap.id: 8e86e504-daf1-4824-9c62-3e4a3e5a597c
+type: text/vnd.tiddlywiki
+url: https://tiddlywiki.com/static/Structuring%2520TiddlyWiki.html
+
+TiddlyWiki5提供了几个功能来帮助您将信息组织为[[条目|Tiddlers]]，并建立起它们之间的关系模型：
+
+* [[条目链接|TiddlerLinks]]
+* [[加标签|Tagging]]
+* [[标题列表|Title List]]
+* [[数据条目|DataTiddlers]]

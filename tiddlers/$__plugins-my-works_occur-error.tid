@@ -1,0 +1,46 @@
+caption: 发生错误
+created: 20220627015503604
+modified: 20220627020238999
+tags: $:/tags/MyWorks
+title: $:/plugins-my-works/occur-error
+
+!! 样式异常
+
+样式条目 <<tag $:/tags/Stylesheet>> 中，使用 `<pre>` 标签包裹类似下面的代码后，会导致其他样式异常。
+
+```css
+.xp-gtd-lists>* {
+    padding: 0;
+}
+
+.xp-gtd-list>* {
+    padding: 0 8px;
+}
+```
+
+
+!! 错误弹窗
+
+在单文件版本中，特殊情景下，[[TiddlyMap|$:/plugins/felixhayashi/tiddlymap]] 引发的错误弹窗（不影响使用）。
+
+<div class="red-box">
+
+!! Internal JavaScript Error
+
+Well, this is embarrassing. It is recommended that you restart TiddlyWiki by refreshing your browser
+
+<span class="tc-muted">Uncaught Cannot group by property to</span>
+
+</div>
+
+触发情景为，当按钮中同时使用了 `action-sendmessage` 和其他动作（比如 `action-setfield`、`action-createtiddler`）： 
+
+```
+<$button>
+{{$:/core/images/new-button}}
+<$action-sendmessage $message="tm-new-tiddler" title="tiddlymap troubleshooting" tags="task" />
+<$action-setfield $tiddler="done" tags="done" color="#00cc33"/>
+</$button>
+```
+
+点击按钮，创建条目 `tiddlymap troubleshooting` 后立刻又删除，该弹窗就会出现。（只会在首次点击按钮时出现）

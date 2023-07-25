@@ -1,0 +1,9 @@
+created: 20210418123302460
+modified: 20211217080956821
+tags: XP-tutorials
+title: 使用 TiddlyDesktop 遇到的问题
+tmap.id: 6364f140-3818-4e50-82a0-95a91f3da864
+
+!! {{$:/core/images/help}} 不小心将一个条目拖到主界面列表中，然后无法 remove
+
+在 Linux 中，可以到 `~/.config/TiddlyDesktop/Default/user-config-tiddlywiki/tiddlers` 下找到误导入的条目，删除即可。

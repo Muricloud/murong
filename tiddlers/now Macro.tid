@@ -1,0 +1,20 @@
+caption: now：当前时间宏
+created: 20141008141616791
+modified: 20200901042844544
+tags: 中 Macros [[Core Macros]] TiddlyWiki
+title: now Macro
+tmap.id: 945ad408-49cf-4d5e-8563-2b9a64079513
+type: text/vnd.tiddlywiki
+
+<<.def now>>（当前时间）[[宏|Macros]]以指定的[[格式|DateFormat]]返回当前日期和时间。
+
+该值不会就像滴答滴答的时钟一样自动更新。 它只会在宏调用被呈现的时候更新，例如当包含它的条目出于某种其他原因需要刷新显示时。
+
+!! 参数
+
+;format -- 格式
+: 一个指定所需[[格式|DateFormat]]的字符串，默认为 `0hh:0mm, DDth MMM YYYY`
+
+''注意：''格式化字符串 `[UTC]YYYY0MM0DD0hh0mm0ssXXX` 将返回一个日期字符串，表示UTC时间戳，如同在~TiddlyWiki的 `created` 和 `modified` 时间戳字段中使用的那样。
+
+<<.macro-examples "now">>

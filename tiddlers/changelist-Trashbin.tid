@@ -1,0 +1,20 @@
+caption: Trashbin
+created: 20230301155820624
+modified: 20230301155846151
+tags: [[Change List]] XP-tutorials
+title: changelist-Trashbin
+tmap.id: d99d5998-64b4-425c-b4ff-fc947b1ba530
+
+!! $:/plugins/kookma/trashbin
+
+由于侧边栏固定的项目较多，将文字标题换为图标显示：
+
+* $:/xp/ui/SideBar/Trashbin
+
+并更改了内容显示效果：
+
+* $:/plugins/kookma/trashbin/ui/sidebar
+
+删除按钮中的 list-after 排序（用 <<tag $:/tags/ViewToolbar>> 中的 list 字段进行排序）：
+
+* $:/plugins/kookma/trashbin/ui/toolbar-button

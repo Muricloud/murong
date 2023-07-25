@@ -1,0 +1,42 @@
+created: 20230629020308732
+modified: 20230629024753841
+title: 位移时间图像例题
+tmap.id: d44e1053-23e5-444e-b646-180dac8a1492
+
+<$details summary="例题1" open="no">
+<div style="width:500px">[img[位移时间图像例题1图.png]]
+</div>
+
+
+
+
+<$details summary="答案" open="no">
+答案：D<br>
+A.第2-4s，质点静止<br>
+B.第3s内，位移0<br>
+C.运动的轨迹是路程，没办法通过位移去预测运动轨迹<br>
+D.对的。''位移：是初位置到末位置的有向线段''。前4s内，第1秒初位于0m的位置，第4秒末，位于2m的位置。所以前4s内的位移是4m
+
+</$details>
+
+
+</$details>
+
+<$details summary="例题2" open="no">
+
+<div style="width:500px">
+[img[位移时间图像例题2图像.png]]
+<$details summary="答案" open="no">
+答案：B<br>
+A、B、C都是匀速直线运动，因为线段上的每个点的斜率都相等。<br><br>
+$$v_A=0.5 m/s,v_B=2m/s,v_A=-2 m/s,$$
+
+
+</$details>
+</div>
+
+
+</$details>
+
+
+

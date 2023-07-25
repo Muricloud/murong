@@ -1,0 +1,15 @@
+created: 20230601102339907
+modified: 20230601132039221
+tags: $:/tags/SideBar
+title: 常用代码集合
+tmap.id: 5de54734-6cfd-4a69-a594-0beca2123267
+
+<$list filter="[tag[模板代码]sort[]limit[1]]">
+<$macrocall
+  $name="tabs"
+  tabsList="[tag[模板代码]sort[]]"
+  default={{!!title}}
+  class="tc-vertical"
+  template="$:/templates/tabs"
+/>
+</$list>

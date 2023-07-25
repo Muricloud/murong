@@ -1,0 +1,22 @@
+caption: list-tagged-draggable：可拖动标签列表宏
+created: 20170329092723939
+modified: 20200901042844538
+tags: 中 Macros [[Core Macros]] TiddlyWiki
+title: list-tagged-draggable Macro
+tmap.id: 9bcfec65-96bf-43f0-a7c2-91235daf605d
+type: text/vnd.tiddlywiki
+
+<<.def list-tagged-draggable>>（可拖动标签列表）[[宏|Macros]]将特定标签下的条目呈现为可通过[[拖放|Drag and Drop]]重新排序的链接列表。
+
+!! 参数
+
+;tag -- 标签
+: 标签的标题
+;itemTemplate -- 项目模板
+: 可选，用于呈现列表项目的模板条目的标题
+
+请注意，[[排序|Order of Tagged Tiddlers]]是通过将新列表分配给标签条目的 `list` 字段来完成的。 此标签下的其他条目的任何 `list-before` 或 `list-after` 字段也同时被删除，以确保 `list` 字段的排序得到遵守。
+
+如果没有提供 `itemTemplate` 参数，那么列表项将被渲染为简单的链接。 在 `itemTemplate` 中，用[[currentTiddler变量|currentTiddler Variable]]引用当前列表项。
+
+<<.macro-examples "list-tagged-draggable">>

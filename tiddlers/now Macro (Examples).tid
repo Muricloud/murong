@@ -1,0 +1,11 @@
+caption: 当前时间宏（示例）
+created: 20150221151358000
+modified: 20200901042844545
+tags: 中 [[now Macro]] [[Macro Examples]] TiddlyWiki
+title: now Macro (Examples)
+tmap.id: 2a5c0375-a73f-45ae-8953-0c1a1cf7a92e
+type: text/vnd.tiddlywiki
+
+<$macrocall $name=".example" n="1" eg="""<<now>>"""/>
+<$macrocall $name=".example" n="2" eg="""<<now YYYY-0MM-0DD>>"""/>
+<$macrocall $name=".example" n="3" eg="""<<now "hh:0mm:0sspm">>"""/>

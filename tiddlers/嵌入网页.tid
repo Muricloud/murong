@@ -1,0 +1,8 @@
+created: 20230602014633115
+modified: 20230602014726273
+tags: 模板代码
+title: 嵌入网页
+tmap.id: 47f74c02-ee9b-4d08-b54f-cb39f8b61b8a
+
+<<codes src:"""<iframe width="900" height="700" src="https://www.youtube.com/embed/i3Bggkm7paA" frameborder="0" allowfullscreen></iframe>
+""">>

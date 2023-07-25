@@ -1,0 +1,17 @@
+caption: 最新更新日志
+created: 20220817125544011
+modified: 20220818001034702
+tags: Update FAQ
+title: TiddlyWiki XP Latest Changelog
+tmap.id: 9361d09f-99c6-4d3b-a1e7-7cbc6e3edd8d
+type: text/vnd.tiddlywiki
+
+<$list filter="[tag[Changelog]!sort[created]limit[1]]">
+
+^^Updated <$view field="modified" format="date" template="DDth MMM YYYY at 0hh:0mm">TBA</$view>^^
+
+<$transclude/>
+
+</$list>
+
+<$link to="TiddlyWiki XP Changelog" overrideClass="tc-install-plugin tc-reinstall-upgrade">更新历史记录</$link>

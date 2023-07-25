@@ -1,0 +1,10 @@
+author: kl
+dependents: $:/plugins/xp/aggregation
+description: Manage your questions
+name: WHYs
+parent-plugin: $:/plugins/xp/aggregation
+plugin-type: plugin
+revision: 0
+title: $:/plugins/xp/aggregation-whys
+type: application/json
+version: 0.3.1

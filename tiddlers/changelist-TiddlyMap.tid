@@ -1,0 +1,23 @@
+caption: TiddlyMap
+created: 20220422114613355
+modified: 20230301155747494
+tags: [[Change List]] XP-tutorials
+title: changelist-TiddlyMap
+tmap.id: 5276fd73-d768-44d6-9342-d3e49c3359ae
+
+!! $:/plugins/felixhayashi/tiddlymap
+
+取消首次启动时的配置界面：
+
+* $:/plugins/felixhayashi/tiddlymap/js/startup/caretaker
+* $:/plugins/felixhayashi/tiddlymap/misc/meta <div>
+
+```js
+showWelcomeMessage:false
+```
+</div>
+
+配置 Default 视图的过滤规则，显示标签为 TableOfContents 的条目：
+
+* $:/plugins/felixhayashi/tiddlymap/graph/views/Default/filter/edges
+* $:/plugins/felixhayashi/tiddlymap/graph/views/Default/filter/nodes

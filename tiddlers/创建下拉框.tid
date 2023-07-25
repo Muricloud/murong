@@ -1,0 +1,11 @@
+created: 20211214095124694
+modified: 20220220072843816
+tags: [[WikiText 应用实例]] XP-tutorials
+title: 创建下拉框
+tmap.id: 1b4c047f-abbd-4f0f-a709-b7da1fe50dc5
+
+> 选择部件（[[SelectWidget|https://tiddlywiki.com/static/SelectWidget.html]]）显示基于 [[HTML 选择元素|https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select]]的弹出式菜单。 弹出（或下拉）菜单包含的项目列表由 `<option>` 和 `<optgroup>` 元素定义。
+
+使用选择部件浏览条目：[[demo1|创建下拉框/demo1]]
+
+手动设置选项：[[demo2|创建下拉框/demo2]]

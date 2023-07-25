@@ -1,0 +1,16 @@
+caption: Node.js on Termux
+color: #F06292
+created: 20200501120322327
+delivery: App with DIY steps
+description: Using Node.js to serve/create flatfile wikis
+method: sync
+modified: 20220819093318595
+tags: Saving [[TiddlyWiki on Node.js]] Android TiddlyWiki
+title: Serving TW5 from Android
+tmap.id: ffd9fb77-4e09-4c52-b877-adde6c8ade23
+type: text/vnd.tiddlywiki
+url: https://tiddlywiki.com/static/Serving%2520TW5%2520from%2520Android.html
+
+[[Termux|https://termux.com/]] 是一个开源的 android 应用程序，提供有限的 Unix 环境，让使用者可以在 android 中安装 [[Node.js]] 和 npm 模组。使用者可以使用 [[Termux|https://termux.com/]] 安装并执行 [[Node.js 上的 TiddlyWiki |TiddlyWiki on Node.js]]。
+
+<<tabs "[[Serving TW5 from Android/简介]] [[Serving TW5 from Android/useTermux]]" "Serving TW5 from Android/简介" "$:/state/tab1">>

@@ -1,0 +1,60 @@
+caption: tiddlywiki.info 文件
+created: 20161015114042793
+modified: 20210128084828685
+tags: 中 TiddlyWikiFolders TiddlyWiki
+title: tiddlywiki.info Files
+tmap.id: 1a7a40d5-80b2-497d-88a7-0a9839d00a20
+type: text/vnd.tiddlywiki
+
+[[TiddlyWikiFolders]]由一个单独的 `tiddlywiki.info` 文件来配置，该文件在维基文件夹的根目录中。 它应该包含一个JSON对象，其中包含以下属性：
+
+* ''plugins'' - 一个包含在维基中的插件名称的数组
+* ''themes'' - 一个包含在维基中的主题名称的数组
+* ''languages'' - 一个包含在维基中的语言名称的数组
+* ''includeWikis'' - 一个引用数组，标记包含在维基中的外部维基文件夹
+* ''build'' - 一个命名的构建目标散列表，每个目标由一个命令令牌数组定义（参见BuildCommand）
+* ''config'' - 一个可选的配置选项的散列表（见下文）
+
+!!! ''includeWikis'' -- 包含维基
+
+在''includeWikis''数组中的条目可以是指定维基的相对路径的字符串，也可以是具有以下字段的一个对象：
+
+* ''path'' - 维基文件夹的相对路径
+* ''read-only'' - 设置为//true//以防止被包含的维基中的条目被修改。 修改将被写入到下面描述的 ''default-tiddler-location''指定的目录中
+
+!!! ''build'' -- 构建
+
+请注意，如果在当前 `tiddlywiki.info` 文件中该目标的名称未定义，则包含的维基的构建目标将被合并。
+
+!!! ''config'' --配置
+
+配置选项包括：
+
+* ''default-tiddler-location'' - 到文件系统适配器的默认位置的路径字符串，以保存新的条目（相对于维基文件夹解析）
+* ''retain-original-tiddler-path'' - 如果为true，则服务器将生成一个[[$:/config/OriginalTiddlerPaths]]条目，其中包含维基中每个条目原始文件的路径
+
+!!! 示例
+
+例如：
+
+```
+{
+	"plugins": [
+		"tiddlywiki/tiddlyweb",
+		"tiddlywiki/filesystem"
+	],
+	"includeWikis": [
+		{"path": "../tw5.com", "read-only": true}
+	],
+	"build": {
+		"index": [
+			"--rendertiddler","$:/core/save/all","index.html","text/plain"],
+		"favicon": [
+			"--savetiddler","$:/favicon.ico","favicon.ico",
+			"--savetiddler","$:/green_favicon.ico","static/favicon.ico"]
+	},
+	"config": {
+		"retain-original-tiddler-path": true	
+	}
+}
+```

@@ -1,0 +1,10 @@
+caption: 示例
+created: 20220205025650726
+modified: 20230301153710977
+tags: XP-tutorials [[Annotate Button]]
+title: Annotate Button/示例
+tmap.id: d4b10905-be5d-4d11-a0a9-3e85b1f58abd
+
+<<wikitext-example-without-html 
+src:"""<<annotate "Annotation Example" "$:/annotation/example">>
+""">>

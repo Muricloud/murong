@@ -1,0 +1,13 @@
+caption: Markdown
+created: 20210619145628442
+modified: 20220819083046443
+moscow: S
+tags: [[Plugin Card]] OfficialPlugins XP-tutorials
+title: Markdown Plugin
+tmap.id: 08650b67-1a65-4409-b290-af01db823add
+
+[ext[https://tiddlywiki.com/plugins/tiddlywiki/markdown|plugins/tiddlywiki/markdown]]
+
+The Markdown plugin enables you to use tiddlers that are written in standard Markdown markup.
+
+* $:/plugins/tiddlywiki/markdown

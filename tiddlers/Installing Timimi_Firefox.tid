@@ -1,0 +1,21 @@
+caption: Firefox
+created: 20200430112214276
+icon: fa-firefox
+modified: 20211217081638534
+tags: [[Installing Timimi]] XP-tutorials
+title: Installing Timimi/Firefox
+tmap.id: ef6c00be-84b5-4ad6-9763-021ebf862a78
+
+!! <i class='fab fa-linux'></i> Linux
+* 在 {{firefox-addonpage}} 中安装 Timimi 扩展
+{{linux-install}}
+
+
+!! <i class='fab fa-apple'></i> Mac
+* 在 {{firefox-addonpage}} 中安装 Timimi 扩展
+{{mac-install}}
+
+
+!! <i class='fab fa-windows'></i> Windows
+* 在 {{firefox-addonpage}} 中安装 Timimi 扩展
+* 从 {{releasepage}} 上下载并运行 ''timimi-2-1-1-Windows-Firefox.exe''

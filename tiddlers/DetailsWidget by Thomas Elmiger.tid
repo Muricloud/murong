@@ -1,0 +1,16 @@
+caption: Details
+created: 20210619135609744
+modified: 20220819085522728
+moscow: S
+tags: [[Community Plugins]] [[Plugin Card]] XP-tutorials
+title: DetailsWidget by Thomas Elmiger
+tmap.id: 066ad54d-77f4-4c3a-b403-ad12bfa93c71
+url: https://tid.li/tw5/plugins.html
+
+{{!!url}}
+
+Disclosure HTML element
+
+Create HTML 5 `<details>` elements including a `<summary>` using this widget.
+
+* $:/plugins/telmiger/details

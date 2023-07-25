@@ -1,0 +1,20 @@
+background-color: #fff
+caption: Berkeley CS 61C
+color: red
+created: 20210711163343270
+icon: {{$:/core/images/video}}
+image: $:/heiban.png
+link: 
+linkcolor: <<colour primary>>
+modified: 20220701153701048
+tags: Planning Examples Course
+title: Berkeley CS 61C
+tmap.id: e26eeedc-bad0-40ad-a4d3-a65a14509984
+
+!! 课程目录
+
+@@.list-tree
+* 
+** 
+* 
+@@

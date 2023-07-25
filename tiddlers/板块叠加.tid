@@ -1,0 +1,38 @@
+created: 20230712105517856
+modified: 20230714035606836
+title: 板块叠加
+tmap.id: 496c9bfe-6863-47ee-bfa3-d1608ed76f3e
+
+''二级结论：''物体与木板动摩擦因素$$\mu_1$$ ,木板与地面动摩擦因素$$\mu_2$$ ,当物体与木板速度相同时，且$$\mu_1>\mu_2$$时，且没有其他的外力时，物体与木板最后会一起做匀减速直线运动直到静止。
+
+<$details summary="证明" open="yes">
+
+$$ f_1 \leq \mu_1 m_A g$$<br>
+$$ ma_1=f_1 \leq \mu_1 m_A g$$<br>
+$$ a_1\leq \mu_1  g$$<br>
+$$ f_2 =\mu_2(m_A+m_B)g$$<br>
+$$ \mu_2(m_A+m_B)g - f1 = m_Ba_1$$<br>
+$$ \mu_2(m_A+m_B)g = m_Ba_1 +f_1 \leq m_Ba_1 + \mu_1 m_A g$$<br>
+$$ \mu_2(m_A+m_B)g  \leq m_Ba_1 + \mu_1 m_A g$$<br>
+$$ \mu_2(m_A+m_B)g  \leq m_Ba_1 + \mu_1 m_A g  \leq m_B\mu_1 g + \mu_1m_Ag$$<br>
+$$ \mu_2(m_A+m_B)g   \leq  \mu_1 m_B g + \mu_1m_Ag$$<br>
+$$ \mu_2(m_A+m_B)g   \leq \mu_1(m_A+m_B)g$$<br>
+$$ \mu_2 \leq \mu_1 $$<br>
+
+</$details>
+
+
+<table>
+<th>主题</th>
+<th>链接</th>
+<tr>
+<td>板块1220</td>
+<td>https://www.geogebra.org/m/s86evuhy</td>
+</tr>
+<tr>
+<td>滑块木板模型系列</td>
+<td>https://www.geogebra.org/m/ch8wefdv</td>
+</tr>
+</table>
+
+

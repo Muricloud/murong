@@ -1,0 +1,23 @@
+created: 20200801111958762
+modified: 20211207073037657
+tags: XP-tutorials
+title: 钉板
+tmap.id: d9ceae4f-9279-4be1-acfb-3312960b4637
+
+钉板包含固定在板上的一些通知。效果参见 [[Cork Board]]。
+
+!! 创建新通知
+
+方法一：
+
+在 [[pinboard|Cork Board]] 中，你看到一个灰色的图标向右浮动，点击它会创建一个黄色的新通知。
+
+方法二：
+
+* 创建新的条目，或者编辑已有条目
+* 给它打上 `pin` 标签
+* 添加一个名为 `priority` 的自定义字段，并设置一个值，如红色（red）、黄色（yellow）、蓝色（blue）或绿色（green）
+* 保存条目，仅此而已。
+
+
+> 该功能由 $:/plugins/kookma/pinboard 插件提供。

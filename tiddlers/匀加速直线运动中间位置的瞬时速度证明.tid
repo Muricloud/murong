@@ -1,0 +1,40 @@
+created: 20230630092434102
+modified: 20230630100248041
+tags: 
+title: 匀加速直线运动中间位置的瞬时速度证明
+tmap.id: acf5bf48-52aa-459d-b554-b4450773e8f0
+
+已知$$v_0,v_t,a$$
+
+已知$$v_t^2-v_0^2=2ax 
+\ \\
+\ \\
+v_{\frac{x}{2}}^2-v_0^2=2a\frac{1}{2}x
+\ \\
+\ \\
+2v_{\frac{x}{2}}^2-2v_0^2=v_t^2-v_0^2
+\ \\
+\ \\
+2v_{\frac{x}{2}}^2 =v_t^2+v_0^2
+\ \\
+\ \\
+v_{\frac{x}{2}}=\sqrt {\frac{v_t^2+v_0^2}{2}}
+$$
+<br><br>
+已知$$v_t^2-v_0^2=2ax 
+\ \\
+\ \\
+v_{\frac{m}{n}x}^2-v_0^2=2a\frac{m}{n}x
+\ \\
+\ \\
+\frac{n}{m}v_{\frac{m}{n}x}^2-\frac{n}{m}v_0^2=v_t^2-v_0^2
+\ \\
+\ \\
+\frac{n}{m}v_{\frac{m}{n}x}^2 =v_t^2+\frac{n-m}{m}v_0^2
+\ \\
+\ \\
+v_{\frac{m}{n}x}^2=\frac{m}{n}v_t^2+\frac{n-m}{n}v_0^2
+\ \\
+\ \\
+v_{\frac{m}{n}x} = \sqrt {\frac{m}{n}v_t^2+\frac{n-m}{n}v_0^2}
+$$

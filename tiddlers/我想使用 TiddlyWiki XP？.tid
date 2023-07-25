@@ -1,0 +1,27 @@
+created: 20220222051950225
+modified: 20220903065524200
+tags: FAQ XP-tutorials
+title: 我想使用 TiddlyWiki XP？
+tmap.id: 4766cf50-063e-4a4f-8456-2fccb119b60f
+
+//操作前先进行数据备份，这是一个好习惯。//
+
+''第一步：''[[将 tiddlywiki-xp 仓库克隆或下载到本地|如何下载 TiddlyWiki XP 中的所有插件？]]。
+
+如果是新用户，直接使用对应的版本即可（使用方法参阅[[新手入门指南]]）：
+
+* 单文件版本 `version/tiddlywiki-xp.zip/tiddlywiki-xp_Minimal.html`
+* 服务器版本 `version/tiddlywiki-xp_Server.zip`
+
+如果你使用过 TiddlyWiki，那么继续进行第二步。
+
+''第二步：''安装 TiddlyWiki XP 中的所有插件。
+
+* 单文件版本：
+** 将你的维基文件拖到 `tiddlywiki-xp_Minimal.html` 中进行导入。
+*> 单文件版本所有插件：`plugins/PluginforSingleFileVersion.zip`
+
+* 服务器版本：
+** 打开文件 `tiddlywiki-xp_Server.zip`
+** 将 MyPluginStore 文件夹下所有插件拷贝到你的[[自定义插件库|Node.js 下安装自定义插件]]中；
+** 参照 xp 文件夹下的 [[tiddlywiki.info|xp-tiddlywiki.info]] 文件，安装所有插件。

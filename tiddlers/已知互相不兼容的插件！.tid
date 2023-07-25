@@ -1,0 +1,20 @@
+created: 20220626225724366
+linkcolor: red
+modified: 20220701153953131
+tags: XP-tutorials
+title: 已知互相不兼容的插件！
+tmap.id: f386a94c-b189-4c0a-a354-f162ea6fa9d9
+
+\define error1() <i style="color:firebrick;fill:firebrick;">< ❓ incompatible ></i>
+\define error2() <i style="color:firebrick;fill:firebrick;">< ⛔️ incompatible ></i>
+
+<span class="tc-muted">
+❓ 表示轻微不兼容。 ⛔️ 表示严重不兼容。
+</span>
+
+不兼容列表：
+
+|!1 |!$:/plugins/sq/Stories | <<error2>> |$:/plugins/souk21/commandpalette |[[Problem and Solution|Stories 与 commandpalette 不兼容]] |
+|!2 |!$:/plugins/tiddlywiki/menubar<br>$:/plugins/xp/quickbar | <<error1>> |$:/plugins/tobibeer/preview |[[Problem and Solution|menubar 与 preview 不兼容]] |
+|!3 |!$:/plugins/tiddlywiki/dynannotate | <<error2>> |$:/plugins/tobibeer/appear |[[Problem and Solution|dynannotate 与 appear 不兼容]] |
+|!4 |!$:/plugins/tiddlywiki/codemirror | <<error2>> |$:/plugins/snowgoon88/edit-comptext |[[Problem and Solution|Edit-CompText by AlainD]] |

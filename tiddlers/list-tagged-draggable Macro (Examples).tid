@@ -1,0 +1,9 @@
+caption: 可拖动标签列表宏（示例）
+created: 20170329093300835
+modified: 20200901042844539
+tags: 中 [[list-tagged-draggable Macro]] [[Macro Examples]] TiddlyWiki
+title: list-tagged-draggable Macro (Examples)
+tmap.id: 92bb8894-4a10-49d7-a70b-f2ddc536da73
+type: text/vnd.tiddlywiki
+
+<$macrocall $name=".example" n="1" eg="""<<list-tagged-draggable tag:"Features">>"""/>

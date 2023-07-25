@@ -1,0 +1,17 @@
+caption: 在启动时保持打开的条目
+created: 20140101192052333
+modified: 20200901042844549
+tags: 中 [[Customise TiddlyWiki]] TiddlyWiki
+title: Preserving open tiddlers at startup
+tmap.id: ec0a5437-552a-4156-8016-e89588b5288d
+type: text/vnd.tiddlywiki
+
+通常，TiddlyWiki在启动时显示的条目，由作为过滤器的[[$:/DefaultTiddlers]]条目指定。
+
+有时，重新打开与上次文件保存时同样是打开着的条目是有用的。 为此，请将[[$:/DefaultTiddlers]]设置为这样的筛选器：
+
+```
+[list[$:/StoryList]]
+```
+
+这个过滤器返回[[$:/StoryList]]条目中指定的条目，这是TiddlyWiki用于存储当前故事中的条目序列的系统条目。

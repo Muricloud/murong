@@ -1,0 +1,26 @@
+caption: tag Macro
+created: 20211208221821976
+modified: 20220626090014162
+tags: XP-tutorials 调用内置宏
+title: 调用内置宏/tag Macro
+tmap.id: c1dbb140-782f-4b6d-a843-359d74303c75
+
+<div class="gray-box">
+
+相关知识：
+
+* ''tag 是什么？''　标签实际上只是一个条目（或潜在的条目）。
+* ''tag 的用途？''　<<.def tag>>（标签）用于对条目进行归类。
+* ''tag Macro 是什么？''　[[tag Macro]] 为指定的标签生成标签丸。定义在 $:/core/macros/tag 中。
+
+</div>
+
+!! 代码实例
+
+默认为当前条目生成标签丸：
+
+<$macrocall $name="wikitext-example-without-html" src="""<<tag>>"""/>
+
+指定一个标签：
+
+<$macrocall $name="wikitext-example-without-html" src="""<<tag Concepts>>"""/>

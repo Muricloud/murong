@@ -1,0 +1,14 @@
+caption: TiddlyWiki for Scholars
+created: 20220724004912752
+linkcolor: 
+modified: 20220819085826427
+revision: 0
+tags: [[Community Plugins]] [[Plugin Card]]
+title: TiddlyWiki for Scholars
+tmap.id: df432e8b-2866-49d3-a541-97ccec76c0f9
+type: text/vnd.tiddlywiki
+url: http://tw5.scholars.tiddlyspot.com/
+
+{{!!url}}
+
+The main feature of TiddlyWiki for Scholars is its tabs bar at the bottom of each tiddler. Each tab shows relevant information related to the current tiddler. And the list of tabs is specific to each tiddler's contents type. For example, "note tiddlers" and "quote tiddlers" have different lists of tabs. Several predefined tabs allow an easy and fast creation of new tiddlers related to the current one.

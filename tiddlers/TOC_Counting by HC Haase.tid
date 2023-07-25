@@ -1,0 +1,13 @@
+caption: TOC_Counting
+created: 20210621025712033
+modified: 20220819085854778
+tags: [[Community Plugins]] [[Plugin Card]] XP-tutorials
+title: TOC_Counting by HC Haase
+tmap.id: e94f35e1-0656-4e21-8418-240d50478c1f
+url: https://hchaase.github.io/HC-Plugins/#TOC_Counting%20Introduction
+
+{{!!url}}
+
+This counting plugin adds a count of child tiddlers to the right of each TOC entry
+
+* $:/plugins/hchaase/toc_counting

@@ -1,0 +1,27 @@
+caption: 设置
+created: 20220219161228860
+modified: 20230301153616750
+tags: XP-tutorials [[Annotate Button]]
+title: Annotate Button/设置
+tmap.id: 80ea8b67-143d-471f-918a-30a661af3238
+
+右边栏 XP 标签页中，提供了选项：
+
+* 关闭图标。
+* 查看模式：默认是悬浮弹窗，可改为点击弹窗。
+* 修改背景颜色。
+
+该按钮包含以下条目：
+
+* $:/xp/ui/EditorToolbar/annotate
+* $:/templates/transclusion-annotation
+* $:/xp/macros/annotation
+* $:/_xp/Stylesheet/annotation
+* $:/config/ShortcutInfo/annotate
+* $:/config/flibbles/relink/fields/annotate-tiddler
+* $:/config/annotation/mode
+* $:/config/annotation/display
+* $:/config/shortcuts/annotate
+* $:/xp/images/annotation
+* $:/language/Buttons/annotate/Caption
+* $:/language/Buttons/annotate/Hint

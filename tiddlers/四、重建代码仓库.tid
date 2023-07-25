@@ -1,0 +1,62 @@
+created: 20210501155555721
+modified: 20220626085136780
+tags: XP-tutorials
+title: 四、重建代码仓库
+tmap.id: c8915458-64be-49ca-8659-55ac03ed9abc
+
+提交次数越多，历史版本记录就会越多，这些记录可能会占用大量仓库体积。然而尴尬的是，对于个人笔记或者个人博客，这些历史版本几乎用不到。
+
+脚本 [[deploy.sh]] 中已经加入了垃圾清理的命令 `git gc --prune=now`。但随着时间的推移，那些不能被该命令清理的“垃圾”会越来越多。当数据超过了仓库的最大容量时，我们需要「重建代码仓库」，删除所有历史记录。
+
+!! 聪明的方法
+
+使用脚本 [[rebuild.sh]] 进行自动化操作，快速「重建代码仓库」。根据需要添加子仓库的重建脚本：
+
+* [[rebuild-submodule-1.sh]]
+* [[rebuild-submodule-2.sh]]
+* [[rebuild-submodule-3.sh]]
+* ...
+
+!! 简单的方法
+
+在 mywiki 仓库的【设置】中【重置代码仓库】。
+
+将空仓库克隆下来：
+
+```bash
+git clone git@e.coding.net:NAME/wikisites/mywiki.git
+cd mywiki
+```
+
+<div class="gray-box">
+
+''另一种操作方式：''本地新建一个空仓库
+
+```
+mkdir new_git_repo
+cd new_git_repo
+git init 
+```
+</div>
+
+添加之前的子仓库：
+
+```bash
+git submodule add git@e.coding.net:NAME/wikisites/mywiki-private.git tiddlers/private
+git submodule add git@e.coding.net:NAME/wikisites/mywiki-journals.git tiddlers/journals
+git submodule add git@e.coding.net:NAME/wikisites/mywiki-images.git tiddlers/images
+```
+
+将其他内容拷贝进来，注意拷贝 mywiki 下的 `.gitignore` 隐藏文件。
+
+最后提交上传。
+
+<div class="gray-box">
+
+如果上面选择了「另一种方式」，则需要将新仓库强制推送到云端：
+
+```bash
+git remote add origin git@e.coding.net:USERNAME/wikisites/mywiki.git
+git push -uf origin master
+```
+</div>

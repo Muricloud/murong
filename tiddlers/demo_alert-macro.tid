@@ -1,0 +1,45 @@
+caption: Alert macro
+created: 20190906095745460
+creator: Mohammad
+modified: 20200901042808895
+tags: alert doc XP-tutorials
+title: demo/alert-macro
+tmap.id: eec258c5-a7fd-423d-a855-2f9f68831909
+type: text/vnd.tiddlywiki
+
+!! Alert macro
+Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages<<rfe 1 "https://getbootstrap.com/docs/4.3/components/alerts/">>.
+
+!! Syntax
+
+```
+<<alert type:"primary" src:"" width:"100%", class:"">>
+```
+
+!! Content and attributes
+|!Attributes |!Type |!Description |
+|type |optional|a bootstrap contextual classes (e.g. primary, secondary,...). The default value is `primary` |
+|src |required|the text to be shown as alert|
+|width |optional|the width of element, default is `100%`|
+|class |optional|extra css class e.g for adding borders, etc.|
+
+!! Example
+<$macrocall $name="wikitext-example-without-html" 
+src="""<<alert primary "primary alert" width:60%>>
+<<alert secondary "secondary alert" width:60%>>
+<<alert success "success alert" width:60%>>
+<<alert warning "warning alert" width:60%>>
+<<alert danger "danger alert" width:60%>>
+<<alert info "info alert" width:60%>>
+<<alert light "light alert" width:60%>>
+<<alert dark "dark alert" width:60%>>
+"""/>
+
+!! Use extra class
+The below example adds a primary (blue) left boreder using the extra classes `leftbar` plus `border-primary`.
+
+<$macrocall $name="wikitext-example-without-html" 
+src="""<<alert primary src:"Leftbar alert primary" class:"leftbar border-primary">>
+"""/>
+
+See more examples at [[demo/alert-advanced]]

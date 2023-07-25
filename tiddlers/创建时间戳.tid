@@ -1,0 +1,9 @@
+created: 20210618153920741
+modified: 20211207131311948
+tags: TiddlyWiki Examples Howto
+title: 创建时间戳
+tmap.id: c28ac874-2cee-4a96-b821-f63d6e98564c
+
+<$macrocall $name="wikitext-example-without-html" 
+src="""<<now "[UTC]YYYY0MM0DD0hh0mm0ssXXX">>
+"""/>

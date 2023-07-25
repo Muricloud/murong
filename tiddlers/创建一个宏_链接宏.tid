@@ -1,0 +1,12 @@
+caption: 链接宏
+created: 20211214234553649
+modified: 20220220033417389
+tags: 创建一个宏 XP-tutorials
+title: 创建一个宏/链接宏
+tmap.id: 3f9319ad-5f97-4097-8ca1-514854ddcb99
+
+最简单的就是将常用的 URL 制作为宏。比如 $:/xp/macros/external-link 中定义了链接到百度百科、哔哩哔哩等的宏。使用效果为：
+
+<<wikitext-example-without-html src:"""<<baike 苹果公司>>""">>
+<<wikitext-example-without-html src:"""<<bilibili BV1r34y1d7JX>>""">>
+<<wikitext-example-without-html src:"""<<bilibiliButton BV1r34y1d7JX 《越女凌风》 lightblue>>""">>

@@ -1,0 +1,20 @@
+caption: 段落
+created: 20131205155836435
+modified: 20220819093318595
+tags: 中 WikiText TiddlyWiki
+title: Paragraphs in WikiText
+tmap.id: 05cd9491-8964-4385-96cd-f2fd33f3d82c
+type: text/vnd.tiddlywiki
+url: https://tiddlywiki.com/static/Paragraphs%2520in%2520WikiText.html
+
+要在 TiddlyWiki 中标记段落的末尾，您需要输入 `enter` 两次以创建空行：
+
+```
+这是第一段。
+
+这是第二段。
+```
+
+这是第一段。
+
+这是第二段。

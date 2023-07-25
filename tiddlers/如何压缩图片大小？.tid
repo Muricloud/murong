@@ -1,0 +1,91 @@
+created: 20210702234742741
+modified: 20211207131311950
+tags: Pictures Examples Howto
+title: 如何压缩图片大小？
+tmap.id: 6716a678-7453-4814-b569-9dff8411b9fa
+type: text/vnd.tiddlywiki
+
+! 命令行工具 [[JpegOptim|https://github.com/tjko/jpegoptim]] 和 [[OptiPNG|http://optipng.sourceforge.net/]]
+
+（一旦学会命令，操作起来相当便捷高效）
+
+```bash
+sudo apt install jpegoptim optipng
+```
+
+!! ''jpegoptim''
+
+常用参数：
+
+```
+-d<path>, --dest=<path>
+	设置保存优化文件的目录（默认覆盖源文件）。
+
+-m<quality>, --max=<quality>
+	设置最大图像质量因子（禁用无损优化）。取值范围: 0 - 100（值越大品质越高，代表压缩力度越小）
+
+-S<size>, --size=<size>
+	尝试将文件优化到给定的大小（禁用无损优化模式）。目标大小以千字节 (1 - n) 或原始文件大小的百分比 (1% - 99%)。如果压缩结果大于给定值，可以缩小给定值再压缩。
+
+-o, --overwrite
+	Overwrite target file even if it exists (when using -d option).
+```
+
+基本用法：
+
+```bash
+# 创建存储目录（jpegoptim 太傻，不会自动创建文件夹）
+$ mkdir output
+
+# 默认优化
+$ jpegoptim file.jpg -d output
+
+# 指定图像质量因子
+$ jpegoptim -m80 file.jpg -od output
+# -o 可以和 -d 合并为 -od。顺序不能错。
+
+# 指定压缩后的文件大小
+$ jpegoptim -S200 file.jpg -d output
+```
+
+
+!! ''optipng''
+
+常用参数：
+
+```
+-backup, -keep      keep a backup of the modified files
+	保留存储目录中的同名文件，或者叫备份。
+		
+-out <file>         write output file to <file>
+-dir <directory>    write output file(s) to <directory>
+	设置保存优化文件的目录。可以缩写为 -d。
+
+-o <level>          optimization level (0-7)                [default: 2]
+	选择优化级别。
+```
+
+基本用法：
+
+```bash
+# 默认压缩
+$ optipng file.png -d output
+
+# 指定优化级别
+$ optipng -o3 file.png -d output
+$ optipng -o5 file.png -d output -keep
+```
+
+
+!! 批量处理
+
+使用 find、xargs 这样的工具可以压缩你指定的一些文件
+
+```bash
+$ find . -name "*.jpg" | xargs jpegoptim
+```
+
+
+!! See also
+
+* [[linux 下好用的图片压缩工具 JpegOptim 和 OptiPNG|https://www.jianshu.com/p/db7a88062f66]]

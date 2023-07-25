@@ -1,0 +1,25 @@
+caption: 创建子故事
+created: 20140214215718317
+modified: 20211215095309036
+tags: 中 TiddlyWiki [[WikiText 应用实例]]
+title: Creating SubStories
+tmap.id: b24d7963-7d52-4a7e-90d6-b3b3d74c20d6
+type: text/vnd.tiddlywiki
+
+这个例子展示了如何在独立于主故事的条目中创建一个子故事。
+
+<<wikitext-example-without-html 
+src:"""<$navigator story="MySubStoryList" history="MySubHistoryList">
+
+<$list
+  filter="[list[MySubStoryList]]"
+  history="MySubHistoryList"
+  template={{$:/config/ui/ViewTemplate}}
+  editTemplate={{$:/config/ui/EditTemplate}}
+  storyview="classic"
+  emptyMessage="<p>Click this link to get started: [[TiddlyWiki]]</p>"/>
+
+</$navigator>
+""">>
+
+子故事中的链接是在子故事内打开，而不是在主故事中。

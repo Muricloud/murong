@@ -1,0 +1,26 @@
+created: 20210422151145589
+modified: 20210423053751043
+tags: XP-tutorials
+title: Linux 上创建快捷方式
+tmap.id: 2f7011a4-a678-4c23-95ed-aeda9bbbaf97
+
+!! 使用文件管理器
+
+* 打开 Nautilus 文件管理器，进入 ''Preferences -> Behavior''。 启用选项 "''Show action to create symbolic links''"。 现在在 Nautilus 中有了“Create Link”上下文菜单项。
+* 快捷键为 <kbd>ctrl-shift-M</kbd>。
+
+
+!! 使用命令
+
+```bash
+# 创建文件夹的快捷方式
+ln -sv /usr/share/backgrounds /your/wikipath/tiddlers/images/
+ln -sv /DATA/Pictures/Wallpapers /your/wikipath/tiddlers/images/
+```
+
+> 注意：创建文件夹的快捷方式必须使用绝对路径。
+
+```bash
+# 创建文件的快捷方式
+ln -s /your/filepath/film.mp4 /your/wikipath/tiddlers/videos/
+```

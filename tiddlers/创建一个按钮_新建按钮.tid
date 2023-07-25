@@ -1,0 +1,39 @@
+caption: 新建按钮
+created: 20211214063619283
+modified: 20220711171255875
+tags: 创建一个按钮 XP-tutorials
+title: 创建一个按钮/新建按钮
+tmap.id: b45b7c88-63c9-421e-8c52-e798b5f0551d
+
+创建条目可以使用：
+
+# 新建条目部件消息 [[WidgetMessage|https://tiddlywiki.com/static/WidgetMessage%253A%2520tm-new-tiddler.html]]: `tm-new-tiddler`
+# 创建条目动作部件 [[ActionCreateTiddlerWidget|https://tiddlywiki.com/static/ActionCreateTiddlerWidget.html]]: `action-createtiddler`
+
+区别在于，执行部件消息需要确认后才能得到结果；而执行动作部件直接得到结果。请看示例。
+
+
+!! 根据预配置在故事河中新建一个草稿条目
+
+<$macrocall $name="wikitext-example-without-html" 
+src="""<$button>
+<$action-sendmessage $message="tm-new-tiddler" title="This is newly created tiddler" tags="OneTag [[Another Tag]]" text=<<now "Today is DDth, MMM YYYY">>/>
+Click me!
+</$button>
+"""/>
+
+> 字段值可通过条目传入，比如：`text={{用以致学}}`
+
+
+!! 根据预配置直接创建出一个条目
+
+（显示通知消息并打开最近列表）
+
+<$macrocall $name="wikitext-example-without-html" 
+src="""<$button>
+<$action-sendmessage $message="tm-notify" $param="SampleNotification"/>
+<$action-createtiddler $basetitle="base" $template="ActionCreateTiddlerWidget Template" aa="new field aa" bb="new field bb" />
+<$action-setfield $tiddler="$:/state/tab/sidebar--595412856" text="$:/core/ui/SideBar/Recent"/>
+Create Tiddler
+</$button>
+"""/>

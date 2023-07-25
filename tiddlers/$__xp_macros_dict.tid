@@ -1,0 +1,18 @@
+created: 20220219164551733
+modified: 20220220060123900
+revision: 0
+tags: $:/tags/Macro XP-tutorials
+title: $:/xp/macros/dict
+type: text/vnd.tiddlywiki
+
+\define xd(word,pronounce,src)
+<<card 
+title:"$word$"
+text:"""$pronounce$
+<audio src="https://tts.hjapi.com/en-us/$src$" preload="none" controls loop>你的浏览器不支持 audio 标签。</audio>
+[[source|https://dict.hjenglish.com/w/$word$]]
+"""
+width:"21rem"
+class:"border-primary text-primary"
+>>
+\end

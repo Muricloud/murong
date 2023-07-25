@@ -1,0 +1,31 @@
+created: 20200918193519249
+modified: 20210517145257495
+tags: XP-tutorials
+title: 三、Coding 上开启静态网站
+tmap.id: 1f3ec087-19ba-4055-95c4-09762eece68b
+
+通常个人笔记是不公开的，不需要开启静态网站。如果维基要公开的话，参考下方开启静态网站。
+
+!! 将维基导出为 index.html
+
+为了方便，在 mywiki 中自建一个 [[build.sh]] 脚本。
+
+```bash
+vim build.sh
+chmod 755 build.sh
+./build.sh
+```
+
+!! 推送更新
+
+```
+./deploy.sh  Write your commit message here
+```
+
+!! 开启静态网站
+
+回到 Coding 的 wikiSites 项目：
+
+* 【静态网站】>【新建静态网站】> 网站名称：mywiki > 选择仓库：mywiki > 【保存】
+
+点击 ''访问地址'' 访问网站。由于访问地址不好记，如果要开放维基的话，可以考虑购买一个域名。

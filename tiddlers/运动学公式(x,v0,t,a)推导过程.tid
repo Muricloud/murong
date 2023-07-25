@@ -1,0 +1,35 @@
+created: 20230623132224867
+modified: 20230623132224867
+tags: 
+title: 运动学公式(x,v0,t,a)推导过程
+tmap.id: 7498eb95-559d-48fe-827b-f4fac5e58189
+
+$$x=v_0t+\frac{1}{2}at^2  \	\	 ...\textcircled{1}
+\ \\
+\ \\
+v_t=v_0+at...\textcircled{2}
+\ \\
+\ \\
+\textcircled{2}多了v_t，少了x,然后次数也不一样，尽量化成同样的形式
+\ \\
+\ \\
+两边同乘t：
+v_tt=v_0t+at^2
+\ \\
+\ \\
+两边同乘 \frac{1}{2}：
+\frac{1}{2}v_tt=\frac{1}{2}v_0t+\frac{1}{2}at^2
+\ \\
+\ \\
+两边同加\frac{1}{2}v_0t：
+\frac{1}{2}v_tt+\frac{1}{2}v_0t=v_0t+\frac{1}{2}at^2
+\ \\
+\ \\
+\frac{v_0+v_t}{2}t=v_0t+\frac{1}{2}at^2
+\ \\
+\ \\
+ \overline{v}t=v_0t+\frac{1}{2}at^2
+\ \\
+\ \\
+最后求得：x=v_0t+\frac{1}{2}at^2
+$$
